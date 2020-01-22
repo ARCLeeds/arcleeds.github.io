@@ -1,0 +1,33 @@
+menubar:
+  - title: News and Updates
+    url: /somewhere/
+  - title: Services
+    subfolderitems:
+      - page: Platforms
+        url: /research_platforms/
+      - page: Consulting
+        url: /consultancy/
+      - page: Training
+        url: /training/
+  - title: Help
+    subfolderitems:
+      - page: Documentation
+        url: /documentation/
+      - page: FAQ
+        url: /faq/
+  - title: Training
+    subfolderitems:
+      - page: Calendar
+        url: /trainingcalendar/
+      - page: Courses
+        url: /trainingcourses/
+  - title: About
+    subfolderitems:
+      - page: The Team
+        url: /team/
+      - page: Work
+        url: /casetstudiesprojects/
+      - page: History
+        url: /history/
+  - title: Log a Ticket
+    url: https://leeds.service-now.com/it?id=sc_cat_item&sys_id=7587b2530f675f00a82247ece1050eda

@@ -266,7 +266,7 @@ sass:
 
 asciidoctor-enabled: false
 asciidoctor:
-  description: 
+  description:
   attributes:
     source-highlighter: coderay
     coderay-css: style
