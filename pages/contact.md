@@ -2,11 +2,11 @@
 layout: page
 title: "Contact"
 meta_title: "Contact and use our contact form"
-subheadline: "Wufoo-powered contact forms"
-teaser: "Get in touch with me? Use the contact form."
+#subheadline: "Get i"
+teaser: "Get in touch with Research Computing? Use the contact form."
 permalink: "/contact/"
 ---
-If you need a fabulous contact form for your website, I suggest you use [Wufoo][1]. You can use three forms for free, you get no spam and if you get more than 100 entries you have to pay.
+Contact us via our email address ask-rc@leeds.ac.uk or [click here][1]
 
 
- [1]: http://www.wufoo.com/
+ [1]: mailto:ask-rc@leeds.ac.uk
