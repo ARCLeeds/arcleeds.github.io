@@ -1,7 +1,7 @@
 - name: GitHub
-  url: http://github.com/phlow
+  url: https://github.com/ARCLeeds
   class: icon-github
-  title: Code und mehr...
+  title: ARC Leeds
 
 - name: YouTube
   url: http://www.youtube.com/PhlowMedia
