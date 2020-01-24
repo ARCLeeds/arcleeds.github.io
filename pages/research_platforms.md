@@ -1,12 +1,18 @@
 ---
 layout: page
-title: "Research Platforms"
-meta_title: "Details about the Research Computing curated Research Platforms"
-subheadline: "Find out about available Research Platforms"
-permalink: "/research_platforms/"
+title: Research Platforms
+permalink: /services/research_platforms/
 ---
 
-Find out about our fabulous Research Platforms
+IT Services provide a number of tools and services for both data storage and compute, Research Computing being the primary point of contact for research users.
 
-- Azure Cloud
-- High Performance Computing (HPC) at Leeds
+
+| Platform                                                        | Application                                                                                                                                                                                                                                                                                                                                                                       |
+|-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| High Performance Computing (ARC) clusters                       | Batch processing for Big Data and Big Compute.  Used for both high throughput and high performance computing workloads.                                                                                                                                                                                                                                                           |
+| Research Data Science Platform (IRC)                            | Virtual Windows and Linux desktops for the processing and storage of data deemed sensitive.                                                                                                                                                                                                                                                                                       |
+| Research Data Storage (provided through DCS project and others) | Scalable research data storage (IT) PeTAL tape archive (Faculty of Environment) Research Data Repository (Library) SEED (Faculty of Medicine)                                                                                                                                                                                                                                     |
+| Research Virtual Machines (provided through DCS project)        | Linux and Windows virtual machines (various CPU, memory and storage configurations)  Powerful computing resources (dedicated to supporting computationally or data intensive research) that can be deployed flexibly and changed easily to meet evolving user needs.  This could also provide other services such as a managed on-premise Gitlab service and a Database platform. |
+| Research Programming Platform                                   | A browser based service providing access to Python, R and Julia through Jupyter Notebooks, Jupyter Lab, RStudio and a Coder (Visual Studio Code) interface.  Use: general purpose code development                                                                                                                                                                                |
+| Research Cloud                                                  | Access to Public Cloud services for research needs not met elsewhere (eg. VMs with GPUs or FPGAs, Cognitive Services APIs, Kubernetes, Azure Labs, Machine Learning Workbench)                                                                                                                                                                                                    |
+| Research Visualisation Platform                                 | Providing access to a variety of computationally intense visualisation tools (eg. VMD, Paraview)                                                                                                                                                                                                                                                                                  |

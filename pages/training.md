@@ -3,7 +3,7 @@ layout: page
 title: "Training"
 meta_title: "Research Computing Training"
 subheadline: "Upgrade your skills with our Research Computing training"
-permalink: "/training/"
+permalink: "/services/training/"
 ---
 
 We provide training to researchers on:

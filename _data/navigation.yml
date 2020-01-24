@@ -3,40 +3,45 @@
   side: left
 
 - title: Services
+  url: /services/
   side: left
   dropdown:
   - title: Platforms
-    url: /research_platforms/
+    url: /services/research_platforms/
   - title: Consulting
-    url: /consultancy/
+    url: /services/consultancy/
   - title: Training
-    url: /training/
+    url: /services/training/
 
 - title: Help
+  url: /help/
+  side: left
   dropdown:
   - title: Documentation
-    url: /documentation/
+    url: /help/documentation/
   - title: FAQ
-    url: /faq/
-  side: left
+    url: /help/faq/
 
 - title: Training
+  url: /training/
+  side: left
   dropdown:
   - title: Calendar
-    url: /trainingcalendar/
+    url: /training/calendar/
   - title: Courses
-    url: /trainingcourses/
-  side: left
+    url: /training/courses/
 
 - title: About
+  side: left
+  url: /about/
   dropdown:
   - title: The Team
-    url: /team/
+    url: /about/team/
   - title: Work
-    url: /casestudiesprojects/
+    url: /about/casestudiesprojects/
   - title: History
-    url: /history/
-  side: left
+    url: /about/history/
+
 
 - title: Log a Ticket
   url: https://leeds.service-now.com/it?id=sc_cat_item&sys_id=7587b2530f675f00a82247ece1050eda
