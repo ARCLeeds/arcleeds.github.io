@@ -10,15 +10,10 @@ permalink: "/services/"
 
 {% include list-nav-dd-items ddtitle='Services' %}
 
-<p>starting...</p>
 <ul>
       {% assign filtered_navigation = site.data.navigation | where:'title', 'Services' %}
 	  {% for link in filtered_navigation %}
-	  in..
-	  {% for dropdown_link in link.dropdown %}
-	  inside...
+	  {% for dropdown_link in filtered_navigation.dropdown %}
           <li>Hi<a href="{{dropdown_link.url}}">{{dropdown_link.title}}</a></li>
       {% endfor %}
-      {% endfor %}
-  </ul>  
-<p>ending...</p>
+</ul>
