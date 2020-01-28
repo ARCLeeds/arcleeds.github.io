@@ -1,14 +1,22 @@
 ---
 layout: page
 show_meta: false
-title: "Services!"
+title: "Services"
 subheadline: "Layouts of Feeling Responsive"
 header:
    image_fullwidth: "header_unsplash_5.jpg"
 permalink: "/services/"
 ---
+
+<p>starting...</p>
 <ul>
-    {% for post in site.categories.services %}
-    <li><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
+      {% assign filtered_navigation = site.data.navigation | where:'title', 'Services' %}
+	  {% for link in filtered_navigation %}
+	  in..
+	  {% for dropdown_link in filtered_navigation.dropdown %}
+	  inside...
+          <li>Hi<a href="{{dropdown_link.url}}">{{dropdown_link.title}}</a></li>
+      {% endfor %}
+      {% endfor %}
+  </ul>  
+<p>ending...</p>
