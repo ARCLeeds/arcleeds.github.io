@@ -30,6 +30,17 @@
     url: /training/calendar/
   - title: Courses
     url: /training/courses/
+    
+- title: Community
+  url: /community/
+  side: left
+  dropdown:
+  - title: Intro
+    url: /community/intro/
+  - title: Champions
+    url: /community/champions/
+  - title: Events
+    url: /community/events/
 
 - title: About
   side: left
