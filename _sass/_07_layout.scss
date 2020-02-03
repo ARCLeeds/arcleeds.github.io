@@ -348,7 +348,6 @@ body.video cite { color: #fff; }
 .t60 {
   margin-top: 0.5%;
   display: flex;
-  color: white;
 }
 .t70 { margin-top: 70px !important; }
 .t80 { margin-top: 80px !important; }
@@ -367,10 +366,17 @@ body.video cite { color: #fff; }
 .pr10 { padding-right: 10px !important; }
 .pr20 { padding-right: 20px !important; }
 
-/* frontpage-widget anchor class */
+/* frontpage-widget classes
+- anchor
+- images
+*/
 
 .frontpage-anchor {
   display: inline-block;
   width: 100%;
   height: 100%;
+}
+
+.frontpage-img {
+  height: 205px;
 }
