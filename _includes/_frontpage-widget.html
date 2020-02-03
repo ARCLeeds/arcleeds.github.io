@@ -12,7 +12,8 @@
 {% capture widget_image %}{% if include.widget.image contains 'http' %}{{ include.widget.image }}{% else %}{{ site.urlimg }}{{ include.widget.image }}{% endif %}{% endcapture %}
 
 
-<div class="medium-4 columns frontpage-widget">
+<div class="medium-4 columns frontpage-widget"
+style="background-color:{{ include.widget.style }};">
 	{% if widget_url != empty %}<a href="{{ widget_url }}">
 	{% if include.widget.video %}
 		{{ include.widget.video }}

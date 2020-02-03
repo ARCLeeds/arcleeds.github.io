@@ -8,20 +8,41 @@ layout: frontpage
 header:
   #image_fullwidth: header_unsplash_12.jpg
 widget1:
-  title: "Research Computing Services"
-  url: '/services/'
+  title: "Platforms"
+  url: '/services/platforms/'
   image: widget-1-302x182.jpg
-  text: 'Lorem ipsum magic...'
+  text: 'Learn about the Research Computing platforms available at Leeds including HPC, Cloud and more.'
+  style: '#56B4E9'
 widget2:
-  title: "HPC Documentation"
-  url: '/help/'
-  text: 'Lorem ipsum voodoo...'
+  title: "Consulting"
+  url: '/services/consulting/'
+  text: 'Learn about our Research Software Engineer Consulting service, helping provide bespoke expertise to your research project.'
   video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
+  style: '#004f2b'
 widget3:
-  title: "About Research Computing"
+  title: "Training"
+  url: '/services/training/'
+  image: widget-github-303x182.jpg
+  text: 'Read more about the wide range of training we offer from introduction to linux to Advanced Python courses.'
+  style: '#0072B2'
+widget4:
+  title: "Support"
+  url: '/help/'
+  image: widget-github-303x182.jpg
+  text: 'Find our support documents and FAQs to help you navigate HPC and any other Research Computing queries.'
+  style: '#56B4E9'
+widget5:
+  title: "Contact"
+  url: '/help/'
+  image: widget-github-303x182.jpg
+  text: 'Need to get in touch? Learn how to contact us and get your query direct to Research Computing.'
+  style: '#004f2b'
+widget6:
+  title: "About"
   url: '/about/'
   image: widget-github-303x182.jpg
-  text: 'Lorem ipsum welter wangler...'
+  text: 'Come and meet the Research Computing team, learn more about our work and history.'
+  style: '#0072B2'
 #
 # Use the call for action to show a button on the frontpage
 #

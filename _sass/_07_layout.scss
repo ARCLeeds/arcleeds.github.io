@@ -344,10 +344,13 @@ body.video cite { color: #fff; }
 .t20 { margin-top: 20px !important; }
 .t30 { margin-top: 30px !important; }
 .t50 { margin-top: 50px !important; }
-.t60 { margin-top: 60px !important; }
+.t60 {
+  margin-top: 0.5%;
+  display: flex;
+}
 .t70 { margin-top: 70px !important; }
 .t80 { margin-top: 80px !important; }
-.t90 { margin-top: 90px !important; }
+.t90 { margin-top: 90px !important;}
 
 .b15 { margin-bottom: 15px !important; }
 .b20 { margin-bottom: 20px !important; }
