@@ -13,17 +13,15 @@
 
 
 <div class="medium-4 columns frontpage-widget">
+	{% if widget_url != empty %}<a href="{{ widget_url }}">
 	{% if include.widget.video %}
 		{{ include.widget.video }}
-	{% elsif widget_url == empty %}
-		{% if widget_image != empty %}<img src="{{ widget_image }}" alt="" />{% endif %}
-	{% else %}
-		<a href="{{ widget_url }}">
-			{% if widget_image != empty %}<img src="{{ widget_image }}" alt="" />{% endif %}
-		</a>
-	{% endif %}
+	{% elsif widget_image != empty %}<img src="{{ widget_image }}" alt="" />
+		{% endif %}
+
 	<h2 class="font-size-h3 t10">{{ include.widget.title }}</h2>
 
 	{% if include.widget.text != empty %}<p>{{ include.widget.text }}</p>{% endif %}
-	{% if widget_url != empty %}<p><a class="button tiny radius" href="{{ widget_url }}">{{ site.data.language.more }}</a></p>{% endif %}
+
+	</a>{% endif %}
 </div>
