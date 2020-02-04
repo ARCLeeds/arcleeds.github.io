@@ -250,7 +250,7 @@ body.video cite { color: #fff; }
 ------------------------------------------------------------------- */
 
 #up-to-top {
-    padding: 160px 0 10px 0;
+    padding-top: 2%;
 }
 #up-to-top a {
     font-size: 24px;
@@ -351,6 +351,7 @@ body.video cite { color: #fff; }
 .t60 {
   margin-top: 0.5%;
   display: flex;
+  flex-wrap: wrap;
 }
 .t70 { margin-top: 70px !important; }
 .t80 { margin-top: 80px !important; }
@@ -383,4 +384,6 @@ body.video cite { color: #fff; }
 
 .frontpage-img {
   height: 205px;
+  display: block;
+  margin: 0;
 }
