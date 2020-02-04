@@ -14,7 +14,8 @@
 
 <div class="medium-4 columns frontpage-widget"
 style="background-color:{{ include.widget.style }};">
-	{% if widget_url != empty %}<a href="{{ widget_url }}" class="frontpage-anchor">
+	{% if widget_url != empty %}
+		<a href="{{ widget_url }}" class="frontpage-anchor">
 		{% if include.widget.video %}
 			{{ include.widget.video }}
 		{% elsif widget_image != empty %}<img src="{{ widget_image }}" alt="{{ include.widget.alt-test }}" class="frontpage-img" />
@@ -24,7 +25,8 @@ style="background-color:{{ include.widget.style }};">
 
 		{% if include.widget.text != empty %}
 			<p>{{ include.widget.text }}</p>
+			<!-- testing this fix -->
 		{% endif %}
 
-	</a>{% endif %}
+		</a>{% endif %}
 </div>
