@@ -178,9 +178,9 @@ msapplication_tilecolor:                '#fabb00'
 #    / __/ / /_/ / /__/  __/ /_/ / /_/ / /_/ / ,<
 #   /_/    \__,_/\___/\___/_.___/\____/\____/_/|_|      Facebook-Optimization › http://j.mp/fb_optimize
 
-og_image:                           'http://images.phlow.de/phlow/phlow_de-logo-512x.png'
-og_locale:                          'en_EN'
-og_type:                            'website'
+#og_image:                           'http://images.phlow.de/phlow/phlow_de-logo-512x.png'
+#og_locale:                          'en_EN'
+#og_type:                            'website'
 
 
 #      _____            _       __   __  ___         ___
@@ -193,8 +193,7 @@ og_type:                            'website'
 #
 
 socialmedia:
-    twitter: phlow
-    facebook: phlow.media
+    twitter: ARCUniLeeds
 
 
 #        ____  _
@@ -206,7 +205,7 @@ socialmedia:
 #
 # used in _includes/comments
 
-disqus_shortname: feelingresponsive
+#disqus_shortname: feelingresponsive
 
 
 #      _____

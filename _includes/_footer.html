@@ -63,13 +63,18 @@
             {{ site.credits }}
           </section>
 
-          <section id="subfooter-right" class="small-12 medium-6 columns">
+          <section id="subfooter-right" >
             <ul class="inline-list social-icons">
             {% for social_item in site.data.socialmedia %}
               <li><a href="{{ social_item.url }}" target="_blank" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
             {% endfor %}
             </ul>
+            <div id="footer-logos">
+              <a href="//www.n8research.org.uk/" target="_blank" ><img src="{{ site.url }}{{ site.baseurl }}/assets/img/n8researchpartnership.jpg" /></a>
+              <a href="//www.leeds.ac.uk/" target="_blank" ><img src="{{ site.url }}{{ site.baseurl }}/assets/img/uol-logo.svg" alt="University of Leeds Logo"/></a>
+            </div>
           </section>
         </nav>
+            
       </div><!-- /#subfooter -->
     </footer>

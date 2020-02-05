@@ -2,7 +2,7 @@
 /* TOC – Color Variables
 
 - Basics
-- Corporate Identity Colorpalette
+- Color-blind friendly color scale
 - Foundation Color Variables
 - Grey Scale
 - Topbar-Navigation
@@ -22,23 +22,24 @@ $body-bg: 			#fdfdfd;
 
 
 
-/* Corporate Identity Colorpalette
-   https://color.adobe.com/de/Flat-Design-Colors-v2-color-theme-4341903/
+/* Color-blind friendly color scale (Okabe & Ito, 2002)
+   https://bookdown.org/hneth/ds4psy/D-2-apx-colors-essentials.html
 ------------------------------------------------------------------- */
 
-$ci-1: #334D5C;		// dark turquoise
+$ci-1: #009E73;		// green
 $ci-2: #0072B2;		// blue
-$ci-3: #EFC94C;		// yellow
-$ci-4: #E27A3F;		// orange
-$ci-5: #DF4949;		// red
+$ci-3: #F0E442;		// yellow
+$ci-4: #E69F00;		// orange
+$ci-5: #D55E00;		// vermillion
 $ci-6: #56B4E9;     // sky blue
+$ci-7: #CC79A7;     // purple
 
 
 
 /* Foundation Color Variables
 ------------------------------------------------------------------- */
 
-$primary-color: $ci-1;
+$primary-color: $ci-2;
 $secondary-color: $ci-6;
 $alert-color: $ci-5;
 $success-color: $ci-6;
@@ -84,16 +85,16 @@ $topbar-link-color-active: #000;
 $topbar-link-color-active-hover: #000;
 
 $topbar-dropdown-label-color: $ci-2;
-$topbar-dropdown-link-bg-hover: $ci-6;
+$topbar-dropdown-link-bg-hover: $grey-4;
 
 $topbar-link-bg-active: $ci-6; // Active Navigation Link
-$topbar-link-bg-hover: $ci-6;
-$topbar-link-bg-active-hover: $ci-2;
+$topbar-link-bg-hover: $grey-4;
+$topbar-link-bg-active-hover: $grey-4;
 
 
 $topbar-dropdown-bg: $ci-6; // Background Mobile Navigation
 $topbar-dropdown-link-color: #fff;
-$topbar-dropdown-link-bg: $ci-2;
+$topbar-dropdown-link-bg: $grey-13;
 
 $topbar-menu-link-color-toggled: $ci-1;
 $topbar-menu-icon-color-toggled: $ci-1;
@@ -109,7 +110,7 @@ $topbar-menu-icon-color-toggled: $ci-6;
 
 $footer-bg: $grey-8;
 $footer-color: #fff;
-$footer-link-color: $ci-6;
+$footer-link-color: $ci-3;
 
 
 $subfooter-bg: $grey-13;

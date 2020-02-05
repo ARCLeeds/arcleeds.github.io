@@ -303,6 +303,15 @@ body.video cite { color: #fff; }
     float: left;
 }
 
+#subfooter-right ul.inline-list {
+    overflow: visible;
+}
+
+#footer-logos {
+    float:right;
+    margin-bottom:30px;
+}
+
 .credits a {
     color: $subfooter-link-color;
     border: 0;
@@ -313,7 +322,7 @@ body.video cite { color: #fff; }
 }
 
 .social-icons {
-    margin-bottom: 10px !important;
+    margin-bottom: 0px !important;
 
 // Beware of SCSS-Syntax here
   li {
