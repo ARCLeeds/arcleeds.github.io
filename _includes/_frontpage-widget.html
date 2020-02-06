@@ -15,10 +15,15 @@
 <div class="medium-4 columns frontpage-widget">
 	{% if widget_url != empty %}
 		<a href="{{ widget_url }}" class="frontpage-anchor">
-<<<<<<< HEAD
-=======
+			<div class="frontpage-widget-content" style="background-color:{{ include.widget.style }};">
+				<h2 class="font-size-h3 t10">{{ include.widget.title }}</h2>
+
+				{% if include.widget.text != empty %}
+					{{ include.widget.text }}
+				{% endif %}
+			</div>
+
 			<div class="frontpage-widget-media">
->>>>>>> break widget into 2 div for image and content
 			{% if include.widget.video %}
 				{{ include.widget.video }}
 			{% elsif widget_image != empty %}
@@ -26,20 +31,7 @@
 			{% endif %}
 			</div>
 
-<<<<<<< HEAD
-			<h2 class="font-size-h3 t10">{{ include.widget.title }}</h2>
-			{% if include.widget.text != empty %}
-				{{ include.widget.text }}
-			{% endif %}
-=======
-			<div class="frontpage-widget-content" style="background-color:{{ include.widget.style }};">
-				<h2 class="font-size-h3 t10">{{ include.widget.title }}</h2>
->>>>>>> break widget into 2 div for image and content
 
-				{% if include.widget.text != empty %}
-					<p>{{ include.widget.text }}</p>
-				{% endif %}
-			</div>
 		</a>
 	{% endif %}
 </div>
