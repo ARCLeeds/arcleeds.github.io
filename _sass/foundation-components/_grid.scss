@@ -121,8 +121,9 @@ $last-child-float: $opposite-direction !default;
   }
 
   // If a column number is given, calculate width
+  // -2.5% here ensures flex boxes don't wrap over 1 line dependent on viewport
   @if $columns {
-    width: grid-calc($columns, $total-columns);
+    width: grid-calc($columns, $total-columns) - 2.5%;
 
     // If last column, float naturally instead of to the right
     @if $last-column { float: $opposite-direction; }

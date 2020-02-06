@@ -71,8 +71,8 @@
     border-bottom: 1px solid #fff;
   }
   .alert-box.terminal {
-    background: $grey-12; 
-    color: #fff; 
+    background: $grey-12;
+    color: #fff;
     border-color: scale-color($grey-12, $lightness: -14%);
     font-family: $font-family-monospace;
   }
@@ -159,4 +159,13 @@ img.lazy {
     padding-top: 50px;
     margin-top: -50px;
   }
+}
+
+/* frontpage-widget style  */
+
+.frontpage-widget {
+  color: white;
+  margin: 1%;
+  border-radius: 3px;
+  padding: 1%;
 }
