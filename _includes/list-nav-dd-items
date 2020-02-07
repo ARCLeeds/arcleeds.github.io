@@ -1,8 +1,10 @@
 <ul>
-      {% assign filtered_navigation = site.data.navigation | where:'title', [include.ddtitle] %}
-	  {% for link in filtered_navigation %}
-	  {% for dropdown_link in link.dropdown %}
-          <li><a href="{{dropdown_link.url}}">{{dropdown_link.title}}</a></li>
+      {% assign filtered_navigation = site.data.navigation | where:'title', include.ddtitle %}
+
+	  {% for item in filtered_navigation %}
+			  {% for dditem in item.dropdown %}
+		          <li><a href="{{dditem.url}}">{{dditem.title}}</a></li>
+		      {% endfor %}
       {% endfor %}
-      {% endfor %}
-  </ul>  
+
+  </ul>
