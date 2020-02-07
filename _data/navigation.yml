@@ -7,9 +7,9 @@
   side: left
   dropdown:
   - title: Platforms
-    url: /services/research_platforms/
+    url: /services/researchplatforms/
   - title: Consulting
-    url: /services/consultancy/
+    url: /services/consulting/
   - title: Training
     url: /services/training/
 
