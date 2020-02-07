@@ -1,4 +1,4 @@
-## [Uiversity of Leeds][1] IT Research Computing Website 
+## [University of Leeds][1] IT Research Computing Website 
 
 This is a Jeyll website, based on the [*Feeling Responsive*][2] theme.
 
