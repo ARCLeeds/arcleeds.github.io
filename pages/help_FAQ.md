@@ -3,7 +3,7 @@ layout: page
 
 title: "Frequently Asked Questions"
 
-permalink: "/help/faq"
+permalink: "/help/faq/"
 ---
 
 - How do I log a ticket
