@@ -8,7 +8,10 @@ permalink: "/about/team/"
 
 - Mark Conmy
 - Martin Callaghan
-- John Hodrien
+- Phil Chambers
 - Ollie Clark
-- Nick Rhodes
 - Alex Coleman
+- Samantha Crossfield
+- John Hodrien
+- Adam Keeley
+- Nick Rhodes
