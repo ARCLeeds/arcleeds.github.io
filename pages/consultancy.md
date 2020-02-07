@@ -6,4 +6,5 @@ subheadline: "Handcrafted consultancy for your research data problem"
 permalink: "/services/consulting/"
 ---
 
-Have a research code problem? Hire an RSE!
+Have a research code problem? Hire an RSE!  
+We are here to assist with any stage of a Research Project.
