@@ -9,7 +9,7 @@ header:
   #image_fullwidth: header_unsplash_12.jpg
 widget1:
   title: "Platforms"
-  url: '/services/platforms/'
+  url: '/services/research-platforms/'
   image: widget-1-302x182.jpg
   text: 'Learn about the Research Computing platforms available at Leeds including HPC, Cloud and more.'
   style: '#0c7243' # dark green
