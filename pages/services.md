@@ -2,11 +2,9 @@
 layout: page
 show_meta: false
 title: "Services"
-subheadline: "Layouts of Feeling Responsive"
-header:
-   image_fullwidth: "header_unsplash_5.jpg"
 permalink: "/services/"
 ---
 
-{% include list-nav-dd-items ddtitle='Services' %}
+We provide a range of services to support researchers and research projects.  
 
+{% include list-nav-dd-items ddtitle="Services" %}

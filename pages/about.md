@@ -1,13 +1,9 @@
 ---
 layout: page
-subheadline: "Header"
-title: "Help"
-header:
-   image_fullwidth: "header_unsplash_5.jpg"
+title: "About"
 permalink: "/about/"
 ---
-<ul>
-    {% for post in site.tags.header %}
-    <li><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
+
+For more information about the Research Computing Team:
+
+{% include list-nav-dd-items ddtitle="About" %}

@@ -13,3 +13,6 @@ We provide training to researchers on:
 - R
 - Introduction to Linux
 - High Performance computing Carpentries
+
+For more information see:
+{% include list-nav-dd-items ddtitle="Training" %}
