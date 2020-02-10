@@ -16,17 +16,20 @@
 style="background-color:{{ include.widget.style }};">
 	{% if widget_url != empty %}
 		<a href="{{ widget_url }}" class="frontpage-anchor">
-			{% if include.widget.video %}
-				{{ include.widget.video }}
-			{% elsif widget_image != empty %}
-				<img src="{{ widget_image }}" alt="{{ include.widget.alt-test }}" class="frontpage-img" />
-			{% endif %}
+			<div>
+				{% if include.widget.video %}
+					{{ include.widget.video }}
+				{% elsif widget_image != empty %}
+					<img src="{{ widget_image }}" alt="{{ include.widget.alt-test }}" class="frontpage-img" />
+				{% endif %}
 
-			<h2 class="font-size-h3 t10">{{ include.widget.title }}</h2>
-			{% if include.widget.text != empty %}
-				{{ include.widget.text }}
-			{% endif %}
-
+				<div class="frontpage-widget-content">
+					<h2 class="font-size-h3 t10">{{ include.widget.title }}</h2>
+					{% if include.widget.text != empty %}
+						{{ include.widget.text }}
+					{% endif %}
+				</div>
+		</div>
 		</a>
 	{% endif %}
 </div>
