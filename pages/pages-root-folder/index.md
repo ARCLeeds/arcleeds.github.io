@@ -25,7 +25,7 @@ widget3:
   title: "Training"
   url: '/services/training/'
   image: widget-github-303x182.jpg
-  text: 'Read more about the wide range of training we offer from introduction to linux to Advanced Python courses.'
+  text: 'Read more about the wide range of training we offer from introduction to Linux to Advanced Python courses.'
   style: '#0072B2' # dark blue
   alt-text: "widget descriptor"
 widget4:
