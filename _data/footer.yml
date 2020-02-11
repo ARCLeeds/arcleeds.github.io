@@ -1,0 +1,21 @@
+find_us:
+  title: "Find US"
+  name: "Research Computing"
+  address:
+    - text: "Room 10.11, IT Services Building"
+    - text: "EC Stoner Building"
+    - text: "University of Leeds"
+    - text: "Leeds"
+
+contact_us:
+  title: "Contact Us"
+  categories:
+    - ticket:
+      name: Send us a Ticket
+      url: https://leeds.service-now.com/it?id=sc_cat_item&sys_id=7587b2530f675f00a82247ece1050eda
+    - email:
+      name: Send us an email
+      url: mailto:ask-rc@leeds.ac.uk
+    - meeting:
+      name: Request appointment
+      url: https://leeds.service-now.com/it?id=sc_cat_item&sys_id=7587b2530f675f00a82247ece1050eda

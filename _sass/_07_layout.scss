@@ -404,5 +404,6 @@ body.video cite { color: #fff; }
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  display: table;
+  display: flex;
+  justify-content: center;
 }

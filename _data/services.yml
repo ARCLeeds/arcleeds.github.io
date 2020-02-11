@@ -1,13 +1,13 @@
-- menu_name: "Links"
+- menu_name: "Quick Links"
 
-- name: "Contact Us"
-  url: "https://leeds.service-now.com/it?id=sc_cat_item&sys_id=7587b2530f675f00a82247ece1050eda"
-  title: "Contact us via a ticket"
+- name: "University of Leeds IT Services"
+  url: "https://it.leeds.ac.uk/it"
+  title: "IT Services Page"
 
-- name: "IT Knowledge Base"
+- name: "University of Leeds IT Knowledge Base"
   url: "https://it.leeds.ac.uk/it?id=index"
-  title: "University of Leeds IT Knowledge Base"
+  title: "IT Knowledge Base Page"
 
-- name: "sitemap.xml"
+- name: "Sitemap"
   url: "/sitemap.xml"
   title: "Sitemap for Google Webmaster Tools"
