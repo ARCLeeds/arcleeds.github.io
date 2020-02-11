@@ -16,6 +16,7 @@
 - Subfooter
 - CSS-Classes to add margin at top or bottom
 - frontpage-widget anchor class
+- footer-row class
 
 */
 
@@ -395,4 +396,13 @@ body.video cite { color: #fff; }
   height: 205px;
   display: block;
   margin: 0;
+}
+
+/* footer-row class */
+
+.footer-row {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
 }
