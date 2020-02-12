@@ -3,10 +3,10 @@
   class: icon-github
   title: ARC Leeds
 
-#- name: YouTube
-#  url: http://www.youtube.com/PhlowMedia
-#  class: icon-youtube
-#  title: "Videos, Video-Anleitungen und Filme von Phlow auf YouTube"
+- name: YouTube
+  url: "#"
+  class: icon-youtube
+  title: "Videos, coming soon!"
 
 - name: Twitter
   url: http://twitter.com/ARCUniLeeds
