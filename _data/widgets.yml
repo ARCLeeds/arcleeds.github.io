@@ -40,3 +40,63 @@ widget6:
   text: 'Come and meet the Research Computing team, learn more about our work and history.'
   style: '#0072B2' # dark blu
   alt-text: "widget descriptor"
+widget7:
+  title: 'History'
+  url: /about/history/
+  image: widget-github-303x182.jpg
+  text: Read about the history of Research Computing at Leeds
+  style: '#0c7243' # dark green
+widget8:
+  title: 'The Team'
+  url: /about/team/
+  image: widget-github-303x182.jpg
+  text: Meet the Research Computing Team.
+  style: '#56B4E9' # light blue
+widget9:
+  title: 'Work'
+  url: /about/casestudiesprojects/
+  image: widget-github-303x182.jpg
+  text: Find out more about case studies of RSE work.
+  style: '#0072B2' # dark blu
+widget10:
+  title: 'Documentation'
+  url: /help/documentation/
+  image: widget-github-303x182.jpg
+  text: Find our extensive documentation for our Research Platforms
+  style: '#56B4E9' # light blue
+widget11:
+  title: 'FAQ'
+  url: /help/faq/
+  image: widget-github-303x182.jpg
+  text: Find answers to your frequently asked questions.
+  style: '#0072B2' # dark blu
+widget12:
+  title: 'Intro'
+  url: /community/intro/
+  image: widget-github-303x182.jpg
+  text: Read about the history of Research Computing at Leeds
+  style: '#0072B2' # dark blu
+widget13:
+  title: 'Champions'
+  url: /community/champions/
+  image: widget-github-303x182.jpg
+  text: Meet the Research Computing Team.
+  style: '#56B4E9' # light blue
+widget14:
+  title: 'Events'
+  url: /community/events/
+  image: widget-github-303x182.jpg
+  text: Find out more about case studies of RSE work.
+  style: '#0c7243' # dark green 
+widget15:
+  title: 'Calendar'
+  url: /training/calendar/
+  image: widget-github-303x182.jpg
+  text: Search our event calendar
+  style: '#0c7243' # dark green
+widget16:
+  title: 'Courses'
+  url: /training/calendar/
+  image: widget-github-303x182.jpg
+  text: Meet the Research Computing Team.
+  style: '#56B4E9' # light blue
