@@ -1,7 +1,7 @@
 widget1:
   title: "Platforms"
   url: '/services/researchplatforms/'
-  image: widget-1-302x182.jpg
+  image: HPC3small.jpg
   text: 'Learn about the Research Computing platforms available at Leeds including HPC, Cloud and more.'
   style: '#0c7243' # dark green
   alt-text: "widget descriptor"
@@ -9,27 +9,27 @@ widget2:
   title: "Consulting"
   url: '/services/consulting/'
   text: 'Learn about our Research Software Engineer Consulting service, helping provide bespoke expertise to your research project.'
-  image: HPC3small.jpg
+  image: research_hack.jpg
   style: '#56B4E9' # light blue
   alt-text: "High performance computer rack"
 widget3:
   title: "Training"
   url: '/services/training/'
-  image: widget-github-303x182.jpg
+  image: computer_teaching.jpg
   text: 'Read more about the wide range of training we offer from introduction to Linux to Advanced Python courses.'
   style: '#0072B2' # dark blue
   alt-text: "widget descriptor"
 widget4:
   title: "Support"
   url: '/help/'
-  image: widget-github-303x182.jpg
+  image: pc_user.jpg
   text: 'Find our support documents and FAQs to help you navigate HPC and any other Research Computing queries.'
   style: '#0c7243' # dark green
   alt-text: "widget descriptor"
 widget5:
   title: "Contact"
   url: '/help/'
-  image: widget-github-303x182.jpg
+  image: contact-img.jpg
   text: 'Need to get in touch? Learn how to contact us and get your query direct to Research Computing.'
   style: '#56B4E9' # light blue
   alt-text: "widget descriptor"
@@ -43,7 +43,7 @@ widget6:
 widget7:
   title: 'History'
   url: /about/history/
-  image: widget-github-303x182.jpg
+  image: everest.jpg
   text: Read about the history of Research Computing at Leeds
   style: '#0c7243' # dark green
 widget8:
@@ -55,31 +55,31 @@ widget8:
 widget9:
   title: 'Work'
   url: /about/casestudiesprojects/
-  image: widget-github-303x182.jpg
+  image: work-img.jpg
   text: Find out more about case studies of RSE work.
   style: '#0072B2' # dark blu
 widget10:
   title: 'Documentation'
   url: /help/documentation/
-  image: widget-github-303x182.jpg
+  image: documentation-img.jpg
   text: Find our extensive documentation for our Research Platforms
   style: '#56B4E9' # light blue
 widget11:
   title: 'FAQ'
   url: /help/faq/
-  image: widget-github-303x182.jpg
+  image: faq-img.jpg
   text: Find answers to your frequently asked questions.
   style: '#0072B2' # dark blu
 widget12:
   title: 'Intro'
   url: /community/intro/
   image: widget-github-303x182.jpg
-  text: Read about the history of Research Computing at Leeds
+  text: Intros are important so here we go!
   style: '#0072B2' # dark blu
 widget13:
   title: 'Champions'
   url: /community/champions/
-  image: widget-github-303x182.jpg
+  image: champions-img.jpg
   text: Meet the Research Computing Team.
   style: '#56B4E9' # light blue
 widget14:
@@ -87,16 +87,16 @@ widget14:
   url: /community/events/
   image: widget-github-303x182.jpg
   text: Find out more about case studies of RSE work.
-  style: '#0c7243' # dark green 
+  style: '#0c7243' # dark green
 widget15:
   title: 'Calendar'
   url: /training/calendar/
-  image: widget-github-303x182.jpg
+  image: calendar-img.jpg
   text: Search our event calendar
   style: '#0c7243' # dark green
 widget16:
   title: 'Courses'
   url: /training/calendar/
-  image: widget-github-303x182.jpg
+  image: computer_teaching.jpg
   text: Meet the Research Computing Team.
   style: '#56B4E9' # light blue
