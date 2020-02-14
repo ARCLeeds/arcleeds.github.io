@@ -21,31 +21,31 @@ format: frontpage
 
 <!-- row1 of services tiles -->
 <div class="row t60">
-	{% if page.widget1.image or page.widget1.video or page.widget1.title %}
-		{% include _frontpage-widget.html widget=page.widget1 %}
+	{% if site.data.widgets.widget1.image or site.data.widgets.widget1.video or site.data.widgets.widget1.title %}
+		{% include _frontpage-widget.html widget=site.data.widgets.widget1 %}
 	{% endif %}
 
-	{% if page.widget2.image or page.widget2.video or page.widget2.title %}
-		{% include _frontpage-widget.html widget=page.widget2 %}
+	{% if site.data.widgets.widget2.image or site.data.widgets.widget2.video or site.data.widgets.widget2.title %}
+		{% include _frontpage-widget.html widget=site.data.widgets.widget2 %}
 	{% endif %}
 
-	{% if page.widget3.image or page.widget3.video or page.widget3.title %}
-		{% include _frontpage-widget.html widget=page.widget3 %}
+	{% if site.data.widgets.widget3.image or site.data.widgets.widget3.video or site.data.widgets.widget3.title %}
+		{% include _frontpage-widget.html widget=site.data.widgets.widget3 %}
 	{% endif %}
 </div>
 
 <!-- row2 of services tiles -->
 <div class="row t60">
-	{% if page.widget4.image or page.widget4.video or page.widget4.title %}
-		{% include _frontpage-widget.html widget=page.widget4 %}
+	{% if site.data.widgets.widget4.image or site.data.widgets.widget4.video or site.data.widgets.widget4.title %}
+		{% include _frontpage-widget.html widget=site.data.widgets.widget4 %}
 	{% endif %}
 
-	{% if page.widget5.image or page.widget5.video or page.widget5.title %}
-		{% include _frontpage-widget.html widget=page.widget5 %}
+	{% if site.data.widgets.widget5.image or site.data.widgets.widget5.video or site.data.widgets.widget5.title %}
+		{% include _frontpage-widget.html widget=site.data.widgets.widget5 %}
 	{% endif %}
 
-	{% if page.widget6.image or page.widget6.video or page.widget6.title %}
-		{% include _frontpage-widget.html widget=page.widget6 %}
+	{% if site.data.widgets.widget6.image or site.data.widgets.widget6.video or site.data.widgets.widget6.title %}
+		{% include _frontpage-widget.html widget=site.data.widgets.widget6 %}
 	{% endif %}
 </div>
 
