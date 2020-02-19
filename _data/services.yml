@@ -1,17 +1,13 @@
-- menu_name: "Services"
+- menu_name: "Quick Links"
 
-- name: "Contact"
-  url: "/contact/"
-  title: "Contact"
+- name: "University of Leeds IT Services"
+  url: "https://it.leeds.ac.uk/it"
+  title: "IT Services Page"
 
-- name: "RSS"
-  url: "/feed.xml"
-  title: "Subscribe to RSS Feed"
+- name: "University of Leeds IT Knowledge Base"
+  url: "https://it.leeds.ac.uk/it?id=index"
+  title: "IT Knowledge Base Page"
 
-- name: "Atom"
-  url: "/atom.xml"
-  title: "Subscribe to Atom Feed"
-
-- name: "sitemap.xml"
+- name: "Sitemap"
   url: "/sitemap.xml"
   title: "Sitemap for Google Webmaster Tools"
