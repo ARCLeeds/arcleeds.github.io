@@ -13,6 +13,9 @@ contact_us:
     - ticket:
       name: Send us a Ticket
       url: https://leeds.service-now.com/it?id=sc_cat_item&sys_id=7587b2530f675f00a82247ece1050eda
+    - account:
+      name: Request a HPC Account
+      url: https://leeds.service-now.com/it?id=sc_cat_item&sys_id=4c002dd70f235f00a82247ece1050ebc
     - email:
       name: Send us an email
       url: mailto:ask-rc@leeds.ac.uk
