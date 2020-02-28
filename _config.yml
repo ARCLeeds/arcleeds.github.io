@@ -17,7 +17,7 @@ slogan: 'Bringing cutting edge computation to world class research'
 description: 'Welcome to the official website for the Research Computing service from the University of Leeds.'
 
 # The credits show up in the includes/_footer.html
-credits: '© 2020 Research IT, University of Leeds | <a href="http://www.leeds.ac.uk/info/5000/about/239/accessibility">Accessibility</a> | <a href="http://www.leeds.ac.uk/privacy">Privacy</a>'
+credits: '© University of Leeds | <a href="http://www.leeds.ac.uk/info/5000/about/239/accessibility">Accessibility</a> | <a href="http://www.leeds.ac.uk/privacy">Privacy</a>'
 
 # Main author of the website
 # See > authors.yml

@@ -3,9 +3,9 @@ find_us:
   name: "Research Computing"
   address:
     - text: "Room 10.11, IT Services Building"
-    - text: "EC Stoner Building"
     - text: "University of Leeds"
     - text: "Leeds"
+    - text: "LS2 9JT"
 
 contact_us:
   title: "Contact Us"
