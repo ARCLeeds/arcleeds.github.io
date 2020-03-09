@@ -1,25 +1,23 @@
 widget1:
-  title: "HPC0: Introduction to Linux for HPC"
+  title: "HPC0: <br> Introduction to Linux <br> for HPC"
   url: '/training/courses/hpc0'
   text: 'This is a hands-on workshop intended as an introduction to the Linux command line and shell scripting.'
-  style: 'training-widget' 
+  style: 'training-widget'
 widget2:
-  title: "HPC1: Introduction to High Performance Computing at Leeds"
+  title: "HPC1: <br> Introduction to High Performance Computing"
   url: '/training/courses/hpc1'
   text: 'This workshop is designed to introduce new users to concepts of High Performance Computing (HPC) and the HPC service at Leeds.'
   style: 'training-widget'
 widget3:
-  title: "SWD2: Version Control with Git and Github"
+  title: "SWD2: <br> Version Control with Git and Github"
   url: '/training/courses/swd2'
   text: 'An introduction to version control using git and GitHub.'
   style: 'training-widget'
 widget4:
-  title: "Support"
-  url: '/help/'
-  image: pc_user.jpg
-  text: 'Find our support documents and FAQs to help you navigate HPC and any other Research Computing queries.'
-  style: '#0c7243' # dark green
-  alt-text: "widget descriptor"
+  title: "SWD3: <br> Software development practices for research programming "
+  url: '/training/courses/swd3'
+  text: 'The purpose of this workshop is to introduce a number of the techniques and concepts that professional software developers use to manage their code, projects and teams.'
+  style: 'training-widget'
 widget5:
   title: "Contact"
   url: '/help/'
