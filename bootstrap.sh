@@ -15,4 +15,5 @@ cd /vagrant
 bundle update
 
 echo 'Environment should now be configured.'
-echo 'To serve website run bundler exec jekyll serve --port 8000'
+
+bundler exec jekyll serve --detach --host=0.0.0.0 --port 8000
