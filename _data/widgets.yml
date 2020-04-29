@@ -96,7 +96,7 @@ widget15:
   style: '#0c7243' # dark green
 widget16:
   title: 'Courses'
-  url: /training/calendar/
+  url: /training/courses/
   image: computer_teaching.jpg
   text: Meet the Research Computing Team.
   style: '#56B4E9' # light blue
