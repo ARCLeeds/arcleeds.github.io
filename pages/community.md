@@ -1,5 +1,4 @@
 ---
-layout: page-fullwidth
 title: "Community"
 permalink: "/community/"
 ---

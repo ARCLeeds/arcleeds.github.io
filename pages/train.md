@@ -1,5 +1,4 @@
 ---
-layout: page-fullwidth
 title: "Training"
 permalink: "/training/"
 ---

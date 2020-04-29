@@ -1,5 +1,4 @@
 ---
-layout: page-fullwidth
 title: "About"
 permalink: "/about/"
 breadcrumb: true

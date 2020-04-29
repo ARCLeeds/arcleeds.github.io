@@ -1,8 +1,5 @@
 ---
-layout: page
-
 title: "Frequently Asked Questions"
-
 permalink: "/help/faq/"
 ---
 

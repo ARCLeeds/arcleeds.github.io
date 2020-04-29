@@ -1,5 +1,4 @@
 ---
-layout: page-fullwidth
 title: "HPC0"
 permalink: "/training/courses/hpc0"
 ---

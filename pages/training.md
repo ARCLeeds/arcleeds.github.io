@@ -1,5 +1,4 @@
 ---
-layout: page-fullwidth
 title: "Training"
 meta_title: "Research Computing Training"
 subheadline: "Upgrade your skills with our Research Computing training"

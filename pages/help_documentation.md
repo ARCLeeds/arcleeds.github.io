@@ -1,8 +1,5 @@
 ---
-layout: page
-
 title: "Documentation"
-
 permalink: "/help/documentation/"
 ---
 

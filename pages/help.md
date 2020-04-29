@@ -1,8 +1,5 @@
 ---
-layout: page-fullwidth
-
 title: "Help"
-
 permalink: "/help/"
 ---
 
