@@ -10,35 +10,5 @@ format: frontpage
 *
 {% endcomment %}
 
-<!-- row1 of services tiles -->
-<div class="row t60">
-	{% if site.data.widgets.widget1.image or site.data.widgets.widget1.video or site.data.widgets.widget1.title %}
-		{% include _frontpage-widget.html widget=site.data.widgets.widget1 %}
-	{% endif %}
-
-	{% if site.data.widgets.widget2.image or site.data.widgets.widget2.video or site.data.widgets.widget2.title %}
-		{% include _frontpage-widget.html widget=site.data.widgets.widget2 %}
-	{% endif %}
-
-	{% if site.data.widgets.widget3.image or site.data.widgets.widget3.video or site.data.widgets.widget3.title %}
-		{% include _frontpage-widget.html widget=site.data.widgets.widget3 %}
-	{% endif %}
-</div>
-
-<!-- row2 of services tiles -->
-<div class="row t60">
-	{% if site.data.widgets.widget4.image or site.data.widgets.widget4.video or site.data.widgets.widget4.title %}
-		{% include _frontpage-widget.html widget=site.data.widgets.widget4 %}
-	{% endif %}
-
-	{% if site.data.widgets.widget5.image or site.data.widgets.widget5.video or site.data.widgets.widget5.title %}
-		{% include _frontpage-widget.html widget=site.data.widgets.widget5 %}
-	{% endif %}
-
-	{% if site.data.widgets.widget6.image or site.data.widgets.widget6.video or site.data.widgets.widget6.title %}
-		{% include _frontpage-widget.html widget=site.data.widgets.widget6 %}
-	{% endif %}
-</div>
-
 
 <!-- end of frontpage.html doc -->

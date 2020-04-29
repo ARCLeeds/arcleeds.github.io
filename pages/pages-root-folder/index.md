@@ -4,7 +4,7 @@
 # inserted automagically in the webpage. To make
 # this work, you have to use › layout: frontpage
 #
-layout: frontpage
+layout: page
 section: home
 
 #
@@ -26,9 +26,32 @@ permalink: /index.html
 homepage: true
 ---
 
-<div id="videoModal" class="reveal-modal large" data-reveal="">
-  <div class="flex-video widescreen vimeo" style="display: block;">
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/3b5zCFSmVvU" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <a class="close-reveal-modal">&#215;</a>
+<!-- row1 of services tiles -->
+<div class="t60">
+	{% if site.data.widgets.widget1.image or site.data.widgets.widget1.video or site.data.widgets.widget1.title %}
+		{% include _frontpage-widget.html widget=site.data.widgets.widget1 %}
+	{% endif %}
+
+	{% if site.data.widgets.widget2.image or site.data.widgets.widget2.video or site.data.widgets.widget2.title %}
+		{% include _frontpage-widget.html widget=site.data.widgets.widget2 %}
+	{% endif %}
+
+	{% if site.data.widgets.widget3.image or site.data.widgets.widget3.video or site.data.widgets.widget3.title %}
+		{% include _frontpage-widget.html widget=site.data.widgets.widget3 %}
+	{% endif %}
+</div>
+
+<!-- row2 of services tiles -->
+<div class="t60">
+	{% if site.data.widgets.widget4.image or site.data.widgets.widget4.video or site.data.widgets.widget4.title %}
+		{% include _frontpage-widget.html widget=site.data.widgets.widget4 %}
+	{% endif %}
+
+	{% if site.data.widgets.widget5.image or site.data.widgets.widget5.video or site.data.widgets.widget5.title %}
+		{% include _frontpage-widget.html widget=site.data.widgets.widget5 %}
+	{% endif %}
+
+	{% if site.data.widgets.widget6.image or site.data.widgets.widget6.video or site.data.widgets.widget6.title %}
+		{% include _frontpage-widget.html widget=site.data.widgets.widget6 %}
+	{% endif %}
 </div>
