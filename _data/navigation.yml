@@ -23,12 +23,15 @@
   side: left
   url: /about/
   dropdown:
-  - title: The Team
-    url: /about/team/
-  - title: History
-    url: /about/history/
   - title: Case studies
     url: /about/casestudiesprojects/
+  - title: Changelog
+    url: /about/changelog/
+  - title: History
+    url: /about/history/
+  - title: The Team
+    url: /about/team/
+
 
 - title: Help
   url: /help/
