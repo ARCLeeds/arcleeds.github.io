@@ -1,17 +1,21 @@
 ---
 title: "Training"
-meta_title: "Research Computing Training"
-subheadline: "Upgrade your skills with our Research Computing training"
-permalink: "/services/training/"
+permalink: "/training/"
 ---
 
-We provide training to researchers on:
+To see what courses are available and when:
 
-- Reproducible Research (using git, containers, virtual machines)
-- Python 3
-- R
-- Introduction to Linux
-- High Performance computing Carpentries
+{% assign filtered_navigation = site.data.navigation | where:'title', page.title %}
 
-For more information see:
-{% include list-nav-dd-items ddtitle="Training" %}
+{% assign service_names = filtered_navigation[0].dropdown | map: 'title' %}
+
+<!-- added page-row t60 div to ensure flexbox -->
+<div class="t60">
+{% for item in site.data.widgets %}
+  {% assign widget_feat = item[1] %}
+  {% if service_names contains widget_feat.title %}
+    {% include _frontpage-widget.html widget=widget_feat %}
+  {% endif %}
+
+{% endfor %}
+</div>
