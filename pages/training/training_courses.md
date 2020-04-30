@@ -1,14 +1,16 @@
 ---
-layout: page-fullwidth
 title: "Training Courses"
 permalink: "/training/courses/"
 ---
 
-### Research Computing training courses exist in 3 distinct tiers: Padawan for beginners, Knight for intermediate level and Master for advanced users
+### Research Computing training courses exist in 3 distinct tiers:
+<h3 style="text-align: center;"> -   Padawan for beginners </h3>
+### -   Knight for intermediate level
+### -   Master for advanced users
 
 
 ## Padawan Level Courses
-<div class="row t60">
+<div class="t60">
 	{% if site.data.training_courses.widget1.image or site.data.training_courses.widget1.video or site.data.training_courses.widget1.title %}
 		{% include _training-widget.html widget=site.data.training_courses.widget1 %}
 	{% endif %}
