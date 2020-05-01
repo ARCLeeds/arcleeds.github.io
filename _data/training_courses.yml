@@ -1,94 +1,102 @@
 widget1:
-  title: "HPC0: <br> Introduction to Linux <br> for HPC"
-  url: '/training/courses/hpc0'
-  text: 'This is a hands-on workshop intended as an introduction to the Linux command line and shell scripting.'
-  style: 'training-widget'
+  title: 'HPC0: <br> Introduction to Linux <br> for HPC'
+  url: /training/courses/hpc0
+  text: This is a hands-on workshop intended as an introduction
+         to the Linux command line and shell scripting.
+  style: training-widget
 widget2:
-  title: "HPC1: <br> Introduction to High Performance Computing"
-  url: '/training/courses/hpc1'
-  text: 'This workshop is designed to introduce new users to concepts of High Performance Computing (HPC) and the HPC service at Leeds.'
-  style: 'training-widget'
+  title: 'HPC1: <br> Introduction to High Performance Computing'
+  url: /training/courses/hpc1/
+  text: |
+         This workshop is designed to introduce new users to
+         concepts of High Performance Computing (HPC) and the HPC service at Leeds.
+  style: training-widget
 widget3:
-  title: "SWD2: <br> Version Control with Git and Github"
-  url: '/training/courses/swd2'
-  text: 'An introduction to version control using git and GitHub.'
-  style: 'training-widget'
+  title: 'SWD1a: <br> Introduction to <br> Python programming'
+  url: /training/courses/swd1a
+  text: |
+        This is an introduction to programming in Python for
+        people with little or no previous programming experience.
+  style: training-widget
 widget4:
-  title: "SWD3: <br> Software development practices for research programming "
-  url: '/training/courses/swd3'
-  text: 'The purpose of this workshop is to introduce a number of the techniques and concepts that professional software developers use to manage their code, projects and teams.'
-  style: 'training-widget'
+  title: 'SWD1b: <br> Introduction to <br> R programming'
+  url: /training/courses/swd1b
+  text: |
+        This is an introduction to programming in R
+        for people with little or no previous programming experience.
+  style: training-widget
 widget5:
-  title: "Contact"
-  url: '/help/'
-  image: contact-img.jpg
-  text: 'Need to get in touch? Learn how to contact us and get your query direct to Research Computing.'
-  style: '#56B4E9' # light blue
-  alt-text: "widget descriptor"
+  title: 'SWD2: <br> Version Control with Git and GitHub'
+  url: /training/courses/swd2
+  text: This is a hands-on workshop intended as an
+        introduction to version control using git and GitHub.
+  style: training-widget
 widget6:
-  title: "About"
-  url: '/about/'
-  image: widget-github-303x182.jpg
-  text: 'Come and meet the Research Computing team, learn more about our work and history.'
-  style: '#0072B2' # dark blu
-  alt-text: "widget descriptor"
+  title: 'SWD3: <br> Software development practices for Research'
+  url: /training/courses/swd3
+  text: |
+         A one-day workshop introducing techniques and concepts
+         that professional software developers use to manage their code, projects and teams.
+  style: training-widget
 widget7:
-  title: 'History'
-  url: /about/history/
-  image: everest.jpg
-  text: Read about the history of Research Computing at Leeds
-  style: '#0c7243' # dark green
+  title: 'HPC6: <br> HPC for Life Sciences and Bioinformatics'
+  url: /training/courses/hpc6
+  text: |
+         A one-day workshop to introduce Biologists, Chemists and
+         Bioinformaticians to the HPC facilities at Leeds.
+  style: training-widget
+
+# intermediate courses
+
 widget8:
-  title: 'The Team'
-  url: /about/team/
-  image: widget-github-303x182.jpg
-  text: Meet the Research Computing Team.
-  style: '#56B4E9' # light blue
+  title: 'HPC2: Applications and containers on HPC'
+  url: /training/courses/hpc2
+  text: |
+        A one-day workshop introducing application
+        development on the HPC service with hands on practice managing, installing and compiling code.
+  style: training-widget
 widget9:
-  title: 'Work'
-  url: /about/casestudiesprojects/
-  image: work-img.jpg
-  text: Find out more about case studies of RSE work.
-  style: '#0072B2' # dark blu
+  title: 'HPC3: Computer architectures and shared memory parallel programming'
+  url: /training/courses/hpc3
+  text: |
+        A one-day workshop introducing the OpenMP
+        parallel programming model with hands on practice developing and
+        adapting code to run on shared memory machines.
+  style: training-widget
 widget10:
-  title: 'Documentation'
-  url: /help/documentation/
-  image: documentation-img.jpg
-  text: Find our extensive documentation for our Research Platforms
-  style: '#56B4E9' # light blue
+  title: 'HPC5: Introduction to GPU programming with CUDA'
+  url: /training/courses/hpc5
+  text: |
+        A one-day workshop covering the  fundamentals of parallel computing
+        with GPUs and the CUDA programming environment.
+  style: training-widget
 widget11:
-  title: 'FAQ'
-  url: /help/faq/
-  image: faq-img.jpg
-  text: Find answers to your frequently asked questions.
-  style: '#0072B2' # dark blu
+  title: 'SWD4: Cloud computing for Research'
+  url: /training/courses/swd4
+  text: |
+        An introduction to Cloud computing services for researchers especially
+        with regard to High Performance Computing and Big Data analysis.
+  style: training-widget
 widget12:
-  title: 'Intro'
-  url: /community/intro/
-  image: widget-github-303x182.jpg
-  text: Intros are important so here we go!
-  style: '#0072B2' # dark blu
+  title: 'SWD5: Scientific Python'
+  url: /training/courses/swd5
+  text: |
+        A one-day workshop on Python’s main Scientific libraries
+        (Scipy, Numpy and Matplotlib) and covering how to link existing
+        C and Fortran codes and subroutines within Python code.
+  style: training-widget
 widget13:
-  title: 'Champions'
-  url: /community/champions/
-  image: champions-img.jpg
-  text: Meet the Research Computing Team.
-  style: '#56B4E9' # light blue
+  title: 'SWD6: High performance Python'
+  url: /training/courses/swd6
+  text: |
+        A hands-on workshop covering the use of a set of tools and techniques aimed
+        at improving the execution speed of your Python code.
+  style: training-widget
 widget14:
-  title: 'Events'
-  url: /community/events/
-  image: widget-github-303x182.jpg
-  text: Find out more about case studies of RSE work.
-  style: '#0c7243' # dark green
-widget15:
-  title: 'Calendar'
-  url: /training/calendar/
-  image: calendar-img.jpg
-  text: Search our event calendar
-  style: '#0c7243' # dark green
-widget16:
-  title: 'Courses'
-  url: /training/calendar/
-  image: computer_teaching.jpg
-  text: Meet the Research Computing Team.
-  style: '#56B4E9' # light blue
+  title: 'SWD7: Introduction to reproducible workflows in Python'
+  url: /training/courses/swd7
+  text: |
+        A one-day workshop covering best practises for reproducible scientific
+        code development and how to implement these into their day-to-day Python
+        workflows.
+  style: training-widget
