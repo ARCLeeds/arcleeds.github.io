@@ -6,7 +6,7 @@ widget:
     style: training-widget
     level: beginner
   - title: 'HPC1: <br> Introduction to High Performance Computing'
-    url: /training/courses/hpc1/
+    url: /training/courses/hpc1
     text: |
            This workshop is designed to introduce new users to
            concepts of High Performance Computing (HPC) and the HPC service at Leeds.
