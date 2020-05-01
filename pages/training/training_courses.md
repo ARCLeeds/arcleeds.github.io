@@ -3,56 +3,59 @@ title: "Training Courses"
 permalink: "/training/courses/"
 ---
 
-### Research Computing training courses exist in 3 distinct tiers:
-<h3 style="text-align: center;"> Beginner </h3>
-<h3 style="text-align: center;"> Intermediate </h3>
-
+### Browse our available training courses below and click to find out more including how to book a place.
 
 ## Padawan Level Courses
-<div class="t60">
-	{% if site.data.training_courses.widget1.image or site.data.training_courses.widget1.video or site.data.training_courses.widget1.title %}
-		{% include _training-widget.html widget=site.data.training_courses.widget1 %}
-	{% endif %}
+{% comment %}
+   The below sections automatically populates tiles on the page based on
+	 widget data in the _data/training_courses.yml file.
+	 It works by selecting out data at the level beginner, calculates the array size
+	 calculates the number of rows as no. of items / max item per row (4) rounded up.
+	 It then loops over the calculated number of rows, and loops over the number of columns
+	 (1 to 4), it assigns a col2 value that is equal to the current column which it uses to index
+	 the widget data from the data subset created earlier.
+	 It tests if the data exists (by checking if a title exists for the given widget) and if it
+	 does exist it includes the _training_widget.html passing it data from the indexed widget
+{% endcomment %}
 
-	{% if site.data.training_courses.widget2.image or site.data.training_courses.widget2.video or site.data.training_courses.widget2.title %}
-		{% include _training-widget.html widget=site.data.training_courses.widget2 %}
-	{% endif %}
+{% assign beginner_data = site.data.training_courses.widget | where: 'level','beginner' %}
 
-	{% if site.data.training_courses.widget3.image or site.data.training_courses.widget3.video or site.data.training_courses.widget3.title %}
-		{% include _training-widget.html widget=site.data.training_courses.widget3 %}
-	{% endif %}
+{% assign beginner_items = beginner_data | size %}
 
-  {% if site.data.training_courses.widget4.image or site.data.training_courses.widget4.video or site.data.training_courses.widget4.title %}
-		{% include _training-widget.html widget=site.data.training_courses.widget4 %}
-	{% endif %}
-</div>
+{% assign beginner_nrows = beginner_items | divided_by: 4.0 | ceil %}
 
-<div class="t60">
-	{% if site.data.training_courses.widget5.image or site.data.training_courses.widget5.video or site.data.training_courses.widget5.title %}
-		{% include _training-widget.html widget=site.data.training_courses.widget5 %}
-	{% endif %}
+{% assign col2 = 0 %}
 
-	{% if site.data.training_courses.widget6.image or site.data.training_courses.widget6.video or site.data.training_courses.widget6.title %}
-		{% include _training-widget.html widget=site.data.training_courses.widget6 %}
-	{% endif %}
-
-	{% if site.data.training_courses.widget7.image or site.data.training_courses.widget7.video or site.data.training_courses.widget7.title %}
-		{% include _training-widget.html widget=site.data.training_courses.widget7 %}
-	{% endif %}
-</div>
+<div class="test-space t60">
+  {% for row in (1..beginner_nrows) %}
+	   {% for col in (1..4) %}
+				{% assign col_data = beginner_data[col2] %}
+	      {% if col_data.title %}
+				   {% include _training-widget.html widget=col_data  %}
+				{% endif %}
+				{% assign col2 = col2 | plus: 1 %}
+		{% endfor %}
+  {% endfor %}
+</div>				
 
 ## Intermediate Level Courses
 
+{% assign intermediate_data = site.data.training_courses.widget | where: 'level','intermediate' %}
+
+{% assign intermediate_items = intermediate_data | size %}
+
+{% assign intermediate_nrows = intermediate_items | divided_by: 4.0 | ceil %}
+
+{% assign col2 = 0 %}
+
 <div class="t60">
-	{% if site.data.training_courses.widget8.image or site.data.training_courses.widget8.video or site.data.training_courses.widget8.title %}
-		{% include _training-widget.html widget=site.data.training_courses.widget8 %}
-	{% endif %}
-
-	{% if site.data.training_courses.widget9.image or site.data.training_courses.widget9.video or site.data.training_courses.widget9.title %}
-		{% include _training-widget.html widget=site.data.training_courses.widget9 %}
-	{% endif %}
-
-	{% if site.data.training_courses.widget10.image or site.data.training_courses.widget10.video or site.data.training_courses.widget10.title %}
-		{% include _training-widget.html widget=site.data.training_courses.widget10 %}
-	{% endif %}
-</div>
+  {% for row in (1..intermediate_nrows) %}
+	   {% for col in (1..4) %}
+				{% assign col_data = intermediate_data[col2] %}
+	      {% if col_data.title %}
+				   {% include _training-widget.html widget=col_data  %}
+				{% endif %}
+				{% assign col2 = col2 | plus: 1 %}
+		{% endfor %}
+  {% endfor %}
+</div>				

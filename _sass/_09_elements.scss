@@ -210,3 +210,13 @@ img.lazy {
   padding: 5px;
   height: 50%;
 }
+
+.intermediate {
+  box-shadow: 0pt 0pt 0pt 3pt red;
+  transition: opacity .2s ease-out;
+}
+
+.beginner {
+  box-shadow: 0pt 0pt 0pt 3pt dodgerblue;
+  transition: opacity .2s ease-out;
+}
