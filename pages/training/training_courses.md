@@ -5,7 +5,7 @@ permalink: "/training/courses/"
 
 ### Browse our available training courses below and click to find out more including how to book a place.
 
-## Padawan Level Courses
+## Beginner Level Courses
 {% comment %}
    The below sections automatically populates tiles on the page based on
 	 widget data in the _data/training_courses.yml file.
