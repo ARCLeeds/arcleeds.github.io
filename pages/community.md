@@ -5,17 +5,24 @@ permalink: "/community/"
 
 For more information on the Research Computing Community:
 
-{% assign filtered_navigation = site.data.navigation | where:'title', page.title %}
+{% assign page_list = site.data.widgets.main | where: 'title', page.title %}
 
-{% assign service_names = filtered_navigation[0].dropdown | map: 'title' %}
+{% assign page_data = page_list[0].subpages %}
 
-<!-- added row t60 div to ensure flexbox -->
+{% assign page_items = page_data | size %}
+
+{% assign page_nrows = page_items | divided_by: 4.0 | ceil %}
+
+{% assign col2 = 0 %}
+
 <div class="t60">
-{% for item in site.data.widgets %}
-  {% assign widget_feat = item[1] %}
-  {% if service_names contains widget_feat.title %}
-    {% include _frontpage-widget.html widget=widget_feat %}
-  {% endif %}
-
-{% endfor %}
-</div>
+  {% for row in (1..page_nrows) %}
+	   {% for col in (1..4) %}
+				{% assign col_data = page_data[col2] %}
+	      {% if col_data.title %}
+				   {% include _frontpage-widget.html widget=col_data  %}
+				{% endif %}
+				{% assign col2 = col2 | plus: 1 %}
+		{% endfor %}
+  {% endfor %}
+</div>		

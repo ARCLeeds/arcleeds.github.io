@@ -1,116 +1,104 @@
-widget1:
-  title: "Platforms"
-  url: '/researchplatforms/'
-  image: HPC3small.jpg
-  text: 'Learn about the Research Computing platforms available at Leeds including HPC, Cloud and more.'
-  style: '#0c7243' # dark green
-  alt-text: "widget descriptor"
-widget2:
-  title: "Consulting"
-  url: '/consulting/'
-  text: 'Learn about our Research Software Engineer Consulting service, helping provide bespoke expertise to your research project.'
-  image: research_hack.jpg
-  style: '#56B4E9' # light blue
-  alt-text: "High performance computer rack"
-widget3:
-  title: "Training"
-  url: '/training/'
-  image: computer_teaching.jpg
-  text: 'Read more about the wide range of training we offer from introduction to Linux to Advanced Python courses.'
-  style: '#0072B2' # dark blue
-  alt-text: "widget descriptor"
-widget4:
-  title: "Support"
-  url: '/help/'
-  image: pc_user.jpg
-  text: 'Find our support documents and FAQs to help you navigate HPC and any other Research Computing queries.'
-  style: '#0c7243' # dark green
-  alt-text: "widget descriptor"
-widget5:
-  title: "Contact"
-  url: '/help/contact/'
-  image: contact-img.jpg
-  text: 'Need to get in touch? Learn how to contact us and get your query direct to Research Computing.'
-  style: '#56B4E9' # light blue
-  alt-text: "widget descriptor"
-widget6:
-  title: "About"
-  url: '/about/'
-  image: widget-github-303x182.jpg
-  text: 'Come and meet the Research Computing team, learn more about our work and history.'
-  style: '#0072B2' # dark blu
-  alt-text: "widget descriptor"
+main:
+  - title: "Platforms"
+    url: '/researchplatforms/'
+    image: HPC3small.jpg
+    text: 'Learn about the Research Computing platforms available at Leeds including HPC, Cloud and more.'
+    style: '#0c7243' # dark green
+    alt-text: "widget descriptor"
 
-# about section
+  - title: "Consulting"
+    url: '/consulting/'
+    text: 'Learn about our Research Software Engineer Consulting service, helping provide bespoke expertise to your research project.'
+    image: research_hack.jpg
+    style: '#56B4E9' # light blue
+    alt-text: "High performance computer rack"
 
-widget7:
-  title: 'History'
-  url: /about/history/
-  image: everest.jpg
-  text: Read about the history of Research Computing at Leeds
-  style: '#0c7243' # dark green
-widget8:
-  title: 'The Team'
-  url: /about/team/
-  image: widget-github-303x182.jpg
-  text: Meet the Research Computing Team.
-  style: '#56B4E9' # light blue
-widget9:
-  title: 'Case studies'
-  url: /about/casestudiesprojects/
-  image: work-img.jpg
-  text: Find out more about case studies of RSE work.
-  style: '#0072B2' # dark blu
+  - title: "Training"
+    url: '/training/'
+    image: computer_teaching.jpg
+    text: 'Read more about the wide range of training we offer from introduction to Linux to Advanced Python courses.'
+    style: '#0072B2' # dark blue
+    alt-text: "widget descriptor"
+    subpages:
+      - title: 'Calendar'
+        url: /training/calendar/
+        image: calendar-img.jpg
+        text: Search our event calendar
+        style: '#0c7243' # dark green
+      - title: 'Courses'
+        url: /training/courses/
+        image: computer_teaching.jpg
+        text: Browse the list of training courses we have to offer
+        style: '#56B4E9' # light blue
+
+  - title: "Help"
+    url: '/help/'
+    image: pc_user.jpg
+    text: 'Find our support documents and FAQs to help you navigate HPC and any other Research Computing queries.'
+    style: '#0c7243' # dark green
+    alt-text: "widget descriptor"
+    subpages:
+      - title: 'Documentation'
+        url: /help/documentation/
+        image: documentation-img.jpg
+        text: Find our extensive documentation for our Research Platforms
+        style: '#0c7243' # dark green
+      - title: 'FAQ'
+        url: /help/faq/
+        image: faq-img.jpg
+        text: Find answers to your frequently asked questions.
+        style: '#0072B2' # dark blu
+      - title: "Contact"
+        url: '/help/contact/'
+        image: contact-img.jpg
+        text: 'Need to get in touch? Learn how to contact us and get your query direct to Research Computing.'
+        style: '#56B4E9' # light blue
+        alt-text: "widget descriptor"
 
 
-# help section
 
-widget10:
-  title: 'Documentation'
-  url: /help/documentation/
-  image: documentation-img.jpg
-  text: Find our extensive documentation for our Research Platforms
-  style: '#0c7243' # dark green
-widget11:
-  title: 'FAQ'
-  url: /help/faq/
-  image: faq-img.jpg
-  text: Find answers to your frequently asked questions.
-  style: '#0072B2' # dark blu
+  - title: "About"
+    url: '/about/'
+    image: widget-github-303x182.jpg
+    text: 'Come and meet the Research Computing team, learn more about our work and history.'
+    style: '#0072B2' # dark blu
+    alt-text: "widget descriptor"
+    subpages:
+      - title: 'History'
+        url: /about/history/
+        image: everest.jpg
+        text: Read about the history of Research Computing at Leeds
+        style: '#0c7243' # dark green
+      - title: 'The Team'
+        url: /about/team/
+        image: widget-github-303x182.jpg
+        text: Meet the Research Computing Team.
+        style: '#56B4E9' # light blue
+      - title: 'Case studies'
+        url: /about/casestudiesprojects/
+        image: work-img.jpg
+        text: Find out more about case studies of RSE work.
+        style: '#0072B2' # dark blu
+      - title: 'Changelog'
+        url: /about/changelog/
+        image: wood-logs.jpeg
+        text: See the changelog for this site
+        style: '#0c7243' # dark green
 
-# community section
-
-widget12:
-  title: 'Champions'
-  url: /community/champions/
-  image: champions-img.jpg
-  text: Meet the Research Computing Team.
-  style: '#56B4E9' # light blue
-widget13:
-  title: 'Events'
-  url: /community/events/
-  image: widget-github-303x182.jpg
-  text: Find out more about case studies of RSE work.
-  style: '#0c7243' # dark green
-
-# training section
-
-widget14:
-  title: 'Calendar'
-  url: /training/calendar/
-  image: calendar-img.jpg
-  text: Search our event calendar
-  style: '#0c7243' # dark green
-widget15:
-  title: 'Courses'
-  url: /training/courses/
-  image: computer_teaching.jpg
-  text: Meet the Research Computing Team.
-  style: '#56B4E9' # light blue
-
-widget16:
-  title: 'Changelog'
-  url: /about/changelog/
-  image: wood-logs.jpeg
-  text: See the changelog for this site
-  style: '#0c7243' # dark green
+  - title: "Community"
+    url: '/community/'
+    image: widget-github-303x182.jpg
+    text: 'Come and meet the Research Computing team, learn more about our work and history.'
+    style: '#0072B2' # dark blu
+    alt-text: "widget descriptor"
+    subpages:
+      - title: 'Champions'
+        url: /community/champions/
+        image: champions-img.jpg
+        text: Meet the Research Computing Champions from across the University.
+        style: '#56B4E9' # light blue
+      - title: 'Events'
+        url: /community/events/
+        image: widget-github-303x182.jpg
+        text: Find out more about the events we put on including our TechTalk series.
+        style: '#0c7243' # dark green
