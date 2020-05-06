@@ -1,6 +1,6 @@
 ---
-title: "SWD1b: Introduction to R programming"
-permalink: "/training/courses/swd1b/"
+title: "HPC7: HPC for Data Analytics"
+permalink: "/training/courses/hpc7/"
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}

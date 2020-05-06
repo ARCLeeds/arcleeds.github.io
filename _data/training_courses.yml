@@ -15,7 +15,7 @@
 #    level: is it beginner, intermediate or other (not shown)
 #    content:
 #      body: main body text describing course
-#      outcomes: 
+#      outcomes:
 #       - unordered list of learning outcomes
 #      prereq: list of what skills are required
 #      duration: how long is the course
@@ -176,7 +176,7 @@ widget:
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9UiUyMHByb2dyYW1taW5nJmdkX3N0eXBlPSZnZF90dXRvcj1MYXN0JTIwbmFtZSZkYXRlMT0wNCUyZjExJTJmMjAxOCZkYXRlMj0yMCUyZjEyJTJmMjAxOCZkYXRlMT0wNC4xMS4yMDE4JmRhdGUyPTIwLjEyLjIwMTgmcHJvdmlkZXJsaXN0PTAmYW5kb3I9QU5EJnNvcnQ9QkVHREEmZ2RfY2FsbGlkPUlOSVRJQUwmc3R5bGU9"
 
   - title: 'SWD2: <br> Version Control with Git and GitHub'
-    url: /training/courses/swd2
+    url: /training/courses/swd2/
     text: This is a hands-on workshop intended as an
           introduction to version control using git and GitHub.
     style: training-widget
@@ -255,7 +255,7 @@ widget:
     level: beginner
     content:
       body: "
-      The purpose of this one-day workshop is intended to introduce Biologists,
+      The purpose of this one-day workshop is to introduce Biologists,
       Chemists and Bioinformaticians to the High Performance Computing facilities
       at Leeds. Although it will include material from some other workshops
       (particularly [HPC 1: Introduction to High Performance Computing at Leeds]({{ site.baseurl }}{% link pages/training/training_courses/hpc1.md %})),
@@ -299,8 +299,8 @@ widget:
       although experience with the Linux command line and some programming
       experience in Fortran, C or Python would be very useful. It is <strong>not</strong> an
       introductory programming workshop (see workshops
-      [SWD1a]{{ site.baseurl }}{% link pages/training/training_courses/swd1a.md %},
-      [SWD1b]({{ site.baseurl }}{% link pages/training/training_courses/swd1b.md %})
+      [SWD1a: Introduction to Python programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1a.md %}),
+      [SWD1b: Introduction to R programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1b.md %})
       if that is what you need).
       "
       outcomes:
@@ -475,7 +475,7 @@ widget:
         This workshop is aimed at people who can already program in Python
         at an intermediate level (with a knowledge of loops, functions and 'if' statements).
         If you need to learn how to program in Python, please attend
-        [SWD1a]{{ site.baseurl }}{% link pages/training/training_courses/swd1a.md %}
+        [SWD1a: Introduction to Python programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1a.md %}).
         "
       duration: 1 day
       frequency: This workshop usually runs once each academic year.
@@ -513,7 +513,7 @@ widget:
         We recommend that attendees have a working knowledge of the Unix
         shell (although this is not essential) and are proficient Python programmers.
         If you need to learn how to program in Python, please attend
-        [SWD1a]{{ site.baseurl }}{% link pages/training/training_courses/swd1a.md %}
+        [SWD1a: Introduction to Python programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1a.md %}).
         It is strongly recommended that you bring your own laptop to this workshop
         with some specific software installed. Further information will be provided
         when you are accepted onto the course.
@@ -571,7 +571,7 @@ widget:
 
 # other courses not listed publically on arc.leeds.ac.uk
 
-  - title: "HPC 4: An introduction to Parallel Programming with MPI C and Fortran"
+  - title: "HPC4: An introduction to Parallel Programming with MPI C and Fortran"
     url: /training/courses/hpc4/
     text: |
           A one-day workshop for new users familiarising themselves with
@@ -606,7 +606,7 @@ widget:
       suitability: Research postgraduate students and above; teaching lecturing and research staff.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMCZ3PTIwOTk1NjAr)/courses.htm?gd_keywords=50113850"
 
-  - title: "HPC 7: HPC for Data Analytics"
+  - title: "HPC7: HPC for Data Analytics"
     url: /training/courses/hpc7/
     text: |
           A one-day workshop giving an overview of data science tools
@@ -636,15 +636,15 @@ widget:
       of High Performance Computing or the Linux command line.
       This is <strong>not</strong> an introductory programming course. If you need to learn how to program,
       please attend either
-      [SWD1a]{{ site.baseurl }}{% link pages/training/training_courses/swd1a.md %},
-      [SWD1b]({{ site.baseurl }}{% link pages/training/training_courses/swd1b.md %}).
+      [SWD1a: Introduction to Python programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1a.md %}),
+      [SWD1b: Introduction to R programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1b.md %}).
       "
       duration: 1 day
       frequency: This workshop usually runs once each academic year.
       suitability: Research postgraduate students and above; teaching lecturing and research staff.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9RGF0YSUyMEFuYWx5dGljcyZnZF9zdHlwZT0mZ2RfdHV0b3I9TGFzdCUyMG5hbWUmZGF0ZTE9ZGQlMmZtbSUyZnl5eXkmZGF0ZTI9ZGQlMmZtbSUyZnl5eXkmZGF0ZTE9MDAuMDAuMDAwMCZkYXRlMj0wMC4wMC4wMDAwJnByb3ZpZGVybGlzdD0wJmFuZG9yPUFORCZzb3J0PUJFR0RBJmdkX2NhbGxpZD1JTklUSUFMJnN0eWxlPQ%3d%3d"
 
-  - title: "HPC 8: Docker and Singularity: Containers for HPC"
+  - title: "HPC8: Docker and Singularity: Containers for HPC"
     url: /training/courses/hpc8/
     text: |
           A one-day workshop giving an introduction to containerisation tools

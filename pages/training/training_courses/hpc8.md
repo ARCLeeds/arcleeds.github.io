@@ -1,6 +1,6 @@
 ---
-title: "SWD1b: Introduction to R programming"
-permalink: "/training/courses/swd1b/"
+title: "HPC8: Docker and Singularity: Containers for HPC"
+permalink: "/training/courses/hpc8/"
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}

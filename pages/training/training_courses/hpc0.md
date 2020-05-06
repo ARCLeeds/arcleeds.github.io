@@ -11,7 +11,7 @@ permalink: "/training/courses/hpc0/"
 
 ## Workshop content
 
-<p>{{ page_content.body }} </p>
+{{ page_content.body }}
 
 
 At the end of the workshop, attendees will be able to:

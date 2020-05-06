@@ -1,6 +1,6 @@
 ---
-title: "SWD1b: Introduction to R programming"
-permalink: "/training/courses/swd1b/"
+title: "HPC4: An introduction to Parallel Programming with MPI C and Fortran"
+permalink: "/training/courses/hpc4/"
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}
