@@ -35,7 +35,7 @@ main:
     url: '/help/'
     image: pc_user.jpg
     text: 'Find our support documents and FAQs to help you navigate HPC and any other Research Computing queries.'
-    style: '#0c7243' # dark green
+    style: '#56B4E9' # light blue
     alt-text: "widget descriptor"
     subpages:
       - title: 'Documentation'
@@ -87,10 +87,10 @@ main:
 
   - title: "Community"
     url: '/community/'
-    image: widget-github-303x182.jpg
-    text: 'Come and meet the Research Computing team, learn more about our work and history.'
-    style: '#0072B2' # dark blu
-    alt-text: "widget descriptor"
+    image: handsin.jpg
+    text: 'Find out more about the Research Computing community at Leeds.'
+    style: '#0c7243' # dark green
+    alt-text: "Hands piled on together"
     subpages:
       - title: 'Champions'
         url: /community/champions/
