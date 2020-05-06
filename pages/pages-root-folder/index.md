@@ -26,32 +26,24 @@ permalink: /index.html
 homepage: true
 ---
 
-<!-- row1 of services tiles -->
+{% assign page_list = site.data.widgets.main %}
+
+{% assign page_data = page_list %}
+
+{% assign page_items = page_data | size %}
+
+{% assign page_nrows = page_items | divided_by: 4.0 | ceil %}
+
+{% assign col2 = 0 %}
+
 <div class="t60">
-	{% if site.data.widgets.widget1.image or site.data.widgets.widget1.video or site.data.widgets.widget1.title %}
-		{% include _frontpage-widget.html widget=site.data.widgets.widget1 %}
-	{% endif %}
-
-	{% if site.data.widgets.widget2.image or site.data.widgets.widget2.video or site.data.widgets.widget2.title %}
-		{% include _frontpage-widget.html widget=site.data.widgets.widget2 %}
-	{% endif %}
-
-	{% if site.data.widgets.widget3.image or site.data.widgets.widget3.video or site.data.widgets.widget3.title %}
-		{% include _frontpage-widget.html widget=site.data.widgets.widget3 %}
-	{% endif %}
-</div>
-
-<!-- row2 of services tiles -->
-<div class="t60">
-	{% if site.data.widgets.widget4.image or site.data.widgets.widget4.video or site.data.widgets.widget4.title %}
-		{% include _frontpage-widget.html widget=site.data.widgets.widget4 %}
-	{% endif %}
-
-	{% if site.data.widgets.widget5.image or site.data.widgets.widget5.video or site.data.widgets.widget5.title %}
-		{% include _frontpage-widget.html widget=site.data.widgets.widget5 %}
-	{% endif %}
-
-	{% if site.data.widgets.widget6.image or site.data.widgets.widget6.video or site.data.widgets.widget6.title %}
-		{% include _frontpage-widget.html widget=site.data.widgets.widget6 %}
-	{% endif %}
-</div>
+  {% for row in (1..page_nrows) %}
+	   {% for col in (1..4) %}
+				{% assign col_data = page_data[col2] %}
+	      {% if col_data.title %}
+				   {% include _frontpage-widget.html widget=col_data  %}
+				{% endif %}
+				{% assign col2 = col2 | plus: 1 %}
+		{% endfor %}
+  {% endfor %}
+</div>		
