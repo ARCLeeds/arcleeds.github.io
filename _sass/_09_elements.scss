@@ -11,7 +11,9 @@
 - Accordion
 - Lazy Load XT
 - Frontpage Widget
-
+- training-widget
+- training-widget styling
+- about-widget
 */
 
 
@@ -189,6 +191,8 @@ img.lazy {
   padding: 1%;
 }
 
+/* training-widget */
+
 .training-widget {
   background-color: black;
   color: white;
@@ -211,6 +215,7 @@ img.lazy {
   height: 50%;
 }
 
+/* styling classes for training-widget */
 .intermediate {
   box-shadow: 0pt 0pt 0pt 3pt red;
   transition: opacity .2s ease-out;
@@ -221,7 +226,16 @@ img.lazy {
   transition: opacity .2s ease-out;
 }
 
+
 .small-menu-logo {
   margin: 1.5%;
   height: 2.5rem;
 }
+/* about widget styling */
+
+.about-widget-img {
+  margin-top: 15%;
+  border-radius: 50%;
+  height: 250px;
+}
+>>>>>>> overhaul of team page
