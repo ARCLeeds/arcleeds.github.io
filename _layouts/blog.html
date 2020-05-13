@@ -4,9 +4,18 @@ format: blog-index
 # Don't index these pages dear Google.
 noindex: true
 ---
+
+{% if page.title contains "Blog" %}
+   <p> if block works </p>
+   <p> {{ site.categories }} </p>
+  {% assign whatPage = site.categories.blog %}
+{% elsif page.title contains "Case Studies" %}
+  {% assign whatPage = site.categories.casestudies %}
+{% endif %}
+
 <div class="row">
 	<div class="medium-8 columns t30">
-		{% include _pagination.html %}
+		{% include _pagination2.html content=whatPage %}
 	</div><!-- /.medium-7.columns -->
 
 
