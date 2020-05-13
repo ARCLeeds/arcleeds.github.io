@@ -188,3 +188,35 @@ img.lazy {
   color: white;
   padding: 1%;
 }
+
+.training-widget {
+  background-color: black;
+  color: white;
+  margin: 1%;
+  border-radius: 3px;
+  padding: 1%;
+  opacity: 0.85;
+  transition: opacity .2s ease-out;
+}
+
+.training-widget:hover {
+  opacity: 1;
+  color: white;
+  padding: 1%;
+}
+
+.training-widget-content {
+  color: white;
+  padding: 5px;
+  height: 50%;
+}
+
+.intermediate {
+  box-shadow: 0pt 0pt 0pt 3pt red;
+  transition: opacity .2s ease-out;
+}
+
+.beginner {
+  box-shadow: 0pt 0pt 0pt 3pt dodgerblue;
+  transition: opacity .2s ease-out;
+}

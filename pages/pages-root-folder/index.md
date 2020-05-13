@@ -4,7 +4,7 @@
 # inserted automagically in the webpage. To make
 # this work, you have to use › layout: frontpage
 #
-layout: frontpage
+layout: page
 section: home
 
 #
@@ -26,9 +26,24 @@ permalink: /index.html
 homepage: true
 ---
 
-<div id="videoModal" class="reveal-modal large" data-reveal="">
-  <div class="flex-video widescreen vimeo" style="display: block;">
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/3b5zCFSmVvU" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <a class="close-reveal-modal">&#215;</a>
-</div>
+{% assign page_list = site.data.widgets.main %}
+
+{% assign page_data = page_list %}
+
+{% assign page_items = page_data | size %}
+
+{% assign page_nrows = page_items | divided_by: 4.0 | ceil %}
+
+{% assign col2 = 0 %}
+
+<div class="t60">
+  {% for row in (1..page_nrows) %}
+	   {% for col in (1..4) %}
+				{% assign col_data = page_data[col2] %}
+	      {% if col_data.title %}
+				   {% include _frontpage-widget.html widget=col_data  %}
+				{% endif %}
+				{% assign col2 = col2 | plus: 1 %}
+		{% endfor %}
+  {% endfor %}
+</div>		

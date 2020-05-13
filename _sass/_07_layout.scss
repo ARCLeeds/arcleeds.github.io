@@ -17,6 +17,7 @@
 - CSS-Classes to add margin at top or bottom
 - frontpage-widget anchor class
 - footer-row class
+- page-row
 
 */
 
@@ -393,8 +394,10 @@ body.video cite { color: #fff; }
 }
 
 .frontpage-img {
-  height: 205px;
+  width: 100vw;
+  height: 280px;
   display: block;
+  overflow: hidden;
   margin: 0;
 }
 
@@ -406,4 +409,16 @@ body.video cite { color: #fff; }
   margin-right: auto;
   display: flex;
   justify-content: center;
+}
+
+/* page-row */
+// resolves annoying rem max-width in row
+
+.page-row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 80%;
 }

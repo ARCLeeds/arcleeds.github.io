@@ -1,18 +1,28 @@
 ---
-layout: page
 title: "Training"
-meta_title: "Research Computing Training"
-subheadline: "Upgrade your skills with our Research Computing training"
-permalink: "/services/training/"
+permalink: "/training/"
 ---
 
-We provide training to researchers on:
+To see what courses are available and when:
 
-- Reproducible Research (using git, containers, virtual machines)
-- Python 3
-- R
-- Introduction to Linux
-- High Performance computing Carpentries
+{% assign page_list = site.data.widgets.main | where: 'title', page.title %}
 
-For more information see:
-{% include list-nav-dd-items ddtitle="Training" %}
+{% assign page_data = page_list[0].subpages %}
+
+{% assign page_items = page_data | size %}
+
+{% assign page_nrows = page_items | divided_by: 4.0 | ceil %}
+
+{% assign col2 = 0 %}
+
+<div class="t60">
+  {% for row in (1..page_nrows) %}
+	   {% for col in (1..4) %}
+				{% assign col_data = page_data[col2] %}
+	      {% if col_data.title %}
+				   {% include _frontpage-widget.html widget=col_data  %}
+				{% endif %}
+				{% assign col2 = col2 | plus: 1 %}
+		{% endfor %}
+  {% endfor %}
+</div>		

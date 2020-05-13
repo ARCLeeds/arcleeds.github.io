@@ -2,25 +2,13 @@
   url: /
   side: left
 
-- title: Services
-  url: /services/
+- title: Platforms
+  url: /researchplatforms/
   side: left
-  dropdown:
-  - title: Platforms
-    url: /services/researchplatforms/
-  - title: Consulting
-    url: /services/consulting/
-  - title: Training
-    url: /services/training/
 
-- title: Help
-  url: /help/
+- title: Consulting
+  url: /consulting/
   side: left
-  dropdown:
-  - title: Documentation
-    url: /help/documentation/
-  - title: FAQ
-    url: /help/faq/
 
 - title: Training
   url: /training/
@@ -31,27 +19,40 @@
   - title: Courses
     url: /training/courses/
 
+- title: About
+  side: left
+  url: /about/
+  dropdown:
+  - title: Case studies
+    url: /about/casestudiesprojects/
+  - title: Changelog
+    url: /about/changelog/
+  - title: History
+    url: /about/history/
+  - title: The Team
+    url: /about/team/
+
+
+- title: Help
+  url: /help/
+  side: left
+  dropdown:
+  - title: Contact
+    url: /help/contact/
+  - title: Documentation
+    url: /help/documentation/
+  - title: FAQ
+    url: /help/faq/
+
 - title: Community
   url: /community/
   side: left
   dropdown:
-  - title: Intro
-    url: /community/intro/
   - title: Champions
     url: /community/champions/
   - title: Events
     url: /community/events/
 
-- title: About
-  side: left
-  url: /about/
-  dropdown:
-  - title: The Team
-    url: /about/team/
-  - title: Work
-    url: /about/casestudiesprojects/
-  - title: History
-    url: /about/history/
 
 
 - title: Self Service

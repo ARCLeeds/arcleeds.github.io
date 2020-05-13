@@ -1,0 +1,680 @@
+# the training courses yml
+#
+# this contains all data used for populating individual training courses pages
+# and for populating the widget tiles
+# currently the liquid script plots widgets dependent on the level key
+# it only plots widgets for beginner and intermediate level courses
+# there are some other courses not plotted
+#
+# -- basic format --
+#
+#   - title: the widget title
+#    url: relative url for page /training/courses/hpc0/
+#    text: short summary text for widget
+#    style: style class for widget - training-widget
+#    level: is it beginner, intermediate or other (not shown)
+#    content:
+#      body: main body text describing course
+#      outcomes:
+#       - unordered list of learning outcomes
+#      prereq: list of what skills are required
+#      duration: how long is the course
+#      frequency: how often does it run
+#      suitability: who is suitable for coming
+#      booking: a string link to the SAP booking form
+#
+
+
+
+widget:
+  - title: 'HPC0: <br> Introduction to Linux <br> for HPC'
+    url: /training/courses/hpc0/
+    text: This is a hands-on workshop intended as an introduction
+           to the Linux command line and shell scripting.
+    style: training-widget
+    level: beginner
+    content:
+      body: "
+        This is a hands-on workshop intended as an introduction to the Linux
+        command line and shell scripting. It is suitable for Linux, Unix and Mac
+        OSX users. The purpose of the workshop is to give users the Linux skills
+        to be able to handle data and files, run programs and automate workflows
+        on a PC and on the HPC service. The content of this workshop is equally
+        suited for people who wish to use command line Linux on a PC, in the
+        Cloud or on a HPC platform. New and prospective HPC users are advised to
+        take this workshop before taking the HPC1: Introduction to High Performance
+        Computing at Leeds workshop."
+      outcomes:
+        - Understand the purpose of the Linux Shell
+        - Effectively manage Files and Directories at the command line
+        - Create files, directories and other objects
+        - Create Pipes and Filters to join together commands
+        - Use Loops to repeat actions
+        - Run and manage programs, tools and applications
+        - Create Shell Scripts to automate workflows
+        - Find things from the command line
+        - Use command line tools to search for patterns in data, filter, remove and edit data
+      prereq: None
+      duration: 1/2 day
+      frequency: This course usually runs 10 or more times per year.
+      suitability: All research staff and students
+      booking: 'https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9TGludXgmZ2Rfc3R5cGU9JmdkX3R1dG9yPUxhc3QlMjBuYW1lJmRhdGUxPWRkJTJmbW0lMmZ5eXl5JmRhdGUyPWRkJTJmbW0lMmZ5eXl5JmRhdGUxPTAwLjAwLjAwMDAmZGF0ZTI9MDAuMDAuMDAwMCZwcm92aWRlcmxpc3Q9NTAwMjI0MjkmYW5kb3I9T1Imc29ydD1CRUdEQSZnZF9jYWxsaWQ9SU5JVElBTCZzdHlsZT0%3d'
+
+  - title: 'HPC1: <br> Introduction to High Performance Computing'
+    url: /training/courses/hpc1/
+    text: |
+           This workshop is designed to introduce new users to
+           concepts of High Performance Computing (HPC) and the HPC service at Leeds.
+    style: training-widget
+    level: beginner
+    content:
+      body: "
+      This workshop is designed to introduce new users to the
+      High Performance Computing (HPC) service at Leeds. It will be useful
+      if you are new to HPC in research or have used HPC elsewhere. It is suitable
+      for researchers from all faculties and examples will be given from a range
+      of research domains. The purpose of the workshop is to give users the
+      skills to be an effective user of the HPC service and to get codes and
+      applications running effectively."
+      outcomes:
+        - Understand how HPC can be used to support their research
+        - Use different models of parallel computing
+        - "Be able to use Linux effectively : SSH, directory management, command line etc"
+        - Manage data on the HPC clusters
+        - Use the HPC batch system effectively
+        - Use the module system to load and manage pre-installed applications
+        - Write scripts to run codes and applications
+        - Examine how well code scales and apply techniques to benchmark code
+      prereq: "
+      Experience using Linux at the command line would be useful. <br>
+      If you have no experience of using the command line, we advise you attend
+      the half-day workshop [HPC 0: Introduction to Linux for High Performance Computing]({{ site.baseurl }}{% link pages/training/training_courses/hpc0.md %})
+      "
+      duration: 1 day
+      frequency: This workshop usually runs monthly, up to 10 times each academic year.
+      suitability: Research postgraduate students and above; teaching, lecturing and research staff
+      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9SFBDJTIwQ2FycGVudHJ5JmdkX3N0eXBlPSZnZF90dXRvcj1MYXN0JTIwbmFtZSZkYXRlMT1kZCUyZm1tJTJmeXl5eSZkYXRlMj1kZCUyZm1tJTJmeXl5eSZkYXRlMT0wMC4wMC4wMDAwJmRhdGUyPTAwLjAwLjAwMDAmcHJvdmlkZXJsaXN0PTAmYW5kb3I9QU5EJnNvcnQ9QkVHREEmZ2RfY2FsbGlkPUlOSVRJQUwmc3R5bGU9"
+
+  - title: 'SWD1a: <br> Introduction to <br> Python programming'
+    url: /training/courses/swd1a/
+    text: |
+          This is an introduction to programming in Python for
+          people with little or no previous programming experience.
+    style: training-widget
+    level: beginner
+    content:
+      body: "
+      <strong>PLEASE NOTE:</strong> This course runs as a series of four half-day workshops,
+      usually one week apart. Please do not apply for this course unless you
+      are able to attend ALL the sessions. This is an introduction to programming
+       in Python for people with little or no previous programming experience.
+       It uses plotting and visualising data as its motivating example based on
+        an established research dataset. The course is suitable for attendees
+        from all research domains and we will use a Web based programming
+        environment (a Jupyter Notebook) which means you will be able to apply
+        the ideas you learn on the course straightaway without having to install
+         any software at home or at work.
+      "
+      outcomes:
+        - How to run Python programs
+        - Storing data in computer programs (using variables and data types)
+        - Using built in functions in programs
+        - Avoiding and fixing errors in programs
+        - Using software other people have written (libraries)
+        - Reading tabular data and simple statistical analysis
+        - Plotting data
+        - Storing multiple values using lists
+        - Repeating things using LOOPS
+        - Creating functions
+        - "Making programs do different things for different data (Conditionals: IF statements)"
+        - "Writing simple tests: making sure our programs behave properly"
+        - Programming style
+      prereq: None
+      duration: Four half-day sessions
+      frequency: This course usually runs once each academic year.
+      suitability: This course of four half-day workshops is suitable for all research staff and students.
+      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9UHl0aG9uJTIwUHJvZ3JhbW1pbmcmZ2Rfc3R5cGU9JmdkX3R1dG9yPUxhc3QlMjBuYW1lJmRhdGUxPTAxJTJmMTAlMmYyMDE4JmRhdGUyPTAyJTJmMTIlMmYyMDE4JmRhdGUxPTAxLjEwLjIwMTgmZGF0ZTI9MDIuMTIuMjAxOCZwcm92aWRlcmxpc3Q9MCZhbmRvcj1BTkQmc29ydD1CRUdEQSZnZF9jYWxsaWQ9SU5JVElBTCZzdHlsZT0%3d"
+
+  - title: 'SWD1b: <br> Introduction to <br> R programming'
+    url: /training/courses/swd1b/
+    text: |
+          This is an introduction to programming in R
+          for people with little or no previous programming experience.
+    style: training-widget
+    level: beginner
+    content:
+      body: "
+      <strong>PLEASE NOTE:</strong> This course runs as a series of four
+      half-day workshops, usually one week apart. Please do not apply for this
+      course unless you are able to attend ALL the sessions. This is an introduction
+       to programming in R for people with little or no previous programming experience.
+        It uses plotting and visualising data as its motivating example based on
+        an established research dataset. The course is suitable for attendees
+        from all research domains and we will use a Web based programming
+        environment (a Jupyter Notebook and R Studio) which means you will be
+        able to apply the ideas you learn on the course straightaway without
+        having to install any software at home or at work.
+      "
+      outcomes:
+        - How to run R programs
+        - Storing data in computer programs (using variables and data types)
+        - Using built in functions in programs
+        - Avoiding and fixing errors in programs
+        - Using software other people have written (packages)
+        - Reading tabular data and simple statistical analysis
+        - Plotting data
+        - Storing multiple values using lists
+        - Repeating things using LOOPS
+        - Creating functions
+        - "Making programs do different things for different data (Conditionals: IF statements)"
+        - "Writing simple tests: making sure our programs behave properly"
+        - Programming style
+      prereq: None
+      duration: Four half-day sessions
+      frequency: This course usually runs once each academic year.
+      suitability: This course of four half-day workshops is suitable for all research staff and students.
+      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9UiUyMHByb2dyYW1taW5nJmdkX3N0eXBlPSZnZF90dXRvcj1MYXN0JTIwbmFtZSZkYXRlMT0wNCUyZjExJTJmMjAxOCZkYXRlMj0yMCUyZjEyJTJmMjAxOCZkYXRlMT0wNC4xMS4yMDE4JmRhdGUyPTIwLjEyLjIwMTgmcHJvdmlkZXJsaXN0PTAmYW5kb3I9QU5EJnNvcnQ9QkVHREEmZ2RfY2FsbGlkPUlOSVRJQUwmc3R5bGU9"
+
+  - title: 'SWD2: <br> Version Control with Git and GitHub'
+    url: /training/courses/swd2/
+    text: This is a hands-on workshop intended as an
+          introduction to version control using git and GitHub.
+    style: training-widget
+    level: beginner
+    content:
+      body: "
+      Version control can be thought of as the lab notebook of the digital world:
+        it’s what professional software developers and authors use to keep track
+        of what they’ve done and to collaborate with other people. Every large
+        software development project relies on it, and most programmers use it
+        for their small jobs as well. It isn’t just for software: books, papers,
+         small data sets, and anything that changes over time or needs to be
+         shared can and should be stored in a version control system.
+      "
+      outcomes:
+        - Understanding the benefits and advantages of automated version control
+        - Setting up Git on your own computer
+        - Creating a repository
+        - Tracking changes and exploring history
+        - Ignoring files
+        - Managing remote repositories using Github
+        - Managing teams and collaborating
+        - Coping with conflicts
+        - Hosting code
+        - Open Science and Licensing issues
+      prereq: "We recommend that attendees have a working knowledge of the Unix shell.
+              A suitable course is
+              [HPC 0: Introduction to Linux for High Performance Computing]({{ site.baseurl }}{% link pages/training/training_courses/hpc0.md %})"
+      duration: 1 day
+      frequency: This course will run at least twice each academic year.
+      suitability: Research postgraduate students and above; teaching and lecturing staff.
+      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9VmVyc2lvbiUyMENvbnRyb2wmZ2Rfc3R5cGU9JmdkX3R1dG9yPUxhc3QlMjBuYW1lJmRhdGUxPWRkJTJmbW0lMmZ5eXl5JmRhdGUyPWRkJTJmbW0lMmZ5eXl5JmRhdGUxPTAwLjAwLjAwMDAmZGF0ZTI9MDAuMDAuMDAwMCZwcm92aWRlcmxpc3Q9NTAwMjI0MjkmYW5kb3I9T1Imc29ydD1CRUdEQSZnZF9jYWxsaWQ9SU5JVElBTCZzdHlsZT0%3d"
+
+  - title: 'SWD3: <br> Software development practices for Research'
+    url: /training/courses/swd3/
+    text: |
+           A one-day workshop introducing techniques and concepts
+           that professional software developers use to manage their code, projects and teams.
+    style: training-widget
+    level: beginner
+    content:
+      body: "
+      The purpose of this workshop is to introduce a number of the techniques
+      and concepts that professional software developers use to manage their code,
+       projects and teams. Although the development of research codes and software
+        has different needs and challenges to the development of commercial software,
+         there are nonetheless some tools and techniques that we can adopt or
+         adopt to improve our Research Software Engineering. This isn’t a programming
+         workshop, so it will be relevant to you whichever programming language
+         (on Windows, Linux or Mac) or infrastructure (HPC, Cloud, Desktop) you use.
+         This will be a hands-on session with lots of discussion and small group activities.
+          We’ll be joined by a number of people who develop codes and software who
+          will share their experiences.
+      "
+      outcomes:
+        - Defining and managing projects and teams
+        - Software and data management plans
+        - Effective communication tools and techniques
+        - Planning and software design
+        - Git and version control workflows
+        - Testing and code review
+        - "Continuous Integration (CI) and Continuous Development (CD): Tools and techniques"
+        - End of project reviews
+      prereq: None
+      duration: 1 day
+      frequency: This course usually runs once each academic year.
+      suitability: Research postgraduate students and above; teaching and lecturing staff.
+      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9U1dEJTIwMyUzYSUyMFNvZnR3YXJlJmdkX3N0eXBlPSZnZF90dXRvcj1MYXN0JTIwbmFtZSZkYXRlMT1kZCUyZm1tJTJmeXl5eSZkYXRlMj1kZCUyZm1tJTJmeXl5eSZkYXRlMT0wMC4wMC4wMDAwJmRhdGUyPTAwLjAwLjAwMDAmcHJvdmlkZXJsaXN0PTAmYW5kb3I9QU5EJnNvcnQ9QkVHREEmZ2RfY2FsbGlkPUlOSVRJQUwmc3R5bGU9"
+
+  - title: 'HPC6: <br> HPC for Life Sciences and Bioinformatics'
+    url: /training/courses/hpc6/
+    text: |
+           A one-day workshop to introduce Biologists, Chemists and
+           Bioinformaticians to the HPC facilities at Leeds.
+    style: training-widget
+    level: beginner
+    content:
+      body: "
+      The purpose of this one-day workshop is to introduce Biologists,
+      Chemists and Bioinformaticians to the High Performance Computing facilities
+      at Leeds. Although it will include material from some other workshops
+      (particularly [HPC 1: Introduction to High Performance Computing at Leeds]({{ site.baseurl }}{% link pages/training/training_courses/hpc1.md %})),
+      it’s main purpose is to introduce the range of HPC services at Leeds,
+      how they can be used in Life Sciences research with a specific emphasis
+      on NextGen Sequence analysis.
+      "
+      outcomes:
+        - Basic command-line Linux
+        - Using HPC for large-scale computing
+        - Choosing and installing codes and applications
+        - Running codes and applications through the batch scheduler
+        - Data storage and management
+        - Visualising data in R and Python
+        - Life science and Bioinformatics software and libraries (using R and Python)
+        - Automating analysis pipelines using the command-line shell and Snakemake
+      prereq: None
+      duration: 1 day
+      frequency: This workshop usually runs twice each academic year
+      suitability: All research staff and students
+      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9TGlmZSUyMFNjaWVuY2VzJTIwYW5kJTIwQmlvaW5mb3JtYXRpY3MmZ2Rfc3R5cGU9JmdkX3R1dG9yPUxhc3QlMjBuYW1lJmRhdGUxPWRkJTJmbW0lMmZ5eXl5JmRhdGUyPWRkJTJmbW0lMmZ5eXl5JmRhdGUxPTAwLjAwLjAwMDAmZGF0ZTI9MDAuMDAuMDAwMCZwcm92aWRlcmxpc3Q9MCZhbmRvcj1BTkQmc29ydD1CRUdEQSZnZF9jYWxsaWQ9SU5JVElBTCZzdHlsZT0%3d"
+
+  # intermediate courses
+
+  - title: 'HPC2: Applications and containers on HPC'
+    url: /training/courses/hpc2/
+    text: |
+          A one-day workshop introducing application
+          development on the HPC service with hands on practice managing, installing and compiling code.
+    style: training-widget
+    level: intermediate
+    content:
+      body: "
+      The purpose of the workshop is to introduce the application development
+      environment available on the HPC service and give hands on practice managing,
+      installing and compiling codes on the HPC service. This workshop will be most
+      useful for researchers who need to manage and install their own applications
+      and research codes. This workshop builds on the skills developed on the
+      HPC 1: Introduction to High Performance Computing at Leeds workshop.
+      No previous experience of compiling or managing code is expected,
+      although experience with the Linux command line and some programming
+      experience in Fortran, C or Python would be very useful. It is <strong>not</strong> an
+      introductory programming workshop (see workshops
+      [SWD1a: Introduction to Python programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1a.md %}),
+      [SWD1b: Introduction to R programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1b.md %})
+      if that is what you need).
+      "
+      outcomes:
+        - Understand and apply the range of languages, compilers and libraries available on the HPC service
+        - Download and manage code and libraries effectively
+        - Compile C and Fortran code and investigate optimisation parameters
+        - Manage and use Python, R, Perl and MATLAB codes and libraries
+        - Use <strong>make</strong> and similar tools to automate installation and other processes
+        - Apply basic techniques to profile and debug code
+        - Write scripts to request resources and run code through the batch scheduler
+        - Create and use modules to manage own applications
+        - Understand when and where to use software containers (Docker and Singularity)
+      prereq: "
+      Attendees should have some experience of using HPC services, such as through
+      attending the 
+      [HPC 1: Introduction to High Performance Computing at Leeds]({{ site.baseurl }}{% link pages/training/training_courses/hpc1.md %}).
+      It is likely the workshop will be of most benefit to those users who need to develop and
+      adapt research codes on the HPC service.
+      "
+      duration: 1 day
+      frequency: This course will usually run at least twice per academic year.
+      suitability: All research staff and students
+      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMCZ3PTIwOTk1NjAr)/courses.htm?gd_keywords=50114002"
+
+  - title: 'HPC3: Computer architectures and shared memory parallel programming'
+    url: /training/courses/hpc3/
+    text: |
+          A one-day workshop introducing the OpenMP
+          parallel programming model with hands on practice developing and
+          adapting code to run on shared memory machines.
+    style: training-widget
+    level: intermediate
+    content:
+      body: "
+      This workshop is designed for HPC users who already write or develop codes
+       to give an overview of the hardware and infrastructure that code runs on
+       and how design choices can affect how efficiently code runs. Following this
+       introduction, the workshop will give an introduction to the OpenMP parallel
+       programming model and give hands on practice developing and adapting code
+       to run on shared memory machines. The second part of the workshop is designed
+       for those users who already have experience of using (and perhaps developing)
+       sequential code in C or Fortran and would like to examine the benefits of
+       applying the OpenMP model to parallelise their code. No previous experience
+       of developing parallel code is expected, but familiarity with Fortran or C
+        would be very useful as would the ability to use Linux and the batch
+        scheduler on the HPC service.
+      "
+      outcomes:
+        - Understand the structure of a typical single core and multicore CPU
+        - Understand the building blocks of a typical HPC cluster
+        - Have an overview of how compilers create executable code from source code
+        - Understand the concepts of memory bandwidth and NUMA (non-uniform memory architecture)
+        - Recall the syntax of the OpenMP API
+        - Determine parallel and serial regions of a code (ie. what can and can’t be parallelised)
+        - Understand and apply the need for shared and private data
+        - Avoid data access conflicts
+        - Write, compile and run simple OpenMP programs
+      prereq: "
+      Attendees should have some experience of using HPC services, such as through
+      attending the 
+      [HPC 1: Introduction to High Performance Computing at Leeds]({{ site.baseurl }}{% link pages/training/training_courses/hpc1.md %})
+      and be able to program in Fortran or C at an intermediate level
+      (most of the teaching will use Fortran but examples will be in both languages).
+      It is <strong>not</strong> an introductory programming workshop. You will be expected to know
+      how to program in a modern programming language.
+      "
+      duration: 1 day
+      frequency: This course will usually run at least twice each academic year.
+      suitability: All research staff and students.
+      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9Q29tcHV0ZXIlMjBBcmNoaXRlY3R1cmVzJTIwYW5kJTIwc2hhcmVkJTIwbWVtb3J5JTIwcGFyYWxsZWwlMjBwcm9ncmFtbWluZyZnZF9zdHlwZT0mZ2RfdHV0b3I9TGFzdCUyMG5hbWUmZGF0ZTE9ZGQlMmZtbSUyZnl5eXkmZGF0ZTI9ZGQlMmZtbSUyZnl5eXkmZGF0ZTE9MDAuMDAuMDAwMCZkYXRlMj0wMC4wMC4wMDAwJnByb3ZpZGVybGlzdD0wJmFuZG9yPUFORCZzb3J0PUJFR0RBJmdkX2NhbGxpZD1JTklUSUFMJnN0eWxlPQ%3d%3d"
+
+  - title: 'HPC5: Introduction to GPU programming with CUDA'
+    url: /training/courses/hpc5/
+    text: |
+          A one-day workshop covering the  fundamentals of parallel computing
+          with GPUs and the CUDA programming environment.
+    style: training-widget
+    level: intermediate
+    content:
+      body: "
+      In this workshop, you will learn the fundamentals of parallel computing
+      with GPUs and the CUDA programming environment. Our latest HPC cluster (ARC3)
+      has 24 NVIDIA P100 GPUs and 4 NVIDIA K80 GPUs which can be used to run
+      existing code optimised for GPUs, run new code developed using the CUDA or
+      OpenCL programming models or to run applications on top of GPU optimised
+      frameworks, such as machine learning or deep learning models.
+      Programming examples in this workshop will be in C with some later examples in Python.
+      "
+      outcomes:
+        - An introduction to the GPU hardware model
+        - Multithreading and the concept of the ‘Streaming Multiprocessor’
+        - GPU memory and launching CUDA kernels
+        - CUDA C programming examples with vectors and matrices
+        - Hints and tips to CUDA parallelise existing serial code
+        - Optimising code
+        - "PyCUDA: CUDA programming for Python"
+      prereq: "We recommend that attendees have a working knowledge of the Unix
+      shell, some ability to program in C and Python and can compile C and Fortran codes.
+      This is <strong>not</strong> an introductory programming course. If you need to learn how to program,
+      please attend one of the SWD1 programming courses."
+      duration: 1 day
+      frequency: This workshop usually runs twice each academic year.
+      suitability: All research staff and students.
+      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9SW50cm9kdWN0aW9uJTIwdG8lMjBHUFUlMjBwcm9ncmFtbWluZyZnZF9zdHlwZT0mZ2RfdHV0b3I9TGFzdCUyMG5hbWUmZGF0ZTE9ZGQlMmZtbSUyZnl5eXkmZGF0ZTI9ZGQlMmZtbSUyZnl5eXkmZGF0ZTE9MDAuMDAuMDAwMCZkYXRlMj0wMC4wMC4wMDAwJnByb3ZpZGVybGlzdD0wJmFuZG9yPUFORCZzb3J0PUJFR0RBJmdkX2NhbGxpZD1JTklUSUFMJnN0eWxlPQ%3d%3d"
+
+  - title: 'SWD4: Cloud computing for Research'
+    url: /training/courses/swd4/
+    text: |
+          An introduction to Cloud computing services for researchers especially
+          with regard to High Performance Computing and Big Data analysis.
+    style: training-widget
+    level: intermediate
+    content:
+      body: "
+      As well as providing and supporting a large HPC service, we can also support
+      researchers with using Cloud services from commercial Cloud providers such as
+      Microsoft, Amazon Web Services and Google. This is an introductory workshop
+      intended specifically for researchers who can write code or are interested
+      in coding in a modern computing context (typical languages might be R or Python).
+      This hands-on training is intended to familiarise researchers and data scientists
+      with the services that Cloud providers offer to aid them in their research,
+      especially with regard to High Performance Computing, Big Data analysis,
+      and analysing data streaming from Internet-of-Things (IoT) devices.
+      "
+      outcomes:
+        - Introduction to Cloud services
+        - Intellectual Property and Security issues
+        - Creating VMs for teaching and research in the Azure cloud
+        - Machine Learning with the Azure Machine Learning Lab
+        - Introduction to Big Data Analytics with Apache Spark and Apache Hadoop
+        - "Leveraging Cloud APIs: Eg. using the Google Vision API for image analysis"
+      prereq: "We recommend that attendees have a working knowledge of the Unix shell.
+              A suitable course is
+              [HPC 0: Introduction to Linux for High Performance Computing]({{ site.baseurl }}{% link pages/training/training_courses/hpc0.md %})"
+      duration: 1 day
+      frequency: This course will usually run twice each academic year.
+      suitability: Research postgraduate students and above; teaching and lecturing staff.
+      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9U1dEJTIwNCUzYSUyMENsb3VkJmdkX3N0eXBlPSZnZF90dXRvcj1MYXN0JTIwbmFtZSZkYXRlMT1kZCUyZm1tJTJmeXl5eSZkYXRlMj1kZCUyZm1tJTJmeXl5eSZkYXRlMT0wMC4wMC4wMDAwJmRhdGUyPTAwLjAwLjAwMDAmcHJvdmlkZXJsaXN0PTAmYW5kb3I9QU5EJnNvcnQ9QkVHREEmZ2RfY2FsbGlkPUlOSVRJQUwmc3R5bGU9"
+
+  - title: 'SWD5: Scientific Python'
+    url: /training/courses/swd5/
+    text: |
+          A one-day workshop on Python’s main Scientific libraries
+          (Scipy, Numpy and Matplotlib) and covering how to link existing
+          C and Fortran codes and subroutines within Python code.
+    style: training-widget
+    level: intermediate
+    content:
+      body: "
+      This workshop is aimed at people who want to learn how to use Python for
+      Scientific Computing tasks. The workshop will give an introduction to
+      Python's main Scientific libraries (Scipy, Numpy and Matplotlib) and will
+      also cover how to link existing C and Fortran codes and subroutines within
+      your Python code. All exercises will use Python 3. This would be an ideal
+      course to attend before 'High Performance Python'.
+      "
+      outcomes:
+        - A recap on Python data types
+        - "Numpy: arrays, matrices and linear algebra"
+        - "Numpy: random numbers"
+        - "Numpy: Fourier transforms and polynomials"
+        - "Scipy: Linear Algebra and wrappers to LAPACK & BLAS"
+        - "Scipy: Numerical Integration"
+        - "Scipy: Interpolation"
+        - "Scipy: Optimisation"
+        - "Scipy: Special functions"
+        - "Matplotlib: interactive and non-interactive plotting"
+        - "Matplotlib: producing publication-quality figures"
+        - "Matplotlib: creating diagrams"
+        - Interfacing to C and Fortran
+      prereq: "
+        This workshop is aimed at people who can already program in Python
+        at an intermediate level (with a knowledge of loops, functions and 'if' statements).
+        If you need to learn how to program in Python, please attend
+        [SWD1a: Introduction to Python programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1a.md %}).
+        "
+      duration: 1 day
+      frequency: This workshop usually runs once each academic year.
+      suitability: Research postgraduate students and above; teaching and lecturing staff.
+      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMCZ3PTIwOTk1NjAr)/courses.htm?gd_keywords=50131047"
+
+  - title: 'SWD6: <br> High performance Python'
+    url: /training/courses/swd6/
+    text: |
+          A hands-on workshop covering the use of a set of tools and techniques aimed
+          at improving the execution speed of your Python code.
+    style: training-widget
+    level: intermediate
+    content:
+      body: "
+        Over the past few years, Python and the wider Python ecosystem have become
+        invaluable tools in scientific computing and data analytics. As Python is
+        (for the most part) an interpreted language there are complaints that
+        Python code can be quite slow to execute. In this hands-on workshop you
+        will have the opportunity discover and use a set of tools and techniques
+        that can be used to improve the execution speed of your Python code.
+        The workshop will introduce a number of ways to both measure the efficiency
+        of your code and improve it's speed of execution by introducing strategies
+        for fast and scalable computation with Python.
+      "
+      outcomes:
+        - Profiling code with cProfile and line_profiler
+        - Using numpy
+        - "Compiling to C: using Cython and Numba"
+        - "Compiling to C: using PyPy"
+        - Parallel programming in Python with multiprocessing and ParallelPython
+        - Tips for using less RAM
+        - Case studies and discussion
+      prereq: "
+        We recommend that attendees have a working knowledge of the Unix
+        shell (although this is not essential) and are proficient Python programmers.
+        If you need to learn how to program in Python, please attend
+        [SWD1a: Introduction to Python programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1a.md %}).
+        It is strongly recommended that you bring your own laptop to this workshop
+        with some specific software installed. Further information will be provided
+        when you are accepted onto the course.
+      "
+      duration: 1 day
+      frequency: This workshop usually runs once each academic year.
+      suitability: Research postgraduate students and above; teaching and lecturing staff.
+      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9U1dEJTIwNiUzYSUyMEhpZ2glMjBQZXJmb3JtYW5jZSZnZF9zdHlwZT0mZ2RfdHV0b3I9TGFzdCUyMG5hbWUmZGF0ZTE9ZGQlMmZtbSUyZnl5eXkmZGF0ZTI9ZGQlMmZtbSUyZnl5eXkmZGF0ZTE9MDAuMDAuMDAwMCZkYXRlMj0wMC4wMC4wMDAwJnByb3ZpZGVybGlzdD0wJmFuZG9yPUFORCZzb3J0PUJFR0RBJmdkX2NhbGxpZD1JTklUSUFMJnN0eWxlPQ%3d%3d"
+
+  - title: 'SWD7: Introduction to reproducible workflows in Python'
+    url: /training/courses/swd7/
+    text: |
+          A one-day workshop covering best practises for reproducible scientific
+          code development and how to implement these into their day-to-day Python
+          workflows.
+    style: training-widget
+    level: intermediate
+    content:
+      body: "
+      This is an introductory course to reproducible analysis workflows in Python.
+      It is aimed at people with some experience in Python for data analysis or
+      computational research (e.g. people already developing scripts or using Jupyter notebooks).
+      By the end of the course the attendees will have learnt about best practices
+      for reproducible scientific code development and should be able to implement
+      these techniques to their day to day workflows. This is not an introductory
+      course to Python but rather on how to conduct reproducible research using Python.
+      Thus if you are interested in getting started with Python, we provide other
+       workshops better suited for you. The course is suitable for attendees
+       from all research domains and career levels. Note that this is a bring
+       your own laptop event. We will be using a number of Python packages and
+       tools, so you must install these before the workshop (these will be sent via email before the workshop).
+      "
+      outcomes:
+        - Introduction to reproducible computational research (What is this? Why is it important?)
+        - "Open Source Software licensing: get to know what license is better suited for your projects"
+        - "Managing data: how to version control, share and add metadata to your research data sets"
+        - Produce automated workflows
+        - Creating a software package
+        - Testing scientific code
+        - Test automation and continuous integration
+        - "How to make sure that your code can be run by others (instead to only on your personal computers): this covers execution environments, Docker, and binder"
+        - How to generate digital assets identifiers and citation files for your software
+      prereq:
+        "
+        Attendees must have previous knowledge of Python and should be able to:
+        Write and run Python programs; Know how to import packages in Python (e.g. matplotlib, numpy, pandas);
+        Write functions in Python; Read data from files (e.g. csv, txt).
+
+        It would be also beneficial if the attendees have basic exposure to the shell (command line, terminal) and git.
+        "
+      duration: 1 day
+      frequency: This workshop usually runs once each academic year.
+      suitability: This course is suitable for all research staff and students.
+      booking: "#"
+
+# other courses not listed publically on arc.leeds.ac.uk
+
+  - title: "HPC4: An introduction to Parallel Programming with MPI C and Fortran"
+    url: /training/courses/hpc4/
+    text: |
+          A one-day workshop for new users familiarising themselves with
+          existing MPI codes, or users with C or Fortran serial codes which
+          they would like to develop for the HPC.
+    style: training-widget
+    level: other
+    content:
+      body: "
+      The workshop would most benefit new users familiarising themselves with
+      existing MPI codes, or in particular users with C or Fortran single processor
+      serial codes which they would like to develop for the University’s ARC
+      high performance computing facilities. That does not mean to say you won’t
+      benefit if you don’t have a specific parallel programming task to consider,
+      but that is the best position to be in for this workshop. The workshop does
+      <strong>not</strong> cover an introduction to using the HPC facilities (covered in separate workshops)
+      or shared memory programming nor is it an introductory programming workshop.
+      "
+      outcomes:
+        - An introduction to parallel programming
+        - An introduction to MPI
+        - An understanding of point-to-point communications with MPI
+        - An understanding of collective group communications with MPI
+        - An understanding of data IO operations in parallel, including MPI-IO
+      prereq: "
+        The workshop is designed for those familiar with the UNIX environment
+        and experience of programming in C or FORTRAN is essential.
+        No previous experience of MPI or parallel programming is necessary.
+        Experience of compiling and submitting jobs on the ARC facilities is useful."
+      duration: 1 day
+      frequency: This workshop usually runs once each academic year.
+      suitability: Research postgraduate students and above; teaching lecturing and research staff.
+      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMCZ3PTIwOTk1NjAr)/courses.htm?gd_keywords=50113850"
+
+  - title: "HPC7: HPC for Data Analytics"
+    url: /training/courses/hpc7/
+    text: |
+          A one-day workshop giving an overview of data science tools
+          and techniques and exploring how HPC can provide the
+          computational power to rapidly and efficiently analyse large volumes of data.
+    style: training-widget
+    level: other
+    content:
+      body: "
+      In this workshop, we will give an overview of a number of data science tools
+      and techniques and explore how HPC can provide the
+      computational power to rapidly and efficiently analyse large volumes of data.
+      Although HPC clusters have traditionally been used for modelling and simulation
+      in Science and Engineering, they are equally suited to those research problems
+      that focus on the analysis of data. Although this workshop is open to researchers
+      from all disciplines, examples will be drawn from the humanities and social sciences."
+      outcomes:
+        - What are data analytics, big data and data science?
+        - Using R for High Performance Data Analytics
+        - Analysing streaming data from IoT devices and social media
+        - "Databases: Using SQL, NoSQL and graph databases on HPC"
+        - Parallelising data analysis with MapReduce and Apache Spark
+        - Moving between desktop, HPC and the Cloud
+      prereq: "
+      This workshop is aimed at people who already have some programming experience,
+      ideally in R or Python. Attendees are not expected to have any prior experience
+      of High Performance Computing or the Linux command line.
+      This is <strong>not</strong> an introductory programming course. If you need to learn how to program,
+      please attend either
+      [SWD1a: Introduction to Python programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1a.md %}),
+      [SWD1b: Introduction to R programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1b.md %}).
+      "
+      duration: 1 day
+      frequency: This workshop usually runs once each academic year.
+      suitability: Research postgraduate students and above; teaching lecturing and research staff.
+      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9RGF0YSUyMEFuYWx5dGljcyZnZF9zdHlwZT0mZ2RfdHV0b3I9TGFzdCUyMG5hbWUmZGF0ZTE9ZGQlMmZtbSUyZnl5eXkmZGF0ZTI9ZGQlMmZtbSUyZnl5eXkmZGF0ZTE9MDAuMDAuMDAwMCZkYXRlMj0wMC4wMC4wMDAwJnByb3ZpZGVybGlzdD0wJmFuZG9yPUFORCZzb3J0PUJFR0RBJmdkX2NhbGxpZD1JTklUSUFMJnN0eWxlPQ%3d%3d"
+
+  - title: "HPC8: Docker and Singularity: Containers for HPC"
+    url: /training/courses/hpc8/
+    text: |
+          A one-day workshop giving an introduction to containerisation tools
+          with hands-on practicals creating and managing Docker and Singularity
+          containers for research.
+    style: training-widget
+    level: other
+    content:
+      body: "
+      As software and data containerisation are becoming important tools to ensure
+      the reproducibility of research workflows, the correct tools are needed to
+      facilitate the management and migration of containers between desktop,
+      cloud and HPC platforms. Docker is probably the most widely recognised of
+      the container platforms and works well in many situations. For High
+      Performance Computing clusters though, Singularity provides more flexibility
+      for running containers in user space. In this workshop, we will provide
+      hands-on experience in creating and managing Docker and Singularity containers
+      for research and using Docker together with Singularity in order to manage
+      and run containers on a HPC platform. The practical activities will be
+      illustrated with software examples and use-cases from a range of research domains."
+      outcomes:
+        - Best practice in designing and creating containerised software stacks
+        - Creating native Docker and Singularity containers
+        - Considerations for GPU and MPI support
+        - Converting Docker containers to Singularity containers and vice-versa
+        - Automating container build and test using Github, Dockerhub and Singularity Hub
+        - Deploying and running containers on a HPC cluster
+        - Sharing and citing containers
+      prereq: This workshop is aimed at people who have experience with using the Linux command line and using the HPC clusters.
+      duration: 1 day
+      frequency: This workshop usually runs once each academic year.
+      suitability: Research postgraduate students and above; teaching lecturing and research staff.
+      booking: "#"

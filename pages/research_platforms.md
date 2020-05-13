@@ -1,7 +1,6 @@
 ---
-layout: page
 title: Research Platforms
-permalink: /services/researchplatforms/
+permalink: /researchplatforms/
 ---
 
 IT Services provide a number of tools and services for both data storage and compute, Research Computing being the primary point of contact for research users.
