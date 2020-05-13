@@ -6,17 +6,18 @@ noindex: true
 ---
 
 {% if page.title contains "Blog" %}
-   <p> if block works </p>
-   <p> {{ site.categories }} </p>
   {% assign whatPage = site.categories.blog %}
 {% elsif page.title contains "Case Studies" %}
   {% assign whatPage = site.categories.casestudies %}
 {% endif %}
 
 <div class="row">
+    {{ content }}
+
 	<div class="medium-8 columns t30">
 		{% include _pagination2.html content=whatPage %}
 	</div><!-- /.medium-7.columns -->
+
 
 
 	<div class="medium-4 columns t30">
