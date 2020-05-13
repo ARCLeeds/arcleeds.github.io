@@ -9,18 +9,15 @@ noindex: true
   {% assign whatPage = site.categories.blog %}
 {% elsif page.title contains "Case Studies" %}
   {% assign whatPage = site.categories.casestudies %}
+{% elsif page.title contains "changelog" %}
+  {% assign whatPage = site.categories.changelog %}
 {% endif %}
 
 <div class="row">
     {{ content }}
 
-	<div class="medium-8 columns t30">
-		{% include _pagination2.html content=whatPage %}
+	<div class="medium-12 columns t30">
+		{% include _pagination.html content=whatPage %}
 	</div><!-- /.medium-7.columns -->
 
-
-
-	<div class="medium-4 columns t30">
-		{% include _sidebar.html %}
-	</div><!-- /.medium-5.columns -->
 </div><!-- /.row -->

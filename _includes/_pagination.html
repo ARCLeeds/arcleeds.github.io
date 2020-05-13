@@ -1,30 +1,55 @@
 {% comment %}
-*  This loops through the paginated posts
+*  this now takes a content argument
 *
-*  Total posts: {{ paginator.total_posts }}
-*  Total paginate-pages: {{ paginator.total_pages }}
+*  it expects the content argument to be a list of posts
+*  from within a site.categories list
+*  current either site.categories.blog or site.categories.casestudies
 *
 {% endcomment %}
 
 
-{% for post in paginator.posts %}
+{% for post in include.content %}
   <div class="row">
     <div class="small-12 columns b60">
-      <p class="subheadline">{{ post.categories | join: ' &middot; ' | prepend: '<span class="subheader">' | append: '</span>' }}{% if post.categories != empty and post.subheadline != NULL %} – {% endif %}{{ post.subheadline }}</p>
-      <h2><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="subheadline">{{ post.categories | join: ' &middot; ' | prepend: '<span class="subheader">' | append: '</span>' }}
+        {% if post.categories != empty and post.subheadline != NULL %}
+          –
+        {% endif %}{{ post.date | date: "%Y-%m-%d" }} - {{ post.subheadline }}
+      </p>
+
+      <h4>
+        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.author }}</a>
+      </h4>
+      <h2>
+        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </h2>
       <p>
-        {% if post.image.thumb %}<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}"><img src="{{ site.urlimg }}{{ post.image.thumb }}" class="alignleft" width="150" height="150" alt="{{ page.title escape_once }}"></a>{% endif %}
+        {% if post.image.thumb %}
+        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}">
+          <img src="{{ site.urlimg }}{{ post.image.thumb }}" class="alignleft" width="150" height="150" alt="{{ page.title escape_once }}">
+        </a>
+        {% endif %}
 
-        {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% elsif post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
+        {% if post.meta_description %}
+          {{ post.meta_description | strip_html | escape }}
+        {% elsif post.teaser %}
+          {{ post.teaser | strip_html | escape }}
+        {% endif %}
 
-        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ site.data.language.read }} {{ post.title | escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a>
+        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ site.data.language.read }} {{ post.title | escape_once }}">
+          <strong>{{ site.data.language.read_more }}</strong>
+        </a>
       </p>
     </div><!-- /.small-12.columns -->
   </div><!-- /.row -->
 {% endfor %}
 
+<!-- removing this as multi level pagination (between blog and casestudies)
+is not possible given the gem spec of GitHub pages see https://www.google.com/search?client=ubuntu&channel=fs&q=jekyll-paginate-v2+github+pages&ie=utf-8&oe=utf-8
+this will cause all posts to be added in date order to the top level page which in the long run
+will be quite annoying but for now we'll tolerate.
 
-<nav id="pagination">
+ <nav id="pagination">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
       <a rel="prev" class="radius button small" href="{{ site.url }}{{ site.baseurl }}/blog/" title="{{ site.data.language.previous_posts }}">&laquo; {{ site.data.language.previous_posts }}</a>
@@ -39,4 +64,4 @@
     <a rel="next" class="radius button small" href="{{ site.url }}{{ site.baseurl }}/blog/page{{ paginator.next_page }}/" title="{{ site.data.language.next_posts }}">{{ site.data.language.next }} &raquo;</a>
     {% endif %}
   </nav>
-
+-->
