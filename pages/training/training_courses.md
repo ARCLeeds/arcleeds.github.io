@@ -22,13 +22,13 @@ permalink: "/training/courses/"
 
 {% assign beginner_items = beginner_data | size %}
 
-{% assign beginner_nrows = beginner_items | divided_by: 4.0 | ceil %}
+{% assign beginner_nrows = beginner_items | divided_by: 3.0 | ceil %}
 
 {% assign col2 = 0 %}
 
 <div class="test-space t60">
   {% for row in (1..beginner_nrows) %}
-	   {% for col in (1..4) %}
+	   {% for col in (1..3) %}
 				{% assign col_data = beginner_data[col2] %}
 	      {% if col_data.title %}
 				   {% include _training-widget.html widget=col_data  %}
@@ -44,13 +44,13 @@ permalink: "/training/courses/"
 
 {% assign intermediate_items = intermediate_data | size %}
 
-{% assign intermediate_nrows = intermediate_items | divided_by: 4.0 | ceil %}
+{% assign intermediate_nrows = intermediate_items | divided_by: 3.0 | ceil %}
 
 {% assign col2 = 0 %}
 
 <div class="t60">
   {% for row in (1..intermediate_nrows) %}
-	   {% for col in (1..4) %}
+	   {% for col in (1..3) %}
 				{% assign col_data = intermediate_data[col2] %}
 	      {% if col_data.title %}
 				   {% include _training-widget.html widget=col_data  %}
