@@ -444,8 +444,8 @@ widget:
     url: /training/courses/swd5/
     text: |
           A one-day workshop on Python’s main Scientific libraries
-          (Scipy, Numpy and Matplotlib) and covering how to link existing
-          C and Fortran codes and subroutines within Python code.
+          (Scipy, Numpy and Matplotlib), covering how to link existing
+          C and Fortran codes within Python code.
     style: training-widget
     level: intermediate
     content:

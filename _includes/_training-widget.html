@@ -12,7 +12,7 @@
 {% capture widget_image %}{% if include.widget.image contains 'http' %}{{ include.widget.image }}{% else %}{{ site.urlimg }}{{ include.widget.image }}{% endif %}{% endcapture %}
 
 
-<div class="medium-3 columns {{ include.widget.style }} {{ include.widget.level }}">
+<div class="medium-4 columns {{ include.widget.style }} {{ include.widget.level }}">
 	{% if widget_url != empty %}
 		<a href="{{ widget_url }}" class="frontpage-anchor">
 				<div class="frontpage-widget-content">
