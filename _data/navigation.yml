@@ -53,6 +53,10 @@
   - title: Events
     url: /community/events/
 
+- title: Blog
+  url: /blog/ 
+  side: left
+
 
 
 - title: Self Service
