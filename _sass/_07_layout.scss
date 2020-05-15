@@ -86,7 +86,7 @@ body.video cite { color: #fff; }
     text-shadow: 0 2px 3px rgba(0,0,0,.4);
 }
 #masthead-no-image-header {
-    height: 175px;
+    height: 12rem;
 }
 #masthead-no-image-header #logo img {
     margin-top: auto;
@@ -409,6 +409,7 @@ body.video cite { color: #fff; }
   margin-right: auto;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* page-row */
@@ -421,4 +422,12 @@ body.video cite { color: #fff; }
     margin-top: 0;
     margin-bottom: 0;
     max-width: 80%;
+    display: table;
+}
+
+
+@media screen and (max-width: 40.063em) {
+    .page-row {
+        max-width: 100%;
+    }
 }
