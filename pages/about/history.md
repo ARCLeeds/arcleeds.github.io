@@ -3,7 +3,7 @@ title: "Research Computing History"
 permalink: "/about/history/"
 ---
 
-## HPC in Leeds has operated for over 15 years providing researchers direct access to high compute capacity for their research. You can read more about the journey of Research Computing, in particular HPC in the below post from one of our former HPC administrators, Mark Dixon  
+#### HPC in Leeds has operated for over 15 years providing researchers direct access to high compute capacity for their research. You can read more about the journey of Research Computing, in particular HPC in the below post from one of our former HPC administrators, Mark Dixon  
 <br>
 
 I am about to leave the University of Leeds, having been the technical lead designing and running its central High Performance Computing (HPC) systems just a few days short of 14 years. With my last machine, ARC4, currently in its pilot phase, I’m hoping that people might be interested in hearing more about what we’ve been up to.
