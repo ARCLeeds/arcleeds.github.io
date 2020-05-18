@@ -51,7 +51,7 @@ main:
     alt-text: "widget descriptor"
     subpages:
       - title: 'Documentation'
-        url: /help/documentation/
+        url: https://arc.leeds.ac.uk/
         image: documentation-img.jpg
         text: Find documentation for our Research Platforms.
         style: '#0c7243' # dark green
@@ -61,11 +61,11 @@ main:
         text: Find answers to your frequently asked questions.
         style: '#0072B2' # dark blu
       - title: "Contact"
-        url: '/help/contact/'
+        url: 'https://leeds.service-now.com/it?id=sc_cat_item&sys_id=7587b2530f675f00a82247ece1050eda'
         image: contact-img.jpg
         text: "
-        Need to get in touch? Learn how to contact us and get your query direct 
-        to Research Computing.
+        Need to get in touch? Click here and submit a question directly
+        to the Research Computing team via our contact form.
         "
         style: '#56B4E9' # light blue
         alt-text: "widget descriptor"

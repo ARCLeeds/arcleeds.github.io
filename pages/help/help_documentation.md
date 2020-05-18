@@ -3,4 +3,4 @@ title: "Documentation"
 permalink: "/help/documentation/"
 ---
 
-Here you will find access to documentation including the usage of HPC, installing software and configuring, local environments.
+This page is not rendered on the website as we will redirect users to our readthedocs pages or for the time being to the original ARC website.
