@@ -1,8 +1,8 @@
 ---
 title: "Research Computing Case Studies"
-meta_title: "Details about the Research Computing Case studies"
-subheadline: "Read about where we helped"
 permalink: "/about/casestudiesprojects/"
+layout: blog
 ---
 
-Did we help you? Let us know and be a case study!
+#### Read more about some case studies of our work
+<br>

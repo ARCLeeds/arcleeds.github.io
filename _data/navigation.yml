@@ -38,9 +38,9 @@
   side: left
   dropdown:
   - title: Contact
-    url: /help/contact/
+    url: https://leeds.service-now.com/it?id=sc_cat_item&sys_id=7587b2530f675f00a82247ece1050eda
   - title: Documentation
-    url: /help/documentation/
+    url: https://arc.leeds.ac.uk/
   - title: FAQ
     url: /help/faq/
 
@@ -52,6 +52,10 @@
     url: /community/champions/
   - title: Events
     url: /community/events/
+
+- title: Blog
+  url: /blog/ 
+  side: left
 
 
 

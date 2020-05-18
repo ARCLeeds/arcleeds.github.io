@@ -88,7 +88,7 @@ widget:
       prereq: "
       Experience using Linux at the command line would be useful. <br>
       If you have no experience of using the command line, we advise you attend
-      the half-day workshop [HPC 0: Introduction to Linux for High Performance Computing]({{ site.baseurl }}{% link pages/training/training_courses/hpc0.md %})
+      the half-day workshop HPC 0: Introduction to Linux for High Performance Computing.
       "
       duration: 1 day
       frequency: This workshop usually runs monthly, up to 10 times each academic year.
@@ -204,7 +204,7 @@ widget:
         - Open Science and Licensing issues
       prereq: "We recommend that attendees have a working knowledge of the Unix shell.
               A suitable course is
-              [HPC 0: Introduction to Linux for High Performance Computing]({{ site.baseurl }}{% link pages/training/training_courses/hpc0.md %})"
+              HPC 0: Introduction to Linux for High Performance Computing."
       duration: 1 day
       frequency: This course will run at least twice each academic year.
       suitability: Research postgraduate students and above; teaching and lecturing staff.
@@ -258,7 +258,7 @@ widget:
       The purpose of this one-day workshop is to introduce Biologists,
       Chemists and Bioinformaticians to the High Performance Computing facilities
       at Leeds. Although it will include material from some other workshops
-      (particularly [HPC 1: Introduction to High Performance Computing at Leeds]({{ site.baseurl }}{% link pages/training/training_courses/hpc1.md %})),
+      (particularly [HPC 1: Introduction to High Performance Computing at Leeds]({% link pages/training/training_courses/hpc1.md %})),
       it’s main purpose is to introduce the range of HPC services at Leeds,
       how they can be used in Life Sciences research with a specific emphasis
       on NextGen Sequence analysis.
@@ -299,8 +299,8 @@ widget:
       although experience with the Linux command line and some programming
       experience in Fortran, C or Python would be very useful. It is <strong>not</strong> an
       introductory programming workshop (see workshops
-      [SWD1a: Introduction to Python programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1a.md %}),
-      [SWD1b: Introduction to R programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1b.md %})
+      SWD1a: Introduction to Python programming,
+      SWD1b: Introduction to R programming
       if that is what you need).
       "
       outcomes:
@@ -316,7 +316,7 @@ widget:
       prereq: "
       Attendees should have some experience of using HPC services, such as through
       attending the 
-      [HPC 1: Introduction to High Performance Computing at Leeds]({{ site.baseurl }}{% link pages/training/training_courses/hpc1.md %}).
+      HPC 1: Introduction to High Performance Computing at Leeds.
       It is likely the workshop will be of most benefit to those users who need to develop and
       adapt research codes on the HPC service.
       "
@@ -361,7 +361,7 @@ widget:
       prereq: "
       Attendees should have some experience of using HPC services, such as through
       attending the 
-      [HPC 1: Introduction to High Performance Computing at Leeds]({{ site.baseurl }}{% link pages/training/training_courses/hpc1.md %})
+      HPC 1: Introduction to High Performance Computing at Leeds
       and be able to program in Fortran or C at an intermediate level
       (most of the teaching will use Fortran but examples will be in both languages).
       It is <strong>not</strong> an introductory programming workshop. You will be expected to know
@@ -434,7 +434,7 @@ widget:
         - "Leveraging Cloud APIs: Eg. using the Google Vision API for image analysis"
       prereq: "We recommend that attendees have a working knowledge of the Unix shell.
               A suitable course is
-              [HPC 0: Introduction to Linux for High Performance Computing]({{ site.baseurl }}{% link pages/training/training_courses/hpc0.md %})"
+              HPC 0: Introduction to Linux for High Performance Computing"
       duration: 1 day
       frequency: This course will usually run twice each academic year.
       suitability: Research postgraduate students and above; teaching and lecturing staff.
@@ -475,7 +475,7 @@ widget:
         This workshop is aimed at people who can already program in Python
         at an intermediate level (with a knowledge of loops, functions and 'if' statements).
         If you need to learn how to program in Python, please attend
-        [SWD1a: Introduction to Python programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1a.md %}).
+        SWD1a: Introduction to Python programming.
         "
       duration: 1 day
       frequency: This workshop usually runs once each academic year.
@@ -513,7 +513,7 @@ widget:
         We recommend that attendees have a working knowledge of the Unix
         shell (although this is not essential) and are proficient Python programmers.
         If you need to learn how to program in Python, please attend
-        [SWD1a: Introduction to Python programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1a.md %}).
+        SWD1a: Introduction to Python programming.
         It is strongly recommended that you bring your own laptop to this workshop
         with some specific software installed. Further information will be provided
         when you are accepted onto the course.
@@ -636,8 +636,8 @@ widget:
       of High Performance Computing or the Linux command line.
       This is <strong>not</strong> an introductory programming course. If you need to learn how to program,
       please attend either
-      [SWD1a: Introduction to Python programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1a.md %}),
-      [SWD1b: Introduction to R programming]({{ site.baseurl }}{% link pages/training/training_courses/swd1b.md %}).
+      SWD1a: Introduction to Python programming,
+      SWD1b: Introduction to R programming.
       "
       duration: 1 day
       frequency: This workshop usually runs once each academic year.
