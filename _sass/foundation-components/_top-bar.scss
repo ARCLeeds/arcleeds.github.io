@@ -168,11 +168,11 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
       form,
       input { margin-bottom: 0; }
 
-      input { 
-        height: $topbar-input-height; 
-        padding-top: .35rem; 
-        padding-bottom: .35rem; 
-        font-size: $topbar-button-font-size; 
+      input {
+        height: $topbar-input-height;
+        padding-top: .35rem;
+        padding-bottom: .35rem;
+        font-size: $topbar-button-font-size;
       }
 
       .button, button {
@@ -323,7 +323,26 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
           padding: 12px 0 12px 0;
           padding-#{$default-float}: $topbar-link-padding;
           font-family: $topbar-link-font-family;
-          font-size: $topbar-link-font-size;
+          // media queries here handle medium size viewports to prevent
+          // top-bar menu overflowing by reducing anchor font-size
+          @media #{$xxlarge-only} {
+            font-size: $topbar-link-font-size;
+          }
+          @media #{$xlarge-only} {
+            font-size: $topbar-link-font-size;
+          }
+          @media #{$screen} and (max-width: 90rem) {
+            font-size: 0.85rem;
+          }
+          @media #{$screen} and (max-width: 75.1rem) {
+            font-size: 0.75rem;
+          }
+          @media #{$screen} and (max-width: 70.063rem) {
+            font-size: 0.65rem;
+          }
+          @media #{$screen} and (max-width: 64rem) {
+            font-size: $topbar-link-font-size;
+          }
           font-weight: $topbar-link-weight;
           text-transform: $topbar-link-text-transform;
 

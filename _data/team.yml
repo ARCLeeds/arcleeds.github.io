@@ -64,9 +64,20 @@ main:
     img:
   - name: Nick Rhodes
     role: Research Software Engineer
-    bio:
+    bio: "
+    Nick is a Research Software Engineer at the University of Leeds.
+    Before moving to this role he worked as an Operational Lead supporting
+    student information management systems and DBA team.
+    He has extensive experience working in higher education and NHS
+    developing and supporting large enterprise systems. 
+    Nick is skilled in a wide range of technologies and programming
+    languages across web, applications, databases, networking and server
+    infrastructure.
+    He has frequently worked in devops and lean/agile teams.
+    "
     img: team/nickrhodes.jpeg
   - name: Sean Tuck
+    role: Research Software Engineer
     bio: "
     Sean is a Research Software Engineer at the University of Leeds, working within
     the Data Analytics Team at Leeds Institute for Data Analytics (LIDA). His programming
