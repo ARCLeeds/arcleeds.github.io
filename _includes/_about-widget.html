@@ -28,7 +28,12 @@
 
 	<div class="columns medium-9">
 		<h2>{{ include.widget.name }}</h2>
-		<h4><strong>Role:</strong> {{ include.widget.role }} </h4>
+		{% if include.widget.role %}
+			<h4><strong>Role:</strong> {{ include.widget.role }} </h4>
+		{% endif %}
 		{{ include.widget.bio }}
+		{% if include.widget.email %}
+			<h4> {{ include.widget.email }} </h4>
+		{% endif %}
 	</div>
 </div>

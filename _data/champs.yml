@@ -1,0 +1,9 @@
+main:
+  - name: Example champion
+    bio: "
+    Example is a final year PhD student in Engineering who is familiar with using Python
+    and comsol.
+    "
+    img:
+    email: test@leeds.ac.uk
+
