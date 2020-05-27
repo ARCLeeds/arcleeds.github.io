@@ -284,6 +284,9 @@ body.video cite { color: #fff; }
     #footer a {
         color: $footer-link-color;
     }
+    #footer a:hover {
+        text-decoration: underline;
+    }
     #footer h4,
     #footer h5 {
         letter-spacing: 1px;
