@@ -60,7 +60,11 @@ main:
     img: team/johnhodrien.png
   - name: Adam Keeley
     role: Data Analyst
-    bio:
+    bio: "
+    Adam is a Data Analyst in the Data Analytics Team at Leeds Institute of Data Analytics (LIDA) 
+    His background is in harnessing database and business intelligence tools. He is familiar working with 
+    SQL server, C#, SSAS, SSIS, SSRS.
+    "
     img:
   - name: Nick Rhodes
     role: Research Software Engineer
