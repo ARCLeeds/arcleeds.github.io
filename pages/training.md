@@ -1,6 +1,7 @@
 ---
 title: "Training"
 permalink: "/training/"
+breadcrumb: true
 ---
 
 To see what courses are available and when:

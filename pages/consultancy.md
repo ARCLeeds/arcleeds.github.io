@@ -3,6 +3,7 @@ title: "Research Computing Consultancy"
 meta_title: "Details about the Research Computing Consultancy provision"
 subheadline: "Handcrafted consultancy for your research data problem"
 permalink: "/consulting/"
+breadcrumb: true
 ---
 
 Have a research code problem? Hire an RSE!  

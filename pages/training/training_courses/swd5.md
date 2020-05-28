@@ -1,6 +1,7 @@
 ---
 title: "SWD5: Scientific Python"
 permalink: "/training/courses/swd5/"
+breadcrumb: true
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}

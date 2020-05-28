@@ -1,6 +1,7 @@
 ---
 title: "SWD2: Version Control with Git and GitHub"
 permalink: "/training/courses/swd2/"
+breadcrumb: true
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}

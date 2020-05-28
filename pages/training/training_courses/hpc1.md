@@ -1,6 +1,7 @@
 ---
 title: "HPC1: Introduction to High Performance Computing"
 permalink: "/training/courses/hpc1/"
+breadcrumb: true
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}

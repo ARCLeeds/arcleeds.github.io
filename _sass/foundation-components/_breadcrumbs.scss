@@ -52,6 +52,9 @@ $crumb-slash: "/" !default;
   // We control which background color and border come through.
   background-color: $crumb-bg;
   border-color: $crumb-border-color;
+
+  // adding margin bottom for better spacing
+  margin-bottom: 10px;
 }
 
 // We use this mixin to create breadcrumb styles from list items.

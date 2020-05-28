@@ -1,6 +1,7 @@
 ---
 title: "SWD1b: Introduction to R programming"
 permalink: "/training/courses/swd1b/"
+breadcrumb: true
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}

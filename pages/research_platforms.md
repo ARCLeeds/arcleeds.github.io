@@ -1,6 +1,7 @@
 ---
 title: Research Platforms
 permalink: /researchplatforms/
+breadcrumb: true
 ---
 
 IT Services provide a number of tools and services for both data storage and compute, Research Computing being the primary point of contact for research users.

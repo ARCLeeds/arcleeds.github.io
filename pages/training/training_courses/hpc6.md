@@ -1,6 +1,7 @@
 ---
 title: "HPC6: HPC for Life Sciences and Bioinformatics"
 permalink: "/training/courses/hpc6/"
+breadcrumb: true
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}

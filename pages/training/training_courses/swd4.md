@@ -1,6 +1,7 @@
 ---
 title: "SWD4: Cloud computing for Research"
 permalink: "/training/courses/swd4/"
+breadcrumb: true
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}

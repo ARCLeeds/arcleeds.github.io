@@ -1,6 +1,7 @@
 ---
 title: "Events"
 permalink: "/community/events/"
+breadcrumb: true
 ---
 
 The Research Computing Team are building up a set of regular events for the Research Community.  

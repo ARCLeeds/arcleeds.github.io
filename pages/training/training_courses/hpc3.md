@@ -1,6 +1,7 @@
 ---
 title: "HPC3: Computer architectures and shared memory parallel programming"
 permalink: "/training/courses/hpc3/"
+breadcrumb: true
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}

@@ -12,6 +12,7 @@ author: Alex Coleman
 image:
   thumb: widget-github-303x182.jpg
   caption: Test captions
+breadcrumb: true
 ---
 
 ## Hello world!

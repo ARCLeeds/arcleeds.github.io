@@ -1,6 +1,7 @@
 ---
 title: "Help"
 permalink: "/help/"
+breadcrumb: true
 ---
 
 {% assign page_list = site.data.widgets.main | where: 'title', page.title %}

@@ -1,6 +1,7 @@
 ---
 title: "SWD7: Introduction to reproducible workflows in Python"
 permalink: "/training/courses/swd7/"
+breadcrumb: true
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}

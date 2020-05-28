@@ -1,6 +1,7 @@
 ---
 title: "Community"
 permalink: "/community/"
+breadcrumb: true
 ---
 
 For more information on the Research Computing Community:

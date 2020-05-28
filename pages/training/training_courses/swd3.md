@@ -1,6 +1,7 @@
 ---
 title: "SWD3: Software development practices for Research"
 permalink: "/training/courses/swd3/"
+breadcrumb: true
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}

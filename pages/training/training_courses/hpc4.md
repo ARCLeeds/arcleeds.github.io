@@ -1,6 +1,7 @@
 ---
 title: "HPC4: An introduction to Parallel Programming with MPI C and Fortran"
 permalink: "/training/courses/hpc4/"
+breadcrumb: true
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}

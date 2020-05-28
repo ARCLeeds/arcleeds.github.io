@@ -1,6 +1,7 @@
 ---
 title: "Frequently Asked Questions"
 permalink: "/help/faq/"
+breadcrumb: true
 ---
 
 #### How do I log a ticket?

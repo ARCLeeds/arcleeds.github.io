@@ -1,6 +1,7 @@
 ---
 title: "Research Computing History"
 permalink: "/about/history/"
+breadcrumb: true
 ---
 
 #### HPC in Leeds has operated for over 15 years providing researchers direct access to high compute capacity for their research. You can read more about the journey of Research Computing, in particular HPC in the below post from one of our former HPC administrators, Mark Dixon  

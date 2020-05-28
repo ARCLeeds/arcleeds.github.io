@@ -1,6 +1,7 @@
 ---
 title: "HPC7: HPC for Data Analytics"
 permalink: "/training/courses/hpc7/"
+breadcrumb: true
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}

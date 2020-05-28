@@ -1,6 +1,7 @@
 ---
 title: "HPC5: Introduction to GPU programming with CUDA"
 permalink: "/training/courses/hpc5/"
+breadcrumb: true
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}

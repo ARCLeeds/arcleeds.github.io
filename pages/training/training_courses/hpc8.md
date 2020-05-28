@@ -1,6 +1,7 @@
 ---
 title: "HPC8: Docker and Singularity: Containers for HPC"
 permalink: "/training/courses/hpc8/"
+breadcrumb: true
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}

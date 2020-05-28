@@ -1,6 +1,7 @@
 ---
 title: "HPC2: Applications and containers on HPC"
 permalink: "/training/courses/hpc2/"
+breadcrumb: true
 ---
 
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}
