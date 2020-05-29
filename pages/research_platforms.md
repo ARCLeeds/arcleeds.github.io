@@ -1,6 +1,6 @@
 ---
 title: Research Platforms
-permalink: /researchplatforms/
+permalink: /platforms/
 breadcrumb: true
 ---
 
