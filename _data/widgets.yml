@@ -69,6 +69,14 @@ main:
         "
         style: '#56B4E9' # light blue
         alt-text: "widget descriptor"
+      - title: "Bitesize Videos"
+        url: /help/videos/
+        image: videos-projector.jpg
+        text: "
+        Find some bitesize video guides on using ARC, submitting and troubleshooting
+        jobs and setting up Anaconda on your personal computer.
+        "
+        style: '#0072B2' # dark blu
 
 
 
