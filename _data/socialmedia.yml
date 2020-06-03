@@ -3,10 +3,10 @@
   class: icon-github
   title: ARC Leeds
 
-- name: YouTube
-  url: "#"
+- name: Videos
+  url: /help/videos
   class: icon-youtube
-  title: "Videos, coming soon!"
+  title: "Bitesize Videos"
 
 - name: Twitter
   url: http://twitter.com/ARCUniLeeds
