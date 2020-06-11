@@ -45,6 +45,8 @@
     url: /help/faq/
   - title: Bitesize Videos
     url: /help/videos/
+  - title: Job Script Generator
+    url: /help/scriptmaker/
 
 - title: Community
   url: /community/
@@ -56,7 +58,7 @@
     url: /community/events/
 
 - title: Blog
-  url: /blog/ 
+  url: /blog/
   side: left
 
 
