@@ -1,11 +1,32 @@
 main:
   - name: Mark Conmy
     role: Head of Research IT
-    bio:
-    img:
+    bio: "
+    Mark started out with a degree in Computer Science and, after a couple of years 
+    as a software engineer in the financial world, has spent over twenty-five years 
+    working in academia, specialising in research systems and research-led teaching.  
+    As well as developing and supporting software and hardware solutions across the 
+    University's wide research portfolio, Mark has lectured in software engineering 
+    and championed the need for specialist research support throughout his career.  
+    Working as part of the University IT Executive Team, Mark's portfolio encompasses 
+    all aspects of Research IT, and how to continue to develop its teams and research 
+    capabilities to meet the exciting challenges of the future.
+    "
+    img: team/markconmy.jpg
   - name: Martin Callaghan
     role: Research Computing Consultant
-    bio:
+    bio: "
+      Martin is a Research Computing Consultant and part of the Research Computing group
+      at the University of Leeds in the UK, where we provide High Performance Computing (HPC),
+      Programming and Software Development consultancy across a diverse research community.
+      My role involves Research Software Engineering, training, consultancy and outreach.
+      He also manages a comprehensive HPC and Research Computing training programme designed to
+      be a ‘zero to hero’ structured introduction to HPC, Cloud and research software development.
+      Before joining the University of Leeds, he worked as an Engineer designing machine tool
+      control systems, a teacher and ran his own training and consultancy business. Personal
+      research interests are in text analytics, particularly using neural networks to summarise
+      text at scale.
+    "
     img: team/martincallaghan.jpeg
   - name: Phil Chambers
     role: Data Analyst
@@ -35,8 +56,17 @@ main:
     img: team/alexcoleman.jpeg
   - name: Samantha Crossfield
     role: Data Analyst
-    bio:
-    img:
+    bio: "
+    Samantha is part of the Data Analytics Team within the Leeds Institute for Data Analytics 
+    and provides data handling support. Her work involves identifying research data requirements, 
+    developing secure data flow protocols, and extracting and transforming data using SQL, R and STATA.
+    She leads the information governance and data handling processes for a project that links GP, 
+    community and hospital data to assess long-term cancer care. She also works on de-identification 
+    processes for electronic health data, linkage and spatio-temporal data and informs research methods 
+    processes. She is also studying for a PhD, using electronic health records data to evaluate the burden 
+    and management of inflammatory musculoskeletal diseases including rheumatoid arthritis.
+    "
+    img: team/samanthacrossfield.jpg
   - name: John Hodrien
     role: Research Software Engineer
     bio: "
@@ -61,8 +91,8 @@ main:
   - name: Adam Keeley
     role: Data Analyst
     bio: "
-    Adam is a Data Analyst in the Data Analytics Team at Leeds Institute of Data Analytics (LIDA) 
-    His background is in harnessing database and business intelligence tools. He is familiar working with 
+    Adam is a Data Analyst in the Data Analytics Team at Leeds Institute of Data Analytics (LIDA)
+    His background is in harnessing database and business intelligence tools. He is familiar working with
     SQL server, C#, SSAS, SSIS, SSRS.
     "
     img:
@@ -73,7 +103,7 @@ main:
     Before moving to this role he worked as an Operational Lead supporting
     student information management systems and DBA team.
     He has extensive experience working in higher education and NHS
-    developing and supporting large enterprise systems. 
+    developing and supporting large enterprise systems.
     Nick is skilled in a wide range of technologies and programming
     languages across web, applications, databases, networking and server
     infrastructure.
