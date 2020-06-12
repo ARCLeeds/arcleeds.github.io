@@ -14,6 +14,7 @@
 - training-widget
 - training-widget styling
 - about-widget
+- scriptmaker-input
 */
 
 
@@ -284,4 +285,9 @@ img.lazy {
   margin: 20px 10px 0 0;
 }
 
+// scriptmaker-input
 
+.scriptmaker-input {
+  display: inline !important;
+  width: auto !important;
+}

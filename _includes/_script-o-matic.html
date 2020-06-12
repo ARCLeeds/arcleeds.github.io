@@ -1,10 +1,33 @@
 <!-- html for the script maker page that talks to script-maker.js -->
 
-<table style="width:100%;">
+<table style="width:100%; table-layout: fixed;">
   <tr>
     <th>
       Parameters
     </th>
+  </tr>
+  <tr>
+    <td>
+      Which HPC system are you using?
+    </td>
+    <td>
+      <select id="HPC-name">
+        <option value="ARC4" selected>ARC4</option>
+        <option value="ARC3">ARC3</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      What node type do you wish to use? <br>
+    </td>
+    <td>
+      <select id="node-type">
+        <option value="compute">Compute</option>
+        <option value="GPU">GPU</option>
+        <option value="high-mem">High Memory</option>
+      </select>
+    </td>
   </tr>
   <tr>
     <td>
@@ -13,20 +36,40 @@
       of 48 hours.
     </td>
     <td>
-      <span>
-        <input type="text" id="wallclock-hours" value=" " size="3"> hours
-        <input type="text" id="wallclock-mins" value="15" size="4"> minutes
-        <input type="text" id="wallclock-sec" value=" " size="3"> seconds
-      </span>
+      <input class="scriptmaker-input" type="number" id="wallclock-hours" value="00" size="3" min="00" max="48"> hours
+      <input class="scriptmaker-input" type="number" id="wallclock-mins" value="15" size="4" min="00" max="59"> minutes
+      <input class="scriptmaker-input" type="number" id="wallclock-sec" value="00" size="3" min="00" max="59"> seconds
     </td>
   </tr>
-  <tr>
+  <tr id="arc4-hvmem">
     <td>
       How much memory (RAM) will your job need? <br>
-      This can be a minimum of 1GB and a maximum of 192GB on ARC4 and 128GB on ARC3 for a single process.
+      This can be a minimum of 1GB and a maximum of 192GB on ARC4 for a single process.
     </td>
     <td>
-      <input type="text" id="memory" value="1">
+      <input class="scriptmaker-input" type="number" id="ARC4-memory" value="1" min="1" max="192" size="4">
+    </td>
+  </tr>
+
+  <tr id="arc3-hvmem" style="background: white !important;">
+    <td>
+      How much memory (RAM) will your job need? <br>
+      This can be a minimum of 1GB and a maximum of 128GB on ARC3 for a single process.
+    </td>
+    <td>
+      <input class="scriptmaker-input" type="number" id="ARC3-memory" value="1" min="1" max="128" size="4">
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      Set up email notifications for job events: <br>
+      BEGIN: when job starts, END: when job ends
+    </td>
+    <td>
+      <input class="scriptmaker-input" type="checkbox" id="email-begin"> BEGIN
+      <input class="scriptmaker-input" type="checkbox" id="email-end"> END <br>
+      <input class="scriptmaker-input" type="email" id="email" size="30" > EMAIL
     </td>
   </tr>
 </table>
@@ -52,4 +95,5 @@
   </code>
 </pre>
 
+<script src="{{ site.baseurl }}/assets/js/scriptmaker-formswitch.js" charset="utf-8"></script>
 <script src="{{ site.baseurl }}/assets/js/script-maker.js" charset="utf-8"></script>

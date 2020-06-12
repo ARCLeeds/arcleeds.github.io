@@ -3,7 +3,9 @@
 */
 "use strict";
 
-const mem = document.getElementById('input1');
+const arcType = document.getElementById('HPC-name').value;
+
+const mem = document.getElementById(arcType.concat('-memory') );
 const result = document.getElementById('job_mem');
 
 function inputHandler(e) {
@@ -13,6 +15,7 @@ function inputHandler(e) {
   result.innerHTML = memLine + e.target.value + 'G';
 }
 
+console.log(arcType)
 console.log(mem)
 console.log(result)
 
