@@ -13,24 +13,26 @@ noindex: true
   {% assign whatPage = site.categories.changelog %}
 {% endif %}
 
-<div class="row">
-      <article>
-        <header>
-          {% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
-          <h1>{{ page.title }}</h1>
-        </header>
-  
-        {% if page.teaser %}
-        <p class="teaser">
-          {{ page.teaser }}
-        </p>
-        {% endif %}
-  
-        {{ content }}
-      </article>
-
+<div class="page-row">
+    <div class="medium-12 columns">
+        <article>
+            <header>
+                {% if page.subheadline %}
+                <p class="subheadline">
+                {{ page.subheadline }}
+                </p>
+                {% endif %}
+                <h1>
+                    {{ page.title }}
+                </h1>
+            </header>
+            {% if page.teaser %}
+            <p class="teaser">{{ page.teaser }}</p>
+            {% endif %}
+            {{ content }}
+        </article>
+    </div>
 	<div class="medium-12 columns t30">
 		{% include _pagination.html content=whatPage %}
 	</div><!-- /.medium-7.columns -->
-
 </div><!-- /.row -->

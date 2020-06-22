@@ -1,83 +1,79 @@
 <!-- footer.html start -->
-    <div id="up-to-top" class="row">
-      <div class="small-12 columns" style="text-align: right;">
+<div id="up-to-top" class="row">
+    <div class="small-12 columns" style="text-align: right;">
         <a class="iconfont" href="#top-of-page">&#xf108;</a>
-      </div><!-- /.small-12.columns -->
-    </div><!-- /.footer-row -->
+    </div><!-- /.small-12.columns -->
+</div><!-- /.footer-row -->
 
-
-    <footer id="footer-content" class="bg-grau">
-<!-- light grey footer bar -->
-      <div id="footer">
+<footer id="footer-content" class="bg-grau">
+    <!-- light grey footer bar -->
+    <div id="footer">
         <div class="footer-row">
-          <!-- find us footer box -->
+        <!-- find us footer box -->
+        <!-- Contact us footer box -->
+            <div class="small-6 medium-4 columns">
+                <h5 class=" ">{{ site.data.footer.contact_us.title }}</h5>
+                <ul class="no-bullet">
+                    {% for type  in site.data.footer.contact_us.categories %}
+                    <li>
+                        <a href="{{ type.url }}" target="_blank">{{ type.name }}</a>
+                    </li>
+                    {% endfor %}
+            </div>
+            
+            <!-- Quick lines footer box -->
+            <div class="small-6 medium-4 columns">
+                {% for service_item in site.data.services %}
+                {% if forloop.first == true %}
+                    <h5 class=" ">{{ service_item.menu_name }}</h5>
+                {% endif %}
+                {% endfor %}
 
-          <!-- Contact us footer box -->
-          <div class="small-6 medium-4 columns">
-            <h5 class=" ">{{ site.data.footer.contact_us.title }}</h5>
-            <ul class="no-bullet">
-            {% for type  in site.data.footer.contact_us.categories %}
-                <li>
-                  <a href="{{ type.url }}" target="_blank">{{ type.name }}</a>
-                </li>
-            {% endfor %}
-          </div>
+                <ul class="no-bullet">
+                    {% for service_item in site.data.services %}
+                    {% if service_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% capture domain %}{{ site.url }}{{ site.baseurl }}{% endcapture %}{% endif %}
+                    <li {% if service_item.class %}class="{{ service_item.class }}" {% endif %}>
+                        <a href="{{ domain }}{{ service_item.url }}" {% if service_item.url contains 'http' %}target="_blank" {% endif %} title="{{ service_item.title }}">{{ service_item.name }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            
+            <div class="small-12 medium-4 columns">
+                {% for network_item in site.data.credit %}
+                {% if forloop.first == true %}
+                    <h5>{{ network_item.menu_name }}</h5>
+                {% endif %}
+                {% endfor %}
 
-          <!-- Quick lines footer box -->
-          <div class="small-6 medium-4 columns">
-            {% for service_item in site.data.services %}
-              {% if forloop.first == true %}
-                <h5 class=" ">{{ service_item.menu_name }}</h5>
-              {% endif %}
-            {% endfor %}
-
-              <ul class="no-bullet">
-              {% for service_item in site.data.services %}
-                {% if service_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% capture domain %}{{ site.url }}{{ site.baseurl }}{% endcapture %}{% endif %}
-                  <li {% if service_item.class %}class="{{ service_item.class }}" {% endif %}>
-                    <a href="{{ domain }}{{ service_item.url }}" {% if service_item.url contains 'http' %}target="_blank" {% endif %} title="{{ service_item.title }}">{{ service_item.name }}</a>
-                  </li>
-              {% endfor %}
-              </ul>
-          </div>
-
-
-          <div class="small-12 medium-4 columns">
-            {% for network_item in site.data.credit %}
-              {% if forloop.first == true %}
-                <h5>{{ network_item.menu_name }}</h5>
-              {% endif %}
-            {% endfor %}
-
-            <ul class="no-bullet">
-            {% for network_item in site.data.credit %}
-              {% if network_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% capture domain %}{{ site.url }}{{ site.baseurl }}{% endcapture %}{% endif %}
-                <li {% if network_item.class %}class="{{ network_item.class }}" {% endif %}>
-                  <a href="{{ domain }}{{ network_item.url }}" {% if network_item.url contains 'http' %}target="_blank" {% endif %} title="{{ network_item.title }}">{{ network_item.name }}</a>
-                </li>
-            {% endfor %}
-            </ul>
-          </div><!-- /.large-3.columns -->
+                <ul class="no-bullet">
+                {% for network_item in site.data.credit %}
+                {% if network_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% capture domain %}{{ site.url }}{{ site.baseurl }}{% endcapture %}{% endif %}
+                    <li {% if network_item.class %}class="{{ network_item.class }}" {% endif %}>
+                    <a href="{{ domain }}{{ network_item.url }}" {% if network_item.url contains 'http' %}target="_blank" {% endif %} title="{{ network_item.title }}">{{ network_item.name }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div><!-- /.large-3.columns -->
         </div><!-- /.row -->
 
-      </div><!-- /#footer -->
+    </div><!-- /#footer -->
 
-<!-- dark grey footer bar -->
-      <div id="subfooter">
+    <!-- dark grey footer bar -->
+    <div id="subfooter">
         <nav class="footer-row">
-          <section id="subfooter-left" class="small-12 medium-6 columns credits">
-            {{ site.credits }}
-          </section>
+            <section id="subfooter-left" class="small-12 medium-6 columns credits">
+                {{ site.credits }}
+            </section>
 
-          <section id="subfooter-right" class="small-12 medium-6 columns">
-            <ul class="inline-list social-icons">
-            {% for social_item in site.data.socialmedia %}
-              <li><a href="{{ social_item.url }}" target="_blank" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
-            {% endfor %}
-            </ul>
-          </section>
+            <section id="subfooter-right" class="small-12 medium-6 columns">
+                <ul class="inline-list social-icons">
+                    {% for social_item in site.data.socialmedia %}
+                    <li><a href="{{ social_item.url }}" target="_blank" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
+                    {% endfor %}
+                </ul>
+            </section>
         </nav>
-
-      </div><!-- /#subfooter -->
-    </footer>
+    </div><!-- /#subfooter -->
+</footer>
 <!-- end of footer.html doc -->

@@ -84,7 +84,7 @@ language: 'en'
 # Options › http://jch.penibelst.de
 compress_html:
   clippings: all
-  comments: ["<!-- ", " -->"]
+  comments:
   endings: all
   profile: false
   ignore:
