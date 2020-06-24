@@ -1,5 +1,11 @@
 <!-- html for the script maker page that talks to script-maker.js -->
+<script src="{{ site.baseurl }}/assets/js/script-maker.js" charset="utf-8"></script>
 
 <div id="ARCJobScriptOMatic"></div>
 
-<script src="{{ site.baseurl }}/assets/js/script-maker.js" charset="utf-8"></script>
+<script type="text/javascript">
+  // 
+  var arc_script_o_mat = new ARCJobScriptOMat(document.getElementById("ARCJobScriptOMatic"));
+
+  arc_script_o_mat.init();
+</script>

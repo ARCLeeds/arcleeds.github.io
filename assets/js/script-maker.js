@@ -2,6 +2,10 @@
 Author: Alex Coleman <a.coleman1@leeds.ac.uk>
 Date: 2020-06-24
 
+TODO:
+- [ ] create a global series of settings that can be switched based on
+machine select
+
 *****************************************************
     a job script generator based off 
     https://github.com/BYUHPC/BYUJobScriptGenerator
@@ -22,7 +26,7 @@ var ARCJobScriptOMat = function(div) {
     this.inputs.features = {};
     this.formrows = [];
     this.settings = {
-        machine = [ ["arc3", "ARC3"], ["arc4", "ARC4"]],
+        machine : [ ["arc4", "ARC4"], ["arc3", "ARC3"] ],
         defaults : {
         email_address : "myemail@leeds.ac.uk",
         }
@@ -168,6 +172,18 @@ ARCJobScriptOMat.prototype.newA = function(url, body) {
  * @param  {} doc
  */
 ARCJobScriptOMat.prototype.createForm = function(doc) {
+    
+    var system_choice = arc_sm_system_selector.options[arc_sm_system_selector.selectedIndex].value;
+
+    switch(system_choice) {
+        case "arc3" :
+            sysName = "ARC3";
+            break;
+        case "arc4" :
+            sysName = "ARC4";
+            break;
+    }
+    
     function br() {
         return document.createElement("br")
     };
@@ -184,7 +200,46 @@ ARCJobScriptOMat.prototype.createForm = function(doc) {
     form = document.createElement("form");
     var table = document.createElement("table");
     form.appendChild(table);
-    table.appendChild(newHeaderRow("Parameters"));
+    table.appendChild(newHeaderRow("Parameters for " + sysName + "Job script"));
 
     
 }
+
+/**
+ * Summary. intialise the script-o-matic 
+ * Description. Creates the form and blank job script
+ */
+ARCJobScriptOMat.prototype.init = function() {
+    this.inputDiv = document.createElement("div");
+    this.inputDiv.id = "arc_sm_input_container";
+    this.containerDiv.appendChild(this.inputDiv);
+
+    var scriptHeader = document.createElement("h1");
+    scriptHeader.id = "arc_sm_script_header_container";
+    scriptHeader.appendChild(document.createTextNode("Job Script"));
+    this.containerDiv.appendChild(scriptHeader);
+
+    this.systemSelectorDiv = document.createElement("div");
+    this.systemSelectorDiv.id = "arc_sm_system_selector_container";
+    this.system_selector = this.newSelect({ options : this.settings.machine });
+    this.system_selector.id = "arc_sm_system_selector";
+    this.containerDiv.appendChild(this.newSpan("arc_sm_system_selector_container", 
+                                                "Which system do you wish to use?", 
+                                                this.system_selector));
+    
+    this.form = this.createForm();
+    this.inputDiv.appendChild(this.form);
+
+    this.jobNotesDiv = document.createElement("div");
+    this.jobNotesDiv.id = "arc_sm_jobnotes"
+    this.containerDiv.appendChild(this.jobNotesDiv)
+
+    this.jobScriptDiv = document.createElement("div");
+    this.jobScriptDiv.id = "arc_sm_jobscript";
+    this.containerDiv.appendChild(this.jobScriptDiv);
+
+    this.updateJobScript();
+    
+};
+
+
