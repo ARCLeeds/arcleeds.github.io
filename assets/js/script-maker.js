@@ -209,9 +209,17 @@ ARCJobScriptOMat.prototype.createForm = function(doc) {
     var form = document.createElement("form");
     var table = document.createElement("table");
     form.appendChild(table);
-    table.appendChild(newHeaderRow("Parameters for " + sysName + "Job script"));
+    table.appendChild(newHeaderRow("Parameters for " + sysName + " Job script"));
 
     // specifying inputs
+    this.inputs.node_type = this.newSelect({options : [["Compute", "Compute"],
+                                                       ["GPU", "GPU"]] });
+
+    this.inputs.mem_per_core = this.newInput({value : "1", 
+                                              size : 6,
+                                              type : "number",
+                                              min : "1",
+                                              max : })
 
     this.inputs.wallhours = this.newInput({value : "00", 
                                            size : 3, 
@@ -229,6 +237,9 @@ ARCJobScriptOMat.prototype.createForm = function(doc) {
                                           min : "00",
                                           max : "59"});
     
+    table.appendChild(this.returnNewRow("arc_sm_row_node_type",
+                                        "What node type do you wish to use? ",
+                                        this.inputs.node_type));
     table.appendChild(this.returnNewRow("arc_sm_row_walltime", 
                                         "How long will your job run: ",
                                         this.newSpan(null, 
@@ -281,8 +292,25 @@ ARCJobScriptOMat.prototype.init = function() {
     
 };
 
+ARCJobScriptOMat.prototype.retrieveValues = function() {
 
-ARCJobScriptOMat.prototype.generateScript = function () {
+
+    // retrieve wallclock time values
+    // TODO: need some validation here of correct inputs
+    this.values.wallhours = this.inputs.wallhours.value;
+    this.values.wallmins = this.inputs.wallmins.value;
+    this.values.wallsec = this.inputs.wallsec.value;
+};
+
+
+ARCJobScriptOMat.prototype.updateJobScript = function() {
+    this.retrieveValues();
+    this.toJobScript();
+    return;
+}
+
+
+ARCJobScriptOMat.prototype.generateScript = function() {
 
     var features = "";
 
@@ -292,12 +320,21 @@ ARCJobScriptOMat.prototype.generateScript = function () {
         script_body += "#$ " + txt + "\n";
     };
 
-    script_body += "# use current environment and current working directory\n#$ -V -cwd";
+    script_body += "# use current environment and current working directory\n#$ -V -cwd\n\n";
 
-    script_body += "\n # specify wallclock time (minimum 15min, maximum 48 hours)\n";
-    hashdoll("-l hvmem=" + this.inputs.wallhours.value + 
-             ":" + this.inputs.wallmins.value + ":" +
-             this.inputs.wallsec.value + "\n");
+    script_body += "# specify wallclock time (minimum 15min, maximum 48 hours)\n";
+    hashdoll("-l hvmem=" + this.values.wallhours.value + 
+             ":" + this.values.wallmins.value + ":" +
+             this.values.wallsec.value + "\n");
 
     return script_body
+};
+
+/**
+ * Summary. function to inject job script content into div
+ */
+ARCJobScriptOMat.prototype.toJobScript = function() {
+    var script_body = this.generateScript()
+
+    this.jobScriptDiv.innerHTML = "<pre>" + script_body + "</pre>";
 };
