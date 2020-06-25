@@ -29,6 +29,15 @@ var ARCJobScriptOMat = function(div) {
         machine : [ ["arc4", "ARC4"], ["arc3", "ARC3"] ],
         defaults : {
         email_address : "myemail@leeds.ac.uk",
+        },
+        machine_settings : {
+            arc3 : {
+                max_node_mem : "128",
+
+            },
+            arc4 : {
+                max_node_mem : "192",
+            }
         }
     };
     return this;
@@ -209,7 +218,7 @@ ARCJobScriptOMat.prototype.createForm = function(doc) {
     var form = document.createElement("form");
     var table = document.createElement("table");
     form.appendChild(table);
-    table.appendChild(newHeaderRow("Parameters for " + sysName + " Job script"));
+    table.appendChild(newHeaderRow("Parameters for Job script"));
 
     // specifying inputs
     this.inputs.node_type = this.newSelect({options : [["Compute", "Compute"],
@@ -219,7 +228,7 @@ ARCJobScriptOMat.prototype.createForm = function(doc) {
                                               size : 6,
                                               type : "number",
                                               min : "1",
-                                              max : })
+                                              max : this.settings.machine_settings[system_choice].max_node_mem})
 
     this.inputs.wallhours = this.newInput({value : "00", 
                                            size : 3, 
@@ -236,10 +245,11 @@ ARCJobScriptOMat.prototype.createForm = function(doc) {
                                           type : "number",
                                           min : "00",
                                           max : "59"});
-    
+
     table.appendChild(this.returnNewRow("arc_sm_row_node_type",
                                         "What node type do you wish to use? ",
                                         this.inputs.node_type));
+
     table.appendChild(this.returnNewRow("arc_sm_row_walltime", 
                                         "How long will your job run: ",
                                         this.newSpan(null, 
@@ -249,6 +259,10 @@ ARCJobScriptOMat.prototype.createForm = function(doc) {
                                                     " mins ", 
                                                     this.inputs.wallsec, 
                                                     " secs ")));
+
+    table.appendChild(this.returnNewRow("arc_sm_row_mem_per_core",
+                                        "How much memory do you need per core? ",
+                                        this.inputs.mem_per_core));
 
     
     return form;
@@ -273,7 +287,7 @@ ARCJobScriptOMat.prototype.init = function() {
     this.systemSelectorDiv.id = "arc_sm_system_selector_container";
     this.system_selector = this.newSelect({ options : this.settings.machine });
     this.system_selector.id = "arc_sm_system_selector";
-    this.containerDiv.appendChild(this.newSpan("arc_sm_system_selector_container", 
+    this.inputDiv.appendChild(this.newSpan("arc_sm_system_selector_container", 
                                                 "Which system do you wish to use?", 
                                                 this.system_selector));
     
