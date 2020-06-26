@@ -33,10 +33,12 @@ var ARCJobScriptOMat = function(div) {
         machine_settings : {
             arc3 : {
                 max_node_mem : 128,
+                gpu_node_type : [["coproc_k80", "K80"], ["coproc_p100", "P100"]],
 
             },
             arc4 : {
                 max_node_mem : 192,
+                gpu_node_type : [["coproc_v100", "V100"]],
             }
         }
     };
@@ -215,6 +217,8 @@ ARCJobScriptOMat.prototype.createForm = function(doc) {
     this.inputs.node_type = this.newSelect({options : [["Compute", "Compute"],
                                                        ["GPU", "GPU"]] });
 
+    this.inputs.gpu_type = this.newSelect({options : this.settings.machine_settings[this.inputs.system_selector.value].gpu_node_type})
+
     this.inputs.mem_per_core = this.newInput({value : "1", 
                                               size : 6,
                                               type : "number",
@@ -247,6 +251,11 @@ ARCJobScriptOMat.prototype.createForm = function(doc) {
     table.appendChild(this.returnNewRow("arc_sm_row_node_type",
                                         "What node type do you wish to use? ",
                                         this.inputs.node_type));
+
+    table.appendChild(this.formrows["gpu_job"] = this.returnNewRow("arc_sm_gpu_node_type",
+                                        "Please specify the GPU type you wish to use?",
+                                        this.inputs.gpu_type));
+    this.formrows["gpu_job"].style.display = "none";                                       
 
     table.appendChild(this.returnNewRow("arc_sm_row_walltime", 
                                         "How long will your job run: ",
@@ -311,13 +320,24 @@ ARCJobScriptOMat.prototype.retrieveValues = function() {
 
     this.values.system_selector = this.inputs.system_selector.value;
     // retrieve wallclock time values
-
+    this.values.node_type = this.inputs.node_type.value;
     this.values.wallhours = this.inputs.wallhours.value;
     this.values.wallmins = this.inputs.wallmins.value;
     this.values.wallsec = this.inputs.wallsec.value;
     this.values.mem_per_core = this.inputs.mem_per_core.value;
     this.values.mem_units = this.inputs.mem_units.value;
-    
+
+    // gpu
+    // this switching options doesnt work yet
+    if(this.values.node_type == "GPU"){
+        this.formrows["gpu_job"].style.display = "table-row";
+        this.inputs.gpu_type.options = this.settings.machine_settings[this.values.system_selector].gpu_node_type
+        this.values.gpu_type = this.inputs.gpu_type.value;
+        this.values.gpu_type = this.inputs.gpu_count.value;
+    } else {
+        this.formrows["gpu_job"].style.display = "none";
+    }
+
     // internal validation
 
     if(this.values.mem_units == "M"){
@@ -365,7 +385,14 @@ ARCJobScriptOMat.prototype.generateScript = function() {
 
     script_body += "# use current environment and current working directory\n#$ -V -cwd\n\n";
 
+    // section for including GPU node line
+    if(this.inputs.node_type == "GPU"){
+        script_body += "# line to request using specific GPU resource\n"
+        hashdoll("-l " + this.values.gpu_type + "=" + this.values.gpu_count + "\n")
+    }
+
     script_body += "# specify wallclock time (minimum 15min, maximum 48 hours)\n";
+
     hashdoll("-l h_rt=" + this.values.wallhours + 
              ":" + this.values.wallmins + ":" +
              this.values.wallsec + "\n");
