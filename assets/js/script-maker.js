@@ -190,18 +190,6 @@ ARCJobScriptOMat.prototype.newA = function(url, body) {
  */
 ARCJobScriptOMat.prototype.createForm = function(doc) {
     
-    var system_choice = arc_sm_system_selector.options[arc_sm_system_selector.selectedIndex].value;
-
-    var sysName;
-    switch(system_choice) {
-        case "arc3" :
-            sysName = "ARC3";
-            break;
-        case "arc4" :
-            sysName = "ARC4";
-            break;
-    }
-    
     function br() {
         return document.createElement("br")
     };
@@ -228,7 +216,7 @@ ARCJobScriptOMat.prototype.createForm = function(doc) {
                                               size : 6,
                                               type : "number",
                                               min : "1",
-                                              max : this.settings.machine_settings[system_choice].max_node_mem})
+                                              max : "192"})
 
     this.inputs.wallhours = this.newInput({value : "00", 
                                            size : 3, 
@@ -246,6 +234,8 @@ ARCJobScriptOMat.prototype.createForm = function(doc) {
                                           min : "00",
                                           max : "59"});
 
+    this.inputs.mem_units = this.newSelect({options : [["G", "GB"], ["M", "MB"]]});                                        
+
     table.appendChild(this.returnNewRow("arc_sm_row_node_type",
                                         "What node type do you wish to use? ",
                                         this.inputs.node_type));
@@ -262,7 +252,8 @@ ARCJobScriptOMat.prototype.createForm = function(doc) {
 
     table.appendChild(this.returnNewRow("arc_sm_row_mem_per_core",
                                         "How much memory do you need per core? ",
-                                        this.inputs.mem_per_core));
+                                        this.newSpan(null, this.inputs.mem_per_core, this.inputs.mem_units)));
+
 
     
     return form;
@@ -309,17 +300,22 @@ ARCJobScriptOMat.prototype.init = function() {
 ARCJobScriptOMat.prototype.retrieveValues = function() {
 
 
+    this.values.system_choice = this.inputs.system_choice;
     // retrieve wallclock time values
     // TODO: need some validation here of correct inputs
-    this.values.wallhours = this.inputs.wallhours.value;
-    this.values.wallmins = this.inputs.wallmins.value;
-    this.values.wallsec = this.inputs.wallsec.value;
+    this.values.wallhours = this.inputs.wallhours;
+    this.values.wallmins = this.inputs.wallmins;
+    this.values.wallsec = this.inputs.wallsec;
+    this.values.mem_per_core = this.inputs.mem_per_core;
+    this.values.mem_units = this.inputs.mem_units;
+    
 };
 
 
 ARCJobScriptOMat.prototype.updateJobScript = function() {
     this.retrieveValues();
     this.toJobScript();
+
     return;
 }
 
@@ -337,9 +333,11 @@ ARCJobScriptOMat.prototype.generateScript = function() {
     script_body += "# use current environment and current working directory\n#$ -V -cwd\n\n";
 
     script_body += "# specify wallclock time (minimum 15min, maximum 48 hours)\n";
-    hashdoll("-l hvmem=" + this.values.wallhours.value + 
+    hashdoll("-l h_rt=" + this.values.wallhours.value + 
              ":" + this.values.wallmins.value + ":" +
              this.values.wallsec.value + "\n");
+
+    hashdoll("-l h_vmem=" + this.values.mem_per_core.value + this.values.mem_units.value)
 
     return script_body
 };
