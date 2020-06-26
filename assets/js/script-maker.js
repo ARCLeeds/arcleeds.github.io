@@ -208,6 +208,9 @@ ARCJobScriptOMat.prototype.createForm = function(doc) {
     form.appendChild(table);
     table.appendChild(newHeaderRow("Parameters for Job script"));
 
+    // selecting system
+    this.inputs.system_selector = this.newSelect({ options : this.settings.machine });
+
     // specifying inputs
     this.inputs.node_type = this.newSelect({options : [["Compute", "Compute"],
                                                        ["GPU", "GPU"]] });
@@ -235,6 +238,11 @@ ARCJobScriptOMat.prototype.createForm = function(doc) {
                                           max : "59"});
 
     this.inputs.mem_units = this.newSelect({options : [["G", "GB"], ["M", "MB"]]});                                        
+
+    // create input section of form
+    table.appendChild(this.returnNewRow("arc_sm_system_selector_container", 
+                                  "Which system do you wish to use?", 
+                                  this.inputs.system_selector));
 
     table.appendChild(this.returnNewRow("arc_sm_row_node_type",
                                         "What node type do you wish to use? ",
@@ -276,11 +284,6 @@ ARCJobScriptOMat.prototype.init = function() {
 
     this.systemSelectorDiv = document.createElement("div");
     this.systemSelectorDiv.id = "arc_sm_system_selector_container";
-    this.system_selector = this.newSelect({ options : this.settings.machine });
-    this.system_selector.id = "arc_sm_system_selector";
-    this.inputDiv.appendChild(this.newSpan("arc_sm_system_selector_container", 
-                                                "Which system do you wish to use?", 
-                                                this.system_selector));
     
     this.form = this.createForm();
     this.inputDiv.appendChild(this.form);
