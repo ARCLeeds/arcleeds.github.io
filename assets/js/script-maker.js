@@ -32,11 +32,11 @@ var ARCJobScriptOMat = function(div) {
         },
         machine_settings : {
             arc3 : {
-                max_node_mem : "128",
+                max_node_mem : 128,
 
             },
             arc4 : {
-                max_node_mem : "192",
+                max_node_mem : 192,
             }
         }
     };
@@ -289,8 +289,10 @@ ARCJobScriptOMat.prototype.init = function() {
     this.inputDiv.appendChild(this.form);
 
     this.jobNotesDiv = document.createElement("div");
-    this.jobNotesDiv.id = "arc_sm_jobnotes"
-    this.containerDiv.appendChild(this.jobNotesDiv)
+    this.jobNotesDiv.id = "arc_sm_jobnotes";
+    this.jobNotesDiv.className = "admonition warning"
+    this.jobNotesDiv.style.display = "none";
+    this.containerDiv.appendChild(this.jobNotesDiv);
 
     this.jobScriptDiv = document.createElement("div");
     this.jobScriptDiv.id = "arc_sm_jobscript";
@@ -302,16 +304,44 @@ ARCJobScriptOMat.prototype.init = function() {
 
 ARCJobScriptOMat.prototype.retrieveValues = function() {
 
+    var jobnotes = [];
+    jobnotes.push("<strong> Job specification warnings:\n</strong>");
 
-    this.values.system_choice = this.inputs.system_choice;
+    var standard_mem_per_core = [];
+
+    this.values.system_selector = this.inputs.system_selector.value;
     // retrieve wallclock time values
-    // TODO: need some validation here of correct inputs
-    this.values.wallhours = this.inputs.wallhours;
-    this.values.wallmins = this.inputs.wallmins;
-    this.values.wallsec = this.inputs.wallsec;
-    this.values.mem_per_core = this.inputs.mem_per_core;
-    this.values.mem_units = this.inputs.mem_units;
+
+    this.values.wallhours = this.inputs.wallhours.value;
+    this.values.wallmins = this.inputs.wallmins.value;
+    this.values.wallsec = this.inputs.wallsec.value;
+    this.values.mem_per_core = this.inputs.mem_per_core.value;
+    this.values.mem_units = this.inputs.mem_units.value;
     
+    // internal validation
+
+    if(this.values.mem_units == "M"){
+        standard_mem_per_core = this.values.mem_per_core / 1000;
+    } else {
+        standard_mem_per_core = this.values.mem_per_core;
+    }
+
+    // validation using settings for memory limits on machines
+    if(standard_mem_per_core > this.settings.machine_settings[this.values.system_selector].max_node_mem){
+       jobnotes.push("This is too much memory per core on " + 
+                      this.values.system_selector.toUpperCase() + 
+                      ". The maximum available is " +
+                      this.settings.machine_settings[this.values.system_selector].max_node_mem +
+                       "GB.")
+    }
+
+    this.jobNotesDiv.innerHTML = jobnotes.join("<br/>\n")
+
+    if(jobnotes.length > 1){
+        this.jobNotesDiv.style.display = "inherit";
+    } else {
+        this.jobNotesDiv.style.display = "none";
+    }
 };
 
 
@@ -336,11 +366,11 @@ ARCJobScriptOMat.prototype.generateScript = function() {
     script_body += "# use current environment and current working directory\n#$ -V -cwd\n\n";
 
     script_body += "# specify wallclock time (minimum 15min, maximum 48 hours)\n";
-    hashdoll("-l h_rt=" + this.values.wallhours.value + 
-             ":" + this.values.wallmins.value + ":" +
-             this.values.wallsec.value + "\n");
+    hashdoll("-l h_rt=" + this.values.wallhours + 
+             ":" + this.values.wallmins + ":" +
+             this.values.wallsec + "\n");
 
-    hashdoll("-l h_vmem=" + this.values.mem_per_core.value + this.values.mem_units.value)
+    hashdoll("-l h_vmem=" + this.values.mem_per_core + this.values.mem_units)
 
     return script_body
 };
@@ -353,3 +383,8 @@ ARCJobScriptOMat.prototype.toJobScript = function() {
 
     this.jobScriptDiv.innerHTML = "<pre>" + script_body + "</pre>";
 };
+
+function stackTrace() {
+    var err = new Error()
+    return err.stack()
+}

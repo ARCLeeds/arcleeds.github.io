@@ -19,3 +19,13 @@
 #arc_sm_row_mem_per_core_right select {
 	width: 15%;
 }
+
+.admonition {
+	padding: 0 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	text-align: left;
+	background-color: #e74c3c;
+	color: white;
+  };
