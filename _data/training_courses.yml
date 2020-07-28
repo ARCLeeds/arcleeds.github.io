@@ -133,7 +133,7 @@ widget:
       duration: Four half-day sessions
       frequency: This course usually runs once each academic year.
       suitability: This course of four half-day workshops is suitable for all research staff and students.
-      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9UHl0aG9uJTIwUHJvZ3JhbW1pbmcmZ2Rfc3R5cGU9JmdkX3R1dG9yPUxhc3QlMjBuYW1lJmRhdGUxPTAxJTJmMTAlMmYyMDE4JmRhdGUyPTAyJTJmMTIlMmYyMDE4JmRhdGUxPTAxLjEwLjIwMTgmZGF0ZTI9MDIuMTIuMjAxOCZwcm92aWRlcmxpc3Q9MCZhbmRvcj1BTkQmc29ydD1CRUdEQSZnZF9jYWxsaWQ9SU5JVElBTCZzdHlsZT0%3d"
+      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9c3dkMWEmZ2Rfc3R5cGU9JmdkX3R1dG9yPUxhc3QlMjBuYW1lJmRhdGUxPWRkJTJmbW0lMmZ5eXl5JmRhdGUyPWRkJTJmbW0lMmZ5eXl5JmRhdGUxPTAwLjAwLjAwMDAmZGF0ZTI9MDAuMDAuMDAwMCZwcm92aWRlcmxpc3Q9MCZhbmRvcj1PUiZzb3J0PUJFR0RBJmdkX2NhbGxpZD1JTklUSUFMJnN0eWxlPQ%3d%3d"
 
   - title: 'SWD1b: <br> Introduction to <br> R programming'
     url: /training/courses/swd1b/
@@ -173,7 +173,7 @@ widget:
       duration: Four half-day sessions
       frequency: This course usually runs once each academic year.
       suitability: This course of four half-day workshops is suitable for all research staff and students.
-      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9UiUyMHByb2dyYW1taW5nJmdkX3N0eXBlPSZnZF90dXRvcj1MYXN0JTIwbmFtZSZkYXRlMT0wNCUyZjExJTJmMjAxOCZkYXRlMj0yMCUyZjEyJTJmMjAxOCZkYXRlMT0wNC4xMS4yMDE4JmRhdGUyPTIwLjEyLjIwMTgmcHJvdmlkZXJsaXN0PTAmYW5kb3I9QU5EJnNvcnQ9QkVHREEmZ2RfY2FsbGlkPUlOSVRJQUwmc3R5bGU9"
+      booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9c3dkMWImZ2Rfc3R5cGU9JmdkX3R1dG9yPUxhc3QlMjBuYW1lJmRhdGUxPWRkJTJmbW0lMmZ5eXl5JmRhdGUyPWRkJTJmbW0lMmZ5eXl5JmRhdGUxPTAwLjAwLjAwMDAmZGF0ZTI9MDAuMDAuMDAwMCZwcm92aWRlcmxpc3Q9MCZhbmRvcj1PUiZzb3J0PUJFR0RBJmdkX2NhbGxpZD1JTklUSUFMJnN0eWxlPQ%3d%3d"
 
   - title: 'SWD2: <br> Version Control with Git and GitHub'
     url: /training/courses/swd2/
