@@ -1,4 +1,4 @@
-![University of Leeds Logo](https://github.com/ARCLeeds/arcleeds.github.io/raw/master/assets/img/lighterblueText_wLogo1%20-%20Copy.png)
+![University of Leeds Logo](https://github.com/ARCLeeds/arcleeds.github.io/raw/master/assets/img/lighterblueText_wLogo_m2.1.png)
 # [University of Leeds][1] Research Computing Website
 
 This is the official repository of the Research Computing Team website from
