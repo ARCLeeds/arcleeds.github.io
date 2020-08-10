@@ -27,6 +27,42 @@ Please check out our [contributing guidelines](https://github.com/ARCLeeds/arcle
 As contributors and maintainers to this project, you are expected to abide by
 our code of conduct which can be found within our [contributing guidelines](https://github.com/ARCLeeds/arcleeds.github.io/blob/master/CONTRIBUTING.md).
 
+## Local Development Environment
+
+We use an Anaconda environment (we recommend miniconda if you don't have Anaconda installed already).
+We currently support Linux/Unix (Windows might be possible outside Anaconda, but untested).
+Please use the supplied environment.yml, which will provide a standised environment.
+
+To create locally:
+
+```{bash}
+$ git clone https://github.com/ARCLeeds/arcleeds.github.io.git
+
+$ git checkout  -b [YOURBRANCHNAME # all work should be on this branch
+
+$ conda env create -f environment.yml
+```
+
+
+To build and test locally:
+
+```{bash}
+$ jekyll serve --incremental --watch  
+```
+If you leave jekyll running these flags allow you to make changes, save and jekyll will rebuild your changes automatically.
+The generated HTML is located under the `_site subfolder` for viewing/testing.
+
+To commit your changes do a merge request:
+
+```{bash}
+$ git clone https://github.com/ARCLeeds/arcleeds.github.io.git
+
+$ git checkout  -b [YOURBRANCHNAME # all work should be on this branch
+
+$ conda env create -f environment.yml
+```
+
+
 ## Contact us
 
 You can get in touch with the Research Computing Team via our [help form](https://bit.ly/arc-help).
