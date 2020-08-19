@@ -1,0 +1,6 @@
+name: arcleeds-ghp
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - rb-github-pages

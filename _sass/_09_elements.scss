@@ -203,6 +203,10 @@ img.lazy {
   transition: opacity .2s ease-out;
 }
 
+.tw-lighter {
+  opacity: 0.70;
+}
+
 .training-widget:hover {
   opacity: 1;
   color: white;
