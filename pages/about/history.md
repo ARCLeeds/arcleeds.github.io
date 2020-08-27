@@ -7,7 +7,7 @@ breadcrumb: true
 #### HPC in Leeds has operated for over 15 years providing researchers direct access to high compute capacity for their research. You can read more about the journey of Research Computing, in particular HPC below.
 <br>
 
-In 2005, we had  about 50 conncurrent users consuming 15 core years a month – which has now grown to around 700 active users consuming 1,000 core years a month. In that time we have helped well over 2000 researchers from every faculty of our University and beyond who, between them, have used over 80 thousand core years of computer time. At our peak, we were using around 0.5 MW of electricity for the IT and cooling.
+In 2005, we had about 50 conncurrent users consuming 15 core years a month – which has now grown to around 700 active users consuming 1,000 core years a month. In that time we have helped well over 2000 researchers from every faculty of our University and beyond who, between them, have used over 80 thousand core years of computer time. At our peak, we were using around 0.5 MW of electricity for the IT and cooling.
 
 <div markdown="1" style="text-align:center;">
 ![Histogram plot showing growth of available core hours over time]({{ site.url }}/images/history/core_hours_by_machine_201908.png)  
@@ -17,7 +17,7 @@ In 2005, we had  about 50 conncurrent users consuming 15 core years a month – 
 *Number of active (i.e. job submitting) users by month and year*
 </div>
 
-Highlight of researchers' work we have supported includes modelling industrial bread ovens; optimising airflow in hospital wards to reduce infection, models of how Leeds' layout affects the behaviour of burglars, atmospheric science of the prehistoric era, searches for genes that increase the risk of cancer, interstellar gas clouds; the materials science, the machine aided translation of languages.
+Some highlight of researchers' work that we have supported includes modelling industrial bread ovens; optimising airflow in hospital wards to reduce infection, models of how Leeds' layout affects the behaviour of burglars, atmospheric science of the prehistoric era, searches for genes that increase the risk of cancer, interstellar gas clouds; the materials science, the machine aided translation of languages.
 
 Procuring, installing and running ~20 tonnes of HPC equipment plus ~20 tonnes of cooling equipment is a big undertaking involving a lot of people as well as the Research Computing team, the IT Datacentre, User Admin, Network and Finance teams; our colleagues in the Estates and Purchasing departments; the IT and specialist hardware vendors; the integrators specialising in racking, wiring and HPC technologies; the electrical and mechanical engineering companies; the hardware break/fix engineers.
 
