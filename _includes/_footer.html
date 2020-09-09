@@ -16,7 +16,7 @@
                 <ul class="no-bullet">
                     {% for type  in site.data.footer.contact_us.categories %}
                     <li>
-                        <a href="{{ type.url }}" target="_blank">{{ type.name }}</a>
+                        <a href="{{ type.url }}">{{ type.name }}</a>
                     </li>
                     {% endfor %}
             </div>
@@ -33,7 +33,7 @@
                     {% for service_item in site.data.services %}
                     {% if service_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% capture domain %}{{ site.url }}{{ site.baseurl }}{% endcapture %}{% endif %}
                     <li {% if service_item.class %}class="{{ service_item.class }}" {% endif %}>
-                        <a href="{{ domain }}{{ service_item.url }}" {% if service_item.url contains 'http' %}target="_blank" {% endif %} title="{{ service_item.title }}">{{ service_item.name }}</a>
+                        <a href="{{ domain }}{{ service_item.url }}" title="{{ service_item.title }}">{{ service_item.name }}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -50,7 +50,7 @@
                 {% for network_item in site.data.credit %}
                 {% if network_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% capture domain %}{{ site.url }}{{ site.baseurl }}{% endcapture %}{% endif %}
                     <li {% if network_item.class %}class="{{ network_item.class }}" {% endif %}>
-                    <a href="{{ domain }}{{ network_item.url }}" {% if network_item.url contains 'http' %}target="_blank" {% endif %} title="{{ network_item.title }}">{{ network_item.name }}</a>
+                    <a href="{{ domain }}{{ network_item.url }}" title="{{ network_item.title }}">{{ network_item.name }}</a>
                     </li>
                 {% endfor %}
                 </ul>
@@ -69,7 +69,7 @@
             <section id="subfooter-right" class="small-12 medium-6 columns">
                 <ul class="inline-list social-icons">
                     {% for social_item in site.data.socialmedia %}
-                    <li><a href="{{ social_item.url }}" target="_blank" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
+                    <li><a href="{{ social_item.url }}" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
                     {% endfor %}
                 </ul>
             </section>
