@@ -28,10 +28,8 @@
   - title: The Team
     url: /about/team/
   - title: Case studies
-    url: /about/casestudiesprojects/
-  - title: Changelog
-    url: /about/changelog/
-
+    url: /about/casestudies/
+    
 - title: Help
   url: /help/
   side: left

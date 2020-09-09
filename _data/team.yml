@@ -30,7 +30,14 @@ main:
     img: team/martincallaghan.jpeg
   - name: Phil Chambers
     role: Data Analyst
-    bio:
+    bio: "
+      Phil is a Data Analyst at the University of Leeds, working within the Data Analytics Team at 
+      Leeds Institute for Data Analytics (LIDA). Following work in the NHS, he was a post-doctoral 
+      researcher in cancer genomics and the genomics of autoimmune diseases. He has used his skills 
+      with Python, R and SQL to extract and transform data from diverse sources and analyse data 
+      with various statistical tools. He is keen to use his skills and research experience to promote 
+      reproducible research across the university. 
+    "
     img:
   - name: Ollie Clark
     role: Research Software Engineer

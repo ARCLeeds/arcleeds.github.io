@@ -101,7 +101,7 @@ main:
         text: Meet the Research Computing Team.
         style: '#56B4E9' # light blue
       - title: 'Case studies'
-        url: /about/casestudiesprojects/
+        url: /about/casestudies/
         image: work-img.jpg
         text: Find out more about case studies of RSE work.
         style: '#0072B2' # dark blu

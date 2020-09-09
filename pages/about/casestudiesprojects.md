@@ -1,6 +1,6 @@
 ---
 title: "Research Computing Case Studies"
-permalink: "/about/casestudiesprojects/"
+permalink: "/about/casestudies/"
 layout: blog
 breadcrumb: true
 ---
