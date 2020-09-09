@@ -11,6 +11,7 @@ author: Alex Coleman
 image:
   thumb: casestudies/policedemand/police-unsplash.jpg
 breadcrumb: true
+permalink: "/about/casestudies/:title"
 ---
 
 The Research Computing team provides bespoke consulting services for research projects at the University of Leeds. This brings computational expertise to a wide range of research problems and helps ensure we remain a cutting-edge research driven institution. Read below a case study of one project commissioned by researchers at the University that was developed and delivered by one of our research software engineers.
