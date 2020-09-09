@@ -61,7 +61,7 @@ $ git checkout -b [YOURBRANCHNAME] # all work should be on this branch
 
 $ gem install bundler #installs the bundler gem that will manage our dependancies
 
-$ bundler install
+$ bundler install #will by default install the gems defined in Gemfile and their dependencies
 ```
 
 ### To build and test locally
