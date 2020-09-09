@@ -34,7 +34,7 @@
   url: /help/
   side: left
   dropdown:
-  - title: Contact
+  - title: Contact (Login required)
     url: https://leeds.service-now.com/it?id=sc_cat_item&sys_id=7587b2530f675f00a82247ece1050eda
   - title: Documentation
     url: https://arc.leeds.ac.uk/
@@ -61,9 +61,9 @@
 - title: Self Service
   side: right
   dropdown:
-  - title: Log a Ticket
+  - title: Log a Ticket (Login required)
     url: https://leeds.service-now.com/it?id=sc_cat_item&sys_id=7587b2530f675f00a82247ece1050eda
     side: right
-  - title: Request an Account
+  - title: Request an Account (Login required)
     url: https://leeds.service-now.com/it?id=sc_cat_item&sys_id=4c002dd70f235f00a82247ece1050ebc
     side: right
