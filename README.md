@@ -38,7 +38,7 @@ To create locally:
 ```{bash}
 $ git clone https://github.com/ARCLeeds/arcleeds.github.io.git
 
-$ git checkout  -b [YOURBRANCHNAME # all work should be on this branch
+$ git checkout -b [YOURBRANCHNAME] # all work should be on this branch
 
 $ conda env create -f environment.yml
 ```
@@ -52,15 +52,9 @@ $ jekyll serve --incremental --watch
 If you leave jekyll running these flags allow you to make changes, save and jekyll will rebuild your changes automatically.
 The generated HTML is located under the `_site subfolder` for viewing/testing.
 
-To commit your changes do a merge request:
+To commit your changes do a [pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
+If you are working against an issue, remember to [link your pull request](https://docs.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue)
 
-```{bash}
-$ git clone https://github.com/ARCLeeds/arcleeds.github.io.git
-
-$ git checkout  -b [YOURBRANCHNAME # all work should be on this branch
-
-$ conda env create -f environment.yml
-```
 
 
 ## Contact us
