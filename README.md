@@ -47,11 +47,12 @@ $ conda env create -f environment.yml
 
 ### Ruby
 
-To create locally:
-
 Using the Ruby environment (recommended for Windows).
 Download the recommended ruby + devkit installer from [rubyinstaller.org/downloads/](https://rubyinstaller.org/downloads/) and install.
 Please use the supplied Gemfile, which will provide a standised environment.
+
+To create locally:
+
 
 ```{bash}
 $ git clone https://github.com/ARCLeeds/arcleeds.github.io.git
