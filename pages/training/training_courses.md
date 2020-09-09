@@ -5,7 +5,7 @@ breadcrumb: true
 ---
 
 ### Browse our available training courses below and click to find out more including how to book a place.
-
+#### The two main categories of training we offer are in High Performance Computing (HPC) and software development (SWD).
 ## Beginner Level Courses
 {% comment %}
    The below sections automatically populates tiles on the page based on
