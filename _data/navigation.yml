@@ -20,18 +20,17 @@
     url: /training/courses/
 
 - title: About
-  side: left
   url: /about/
+  side: left
   dropdown:
-  - title: Case studies
-    url: /about/casestudiesprojects/
-  - title: Changelog
-    url: /about/changelog/
   - title: History
     url: /about/history/
   - title: The Team
     url: /about/team/
-
+  - title: Case studies
+    url: /about/casestudiesprojects/
+  - title: Changelog
+    url: /about/changelog/
 
 - title: Help
   url: /help/
