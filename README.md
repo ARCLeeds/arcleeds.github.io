@@ -74,7 +74,7 @@ The generated HTML is located under the `_site subfolder` for viewing/testing.
 
 ### Merging your changes
 
-To merging your changes do a [pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+To merge your changes do a [pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 If you are working against an issue, remember to [link your pull request](https://docs.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue).
 
