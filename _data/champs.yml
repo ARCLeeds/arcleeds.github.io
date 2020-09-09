@@ -1,9 +1,35 @@
+###### data file for community champions #######
+# template:
+#  - name: Example champion
+#    bio: "
+#    Example is a final year PhD student in Engineering who is familiar with using Python
+#    and comsol.
+#    "
+#    img:
+#    email: test@leeds.ac.uk
+######
+
 main:
-  - name: Example champion
+  - name: Daniel Valdenegro
     bio: "
-    Example is a final year PhD student in Engineering who is familiar with using Python
-    and comsol.
+    Daniel Valdenegro is a PhD student in Computational Social Science at the University of Leeds and former Data Analyst 
+    and Junior Researcher at the Social Psychology Lab of the Pontifical Catholic University of Chile. He is passionate 
+    about data analysis and quantitative social research methodology, with experience working with R, Python and JavaScript.
+     His research interests are in the use of ‘big data’ from digital sources -such as social media, IoT or just general 
+     digital footprint- to model human behaviour. His current PhD project attempts to use the public digital footprint on 
+     social media of populations that are undergoing periods of social unrest, to extract their general emotional pattern, 
+     all this to build a predictive model of activism based on theses parameters.
     "
     img:
-    email: test@leeds.ac.uk
+    email: ptdhv@leeds.ac.uk
+  - name: Ben Hanson
+    bio: "
+      Ben is a computational biophysicist working in the School of Physics and Astronomy. 
+      He's currently researching the multiscale formation and mechanical properties of globular protein hydrogels, 
+      but is interested overall in how general physical models translate across the biological mesoscale. Part of
+      his interest in the role of research software champion is in communicating to the scientific research 
+      populace the overlap and differences between mathematics, computation and experimental science.
+    "
+    img: champs/benHProfile.png
+    email: B.S.Hanson@leeds.ac.uk
 
