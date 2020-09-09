@@ -29,8 +29,10 @@ our code of conduct which can be found within our [contributing guidelines](http
 
 ## Local Development Environment
 
-We use an Anaconda environment (we recommend miniconda if you don't have Anaconda installed already).
-We currently support Linux/Unix (Windows might be possible outside Anaconda, but untested).
+### Anaconda
+
+Using Anaconda environment (recommended for Linux/Unix).
+We recommend miniconda if you don't have Anaconda installed already.
 Please use the supplied environment.yml, which will provide a standised environment.
 
 To create locally:
@@ -38,13 +40,31 @@ To create locally:
 ```{bash}
 $ git clone https://github.com/ARCLeeds/arcleeds.github.io.git
 
-$ git checkout  -b [YOURBRANCHNAME # all work should be on this branch
+$ git checkout -b [YOURBRANCHNAME] # all work should be on this branch
 
 $ conda env create -f environment.yml
 ```
 
+### Ruby
 
-To build and test locally:
+Using the Ruby environment (recommended for Windows).
+Download the recommended ruby + devkit installer from [rubyinstaller.org/downloads/](https://rubyinstaller.org/downloads/) and install.
+Please use the supplied Gemfile, which will provide a standised environment.
+
+To create locally:
+
+
+```{bash}
+$ git clone https://github.com/ARCLeeds/arcleeds.github.io.git
+
+$ git checkout -b [YOURBRANCHNAME] # all work should be on this branch
+
+$ gem install bundler #installs the bundler gem that will manage our dependancies
+
+$ bundler install
+```
+
+### To build and test locally
 
 ```{bash}
 $ jekyll serve --incremental --watch  
@@ -52,15 +72,12 @@ $ jekyll serve --incremental --watch
 If you leave jekyll running these flags allow you to make changes, save and jekyll will rebuild your changes automatically.
 The generated HTML is located under the `_site subfolder` for viewing/testing.
 
-To commit your changes do a merge request:
+### Merging your changes
 
-```{bash}
-$ git clone https://github.com/ARCLeeds/arcleeds.github.io.git
+To merge your changes do a [pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-$ git checkout  -b [YOURBRANCHNAME # all work should be on this branch
+If you are working against an issue, remember to [link your pull request](https://docs.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue).
 
-$ conda env create -f environment.yml
-```
 
 
 ## Contact us

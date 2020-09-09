@@ -20,8 +20,8 @@
     url: /training/courses/
 
 - title: About
-  side: left
   url: /about/
+  side: left
   dropdown:
   - title: History
     url: /about/history/
@@ -29,7 +29,7 @@
     url: /about/team/
   - title: Case studies
     url: /about/casestudies/
-    
+
 - title: Help
   url: /help/
   side: left
