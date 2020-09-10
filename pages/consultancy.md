@@ -25,7 +25,7 @@ To get started you can submit details of your intended project via the contact f
 <div class="event-space">
     <div class="event-tile" style="background-color:#56B4E9">
         <a class="event-tile-a" href="https://leeds.service-now.com/it?id=sc_cat_item&sys_id=7587b2530f675f00a82247ece1050eda">
-            <strong>Contact Form</strong>
+            <strong>Contact Form (login required)</strong>
         </a>
     </div>
 </div>
