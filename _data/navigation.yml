@@ -67,3 +67,5 @@
   - title: Request an Account (Login required)
     url: https://leeds.service-now.com/it?id=sc_cat_item&sys_id=4c002dd70f235f00a82247ece1050ebc
     side: right
+  - title: Request Software on HPC (Login required)
+    url: https://leeds.service-now.com/it?id=sc_cat_item&sys_id=48d5a6d70f275f00a82247ece1050ea0
