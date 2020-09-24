@@ -16,7 +16,7 @@ __We deliver maintainable, reliant and scalable solutions__ that can be designed
 
 ### Case studies
 
-You can read through some examples of consulting work the Research Computing Team have been part of at our [Case studies blog]({{ site.baseurl }}/about/casestudiesprojects/).
+You can read through some examples of consulting work the Research Computing Team have been part of at our [Case studies blog]({{ site.baseurl }}/about/casestudies/).
 
 ### How to request
 
