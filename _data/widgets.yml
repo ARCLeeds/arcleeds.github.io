@@ -51,7 +51,7 @@ main:
     alt-text: "widget descriptor"
     subpages:
       - title: 'Documentation'
-        url: https://arc.leeds.ac.uk/
+        url: https://arcdocs.leeds.ac.uk/
         image: documentation-img.jpg
         text: Find documentation for our Research Platforms.
         style: '#0c7243' # dark green
