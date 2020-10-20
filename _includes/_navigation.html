@@ -15,7 +15,7 @@
 </div>
 
 <div id="navigation" class="sticky">
-  <nav class="top-bar" role="navigation" data-topbar>
+  <nav class="top-bar" data-topbar>
     <ul class="title-area">
       <li class="name">
       <a href="{{ site.url }}{{ site.baseurl }}" class="show-for-small-only"> 
@@ -43,7 +43,7 @@
 
       <ul class="right">		  
                       <li class="divider"></li>
-              <li><script language="Javascript" type="text/javascript">
+              <li><script>
 	function google_search() {
 		var query = document.getElementById("google-search").value;
 		window.open("https://www.google.com/search?q=" + query + "+site:" + "{{ google_search_site | cgi_escape }}");
@@ -163,6 +163,6 @@
         {% endfor %}
         {% comment %}   Second loop finished   {% endcomment %}
       </ul>
-  </nav>
     </section>
+  </nav>
 </div><!-- /#navigation -->
