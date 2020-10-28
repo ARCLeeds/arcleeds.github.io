@@ -20,7 +20,7 @@ main:
      social media of populations that are undergoing periods of social unrest, to extract their general emotional pattern, 
      all this to build a predictive model of activism based on theses parameters.
     "
-    img: champs/danVProfile.png
+    img: champs/danVProfile.jpg
     email: ptdhv@leeds.ac.uk
   - name: Ben Hanson
     bio: "
@@ -30,6 +30,6 @@ main:
       his interest in the role of research software champion is in communicating to the scientific research 
       populace the overlap and differences between mathematics, computation and experimental science.
     "
-    img: champs/benHProfile.png
+    img: champs/benHProfile.jpg
     email: B.S.Hanson@leeds.ac.uk
 
