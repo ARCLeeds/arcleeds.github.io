@@ -8,13 +8,13 @@ teaser: "
 "
 author: Martin Callaghan
 image:
-  thumb: blog/deeplearningforgames/scII.png
+  thumb: blog/deeplearningforgames/scII.jpg
   caption: Test captions
 ---
 
 Hey, I'm [Ryan Cross](https://github.com/CrossR) and for my Computer Science MEng Project, I undertook a project in applying Deep Reinforcement Learning to the video game StarCraft II, to replicate some of the [work](https://arxiv.org/abs/1708.04782) that DeepMind had done at the time.
 
-![StarCraft II screenshot](/images/blog/deeplearningforgames/scII.png)
+![StarCraft II screenshot](/images/blog/deeplearningforgames/scII.jpg)
 
 As part of this project, I needed to train a reinforcement learning model for thousands of games. Quickly, it became apparent that it was entirely infeasible to train my models on my computer, despite it being a fairly powerful gaming machine. I was only able to run 2 copies of the game at once, and this was nowhere near enough when for some of my tests 50,000+ runs were needed. Worse still, due to the setup of my model the smaller the number of instances I ran at once, the slower my code would converge.
 
@@ -29,6 +29,6 @@ Better for me, and better for reproducibility!
 Once I'd got that all setup, running my experiments was easy. I'd fire off a test in the morning, leave it running for 8 hours playing 32 games at once and check my results when I got in. I managed to get all the results I needed very quickly, which would just have been infeasible without ARC3 and the GPUs it has. Getting results for tests was taking 30 minutes instead of multiple hours, meaning I could make changes and write up results much
 quicker.
 
-![AI overview of StarCraft II game](/images/blog/deeplearningforgames/pysc2.png)
+![AI overview of StarCraft II game](/images/blog/deeplearningforgames/pysc2.jpg)
 
 Later, I started to transition my code over to help out on a PhD project, utilising transfer learning to improve my results. At this point, I had models that were bigger than most PCs RAM, and yet ARC3 was training them happily. With how ubiquitous machine learning is becoming, its great to have University resources which are both easy to use, and extremely powerful.
