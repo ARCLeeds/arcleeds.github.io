@@ -13,7 +13,7 @@ See below for a range of videos covering useful topics for accessing and using H
 <div class="t60">
     {% for vid in site.data.bitesize-videos.main.working-remotely %}
         <div class="medium-4 columns">
-            <iframe src="{{ vid.src }}" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" allowfullscreen="allowfullscreen" style="display:block;">
+            <iframe src="{{ vid.src }}" height="300" allowfullscreen="allowfullscreen" style="display:block;border:0;margin:0;overflow:auto;width:100%">
             </iframe>
             <p> 
                 {{ vid.description }}
@@ -29,7 +29,7 @@ See below for videos on how to set up useful research computing tools on your lo
 <div class="t60">
     {% for vid in site.data.bitesize-videos.main.remote-working-resources %}
         <div class="medium-4 columns">
-            <iframe src="{{ vid.src }}" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" allowfullscreen="allowfullscreen" style="display:block;">
+            <iframe src="{{ vid.src }}" height="300" allowfullscreen="allowfullscreen" style="display:block;border:0;margin:0;overflow:auto;width:100%">
             </iframe>
             <p> 
                 {{ vid.description }}
