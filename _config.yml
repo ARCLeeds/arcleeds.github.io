@@ -268,3 +268,6 @@ asciidoctor:
     source-highlighter: coderay
     coderay-css: style
     icons: font
+
+# show future blog posts
+future: true
