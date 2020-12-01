@@ -35,7 +35,7 @@ Biological macromolecules are extremely complex and without HPC the equations th
 
 The biological mesoscale is the missing gap in our understanding of how information at the molecular level gives rise to function at the cellular. Therefore, better models at this scale would provide deeper fundamental understanding, help us get more from our experimental data and ultimately will help us to treat disease.
 
-## In your person opinion what's the coolest thing about your research?
+## In your personal opinion what's the coolest thing about your research?
 
 Watching the molecules dance together... But also we have a good understanding of the physics of stars and planets, and subatomic particle physics, but don't know anything about the mechanics of how these motors in our cells work.
 
