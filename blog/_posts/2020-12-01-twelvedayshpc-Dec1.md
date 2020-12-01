@@ -8,7 +8,7 @@ teaser: "
 "
 author: Molly Gravett
 image:
-  thumb: images/blog/12dayshpc-2020/graphic12daysSmall.png
+  thumb: blog/12dayshpc-2020/graphic12daysSmall.png
 
 breadcrumb: true
 ---

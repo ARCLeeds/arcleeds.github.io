@@ -58,7 +58,7 @@
 	<meta property="og:locale" content="{% if site.og_locale == nil %}en_EN{% else %}{{ site.og_locale }}{% endif %}">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="{{ site.title }}">
-	{% if page.image.thumb %}<meta property="og:image" content="{{ url }}/{{ page.image.thumb }}">
+	{% if page.image.thumb %}<meta property="og:image" content="{{ url }}/images/{{ page.image.thumb }}">
 	{% else %} <meta property="og:image" content="{{ url }}/images/HPC3small.jpg">
 	{% endif %}
 	{% if site.socialmedia.facebook %}<meta property="article:author" content="https://www.facebook.com/{{ site.socialmedia.facebook }}">{% endif %}
@@ -71,7 +71,7 @@
 	<meta name="twitter:creator" content="{{ site.socialmedia.twitter }}">
 	<meta name="twitter:title" content="{{ title }}">
 	<meta name="twitter:description" content="{{ description }}">
-	{% if page.image.thumb %}<meta name="twitter:image" content="{{ url }}/{{ page.image.thumb }}">
+	{% if page.image.thumb %}<meta name="twitter:image" content="{{ url }}/images/{{ page.image.thumb }}">
 	{% else %}  <meta property="twitter:image" content="{{ url }}/images/HPC3small.jpg">
 	{% endif %}
 	{% endif %}
