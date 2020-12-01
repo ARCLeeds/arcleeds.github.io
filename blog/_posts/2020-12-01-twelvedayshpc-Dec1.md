@@ -8,7 +8,8 @@ teaser: "
 "
 author: Molly Gravett
 image:
-  thumb: blog/12dayshpc-2020/day1/santa_dynein_Molly Gravett.gif
+  thumb: blog/12dayshpc-2020/graphic12daysSmall.png
+
 breadcrumb: true
 ---
 
