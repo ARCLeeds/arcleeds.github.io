@@ -43,4 +43,9 @@ Watching the molecules dance together... But also we have a good understanding o
 
 The Grinch
 
-![Festive molecular motors.](/images/blog/12dayshpc-2020/day1/santa_dynein_Molly Gravett.gif)
+<figure style="text-align: center;">
+    <img src='/images/blog/12dayshpc-2020/day1/santa_dynein_Molly Gravett.gif' alt='Festive molecular motors.' />
+    <figcaption>
+      Festive molecular motors.
+    </figcaption>
+</figure>
