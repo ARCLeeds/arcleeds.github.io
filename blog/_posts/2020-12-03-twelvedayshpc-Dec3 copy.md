@@ -49,13 +49,13 @@ Elf. I remember going to watch it in the cinema for my birthday when I was about
 <figure>
 <div class='row' style='display:flex;'>
   <div class='column'>
-    <img src='/images/blog/day3/MicellarPhase_Rachel Hendrikse.png' alt='Phase structures for Micellar Phase c = 15%. The micellar phase is when the surfactant molecules bunch up to form spheres within the water.' />
+    <img src='/images/blog/12dayshpc-2020/day3/MicellarPhase_Rachel Hendrikse.png' alt='Phase structures for Micellar Phase c = 15%. The micellar phase is when the surfactant molecules bunch up to form spheres within the water.' />
   </div>
   <div class='column'>
-    <img src='/images/blog/day3/HexagonalPhase_Rachel Hendrikse.png' alt='Phase structures for Hexagonal c = 50%. The hexagonal phase consists of tubes of surfactant molecules that stack to form a honeycomb structure.'/>
+    <img src='/images/blog/12dayshpc-2020/day3/HexagonalPhase_Rachel Hendrikse.png' alt='Phase structures for Hexagonal c = 50%. The hexagonal phase consists of tubes of surfactant molecules that stack to form a honeycomb structure.'/>
   </div>
   <div class='column'>
-    <img src='/images/blog/day3/LamellarPhase_Rachel Hendrikse.png' alt='Phase structures for Lamellar c=70%. This phase is formed when the water molecules and the surfactant molecules separate out into need parallel layers.'>
+    <img src='/images/blog/12dayshpc-2020/day3/LamellarPhase_Rachel Hendrikse.png' alt='Phase structures for Lamellar c=70%. This phase is formed when the water molecules and the surfactant molecules separate out into need parallel layers.'>
   </div>  
 </div>
     <figcaption>
