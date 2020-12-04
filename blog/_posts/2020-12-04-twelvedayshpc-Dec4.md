@@ -26,11 +26,11 @@ Physics and Astronomy
 
 ## What research question are you trying to answer?
 
-The dynamical formation processes and subsequent mechanical responses of protein-based hydrogels are of significant scientific interest, as the ability to rationally design these objects will lead to an era of "smart" biomaterials with a wide range of application. We are trying to use mesoscale simulation techniques in parallel with experimentation to determine how these protein networks grow, and how this yields their subsequent mechanical response.
+The dynamical formation processes and subsequent mechanical responses of protein-based hydrogels are of significant scientific interest, as the ability to rationally design these objects will lead to an era of "smart" biomaterials with a wide range of applications. We are trying to use mesoscale simulation techniques in parallel with experimentation to determine how these protein networks grow, and how this yields their subsequent mechanical response.
 
 ## How does HPC help your research?
 
-The ability to access a large about of parallel computing power enables and almost immediate and efficient allocation and return of physics calculations that would be infeasible on either a single work station, or multiple work stations with different confiurations.
+The ability to access a large amount of parallel computing power and almost immediate and efficient allocation and return of physics calculations that would be unfeasible on either a single work station, or multiple work stations with different confiurations.
 
 ## What is the potential impact of your research?
 
@@ -53,3 +53,4 @@ Jingle All the Way...err, I mean, Die Hard!
   </figcaption>
 </figure>
 
+_The work mentioned in this blog was performed with the support of Professor Lorna Dougan and financial support from the EPSRC, Grant code EP/P02288X/1_
