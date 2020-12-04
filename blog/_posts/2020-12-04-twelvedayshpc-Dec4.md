@@ -42,6 +42,7 @@ The philosophical insights into what it truly means to do science are completely
 
 ## What's your favourite christmas film?
 
+Jingle All the Way...err, I mean, Die Hard!
 
 <figure>
   <div style="text-align:center;">
