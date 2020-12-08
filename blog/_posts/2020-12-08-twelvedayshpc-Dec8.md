@@ -4,7 +4,7 @@ title:  Could Santa live on exoplanets?
 date:   2020-12-08
 subheadline: "🎄12 Days of HPC"
 teaser: "
- Blog post number 5 in our 12 days of HPC series showing how HPC is used to simulate proteins interacting with biological membranes!
+ Blog post number 6 in our 12 days of HPC series showing how the HPC us used to study exoplanets!
 "
 author: Gregory Cooke
 
@@ -34,7 +34,7 @@ We know of over 4000 exoplanets now, and many of these are rocky, like Earth. Th
 
 ## How does HPC help your research?
 
-I am using the HPC at the University of Leeds to simulate Earth-like exoplanets. To do this I am using an Earth system model which simulates the Earth’s atmosphere, land, ice and oceans. This model is the 'high-top' version of the Community Earth System Model (CESM2 - https://www.cesm.ucar.edu/models/cesm2/), known as the Whole Atmosphere Community Climate Model (WACCM). I often need to simulate somewhere between 10-100 model years before a simulation comes into an inter-annual equilibrium state, and on a single HPC computer node, 0.5 years takes roughly 18 hours. Clearly these simulations are computationally intense, and I wouldn’t be able to get anywhere with my research on a regular laptop or a standard desktop computer. I am still surprised at how easy it is to use a supercomputer for my research, and every week I look forward to analysing the exciting new results I retrieve from the HPC. I wonder what supercomputer Santa uses to process all those wishes?
+I am using the HPC at the University of Leeds to simulate Earth-like exoplanets. To do this I am using an Earth system model which simulates the Earth’s atmosphere, land, ice and oceans. This model is the 'high-top' version of the Community Earth System Model ([CESM2](https://www.cesm.ucar.edu/models/cesm2/)), known as the Whole Atmosphere Community Climate Model (WACCM). I often need to simulate somewhere between 10-100 model years before a simulation comes into an inter-annual equilibrium state, and on a single HPC computer node, 0.5 years takes roughly 18 hours. Clearly these simulations are computationally intense, and I wouldn’t be able to get anywhere with my research on a regular laptop or a standard desktop computer. I am still surprised at how easy it is to use a supercomputer for my research, and every week I look forward to analysing the exciting new results I retrieve from the HPC. I wonder what supercomputer Santa uses to process all those wishes?
 
 ## What is the potential impact of your research?
 
