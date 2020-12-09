@@ -55,3 +55,5 @@ The Muppet Christmas Carol
 RGB composite from GOES-16 imagery over the tropical Atlantic 5/2/2020 (top) with three PCA components of embedding vector produced by unsupervised neural network overlaid (bottom). The regions of similar color in the overlay indicate that the neural network has predicted that these contain similar cloud structures.
   </figcaption>
 </figure>
+
+_This work was published in [L. Denby 2020 (GRL)](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019GL085190)_
