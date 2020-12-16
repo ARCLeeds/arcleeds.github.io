@@ -4,7 +4,7 @@ title:  Bacterial biofilms growing like trees in a forest
 date:   2020-12-16
 subheadline: "🎄12 Days of HPC"
 teaser: "
- Blog post number 11 in our 12 days of HPC series looking at using the HPC to study jet streams with climate models!
+ Blog post number 12 in our 12 days of HPC series looking at using the HPC to study bacterial biofilms!
 "
 author: David Head
 
