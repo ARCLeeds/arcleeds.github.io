@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Earths Jet streams - How Santa is really able to get around the World in one night. 
+title:  Earths Jet streams - How Santa is really able to get around the World in one night
 date:   2020-12-15
 subheadline: "🎄12 Days of HPC"
 teaser: "
