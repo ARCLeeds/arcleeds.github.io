@@ -39,7 +39,7 @@ And the wonderful Mr Fabio Marcuccio who is an engineering PhD student in Dr Pao
  
 ## How does HPC help your research?
 
-Every cell (well, almost every cell) in a human's body contains a coy of that persons DNA. DNA is a code of 3 billion 'letters'. That code is read differently in different cells, making messenger copies of large portions of the DNA, multiple times. This means cells are FULL of data. Add to that: each cell in a tumour is different and we need both levels of information from all of them to understand about how that tumour behaves. Advances in technology are allowing us to mine the information in these cells to an unprecedented level. The HPC is invaluable in then letting us term that data into biological insight. 
+Every cell (well, almost every cell) in a human's body contains a copy of that persons DNA. DNA is a code of 3 billion 'letters'. That code is read differently in different cells, making messenger copies of large portions of the DNA, multiple times. This means cells are FULL of data. Add to that: each cell in a tumour is different and we need both levels of information from all of them to understand about how that tumour behaves. Advances in technology are allowing us to mine the information in these cells to an unprecedented level. The HPC is invaluable in then letting us term that data into biological insight. 
 
 ## What is the potential impact of your research?
 
