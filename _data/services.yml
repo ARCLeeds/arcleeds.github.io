@@ -1,5 +1,9 @@
 - menu_name: "Quick Links"
 
+- name: HPC Documentation
+  url: https://arcdocs.leeds.ac.uk/
+  title: Leeds HPC Documentation
+
 - name: "University of Leeds IT Services"
   url: "https://it.leeds.ac.uk/it"
   title: "IT Services Page"

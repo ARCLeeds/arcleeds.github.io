@@ -36,12 +36,14 @@
   dropdown:
   - title: Contact (Login required)
     url: https://leeds.service-now.com/it?id=sc_cat_item&sys_id=7587b2530f675f00a82247ece1050eda
-  - title: Documentation
-    url: https://arcdocs.leeds.ac.uk/
   - title: FAQ
     url: /help/faq/
   - title: Bitesize Videos
     url: /help/videos/
+
+- title: Documentation
+  url: https://arcdocs.leeds.ac.uk/
+  side: left
 
 - title: Community
   url: /community/
