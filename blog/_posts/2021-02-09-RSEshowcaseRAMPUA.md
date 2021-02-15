@@ -8,7 +8,7 @@ teaser: "
 "
 author: Alex Coleman
 image:
-  thumb: blog/
+  thumb: blog/rseShowcase/RAMP/rampUA-ui.png
 
 breadcrumb: true
 ---
@@ -24,10 +24,11 @@ The initial model work focused on the population of Devon and provides a high re
 </div>
 
 
+
 As an RSE embedded in this project I've been involved in encouraging software development best practise particularly around reproducible research. This focused on small, simple steps that could be incorporated into the researchers workflow to help them just get on with writing the implementation of the model:
 
-#### 1. Using GitHub actions to include a workflow for running the code test suite before merging pull requests  
-  Using unit tests to ensure your code does what you expect is a critical step in ensuring your work is reproducible. On a big project like this encouraging researchers to write tests alongside their code and creating workflow that ran tests everytime researchers wanted to update the code base was a crucial quality control step.
+#### 1. Using GitHub actions to include a workflow for running the code test suite before merging pull requests
+  Testing the research code we write is a crucial step in developing research software. At the very least its a _sanity check_ that the function we just wrote does what we think it does. Getting into the habit of writing tests along side Using unit tests to ensure your code does what you expect is a critical step in ensuring your work is reproducible. On a big project like this encouraging researchers to write tests alongside their code and creating workflow that ran tests everytime researchers wanted to update the code base was a crucial quality control step.
 
 #### 2. Using Sphinx and GitHub pages to create an automated documentation webpage  
   [Shinx](https://www.sphinx-doc.org/en/master/) is a documentation generator commonly used alongside [readthedocs](https://docs.readthedocs.io/en/stable/index.html). As researchers wrote the model code they included [docstrings](https://www.python.org/dev/peps/pep-0257/) within the code which we wanted to build into a documentation page for the project. The [autodocs](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html) Sphinx extension makes this easy, allowing for docstrings to be extracted from code and rendered into reStructured Text which is used by Sphinx. 
@@ -38,8 +39,10 @@ As an RSE embedded in this project I've been involved in encouraging software de
   To aid with this we initially used the [Teams feature](https://github.com/team) within GitHub organisations but more on that in [6.](./#6-making-the-most-out-of-github-repository-tools)
 
 #### 4. Repository organisation
-  
-
+  Getting the organisation of a project right is crucial to making your work reproducible and more than anything else good for your own sanity as you embark on writing your code. With this project being a mix of Python and R we took a decision early on to create two separate code repositories: one for the [Python code](https://github.com/Urban-Analytics/RAMP-UA) and one for the [R package](https://github.com/Urban-Analytics/rampuaR). Both of these repositories follow the standard templates for packages in their respective languages although adapted for the specifics of this particular projects. Imposing these structures early was an important step to ensure the code is as accessible as possible and to avoid duplication with developers working asynchronously on the project.
 
 #### 5. Environment specification
+  A core pillar of ensuring everyone in the team was able to work on the project from their own setup was to ensure a project environment specification. There's plenty of tools available for managing this but due to its widespread use in the Python community we opted for [`conda`](https://docs.conda.io/en/latest/). This allows all researchers to work on the project within a specific environment where all package versions are the same so we can ensure consistent behaviour of the model. It also allows us to provide a file within the repository that includes that specification so that anyone can recreate the environment on their own setup. This wasn't without hurdles, in particular ensuring we could run the model on all operating systems, due to particular packages we still currently haven't got the python/R version of the model working on Windows, although the OpenCL model implementation does work on Windows.
+
+
 #### 6. Making the most out of GitHub repository tools
