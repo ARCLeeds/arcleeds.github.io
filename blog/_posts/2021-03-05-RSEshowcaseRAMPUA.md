@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Helping COVID modelling efforts
-date:   2021-02-09
+date:   2021-03-05
 subheadline: "RSE Showcase"
 teaser: "
  Showcasing a recent RSE project to help encourage reproducible research practices in a COVID modelling project
