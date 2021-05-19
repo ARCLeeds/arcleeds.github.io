@@ -26,32 +26,30 @@ $body-bg: 			#fdfdfd;
    https://bookdown.org/hneth/ds4psy/D-2-apx-colors-essentials.html
 ------------------------------------------------------------------- */
 
-$ci-1: #009E73;		// green
+$ci-1: #008561;		// green
 $ci-2: #0072B2;		// blue
-$ci-3: #F0E442;		// yellow
-$ci-4: #E69F00;		// orange
-$ci-5: #D55E00;		// vermillion
-$ci-6: #56B4E9;     // sky blue
-$ci-7: #CC79A7;     // purple
-
-
+$ci-3: #7b7409;		// yellow
+$ci-4: #BD5200;		// orange
+$ci-5: #E02F1F;		// vermillion
+$ci-6: #0276CF;      // sky blue
+$ci-7: #A443E5;      // purple
 
 /* Foundation Color Variables
 ------------------------------------------------------------------- */
 
 $primary-color: $ci-2;
-$secondary-color: $ci-6;
+$secondary-color: $ci-1;
 $alert-color: $ci-5;
-$success-color: $ci-6;
-$warning-color: $ci-4;
-$info-color: $ci-1;
+$success-color: $ci-1;
+$warning-color: $ci-5;
+$info-color: $ci-2;
 
 
 
 /* Grey Scale
 ------------------------------------------------------------------- */
 
-$grey-1: #E4E4E4;
+$grey-1: #efefef;
 $grey-2: #D7D7D7;
 $grey-3: #CBCBCB;
 $grey-4: #BEBEBE;
@@ -77,45 +75,44 @@ $topbar-bg-color: $grey-1;
 $topbar-bg: $topbar-bg-color;
 
 
-$topbar-dropdown-toggle-color: $ci-1;
+$topbar-dropdown-toggle-color: #000;
 
 $topbar-link-color: #000;
 $topbar-link-color-hover: #fff;
-$topbar-link-color-active: #000;
-$topbar-link-color-active-hover: #000;
+$topbar-link-color-active: #fff;
+$topbar-link-color-active-hover: #fff;
 
 $topbar-dropdown-label-color: $ci-2;
-$topbar-dropdown-link-bg-hover: $grey-6;
+$topbar-dropdown-link-bg-hover: $grey-16;
 
-$topbar-link-bg-active: $ci-6; // Active Navigation Link
-$topbar-link-bg-hover: $grey-6;
-$topbar-link-bg-active-hover: $grey-6;
+$topbar-link-bg-active: $ci-2; // Active Navigation Link
+$topbar-link-bg-hover: $grey-13;
+$topbar-link-bg-active-hover: $grey-13;
 
 
-$topbar-dropdown-bg: $ci-6; // Background Mobile Navigation
+$topbar-dropdown-bg: $grey-1; // Background Mobile Navigation
 $topbar-dropdown-link-color: #fff;
 $topbar-dropdown-link-bg: $grey-13;
-
 $topbar-menu-link-color-toggled: $ci-1;
 $topbar-menu-icon-color-toggled: $ci-1;
-$topbar-menu-link-color: #000;
-$topbar-menu-icon-color: #000;
-$topbar-menu-link-color-toggled: $ci-6;
-$topbar-menu-icon-color-toggled: $ci-6;
+$topbar-menu-link-color: $ci-2;
+$topbar-menu-icon-color: $ci-2;
+$topbar-menu-link-color-toggled: $ci-2;
+$topbar-menu-icon-color-toggled: $ci-2;
 
 
 
 /* Footer
 ------------------------------------------------------------------- */
 
-$footer-bg: $grey-8;
+$footer-bg: $grey-13;
 $footer-color: #fff;
-$footer-link-color: $ci-3;
+$footer-link-color: #fff;
 
 
-$subfooter-bg: $grey-13;
-$subfooter-color: $grey-8;
-$subfooter-link-color: $grey-8;
+$subfooter-bg: $grey-16;
+$subfooter-color: $grey-3;
+$subfooter-link-color: $grey-3;
 
 
 
