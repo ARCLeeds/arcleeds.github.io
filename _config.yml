@@ -14,7 +14,7 @@ title: 'Research Computing at Leeds'
 description: 'Welcome to the official website for the Research Computing service from the University of Leeds.'
 
 # The credits show up in the includes/_footer.html
-credits: '© University of Leeds | <a href="http://www.leeds.ac.uk/info/5000/about/239/accessibility">Accessibility</a> | <a href="http://www.leeds.ac.uk/privacy">Privacy</a>'
+credits: '© University of Leeds | <a href="/accessibility.html">Accessibility</a> | <a href="/privacy.html">Privacy</a> | <a href="https://www.leeds.ac.uk/foi">Freedom of Information</a>'
 
 # Main author of the website
 # See > authors.yml
