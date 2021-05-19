@@ -32,10 +32,12 @@
 
                 <ul class="no-bullet">
                     {% for service_item in site.data.services %}
+                    {% if service_item.url and service_item.name and service_item.title %}
                     {% if service_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% capture domain %}{{ site.url }}{{ site.baseurl }}{% endcapture %}{% endif %}
                     <li {% if service_item.class %}class="{{ service_item.class }}" {% endif %}>
                         <a href="{{ domain }}{{ service_item.url }}" title="{{ service_item.title }}">{{ service_item.name }}</a>
                     </li>
+                    {% endif %}
                     {% endfor %}
                 </ul>
             </div>
@@ -49,10 +51,12 @@
 
                 <ul class="no-bullet">
                 {% for network_item in site.data.credit %}
+                {% if network_item.url and network_item.name and network_item.title %}
                 {% if network_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% capture domain %}{{ site.url }}{{ site.baseurl }}{% endcapture %}{% endif %}
                     <li {% if network_item.class %}class="{{ network_item.class }}" {% endif %}>
                     <a href="{{ domain }}{{ network_item.url }}" title="{{ network_item.title }}">{{ network_item.name }}</a>
                     </li>
+                {% endif %}
                 {% endfor %}
                 </ul>
             </div><!-- /.large-3.columns -->
