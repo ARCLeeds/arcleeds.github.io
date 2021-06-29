@@ -7,7 +7,7 @@ main:
     Leeds including HPC, Cloud and more.
     "
     style: '#0c7243' # dark green
-    alt-text: "widget descriptor"
+    alt-text: "High Performance Computer system"
 
   - title: "Consulting"
     url: '/consulting/'
@@ -17,7 +17,7 @@ main:
     "
     image: research_hack.jpg
     style: '#56B4E9' # light blue
-    alt-text: "High performance computer rack"
+    alt-text: "Laptop computer"
 
   - title: "Training"
     url: '/training/'
@@ -27,7 +27,7 @@ main:
     introduction to Linux to Advanced Python courses.
     "
     style: '#0072B2' # dark blue
-    alt-text: "widget descriptor"
+    alt-text: "Students working in a computer cluster"
     subpages:
       - title: 'Calendar'
         url: /training/calendar/
@@ -48,7 +48,7 @@ main:
     and any other Research Computing queries.
     "
     style: '#56B4E9' # light blue
-    alt-text: "widget descriptor"
+    alt-text: "Person using a laptop"
     subpages:
       - title: 'Documentation'
         url: https://arcdocs.leeds.ac.uk/
@@ -68,7 +68,7 @@ main:
         to the Research Computing team via our contact form.
         "
         style: '#56B4E9' # light blue
-        alt-text: "widget descriptor"
+        alt-text: "Rotary Telephone"
       - title: "Bitesize Videos"
         url: /help/videos/
         image: videos-projector.jpg
@@ -88,7 +88,7 @@ main:
     work and history.
     "
     style: '#0072B2' # dark blu
-    alt-text: "widget descriptor"
+    alt-text: "Screenshot of GitHub"
     subpages:
       - title: 'History'
         url: /about/history/
