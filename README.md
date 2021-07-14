@@ -2,7 +2,7 @@
 # [University of Leeds][1] Research Computing Website
 
 This is the official repository of the Research Computing Team website from
-the University of Leeds. It is built using GitHub pages and Jekyll and is
+the University of Leeds. It is built using [GitHub pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com) and is
 based on the [*Feeling Responsive*][2] theme.
 
 You can find the site at [arcleeds.github.io](https://arcleeds.github.io)
