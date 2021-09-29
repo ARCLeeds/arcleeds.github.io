@@ -7,6 +7,7 @@ find_us:
     - text: "Leeds"
     - text: "LS2 9JT"
 
+
 contact_us:
   title: "Contact Us"
   categories:
@@ -17,8 +18,8 @@ contact_us:
       name: Request a HPC Account
       url: https://leeds.service-now.com/it?id=sc_cat_item&sys_id=4c002dd70f235f00a82247ece1050ebc
     - email:
-      name: Send us an email
-      url: mailto:ask-rc@leeds.ac.uk
+      name: Send us an email via the IT Service Desk
+      url: mailto:itservicedesk@leeds.ac.uk
     - meeting:
       name: Request appointment
       url: https://leeds.service-now.com/it?id=sc_cat_item&sys_id=7587b2530f675f00a82247ece1050eda
