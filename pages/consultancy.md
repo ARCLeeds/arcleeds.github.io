@@ -8,7 +8,7 @@ The Research Software Engineering (RSE) service within Research Computing offers
 
 ### Our Service
 
-__We are a diverse team of developers__ with a broad skill set from database solutions, grid and parallelcomputing to data science and AI. We have extensive experience of high performance computing and have supported research across the entire University. You can meet members of the team via the [Team page]({{ site.baseurl }}/about/team/).
+__We are a diverse team of Research Software Engineers__ with a broad skill set from database solutions, grid and parallelcomputing to data science and AI. We have extensive experience of high performance computing and have supported research across the entire University. You can meet members of the team via the [Team page]({{ site.baseurl }}/about/team/).
 
 __We can contribute impact at every stage of your project__ from preparing code for publication to applying for funding. We help researchers ensure their projects meet the stringent funder requirements for research reproducibility and software longevity.
 
