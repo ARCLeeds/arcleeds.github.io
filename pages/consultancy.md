@@ -14,6 +14,21 @@ __We can contribute impact at every stage of your project__ from preparing code 
 
 __We deliver maintainable, reliant and scalable solutions__ that can be designed for any specific fixed term engagement. We can offer consultancy services from the short-term to long-term, part- or full-time, and can be costed into grant applications or charged at a daily rate.
 
+Areas that we work in include:
+
+* Software Development
+* Software Sustainability
+* Software Testing
+* High Performance Computing
+* Machine Learning and Deep Learning
+* Scientific and Parallel Computing
+* Computational Mechanics
+* Data Science
+* Digital Humanities
+* Web and Web Application design and development
+* Cloud 
+* Workflows and Pipelines
+
 ### Case studies
 
 You can read through some examples of consulting work the Research Computing Team have been part of at our [Case studies blog]({{ site.baseurl }}/about/casestudies/).
