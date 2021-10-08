@@ -1,18 +1,20 @@
 ---
-title: "Research Computing Consultancy"
+title: "Research Software Engineering (RSE)"
 permalink: "/consulting/"
 breadcrumb: true
 ---
 
-The Research Software Engineering (RSE) service within Research Computing offers specialist software development consulting to   research projects at the University of Leeds.
+The Research Software Engineering (RSE) service within Research Computing offers specialist software development consultancy, code development expertise and access to tools, platforms and training to research projects at the University of Leeds.
 
 ### Our Service
 
-__We are a diverse team of developers__ with a broad skill set from database solutions, grid computing to data science. We have extensive experience of high performance computing and have supported research across the entire University. You can meet members of the team via the [Team page]({{ site.baseurl }}/about/team/).
+__We are a diverse team of developers__ with a broad skill set from database solutions, grid and parallelcomputing to data science and AI. We have extensive experience of high performance computing and have supported research across the entire University. You can meet members of the team via the [Team page]({{ site.baseurl }}/about/team/).
 
 __We can contribute impact at every stage of your project__ from preparing code for publication to applying for funding. We help researchers ensure their projects meet the stringent funder requirements for research reproducibility and software longevity.
 
 __We deliver maintainable, reliant and scalable solutions__ that can be designed for any specific fixed term engagement. We can offer consultancy services from the short-term to long-term, part- or full-time, and can be costed into grant applications or charged at a daily rate.
+
+__We design and deliver teaching and training__ - researchers can attend our open access training or we can work with your group to design something bespoke.  Members of our team are qualified and experienced teachers and trainers.
 
 Areas that we work in include:
 
@@ -26,7 +28,7 @@ Areas that we work in include:
 * Data Science
 * Digital Humanities
 * Web and Web Application design and development
-* Cloud 
+* Cloud and IoT (Internet of Things) 
 * Workflows and Pipelines
 
 ### Case studies
