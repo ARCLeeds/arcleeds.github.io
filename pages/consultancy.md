@@ -31,9 +31,23 @@ Areas that we work in include:
 * Cloud and IoT (Internet of Things) 
 * Workflows and Pipelines
 
+We're constantly developing new skills, integrating new colleagues and learning about new technologies so please get in touch if you are unsure if we can work together.
+
+
+
 ### Case studies
 
 You can read through some examples of consulting work the Research Computing Team have been part of at our [Case studies blog]({{ site.baseurl }}/about/casestudies/).
+
+### How to use the RSE service
+
+General advice, guidance and grant consultancy is always free; as is our training. We appreciate that proofs of concept and other pump-priming activities may not always have funding available so we are able to provide a number of hours free RSE support for new projects.
+
+Access to RSEs is usually through costing support into your grants (RSEs are costed as Grade 7 or Grade 8 PDRAs in most cases) as 'Directly Incurred' costs. This can be anything from a single day of support through to 0.4FTE of an RSE.
+
+We can also support you in recruiting a full-time specialist RSE and can work with your group to manage, mentor and support the RSE through the central service.
+
+If you have a need for RSE support that can't be costed into a grant, we have a 'day rate' scheme of £400 per day for Leeds projects and £600 (plus VAT) per day for external partners.
 
 ### How to request
 
