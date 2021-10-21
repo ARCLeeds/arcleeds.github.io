@@ -4,7 +4,7 @@ title:  Winter Training Courses now open
 date:   2021-10-19
 subheadline: "Training"
 teaser: "
- Places our now available for upcoming Research Computing training courses, sign up now!
+ Places are now available for upcoming Research Computing training courses, sign up now!
 "
 author: Alex Coleman
 image:
@@ -15,7 +15,7 @@ breadcrumb: true
 
 We've now confirmed some upcoming training courses which are now open for registrations! 
 
-Whether you want to learn some git, linux command line or learn more about the University's high performance computing systems we've got a course for you.
+Whether you want to learn some Git, Linux command line or learn more about the University's high performance computing systems we've got a course for you.
 
 All our courses are hands-on virtual workshops run online via Teams with course materials available online. Find booking links on the course web pages below.
 
