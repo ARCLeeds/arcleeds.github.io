@@ -1,6 +1,7 @@
 import os
 import sys
 import pandas as pd
+import numpy as np
 from jinja2 import Environment, FileSystemLoader
 
 script_dir = os.path.dirname(__file__)
@@ -14,7 +15,9 @@ def render_md(content: dict, output_path: str, date):
 
     get_template = env.get_template("12dayshpc-template.md.j2")
 
-    output_file_name = f"{date}-12dayshpc2021.md"
+    post_day = date.split("-")[-1]
+
+    output_file_name = f"{date}-twelvedayshpc2021-Dec{post_day}.md"
 
     final_path = os.path.join(output_path, output_file_name)
 
@@ -28,7 +31,9 @@ def main(data_file, output_path):
     """
     Main script for loading data in pandas iterating over rows and passing it to render_md
     """
-    working_file = pd.read_csv(data_file)
+    working_file = pd.read_csv(data_file, encoding='cp1252')
+
+    working_file.fillna("", inplace=True)
 
     for idx, row in working_file.iterrows():
 
