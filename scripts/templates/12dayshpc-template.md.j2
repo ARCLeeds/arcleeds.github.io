@@ -1,12 +1,12 @@
 ---
 layout: page
-title:  {{ subtitle }}
-date:   {{ date }}
+title: "{{ subtitle }}"
+date: {{ Publish_date }}
 subheadline: "🎄12 Days of HPC 2021"
 teaser: "
  Blog post number {{ post_number }} in our 12 days of HPC series from {{ your_department }}!
 "
-author: {{ your_name }}
+author: "{{ your_name }}"
 
 image:
     thumb: blog/12dayshpc-2021/12dayshpc-slice.png
@@ -44,27 +44,36 @@ _During the month of December we're featuring blog posts from researchers from a
 
 {{ coolest }}
 
+{% if christmas_song | length %}
+
 ## In your opinion, what is the ultimate Christmas song?
 
 {{ christmas_song }}
 
-{% if extra_content %}
+{% endif %}
 
-    ## Postscript
+{% if extra_content | length %}
 
-    {{ extra_content }}
+## Postscript
+
+{{ extra_content }}
 
 {% endif %}
 
-{% set image_lst = image_file.split(",") %}
-{% set img_cap = captions.split(",") %}
+{% if image_file | length %}
+  {% set image_lst = image_file.split(",") %}
+{% endif %}
+
 <figure>
 <div class='column' style='display:flex;'>
 {% for img in image_lst %}
-    {% set img_cap = captions.split(",")[loop.index-1] %}
+    {% if captions | length %}
+      {% set img_cap = captions.split(",")[loop.index-1] %}
+    {% endif %}
+
   <div class='row'>
-    <img src={{ "/images/blog/12dayshpc-2021/" ~  img }}
-    alt={{ img_cap }} />
+    <img src="{{ "/images/blog/12dayshpc-2021/" ~  img }}"
+    alt="{{ img_cap }}" />
     <figcaption>
       {{ img_cap }}
     </figcaption>
