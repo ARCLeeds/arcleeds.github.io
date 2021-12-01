@@ -8,6 +8,15 @@
 url: 		'http://localhost:4000'
 baseurl: 	''
 urlimg: 	'http://localhost:4000/images/'
+exclude:
+    - .sass-cache
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - INSTALL.md
+    - vendor
+    - scripts
 
 # See › https://github.com/jekyll/jekyll-gist#disabling-noscript-support
 gist:
@@ -24,3 +33,6 @@ sass:
 
 # Disable when not in production
 google_analytics_tracking_id: false
+
+# add future to show any future blog posts
+future: true
