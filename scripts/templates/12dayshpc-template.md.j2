@@ -1,0 +1,85 @@
+---
+layout: page
+title: "{{ subtitle }}"
+date: {{ Publish_date }}
+subheadline: "🎄12 Days of HPC 2021"
+teaser: "
+ Blog post number {{ post_number }} in our 12 days of HPC series from {{ your_department }}!
+"
+author: "{{ your_name }}"
+
+image:
+    thumb: blog/12dayshpc-2021/12dayshpc-slice.png
+
+breadcrumb: true
+---
+
+_During the month of December we're featuring blog posts from researchers from across the University of Leeds showcasing the fantastic work they do using our High performance computing system. Follow us [@RC_at_Leeds](https://twitter.com/RC_at_leeds) to keep up to date with our 12 days of HPC blog series._
+
+## What's your name?
+
+{{ your_name }}
+
+## What department do you work in?
+
+{{ your_department }}
+
+## What research question are you trying to answer?
+
+{{ research_question }}
+
+## What tools or technologies do you use in your research? (Programming languages, packages, APIs)
+
+{{ tools_techniques }}
+
+## How does HPC help your research?
+
+{{ hpc_help }}
+
+## What is the potential impact of your research?
+
+{{ impact }}
+
+## In your personal opinion what's the coolest thing about your research?
+
+{{ coolest }}
+
+{% if christmas_song | length %}
+
+## In your opinion, what is the ultimate Christmas song?
+
+{{ christmas_song }}
+
+{% endif %}
+
+{% if extra_content | length %}
+
+## Postscript
+
+{{ extra_content }}
+
+{% endif %}
+
+{% if image_file | length %}
+  {% set image_lst = image_file.split(",") %}
+{% endif %}
+
+<figure>
+<div class='column' style='display:flex;'>
+{% for img in image_lst %}
+    {% if captions | length %}
+      {% set img_cap = captions.split(",")[loop.index-1] %}
+    {% endif %}
+
+  <div class='row'>
+    <img src="{{ "/images/blog/12dayshpc-2021/" ~  img }}"
+    alt="{{ img_cap }}" />
+    <figcaption>
+      {{ img_cap }}
+    </figcaption>
+  </div>
+{% endfor %}
+</div>
+
+</figure>
+
