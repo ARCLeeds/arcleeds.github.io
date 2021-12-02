@@ -4,7 +4,7 @@ title: "Modelling and simulation of blood flow as well as its interaction with s
 date: 2021-12-02
 subheadline: "🎄12 Days of HPC 2021"
 teaser: "
- Blog post number 2 in our 12 days of HPC series from School of Computing!
+ Blog post number 2 in our 12 days of HPC series from Computational Imaging & Simulation Technologies in Biomedicine (CISTIB) Group within the School of Computing!
 "
 author: "Yongxing Wang"
 
@@ -22,7 +22,7 @@ Yongxing Wang
 
 ## What department do you work in?
 
-School of Computing
+Computational Imaging & Simulation Technologies in Biomedicine (CISTIB) Group within the School of Computing
 
 ## What research question are you trying to answer?
 
@@ -50,10 +50,9 @@ Understand biological systems and design medical implants through modelling and 
 
 Jingle Bells
 
+## Postscript
 
-
-
-
+Find us on Twitter [@cistib](https://twitter.com/cistib?lang=en) and [www.cistib.org](http://www.cistib.org/) to find out more about our groups research.
 
   
 
