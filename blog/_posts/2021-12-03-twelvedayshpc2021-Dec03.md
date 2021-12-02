@@ -6,7 +6,7 @@ subheadline: "🎄12 Days of HPC 2021"
 teaser: "
  Blog post number 3 in our 12 days of HPC series from Astbury Centre/Biological Sciences/Physics/Maths/Computer Science!
 "
-author: "FFEA Research Group (Ryan Cocking, Molly Gravett, Oliver Harlen, Sarah Harris, Joanna Leng, Daniel Read & Jarvellis Rogers)"
+author: "FFEA Research Group (Ryan Cocking, Molly Gravett, Oliver Harlen, Sarah Harris, Joanna Leng, Michelle Peckham, Daniel Read & Jarvellis Rogers)"
 
 image:
     thumb: blog/12dayshpc-2021/12dayshpc-slice.png
@@ -18,7 +18,7 @@ _During the month of December we're featuring blog posts from researchers from a
 
 ## What's your name?
 
-FFEA Research Group (Ryan Cocking, Molly Gravett, Oliver Harlen, Sarah Harris, Joanna Leng, Daniel Read & Jarvellis Rogers)
+FFEA Research Group (Ryan Cocking, Molly Gravett, Oliver Harlen, Sarah Harris, Joanna Leng, Michelle Peckham, Daniel Read & Jarvellis Rogers)
 
 ## What department do you work in?
 
