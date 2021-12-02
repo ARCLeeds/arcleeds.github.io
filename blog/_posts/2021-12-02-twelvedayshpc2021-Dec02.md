@@ -54,8 +54,6 @@ Jingle Bells
 
 Find us on Twitter [@cistib](https://twitter.com/cistib?lang=en) and [www.cistib.org](http://www.cistib.org/) to find out more about our groups research.
 
-  
-
 
 <figure>
 <div class='column'>
@@ -64,6 +62,9 @@ Find us on Twitter [@cistib](https://twitter.com/cistib?lang=en) and [www.cistib
   <div class='row'>
     <img src="/images/blog/12dayshpc-2021/valve_opening3d_Wang_Yongxing.png"
     alt="" />
+    <figcaption>
+    1. Opening of the aortic valve. 
+    </figcaption>
     
   </div>
 
@@ -71,6 +72,9 @@ Find us on Twitter [@cistib](https://twitter.com/cistib?lang=en) and [www.cistib
   <div class='row'>
     <img src="/images/blog/12dayshpc-2021/oscillating_cylinder_Wang_Yongxing.png"
     alt="" />
+    <figcaption>
+    2. Oscillating cylinder in a channel flow.
+    </figcaption>
     
   </div>
 
@@ -78,6 +82,9 @@ Find us on Twitter [@cistib](https://twitter.com/cistib?lang=en) and [www.cistib
   <div class='row'>
     <img src="/images/blog/12dayshpc-2021/vessel_meshing_Wang_Yongxing.png"
     alt="" />
+    <figcaption>
+     3. Volumetric meshing of intracranial vessels.
+    </figcaption>
     
   </div>
 
@@ -85,6 +92,9 @@ Find us on Twitter [@cistib](https://twitter.com/cistib?lang=en) and [www.cistib
   <div class='row'>
     <img src="/images/blog/12dayshpc-2021/bood_flow_aneurysm_Wang_Yongxing.png"
     alt="" />
+    <figcaption>
+    4. Simulation of blood flow in a vessel with an aneurysm.
+    </figcaption>
     
   </div>
 
