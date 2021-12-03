@@ -130,3 +130,12 @@ main:
     development, with experience also using Python, SQL and to a lesser extent C#.
     "
     img: team/seantuck.jpg
+  - name: Luke Conibear
+    role: Research Software Engineer
+    bio: "
+    Luke is a Research Software Engineer focusing on Machine Learning. He used to be
+    a postdoc in air pollution using numerical models to understand how to improve
+    public health. He currently works with the Centre for Doctoral Training in
+    Artificial Intelligence for Medical Diagnosis and Care.
+    "
+    img: team/lukeconibear.jpg
