@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Identifying birds using cutting hedge technology /or/ 500 birds of Christmas"
+title: "500 birds of Christmas"
 date: 2021-12-06
 subheadline: "🎄12 Days of HPC 2021"
 teaser: "
- Blog post number 6 in our 12 days of HPC series from School of Geography!
+ Blog post number 6 in our 12 days of HPC series from School of Geography on identifying birds using cutting hedge technology!
 "
 author: "Sofia Biffi"
 
