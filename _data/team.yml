@@ -130,3 +130,17 @@ main:
     development, with experience also using Python, SQL and to a lesser extent C#.
     "
     img: team/seantuck.jpg
+  - name: Patricia Ternes
+    role: Research Software Engineer
+    bio: "
+    Patricia is a Research Software Engineer, focusing on Computational Mechanics, 
+    at the University of Leeds. She has a PhD in Theoretical Physics and a Master 
+    degree in Condensed Matter Physics. Her research focuses on the development of
+    computational models that help to understand complex systems; initially focusing
+    on phenomena such as the behaviour of fluids at nano‐scales and lately modelling
+    emergence in spatio‐social systems. Previously, she worked as a Researcher in
+    Simulating Urban Systems at the School of Geography (2019-2021), and before 
+    joining the University of Leeds, Patricia also worked as an physics
+    undergraduate professor at Federal Institute Catarinense-Brazil (2018-2019).
+    "
+    img: team/patriciaternes.jpg
