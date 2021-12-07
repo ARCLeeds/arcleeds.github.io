@@ -117,19 +117,6 @@ main:
     He has frequently worked in devops and lean/agile teams.
     "
     img: team/nickrhodes.jpeg
-  - name: Sean Tuck
-    role: Research Software Engineer
-    bio: "
-    Sean is a Research Software Engineer at the University of Leeds, working within
-    the Data Analytics Team at Leeds Institute for Data Analytics (LIDA). His programming
-    experience has been focused on software for data access and analysis. After
-    completing his PhD in computational ecology, he worked at a digital agency
-    in Leeds, doing research for private companies. Sean has used a wide range
-    of statistical models and machine learning libraries across various research
-    projects. The language he has most experience with is R, including R package
-    development, with experience also using Python, SQL and to a lesser extent C#.
-    "
-    img: team/seantuck.jpg
   - name: Patricia Ternes
     role: Research Software Engineer
     bio: "
@@ -144,3 +131,16 @@ main:
     undergraduate professor at Federal Institute Catarinense-Brazil (2018-2019).
     "
     img: team/patriciaternes.jpg
+  - name: Sean Tuck
+    role: Research Software Engineer
+    bio: "
+    Sean is a Research Software Engineer at the University of Leeds, working within
+    the Data Analytics Team at Leeds Institute for Data Analytics (LIDA). His programming
+    experience has been focused on software for data access and analysis. After
+    completing his PhD in computational ecology, he worked at a digital agency
+    in Leeds, doing research for private companies. Sean has used a wide range
+    of statistical models and machine learning libraries across various research
+    projects. The language he has most experience with is R, including R package
+    development, with experience also using Python, SQL and to a lesser extent C#.
+    "
+    img: team/seantuck.jpg
