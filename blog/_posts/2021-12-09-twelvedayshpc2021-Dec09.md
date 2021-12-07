@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ""
+title: "Understanding the effect of digital communication on firm performance with machine learning"
 date: 2021-12-09
 subheadline: "🎄12 Days of HPC 2021"
 teaser: "
