@@ -26,7 +26,7 @@ Faculty of Science Sciences and School of Languages Cultures & Societies
 
 ## What research question are you trying to answer?
 
-I'm working in project led by Professor Serge Sharoff, to develop a AI tool to detect Covid-19 and vaccination related misinformation in tweets and on Telegram messages, as well as to detect users who might be more vulnerable to fall for this misinformation messages. This project is in close collaboration with NSH and the Yorkshire and Humber AHSN, in order to provide them with useable information for possible future initiatives.
+I'm working in project led by Professor Serge Sharoff, to develop a AI tool to detect Covid-19 and vaccination related misinformation in tweets and on Telegram messages, as well as to detect users who might be more vulnerable to fall for this misinformation messages. This project is in close collaboration with NHS and the Yorkshire and Humber AHSN, in order to provide them with useable information for possible future initiatives.
 
 ## What tools or technologies do you use in your research? (Programming languages, packages, APIs)
 
