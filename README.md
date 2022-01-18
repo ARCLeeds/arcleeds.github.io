@@ -31,7 +31,7 @@ our code of conduct which can be found within our [contributing guidelines](http
 
 ### Anaconda
 
-Using Anaconda environment (recommended for Linux/Unix).
+Using Anaconda environment on Linux.
 We recommend miniconda if you don't have Anaconda installed already.
 Please use the supplied environment.yml, which will provide a standised environment.
 
@@ -43,25 +43,6 @@ $ git clone https://github.com/ARCLeeds/arcleeds.github.io.git
 $ git checkout -b [YOURBRANCHNAME] # all work should be on this branch
 
 $ conda env create -f environment.yml
-```
-
-### Ruby
-
-Using the Ruby environment (recommended for Windows).
-Download the recommended ruby + devkit installer from [rubyinstaller.org/downloads/](https://rubyinstaller.org/downloads/) and install.
-Please use the supplied Gemfile, which will provide a standised environment.
-
-To create locally:
-
-
-```{bash}
-$ git clone https://github.com/ARCLeeds/arcleeds.github.io.git
-
-$ git checkout -b [YOURBRANCHNAME] # -b will create a branch for you to work in, ommit if you want to use an existing branch
-
-$ gem install bundler #installs the bundler gem that will manage our dependancies
-
-$ bundler install #will by default install the gems defined in Gemfile and their dependencies
 ```
 
 ### To build and test locally
