@@ -78,9 +78,9 @@ There are limited spaces for these courses so if you are unable to book on you c
 
 ### SWD3: Software development practices for Research
 
-- Thursday 12th November 1pm-4pm
+- Thursday 12th May 1pm-4pm
 
-- Thursday 19th November 1pm-4pm
+- Thursday 19th May 1pm-4pm
 
 The purpose of this workshop is to introduce a number of the techniques and concepts that professional software developers use to manage their code, projects and teams. Although the development of research codes and software has different needs and challenges to the development of commercial software, there are nonetheless some tools and techniques that we can adopt or adopt to improve our Research Software Engineering. This isn’t a programming workshop, so it will be relevant to you whichever programming language (on Windows, Linux or Mac) or infrastructure (HPC, Cloud, Desktop) you use. This will be a hands-on session with lots of discussion and small group activities. We’ll be joined by a number of people who develop codes and software who will share their experiences. This course is split over two sessions a week apart, **please do not apply for this course unless you are able to attend ALL the sessions**.
 
