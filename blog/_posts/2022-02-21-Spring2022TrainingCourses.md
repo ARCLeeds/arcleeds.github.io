@@ -54,9 +54,9 @@ This is a hands-on workshop intended as an introduction to the Linux command lin
 
 ### HPC1: HPC Carpentry
 
-- Tuesday 12th April 1pm-4pm
+- Tuesday 12th April 9am-12pm
 
-- Wednesday 20th April 1pm-4pm
+- Wednesday 20th April 9am-12pm
 
 This workshop is designed to introduce new users to the High Performance Computing (HPC) service at Leeds. It will be useful if you are new to HPC in research or have used HPC elsewhere. It is suitable for researchers from all faculties and examples will be given from a range of research domains. The purpose of the workshop is to give users the skills to be an effective user of the HPC service and to get codes and applications running effectively. This course is split over two sessions a week apart, **please do not apply for this course unless you are able to attend ALL the sessions**.
 
@@ -75,6 +75,24 @@ Version control can be thought of as the lab notebook of the digital world: it's
 There are limited spaces for these courses so if you are unable to book on you can still join the priority waiting list so you are contacted when we next run the training course.
 
 ## May 2022
+
+### HPC0: Introduction to Linux (Online)
+
+- Tuesday 3rd May 9am-12pm
+
+This is a hands-on workshop intended as an introduction to the Linux command line and shell scripting. It is suitable for Linux, Unix and Mac OSX users. The purpose of the workshop is to give users the Linux skills to be able to handle data and files, run programs and automate workflows on a PC and on the HPC service. The content of this workshop is equally suited for people who wish to use command line Linux on a PC, in the Cloud or on a HPC platform. New and prospective HPC users are advised to take this workshop before taking the HPC1: Introduction to High Performance Computing at Leeds workshop.
+
+[https://arc.leeds.ac.uk/training/courses/hpc0/](https://arc.leeds.ac.uk/training/courses/hpc0/)
+
+### HPC1: HPC Carpentry
+
+- Tuesday 10th May 9am-12pm
+
+- Tuesday 17th May 9am-12pm
+
+This workshop is designed to introduce new users to the High Performance Computing (HPC) service at Leeds. It will be useful if you are new to HPC in research or have used HPC elsewhere. It is suitable for researchers from all faculties and examples will be given from a range of research domains. The purpose of the workshop is to give users the skills to be an effective user of the HPC service and to get codes and applications running effectively. This course is split over two sessions a week apart, **please do not apply for this course unless you are able to attend ALL the sessions**.
+
+[https://arc.leeds.ac.uk/training/courses/hpc1/](https://arc.leeds.ac.uk/training/courses/hpc1/)
 
 ### SWD3: Software development practices for Research
 
