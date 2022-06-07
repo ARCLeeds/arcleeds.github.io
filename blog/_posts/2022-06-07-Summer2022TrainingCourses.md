@@ -75,13 +75,13 @@ Over the past few years, Python and the wider Python ecosystem have become inval
 
 At the end of this workshop, learners will be able to:
 
-1. [ ] Understand how to profile Python code and identify bottlenecks
-2. [ ] Understand how to choose the most appropriate data structure, algorithm, and libraries for a problem
-3. [ ] Improve the execution time of Python code using:  
-    - [ ] Vectorisation (with [NumPy](https://numpy.org/doc/stable/reference/ufuncs.html))  
-    - [ ] Compilers (with [Numba](http://numba.pydata.org/))  
-    - [ ] Parallelisation (with [Dask](https://docs.dask.org/en/latest/) and [Ray](https://www.ray.io/))  
-    - [ ] GPUs (with [JAX](https://jax.readthedocs.io/en/latest/index.html), [CUDA/Numba](https://developer.nvidia.com/how-to-cuda-python), and [RAPIDS](https://developer.nvidia.com/rapids))  
+1. Understand how to profile Python code and identify bottlenecks
+2. Understand how to choose the most appropriate data structure, algorithm, and libraries for a problem
+3. Improve the execution time of Python code using:  
+    - Vectorisation (with [NumPy](https://numpy.org/doc/stable/reference/ufuncs.html))  
+    - Compilers (with [Numba](https://numba.pydata.org/))  
+    - Parallelisation (with [Dask](https://docs.dask.org/en/latest/) and [Ray](https://www.ray.io/))  
+    - GPUs (with [JAX](https://jax.readthedocs.io/en/latest/index.html), [CUDA/Numba](https://developer.nvidia.com/how-to-cuda-python), and [RAPIDS](https://developer.nvidia.com/rapids))  
 4. [ ] Understand when to use each technique
 
 N.B. This course has recently been updated and course contents may change at the time of delivery.
