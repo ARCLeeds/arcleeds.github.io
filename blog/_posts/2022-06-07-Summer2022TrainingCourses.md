@@ -82,7 +82,7 @@ At the end of this workshop, learners will be able to:
     - Compilers (with [Numba](https://numba.pydata.org/))  
     - Parallelisation (with [Dask](https://docs.dask.org/en/latest/) and [Ray](https://www.ray.io/))  
     - GPUs (with [JAX](https://jax.readthedocs.io/en/latest/index.html), [CUDA/Numba](https://developer.nvidia.com/how-to-cuda-python), and [RAPIDS](https://developer.nvidia.com/rapids))  
-4. [ ] Understand when to use each technique
+4. Understand when to use each technique
 
 N.B. This course has recently been updated and course contents may change at the time of delivery.
 
