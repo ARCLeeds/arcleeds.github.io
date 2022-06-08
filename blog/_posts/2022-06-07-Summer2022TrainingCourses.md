@@ -55,7 +55,7 @@ This is a hands-on workshop intended as an introduction to the Linux command lin
 
 [https://arc.leeds.ac.uk/training/courses/hpc0/](https://arc.leeds.ac.uk/training/courses/hpc0/)
 
-### HPC1: HPC Carpentry
+### HPC1: HPC Carpentry (Online)
 
 - Tuesday 28th June 9am-12pm
 
@@ -65,7 +65,7 @@ This workshop is designed to introduce new users to the High Performance Computi
 
 [https://arc.leeds.ac.uk/training/courses/hpc1/](https://arc.leeds.ac.uk/training/courses/hpc1/)
 
-### SWD6: High Performance Python
+### SWD6: High Performance Python (Online)
 
 - Thursday 30th June 9am-12pm
 
