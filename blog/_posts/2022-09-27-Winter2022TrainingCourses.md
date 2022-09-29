@@ -12,7 +12,7 @@ image:
 
 breadcrumb: true
 ---
-We're pleased to offer more spaces on upcoming Research Computing training courses. See below for a range of exciting courses we�re running including the new and improved SWD6: High performance python and HPC2: Installing and managing applications on the HPC.
+We're pleased to offer more spaces on upcoming Research Computing training courses. See below for a range of exciting courses we're running including the new and improved SWD6: High performance python and HPC2: Installing and managing applications on the HPC.
 
 ### [HPC0: Introduction to Linux (Online)](https://arc.leeds.ac.uk/training/courses/hpc0/)
 
@@ -94,7 +94,7 @@ At the end of this workshop, learners will be able to:
 * Understand the how filesystem configuration and environment variables relate to software
 * Develop hands on experience with:
   * Building software using GNU Autotools
-  * Using spack package manager
-  * Using conda package manager
-  * Building software using cmake
-  * Interacting and using singularity/Apptainer containers
+  * Using Spack package manager
+  * Using Conda package manager
+  * Building software using CMake
+  * Interacting and using Singularity/Apptainer containers
