@@ -17,7 +17,15 @@ On Thursday 13th October we celebrate International RSE Day 2022!
 The International RSE Day is to celebrate Research Software Engineers around the world and raise awareness for the increasingly relevant discipline of Research Software Engineering. 
 And as a team of RSEs within Research Computing we've taken a few minutes to reflect on what it's like being an RSE at Leeds.
 
-{% include _about-widget.html widget="Alex Coleman" %}
+{% for member in site.data.team.main %}
+
+  {% if member.name contains "Coleman" %}
+    {% assign data = member %}
+  {% endif %}
+
+{% endfor %}
+
+  {% include _about-widget.html widget=data %}
 
 <br />
 
