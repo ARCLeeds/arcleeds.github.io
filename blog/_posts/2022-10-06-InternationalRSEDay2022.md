@@ -7,8 +7,8 @@ teaser: "
  Celebrating RSEs and their contribution to science at Leeds
 "
 author: Alex Coleman
-#image:
-#  thumb: pc_user.jpg
+image:
+  thumb: blog/rseDay2022/rse-logo.png
 
 breadcrumb: true
 ---
