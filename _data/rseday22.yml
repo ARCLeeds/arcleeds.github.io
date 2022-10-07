@@ -1,0 +1,69 @@
+main:
+  - name: Ollie Clark
+    quote: "
+      Ollie is Research Software Engineer at the University of Leeds.
+      He has experience in databases and web development and is familiar with
+      languages including Perl; Python and C/C++. He also has experience with
+      version control and RDBMs including Postgres; MySQL and SQL Server.
+    "
+    img: team/ollieclark.png
+  - name: Alex Coleman
+    quote:
+      "Alex is a Research Software Engineer at the University of Leeds. Previously,
+      he worked in Leeds Institute of Data Analytics as a Data Scientist intern on
+      projects looking at automatically classifying police dispatch reports using natural language
+      processing and developing methods for simulating police supply and demand. He has experience
+      using Python and R to wrangle data, develop statistical models and implement and deploy
+      interactive applications built ontop those models. He is evangelical about reproducible research
+      especially through leveraging software development tools such as version control, CI/CD, documentation
+      and testing to make code more open and more useful.
+    "
+    img: team/alexcoleman.jpeg
+
+  - name: John Hodrien
+    quote: "
+    John is a Research Software Engineer working within the Research
+    IT team at the University of Leeds. Starting life as a Computer Scientist at
+    Leeds; he taught parallel programming (C/C++; MPI/pthreads); before becoming
+    a researcher within the Visualisation and Virtual Reality research group;
+    all within the School of Computing. In these research roles; he has developed
+    systems for working with pathology data with high resolution display clusters;
+    and worked on a number of research projects on e-Science/Grid Computing.
+    More recent work within IT involved providing and supporting a range of
+    predominantly Linux solutions to research and teaching within Engineering;
+    and more recently John has been a leader of this provision for the whole University.
+    <br>
+    <br>
+    John has worked with a number of languages such as C/C++; Java; and Fortran;
+    along with associated toolchains like Git; and has a soft spot for
+    configuration management tools like Puppet; which has been used to provide
+    standard configuration and deployment of systems and solutions at Leeds.
+    "
+    img: team/johnhodrien.png
+
+  - name: Nick Rhodes
+    quote: "
+    Nick is a Research Software Engineer at the University of Leeds.
+    Before moving to this role he worked as an Operational Lead supporting
+    the student information management systems and DBA team.
+    He has extensive experience working in higher education and NHS
+    developing and supporting large enterprise systems.
+    Nick is skilled in a wide range of technologies and programming
+    languages across web, applications, databases, networking and server
+    infrastructure.
+    He has frequently worked in devops and lean/agile teams.
+    "
+    img: team/nickrhodes.jpeg
+  - name: Patricia Ternes
+    quote: "
+    Patricia is a Research Software Engineer, focusing on Computational Mechanics, 
+    at the University of Leeds. She has a PhD in Theoretical Physics and a Master 
+    degree in Condensed Matter Physics. Her research focuses on the development of
+    computational models that help to understand complex systems; initially focusing
+    on phenomena such as the behaviour of fluids at nano‐scales and lately modelling
+    emergence in spatio‐social systems. Previously, she worked as a Researcher in
+    Simulating Urban Systems at the School of Geography (2019-2021), and before 
+    joining the University of Leeds, Patricia also worked as an physics
+    undergraduate professor at Federal Institute Catarinense-Brazil (2018-2019).
+    "
+    img: team/patriciaternes.jpg
