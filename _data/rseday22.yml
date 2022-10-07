@@ -8,16 +8,14 @@ main:
     "
     img: team/ollieclark.png
   - name: Alex Coleman
-    quote:
-      "Alex is a Research Software Engineer at the University of Leeds. Previously,
-      he worked in Leeds Institute of Data Analytics as a Data Scientist intern on
-      projects looking at automatically classifying police dispatch reports using natural language
-      processing and developing methods for simulating police supply and demand. He has experience
-      using Python and R to wrangle data, develop statistical models and implement and deploy
-      interactive applications built ontop those models. He is evangelical about reproducible research
-      especially through leveraging software development tools such as version control, CI/CD, documentation
-      and testing to make code more open and more useful.
-    "
+    quote: >
+      I joined the team after spending a year as a Data Scientist in Leeds Institute of Data Analytics and completing my lab based PhD before that.
+      Being an RSE has allowed me to not only develop my software engineering skills but also help apply and advocate for best practice across research.
+      This means the day job is incredibly varied from helping support researchers write code to model COVID-19, to helping configure software on the HPC systems 
+      to delivering training course on version control using git.
+      With the ever increasing number of researchers doing some form of computation as part of their work having a core team of RSEs who can provide expert advice and
+      ensure researchers are exposed to cutting edge tools and techniques is critical to accelerating innovation at Leeds.
+    
     img: team/alexcoleman.jpeg
 
   - name: John Hodrien
