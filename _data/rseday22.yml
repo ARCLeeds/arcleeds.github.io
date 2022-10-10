@@ -64,4 +64,19 @@ main:
     joining the University of Leeds, Patricia also worked as an physics
     undergraduate professor at Federal Institute Catarinense-Brazil (2018-2019).
     "
+    quote: >
+      I started programming for free and spontaneous pressure during my master's
+      degree. At the time I was trying to model water on a rough surface and all
+      I had access to was a patient supervisor and photocopies of very old
+      programming books. I remember that after adding a feature to my code, it
+      started to give the wrong result and I spent 4 (bloody) months trying to
+      find the error (a wrong signal!!!). Today I know good practices and
+      technologies that prevent errors like this from being a big problem, and
+      one of the things I like most about being a RSE is being able to guide
+      students and researchers so that they can produce science in a less painful
+      way and with higher quality than I did.
+      My wish for the future is for our team to be able to integrate more and more
+      with students and researches and for our work to be increasingly impactful.
+      I also hope that we can encourage and participate in a movement around
+      open and reproducible research.
     img: team/patriciaternes.jpg
