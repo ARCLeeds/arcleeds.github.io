@@ -80,3 +80,12 @@ main:
       I also hope that we can encourage and participate in a movement around
       open and reproducible research.
     img: team/patriciaternes.jpg
+  - name: Ollie Clark
+    quote: "
+    Ollie is a Research Software Engineer in Reserach Computing at the University 
+    of Leeds. Started his career at teaching databases and web technology and then 
+    moved on to supporting database servers. More recently he moved on to supporting 
+    and developing a large information system and smaller web apps. He has knowledge 
+    of C/C++, Perl, Javascript and Python languages and SQL Server, MySQL, Postgress
+    and Cosmos databases. He also has experience of deplying cloud solutions in Azure.
+    img: team/ollieclark.jpg
