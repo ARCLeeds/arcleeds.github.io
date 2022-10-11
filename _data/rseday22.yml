@@ -11,24 +11,24 @@ main:
     img: team/alexcoleman.jpeg
 
   - name: John Hodrien
-    quote: "
-    John is a Research Software Engineer working within the Research
-    IT team at the University of Leeds. Starting life as a Computer Scientist at
-    Leeds; he taught parallel programming (C/C++; MPI/pthreads); before becoming
-    a researcher within the Visualisation and Virtual Reality research group;
-    all within the School of Computing. In these research roles; he has developed
-    systems for working with pathology data with high resolution display clusters;
-    and worked on a number of research projects on e-Science/Grid Computing.
-    More recent work within IT involved providing and supporting a range of
-    predominantly Linux solutions to research and teaching within Engineering;
-    and more recently John has been a leader of this provision for the whole University.
-    <br>
-    <br>
-    John has worked with a number of languages such as C/C++; Java; and Fortran;
-    along with associated toolchains like Git; and has a soft spot for
-    configuration management tools like Puppet; which has been used to provide
-    standard configuration and deployment of systems and solutions at Leeds.
-    "
+    quote: >
+      I've had an affinity for computers since my parents first bought a ZX
+      Spectrum when I was about three, but was never quite sure what I've
+      wanted to do with them.  I think in many ways these story is still
+      playing out!  This led me to a Computer Science degree, a year teaching,
+      and a number of years working as a researcher within the School of
+      Computing at Leeds.  I had a great deal of fun with a mix of research,
+      from e-social science, to digital pathology on clusters of machines.
+      Whilst I enjoyed both teaching and research at the university, I ended up
+      leaving research due to fixed term nature of funding, leading me into a
+      support role within the IT services here at the university.  In many ways
+      I think this suits me better, as I've always enjoyed solving other
+      people's problems; I relish the mix of not just technical problem
+      solving, but also user education and exploring solutions together with
+      researchers.  As an RSE, I can share my technical expertise with
+      researchers and the wider community at Leeds, and have the time and space
+      to explore new tools and technologies, to help solve real problems our
+      researchers are facing.
     img: team/johnhodrien.png
 
   - name: Nick Rhodes
