@@ -1,12 +1,4 @@
 main:
-  - name: Ollie Clark
-    quote: "
-      Ollie is Research Software Engineer at the University of Leeds.
-      He has experience in databases and web development and is familiar with
-      languages including Perl; Python and C/C++. He also has experience with
-      version control and RDBMs including Postgres; MySQL and SQL Server.
-    "
-    img: team/ollieclark.png
   - name: Alex Coleman
     quote: >
       I joined the team after spending a year as a Data Scientist in Leeds Institute of Data Analytics and completing my lab based PhD before that.
@@ -88,4 +80,5 @@ main:
     and developing a large information system and smaller web apps. He has knowledge 
     of C/C++, Perl, Javascript and Python languages and SQL Server, MySQL, Postgress
     and Cosmos databases. He also has experience of deplying cloud solutions in Azure.
+    "
     img: team/ollieclark.jpg
