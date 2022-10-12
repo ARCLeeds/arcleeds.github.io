@@ -31,31 +31,7 @@ main:
       researchers are facing.
     img: team/johnhodrien.png
 
-  - name: Nick Rhodes
-    quote: "
-    Nick is a Research Software Engineer at the University of Leeds.
-    Before moving to this role he worked as an Operational Lead supporting
-    the student information management systems and DBA team.
-    He has extensive experience working in higher education and NHS
-    developing and supporting large enterprise systems.
-    Nick is skilled in a wide range of technologies and programming
-    languages across web, applications, databases, networking and server
-    infrastructure.
-    He has frequently worked in devops and lean/agile teams.
-    "
-    img: team/nickrhodes.jpeg
   - name: Patricia Ternes
-    quote: "
-    Patricia is a Research Software Engineer, focusing on Computational Mechanics, 
-    at the University of Leeds. She has a PhD in Theoretical Physics and a Master 
-    degree in Condensed Matter Physics. Her research focuses on the development of
-    computational models that help to understand complex systems; initially focusing
-    on phenomena such as the behaviour of fluids at nano‐scales and lately modelling
-    emergence in spatio‐social systems. Previously, she worked as a Researcher in
-    Simulating Urban Systems at the School of Geography (2019-2021), and before 
-    joining the University of Leeds, Patricia also worked as an physics
-    undergraduate professor at Federal Institute Catarinense-Brazil (2018-2019).
-    "
     quote: >
       I started programming for free and spontaneous pressure during my master's
       degree. At the time I was trying to model water on a rough surface and all
@@ -72,6 +48,7 @@ main:
       I also hope that we can encourage and participate in a movement around
       open and reproducible research.
     img: team/patriciaternes.jpg
+
   - name: Ollie Clark
     quote: "
     Ollie is a Research Software Engineer in Reserach Computing at the University 
@@ -82,3 +59,17 @@ main:
     and Cosmos databases. He also has experience of deplying cloud solutions in Azure.
     "
     img: team/ollieclark.jpg
+    
+  - name: Nick Rhodes
+    quote: "
+    Nick is a Research Software Engineer at the University of Leeds.
+    Before moving to this role he worked as an Operational Lead supporting
+    the student information management systems and DBA team.
+    He has extensive experience working in higher education and NHS
+    developing and supporting large enterprise systems.
+    Nick is skilled in a wide range of technologies and programming
+    languages across web, applications, databases, networking and server
+    infrastructure.
+    He has frequently worked in devops and lean/agile teams.
+    "
+    img: team/nickrhodes.jpeg
