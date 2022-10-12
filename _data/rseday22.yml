@@ -61,15 +61,9 @@ main:
     img: team/ollieclark.jpg
     
   - name: Nick Rhodes
-    quote: "
-    Nick is a Research Software Engineer at the University of Leeds.
-    Before moving to this role he worked as an Operational Lead supporting
-    the student information management systems and DBA team.
-    He has extensive experience working in higher education and NHS
-    developing and supporting large enterprise systems.
-    Nick is skilled in a wide range of technologies and programming
-    languages across web, applications, databases, networking and server
-    infrastructure.
-    He has frequently worked in devops and lean/agile teams.
-    "
+    quote: >
+      I enjoy the variety of the work within my role; using a wide range of skills and experience supporting and working with the diverse range researchers (both in terms of subject areas and technologies) we have in the University.
+      I highly value being part of a strong Research Computing team, each college has differing skillsets and backgrounds that complement each other well, allowing us to work together and support each other, which is essential for a central resource to the research community at the University.
+      A significant part of our daily work involves communication and collaboration, not only collaborating with researchers, but also with others within IT and wider university and nationally.
+      Another aspect that I like about my role is the need to develop new technologies and skills to support unique requirements from research and allow researchers to utilise computing resources to do better research. This requires our team to be agile and continuously explore emerging technologies.
     img: team/nickrhodes.jpeg
