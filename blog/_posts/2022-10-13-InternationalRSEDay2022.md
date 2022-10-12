@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  International RSE Day 2022
-date:   2022-10-06
+date:   2022-10-13
 subheadline: "RSE"
 teaser: "
  Celebrating RSEs and their contribution to science at Leeds
