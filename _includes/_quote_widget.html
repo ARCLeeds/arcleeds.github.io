@@ -1,0 +1,53 @@
+{% comment %}
+*
+*   First the include captures the url and image in a
+*   separate variable to make the code better readable.
+*
+*   These variables are widget_url and widget_image
+*
+{% endcomment %}
+
+{% capture widget_image %}
+  {% if include.widget.img %}
+	  {% if include.widget.img contains 'http' %}
+		  {{ include.widget.img }}
+		{% else %}
+		  {{ site.urlimg }}{{ include.widget.img }}
+		{% endif %}
+	{% else %}
+		{{ site.urlimg | append: "/team/person-placeholder.png" }}
+	{% endif %}
+{% endcapture %}
+
+{% assign modulo_check = include.index | modulo:2 %}
+
+{% if modulo_check == 0 %}
+<div class="t60-about">
+	<div class="columns medium-3">
+		<img class="about-widget-img"
+		src="{{ widget_image }}" alt="Profile image of {{ include.widget.name }}">
+	</div>
+
+	<div class="columns medium-9">
+		<h2>{{ include.widget.name }}</h2>
+		<blockquote>
+			{{ include.widget.quote }}
+		</blockquote>
+	</div>
+</div>
+{% else %}
+<div class="t60-about">
+	<div class="columns medium-9">
+		<h2>{{ include.widget.name }}</h2>
+		<blockquote>
+			{{ include.widget.quote }}
+		</blockquote>
+	</div>
+	<div class="columns medium-3">
+		<img class="about-widget-img"
+		src="{{ widget_image }}" alt="Profile image of {{ include.widget.name }}">
+	</div>
+
+
+</div>
+{% endif %}

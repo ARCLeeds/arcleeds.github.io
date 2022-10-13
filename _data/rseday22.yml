@@ -1,0 +1,69 @@
+main:
+  - name: Alex Coleman
+    quote: >
+      I joined the team after spending a year as a Data Scientist in Leeds Institute of Data Analytics and completing my lab based PhD before that.
+      Being an RSE has allowed me to not only develop my software engineering skills but also help apply and advocate for best practice across research.
+      This means the day job is incredibly varied from helping support researchers write code to model COVID-19, to helping configure software on the HPC systems 
+      to delivering training course on version control using git.
+      With the ever increasing number of researchers doing some form of computation as part of their work having a core team of RSEs who can provide expert advice and
+      ensure researchers are exposed to cutting edge tools and techniques is critical to accelerating innovation at Leeds.
+    
+    img: team/alexcoleman.jpeg
+
+  - name: John Hodrien
+    quote: >
+      I've had an affinity for computers since my parents first bought a ZX
+      Spectrum when I was about three, but was never quite sure what I've
+      wanted to do with them.  I think in many ways these story is still
+      playing out!  This led me to a Computer Science degree, a year teaching,
+      and a number of years working as a researcher within the School of
+      Computing at Leeds.  I had a great deal of fun with a mix of research,
+      from e-social science, to digital pathology on clusters of machines.
+      Whilst I enjoyed both teaching and research at the university, I ended up
+      leaving research due to fixed term nature of funding, leading me into a
+      support role within the IT services here at the university.  In many ways
+      I think this suits me better, as I've always enjoyed solving other
+      people's problems; I relish the mix of not just technical problem
+      solving, but also user education and exploring solutions together with
+      researchers.  As an RSE, I can share my technical expertise with
+      researchers and the wider community at Leeds, and have the time and space
+      to explore new tools and technologies, to help solve real problems our
+      researchers are facing.
+    img: team/johnhodrien.png
+
+  - name: Patricia Ternes
+    quote: >
+      I started programming for free and spontaneous pressure during my master's
+      degree. At the time I was trying to model water on a rough surface and all
+      I had access to was a patient supervisor and photocopies of very old
+      programming books. I remember that after adding a feature to my code, it
+      started to give the wrong result and I spent 4 (bloody) months trying to
+      find the error (a wrong signal!!!). Today I know good practices and
+      technologies that prevent errors like this from being a big problem, and
+      one of the things I like most about being a RSE is being able to guide
+      students and researchers so that they can produce science in a less painful
+      way and with higher quality than I did.
+      My wish for the future is for our team to be able to integrate more and more
+      with students and researches and for our work to be increasingly impactful.
+      I also hope that we can encourage and participate in a movement around
+      open and reproducible research.
+    img: team/patriciaternes.jpg
+
+  - name: Ollie Clark
+    quote: "
+    Ollie is a Research Software Engineer in Reserach Computing at the University 
+    of Leeds. Started his career at teaching databases and web technology and then 
+    moved on to supporting database servers. More recently he moved on to supporting 
+    and developing a large information system and smaller web apps. He has knowledge 
+    of C/C++, Perl, Javascript and Python languages and SQL Server, MySQL, Postgress
+    and Cosmos databases. He also has experience of deplying cloud solutions in Azure.
+    "
+    img: team/ollieclark.jpg
+    
+  - name: Nick Rhodes
+    quote: >
+      I enjoy the variety of the work within my role; using a wide range of skills and experience supporting and working with the diverse range researchers (both in terms of subject areas and technologies) we have in the University.
+      I highly value being part of a strong Research Computing team, each college has differing skillsets and backgrounds that complement each other well, allowing us to work together and support each other, which is essential for a central resource to the research community at the University.
+      A significant part of our daily work involves communication and collaboration, not only collaborating with researchers, but also with others within IT and wider university and nationally.
+      Another aspect that I like about my role is the need to develop new technologies and skills to support unique requirements from research and allow researchers to utilise computing resources to do better research. This requires our team to be agile and continuously explore emerging technologies.
+    img: team/nickrhodes.jpeg
