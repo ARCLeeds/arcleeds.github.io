@@ -40,12 +40,12 @@ As part of this project, my work contributes to the development of AI-based mode
 
 ## What tools or technologies do you use in your research? (Programming languages, packages, APIs)
 
-Python and MATSim, a Java-based open-source framework for implementing large-scale agent-based transport simulations.
+SPENSER Synthetic Population Estimation and Scenario Projection Model, Python and MATSim, a Java-based open-source framework for implementing large-scale agent-based transport simulations.
 
 ## How does HPC help your research?
 
 In this project, we use an approach called Agent-Based Modelling and Simulation. We model each individual, with socio-demographic characteristics, spatial location, decisions and mobility behaviours. As seniors do not live in a senior-only world, we model all the population in order to reproduce the interactions (in the households, on the road, ..) between the individuals.
-HPC helps me to run the python scripts and MATSim simulations for big populations in a reasonable time. We model around 3 millions agents for WMCA and 700,000 agents for Winnipeg. Code that would take weeks or months to be executed on my laptop runs in some hours on HPC (making my year and a half postdoc much more productive!).
+HPC helps me to run the python scripts and MATSim simulations for big populations in a reasonable time. We model around 3 millions agents for West Midlands Combined Area and 700,000 agents for Winnipeg. Code that would take weeks or months to be executed on my laptop runs in some hours on HPC (making my year and a half postdoc much more productive!).
 
 ## What is the potential impact of your research?
 
@@ -80,7 +80,7 @@ This research is conducted with Pr. Ed Manley as part of the RAIM project (Respo
     
       
       <figcaption>
-        Image 1: % of individuals aged 65 years and over by geographic area (MSOA) in the 2022 synthetic population vs. in the real population reported by the 2021 census.
+        Image 1: West Midlands Combined Area: % of individuals aged 65 years and over by geographic area (MSOA) in the 2022 synthetic population vs. in the real population reported by the 2021 census. The synthetic population reflects the tendency for people aged 65 and over to live outside city centres.
       </figcaption>    
     
   </div>
@@ -92,7 +92,7 @@ This research is conducted with Pr. Ed Manley as part of the RAIM project (Respo
     
       
       <figcaption>
-        
+        Image 2: Snapshot of a simulation of 0.02% of the West Midlands Combined Area population with MATSim. Residential buildings are in red, non-residential buildings are in blue and the road network is in light grey (data from OpenStreetMap). Each green arrow represents an agent travelling by car. 
       </figcaption>    
     
   </div>
