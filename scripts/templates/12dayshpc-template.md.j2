@@ -2,14 +2,14 @@
 layout: page
 title: "{{ subtitle }}"
 date: {{ Publish_date }}
-subheadline: "🎄12 Days of HPC 2021"
+subheadline: "🎄12 Days of HPC 2022"
 teaser: "
  Blog post number {{ post_number }} in our 12 days of HPC series from {{ your_department }}!
 "
 author: "{{ your_name }}"
 
 image:
-    thumb: blog/12dayshpc-2021/12dayshpc-slice.png
+  thumb: blog/12dayshpc-2022/2022-logo.png
 
 breadcrumb: true
 ---
@@ -46,7 +46,7 @@ _During the month of December we're featuring blog posts from researchers from a
 
 {% if christmas_song | length %}
 
-## In your opinion, what is the ultimate Christmas song?
+## What's your favourite part of your Christmas dinner? 
 
 {{ christmas_song }}
 
@@ -69,7 +69,7 @@ _During the month of December we're featuring blog posts from researchers from a
 {% for img in image_lst %}
 
   <div class='row'>
-    <img src="{{ "/images/blog/12dayshpc-2021/" ~  img }}"
+    <img src="{{ "/images/blog/12dayshpc-2022/" ~  img }}"
     alt="{{ img_cap }}" />
     {% if captions | length %}
       {% set img_cap = captions.split(",")[loop.index-1] %}
