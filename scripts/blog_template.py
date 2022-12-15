@@ -42,7 +42,7 @@ def fix_img_paths(data: pd.DataFrame) -> pd.Series:
 
     assert 'image_file' in data.columns 
 
-    return data['image_file'].fillna("").apply(lambda x: x.split("/")[-1].replace("%20","_"))
+    return data['image_file'].fillna("").apply(lambda x: ",".join([x.split("/")[-1].replace("%20","_") for x in  x.split(";")]))
 
 def main(data_file, output_path):
     """

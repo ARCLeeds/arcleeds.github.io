@@ -72,7 +72,7 @@ _During the month of December we're featuring blog posts from researchers from a
     <img src="{{ "/images/blog/12dayshpc-2022/" ~  img }}"
     alt="{{ img_cap }}" />
     {% if captions | length %}
-      {% set img_cap = captions.split(",")[loop.index-1] %}
+      {% set img_cap = captions.split("\n")[loop.index-1] %}
       <figcaption>
         {{ img_cap }}
       </figcaption>    
