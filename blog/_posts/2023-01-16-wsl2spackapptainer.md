@@ -257,7 +257,7 @@ We can then ask spack to generate a recipe:
 spack containerize > py-espresso-walberla.def
 ```
 
-That tries to use standard Spack, not our version, so let's just tweak it to delete the version in the container, and copy ours in instead:
+That tries to use Spack from within their Docker container, not our version which contains the extra packages we've added, so let's just tweak it to delete the version in the container, and copy ours in instead:
 ```bash
 %files
 spack /opt/newspack
