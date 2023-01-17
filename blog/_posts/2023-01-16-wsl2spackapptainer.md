@@ -98,7 +98,7 @@ There's no point tweaking the py-espresso package to use waLBerla yet, given we 
 
 ### Install waLBerla
 
-There isn't a package for waLBerla, but it is a standard CMake package, so should be easy for Spack to handle.
+There isn't a package for waLBerla, but it is a standard CMake package, so should be easy for Spack to handle.  `spack create` is able to interrogate the source release, and use that to create a template build script:
 
 ```bash
 spack create https://i10git.cs.fau.de/walberla/walberla/-/archive/v6.1/walberla-v6.1.tar.bz2
