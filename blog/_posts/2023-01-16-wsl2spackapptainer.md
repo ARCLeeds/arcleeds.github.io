@@ -270,7 +270,7 @@ spack /opt/newspack
    mv /opt/newspack /opt/spack
 ```
 
-Installing apptainer, and required dependencies:
+We're all setup at this point to try to make a container image, but don't have the necessary software to do so.  So next we need to install Apptainer into our WSL2 instance, along with the required dependencies:
 ```bash
 sudo apt-get install -y uidmap squashfuse fuse2fs fuse-overlayfs gfortran
 spack install apptainer@1.1.5~suid
