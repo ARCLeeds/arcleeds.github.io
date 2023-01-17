@@ -35,7 +35,7 @@ I installed the default [Ubuntu image from the Microsoft Store](https://apps.mic
 
 Creating a WSL instance using this is straighforward.  In a command prompt run:
 
-```
+```bash
 wsl --install Ubuntu
 ```
 
@@ -47,7 +47,7 @@ Up pops a new terminal, which asks you to set a username and password, and then 
 
 Well, before we install Spack, we're going to install some dependencies:
 
-```{bash}
+```bash
 sudo apt-get update -y
 sudo apt-get install -y build-essential gfortran
 ```
@@ -55,7 +55,7 @@ This is the essential bits that Spack's likely to need - it includes compilers a
 
 Installing Spack itself is just like on any other Linux system:
 
-```
+```bash
 # Get it from github
 git clone https://github.com/spack/spack
 cd spack
@@ -72,7 +72,7 @@ That all works cleanly:
 
 We can have a look at the package that exists for espressomd in Spack:
 
-```
+```bash
 $ spack list |grep -i espresso
 py-espresso
 py-espressopp
@@ -81,13 +81,13 @@ quantum-espresso
 
 We have a few options there, and we can look at each one:
 
-```
+```bash
 spack info py-espresso
 ```
 
 This shows us it's the one we want, but doesn't mention anything about waLBerla, so it looks like we'll have to sort this bit out ourselves.  You can also look at the full list of dependencies it expects to need using:
 
-```
+```bash
 spack spec py-espresso
 ```
 
@@ -99,14 +99,14 @@ There's no point tweaking the py-espresso package to use waLBerla yet, given we 
 
 There isn't a package for waLBerla, but it is a standard CMake package, so should be easy for Spack to handle.
 
-```
+```bash
 spack create https://i10git.cs.fau.de/walberla/walberla/-/archive/v6.1/walberla-v6.1.tar.bz2
 ```
 
 ![Basic recipe](/images/blog/wsl2spackapptainer/initialrecipe.png)
 Now this isn't a perfect package file, as it doesn't have any dependencies defined, but it's a very nice starting point, given how little effort we've had to put in to make it.  Let's give that a try and see what fails, if anything:
 
-```
+```bash
 spack install walberla
 ```
 
@@ -118,7 +118,7 @@ Wrapper.h:68:10: fatal error: mpi.h: No such file or directory
 
 Ah okay, it needs MPI to be installed. Edit the recipe (`spack edit walberla`) so we can add a dependency on mpi where it says in the file:
 
-```
+```python
 depends_on("mpi")
 ```
 
@@ -132,12 +132,10 @@ Retry the install (`spack install walberla`) and it fails again, this time with 
 
 What's happened here is that we've run out of memory, since by default, WSL2 gets no more than 50%/8Gbytes of RAM, and 2Gbytes of swap.  To increase this, create a file in your Windows home directory (e.g `C:\Users\exuser`) called .wslconfig containing:
 
-```
+```bash
 [wsl2]
-
 # Limits VM memory to use no more than 12 GB, defaults to 50% of ram
 memory=12GB
-
 # Sets the amount of swap storage space to 16GB, default is 25% of available RAM
 swap=16GB
 ```
@@ -146,13 +144,13 @@ In my case, this is just enough to let it build successfully, but you may want d
 
 You need to restart wsl at this point, so in a Windows command prompt:
 
-```
+```bash
 wsl --shutdown
 ```
 
 Start your Ubuntu session back up (I just clicked the Ubuntu entry in the Start Menu), reload spack into your environment, and build waLBerla again:
 
-```
+```bash
 . spack/share/spack/setup-env.sh
 spack install walberla
 ```
@@ -167,13 +165,13 @@ This is the point I realise that what I thought I understood about how espressom
 
 We're going to create a new package py-espresso-walberla, and create a config based on py-espresso, but with the other git repo, and targeting the branch we want to build:
 
-```
+```bash
 spack create -n py-espresso-walberla https://github.com/RudolfWeeber/espresso -t cmake
 ```
 
 This config is wrong, but if I copy the text out of `spack edit py-espresso` and edit it to fix the class name, git repo, and branch, we end up with:
 
-```
+```python
 # Copyright 2013-2022 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
@@ -218,7 +216,7 @@ class PyEspressoWalberla(CMakePackage):
 
 That includes everything but turning on the waLBerla support, so we add in:
 
-```
+```python
     variant("walberla", default=True, description="Include waLBerla support")
     def cmake_args(self):
         spec = self.spec
@@ -241,7 +239,7 @@ What if I wanted to export this as a container to run on another system?  This i
 Spack has support for making Apptainer compatible recipes for exporting Spack environments into containers, but it's not quite up to the challenge of working with this modified Spack (that exists on this machine alone).
 
 So let's do the nearly-but-not quite, then tweak it.  If we write a spack.yaml file:
-```
+```yaml
 spack:
   specs:
   - py-espresso-walberla
@@ -253,12 +251,12 @@ spack:
       spack: develop
 ```
 We can then ask spack to generate a recipe:
-```
+```bash
 spack containerize > py-espresso-walberla.def
 ```
 
 That tries to use standard Spack, not our version, so let's just tweak it to delete the version in the container, and copy ours in instead:
-```
+```bash
 %files
 spack /opt/newspack
 
@@ -268,13 +266,13 @@ spack /opt/newspack
 ```
 
 Installing apptainer, and required dependencies:
-```
+```bash
 sudo apt-get install -y uidmap squashfuse fuse2fs fuse-overlayfs gfortran
 spack install apptainer@1.1.5~suid
 ```
 
 Then use it to build the container:
-```
+```bash
 spack load apptainer
 apptainer build -B /run py-espresso-walberla.sif py-espresso-walberla.def
 ```
