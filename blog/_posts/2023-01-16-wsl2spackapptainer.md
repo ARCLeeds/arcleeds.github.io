@@ -165,7 +165,7 @@ This is the point I realise that what I thought I understood about how espressom
 
 ### Actually installing py-espresso with waLBerla support
 
-We're going to create a new package py-espresso-walberla, and create a config based on py-espresso, but with the other git repo, and targeting the branch we want to build:
+We're going to create a new package py-espresso-walberla, and create a config based on py-espresso, but with the other git repo, and targeting the branch we want to build.  This is similar to what we did before with `spack create` but here's we're giving it a name explicitly, and making sure that it understands that it's a project that builds via CMake.
 
 ```bash
 spack create -n py-espresso-walberla https://github.com/RudolfWeeber/espresso -t cmake
