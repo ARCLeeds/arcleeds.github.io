@@ -21,7 +21,7 @@ This was meant as a deliberate tinker with these tools, to see what worked, and 
 
 The idea was to use WSL2 under Windows to get [ESPResSo](https://espressomd.org/wordpress/) working with [waLBerla](https://www.walberla.net/) integration. although I ended up a little off piste.
 
-Since there weren't believe to be packages that offered this, we'd need to build stuff from source to get there.
+Since there weren't believed to be packages that offered this, we'd need to build stuff from source to get there.
 
 [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) was used for the Linux environment under Windows, [Spack](https://spack.io/) was used to build software, and [Apptainer](https://apptainer.org/) was used to build a container at the end, that could be taken and used elsewhere, for example on an HPC system.
 
@@ -66,6 +66,7 @@ git checkout v0.19.0
 ```
 
 That all works cleanly:
+
 ![Install spack](/images/blog/wsl2spackapptainer/installspack.png)
 
 ### Check espressomd
@@ -104,6 +105,7 @@ spack create https://i10git.cs.fau.de/walberla/walberla/-/archive/v6.1/walberla-
 ```
 
 ![Basic recipe](/images/blog/wsl2spackapptainer/initialrecipe.png)
+
 Now this isn't a perfect package file, as it doesn't have any dependencies defined, but it's a very nice starting point, given how little effort we've had to put in to make it.  Let's give that a try and see what fails, if anything:
 
 ```bash
@@ -116,7 +118,7 @@ This goes through and installs all the things it thinks it needs to build a gene
 Wrapper.h:68:10: fatal error: mpi.h: No such file or directory
 ```
 
-Ah okay, it needs MPI to be installed. Edit the recipe (`spack edit walberla`) so we can add a dependency on mpi where it says in the file:
+Ah okay, it needs MPI to be installed. Edit the recipe (`spack edit walberla`) so we can add a dependency on MPI where it says in the file:
 
 ```python
 depends_on("mpi")
@@ -159,7 +161,7 @@ Spack will only rebuild what it needs to, so it should skip straight to building
 
 ### Why I'm off piste...
 
-This is the point I realise that what I thought I understood about how espressomd integrated with waLBerla was total nonsense, and I'd been digging an interesting shaped hole all this time.  The integration isn't present in the main fork, and when it is included, it pulls in its own copy of waLBerla rather than uses an existing build version!  Ah well, at least we know we've got all the pieces in places for this to work...
+This is the point I realise that what I thought I understood about how espressomd integrated with waLBerla was total nonsense, and I'd been digging an interesting shaped hole all this time.  The integration isn't present in the main fork, and when it is included, it pulls in its own copy of waLBerla rather than using an existing build version!  Ah well, at least we know we've got all the pieces in places for this to work...
 
 ### Actually installing py-espresso with waLBerla support
 
