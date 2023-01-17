@@ -282,7 +282,7 @@ spack load apptainer
 apptainer build -B /run py-espresso-walberla.sif py-espresso-walberla.def
 ```
 
-There's a couple of gotchas in there that I seem to have magically sidestepped with awesome foresight.  Ahem.  Make sure you don't use the default OS image, else the compiler used is too old, and we've not done anything to load a newer compiler.  Also, if you get a crypic permission denied error, that's what the `-B /run` avoids and you might end up spending far too long scratching you head why it's complaining.  Apptainer is assuming that /dev/shm is a writable ramdisk, yet in the host environment we're using, /dev/shm is actually a symbolic link to somewhere else inside /run, so without this extra bind mount, which makes /run outside the container visible as /run within the container, Spack within the build container is unable to write to the ramdisk as it's expecting to be able to.
+There's a couple of gotchas in there that I seem to have magically sidestepped with awesome foresight.  Ahem.  Make sure you don't use the default OS image, else the compiler used is too old, and we've not done anything to load a newer compiler.  Also, if you get a cryptic permission denied error, that's what the `-B /run` avoids and you might end up spending far too long scratching you head why it's complaining.  Apptainer is assuming that `/dev/shm` is a writable ramdisk, yet in the host environment we're using, `/dev/shm` is actually a symbolic link to somewhere else inside `/run`, so without this extra bind mount, which makes `/run` outside the container visible as `/run` within the container, Spack within the build container is unable to write to the ramdisk as it's expecting to be able to.
 
 # Summary
 
