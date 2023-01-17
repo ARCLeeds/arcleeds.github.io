@@ -8,7 +8,7 @@ teaser: "
 author: "Research Computing"
 
 image:
-  thumb: HPC3small.jpg
+  thumb: blog/wsl2spackapptainer/spack-logo.svg
 
 breadcrumb: true
 ---
