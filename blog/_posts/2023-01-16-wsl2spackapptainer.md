@@ -252,12 +252,17 @@ spack:
       os: "ubuntu:22.04"
       spack: develop
 ```
-We can then ask spack to generate a recipe:
+
+Here we create a file for Spack asking for our software (py-espresso-walberla) to be installed, making a recipe suitable to be built with Singularity (which is compatible with Apptainer), and to use ubuntu:22.04 as the base distribution for the build (since we might as well try matching the version we've already tested with in WSL2).
+
+We can then ask spack to generate a recipe to be used by Apptainer to make this container:
 ```bash
 spack containerize > py-espresso-walberla.def
 ```
 
-That tries to use Spack from within their Docker container, not our version which contains the extra packages we've added, so let's just tweak it to delete the version in the container, and copy ours in instead.
+Here it would probably help you to understand what the Spack created container recipe tries to do.
+
+The idea here is that Spack generates a recipe to build you a container with the software you've asked for inside.  But to do that, it pulls down a Docker container from a container registry (e.g. Docker Hub), which comes preconfigured with a working Spack.  This causes us some bother here, because we don't want the stock version, we want to use a modified version that contains our changes.  In theory there's a way of telling it to pull a custom version from a git repository, but I had a look at this and it appears to not work properly when building a Singularity container, and only works if you're building a Docker container, which I don't want to do.  The fix we apply here is to use the default Docker container to build our new container, but before using it, we delete the Spack install they've put on, and copy in the one we've just tested.  It's a bit messy, but it'll do.
 
 Additional tweaks to py-espresso-walberla.def:
 ```bash
