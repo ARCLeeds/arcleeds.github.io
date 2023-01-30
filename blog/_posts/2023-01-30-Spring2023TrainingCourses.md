@@ -97,7 +97,7 @@ At the end of the workshop, attendees will be able to:
 * Reading tabular data and simple statistical analysis
 * Plotting data
 * Storing multiple values using lists
-* Repeating things using LOOPS
+* Repeating things using loops
 * Creating functions
 * Making programs do different things for different data (Conditionals: IF statements)
 * Writing simple tests: making sure our programs behave properly
@@ -147,7 +147,7 @@ At the end of the workshop, attendees will be able to:
 - Reading tabular data and simple statistical analysis
 - Plotting data
 - Storing multiple values using lists
-- Repeating things using LOOPS
+- Repeating things using loops
 - Creating functions
 - Making programs do different things for different data (Conditionals: IF statements)
 - Writing simple tests: making sure our programs behave properly
