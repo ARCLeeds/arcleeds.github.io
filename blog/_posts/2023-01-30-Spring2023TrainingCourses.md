@@ -77,7 +77,7 @@ This is a hands-on workshop intended as an introduction to the Linux command lin
 This workshop is designed to introduce new users to the High Performance Computing (HPC) service at Leeds. It will be useful if you are new to HPC in research or have used HPC elsewhere. It is suitable for researchers from all faculties and examples will be given from a range of research domains. The purpose of the workshop is to give users the skills to be an effective user of the HPC service and to get codes and applications running effectively. This course is split over two sessions a week apart, **please do not apply for this course unless you are able to attend ALL the sessions**.
 
 <div style="text-align: center;">
-<a style="color:#FFF;text-decoration:inherit;" href="https://arc.leeds.ac.uk/training/courses/hpc0/" class="button">Book now</a>
+<a style="color:#FFF;text-decoration:inherit;" href="https://arc.leeds.ac.uk/training/courses/hpc1/" class="button">Book now</a>
 </div>
 
 ### SWD1a: Introduction to Python programming (In person)
@@ -127,7 +127,7 @@ This is a hands-on workshop intended as an introduction to the Linux command lin
 This workshop is designed to introduce new users to the High Performance Computing (HPC) service at Leeds. It will be useful if you are new to HPC in research or have used HPC elsewhere. It is suitable for researchers from all faculties and examples will be given from a range of research domains. The purpose of the workshop is to give users the skills to be an effective user of the HPC service and to get codes and applications running effectively. This course is split over two sessions a week apart, **please do not apply for this course unless you are able to attend ALL the sessions**.
 
 <div style="text-align: center;">
-<a style="color:#FFF;text-decoration:inherit;" href="https://arc.leeds.ac.uk/training/courses/hpc0/" class="button">Book now</a>
+<a style="color:#FFF;text-decoration:inherit;" href="https://arc.leeds.ac.uk/training/courses/hpc1/" class="button">Book now</a>
 </div>
 
 ### SWD1b: Introduction to R Programming (In person)
