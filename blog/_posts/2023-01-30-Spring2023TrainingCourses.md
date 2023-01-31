@@ -83,7 +83,7 @@ This workshop is designed to introduce new users to the High Performance Computi
 ### SWD1a: Introduction to Python programming (In person)
 
 * Wednesday 29th March 10am-4pm
-* Wednesday 30th March 10am-4pm
+* Thursday 30th March 10am-4pm
 
 This is an introduction to programming in Python for people with little or no previous programming experience. It uses plotting and visualising data as its motivating example based on an established research dataset. The course is suitable for attendees from all research domains and we will use a Web based programming environment (a Jupyter Notebook) which means you will be able to apply the ideas you learn on the course straightaway without having to install any software at home or at work. This course is running as 2 all day sessions delivered in person on campus. **Please do not apply for this course unless you are able to attend ALL the sessions.**
 
