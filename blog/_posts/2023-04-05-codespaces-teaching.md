@@ -13,7 +13,7 @@ image:
 breadcrumb: true
 ---
 
-_Thumbnail taken from [GitHub blog post](https://github.blog/2021-08-11-githubs-engineering-team-moved-codespaces/)._
+_Thumbnail taken from [GitHub blog post](https://github.blog/2021-08-11-githubs-engineering-team-moved-codespaces/). All copyright for the image belongs to GitHub._
 
 Recently, we delivered a Python and git/GitHub crash course session for a centre for doctoral training. It’s always great to do courses with a room full of keen PhD students and this was no exception. The catch with this course was the limited time frame required to both introduce Python and also git and GitHub. Our internal preference is to do this as two separate courses, a 2-day Python course and a 1-day intro to version control using git and GitHub. 
 
