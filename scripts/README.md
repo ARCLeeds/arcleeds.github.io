@@ -7,9 +7,11 @@ This directory is for any utility scripts that are used in generating website co
 The 12 days of HPC is our annual blog series showcasing research projects that run on the HPC.
 These entries are collected via a Microsoft Form which is exported as an Excel spreadsheet and converted to a .csv file.
 
-Some hand tinkering is required with the form .csv file as it contains weird and wonderful OneDrive paths to image files and formats image files with their name and the name of the user appended with whitespace.
+Some hand tinkering is required with the form .csv file as it contains weird and wonderful OneDrive paths to image files and formats image files with their name and the name of the user appended with whitespace. 
+The function `fix_img_paths` in `blog_template.py` attempts to resolve this but is not guaranteed against Microsoft Form behaviour changes with
+regards to uploaded files.
 
-After tinkering with the spreadsheet you can run the `blog_template.py` script with some arguments to build the markdown blog post files using the jinja2 templates.
+After tinkering with the spreadsheet you can run the `blog_template.py` script with some arguments to build the markdown blog post files using the Jinja templates.
 
 ### Usage
 
@@ -60,19 +62,37 @@ Your final arrangement of columns for the template to work should look like this
 | extra_content |
 
 If necessarily you could look at changing the column names but you will also need to change the
-variables used in the jinja2 template.
+variables used in the Jinja template.
 
 You are now ready to generate your blog posts! You can do this by setting up a virtualenv:
 
 ```bash
 $ cd scripts
 
-$ python -m venv .venv
+# create a virtual environment in the scripts directory
+$ python -m venv venv
 
-$ . .venv/bin/activate
+# activate the virtual environment
+$ . venv/bin/activate
 
+# install the dependencies into the virtual environment
 (.venv)$ pip install -r requirements.txt
 
+# run the script for creating blog posts from the data file
 $ python blog_template.py path/to/data.csv path/to/output/directory/for/.md
 
 ```
+
+## Scheduling posts
+
+To save effort on having to submit a new PR each day and have it merged this repository also 
+includes a [special GitHub action](../.github/workflows/merge-schedule.yml) for scheduling PR merges.
+
+To use this GitHub action just create a PR for each post and in the description add the following:
+
+```
+/schedule YYYY-MM-DD
+```
+
+Where `YYYY-MM-DD` is the date you wish the PR to be merged. 
+The action will schedule the PR to be merged on that date on or around midnight.
