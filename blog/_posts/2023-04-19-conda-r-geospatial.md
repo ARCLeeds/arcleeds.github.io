@@ -85,3 +85,70 @@ This however does come with some potential drawbacks:
 - We're constrained by what libraries are available via Conda, now that we're using Conda to manage our library dependencies we're dependent on someone making sure those libraries are available and up-to-date via Conda. It also becomes harder for us to compile a different library from source and make it available to our Conda-installed version of R
 - We're using a different compiler toolchain than the one on our system, on ARC4 the R module has been compiled with the compilers available on the HPC. When we use the Conda-installed version of R this has been compiled using a different compiler toolchain (that is also installed via Conda). This may not have optimised for the architecture of our HPC and so we might not be getting the best performance for Conda-installed R versus the R module on HPC
 
+## Spack/Apptainer alternative
+
+You could decide that you wanted to create a container with this package
+included instead.
+
+[Spack](https://spack.io/) is a package manager for supercomputers, that can
+also help you build containers.  [Apptainer](https://apptainer.org/) is the
+most widely used container system for HPCs.
+
+The Conda approach is definitely more straightforward, but there are
+potentially performance advantages to the Spack route, with it using a
+compressed image that takes up less space on disk, and also a single file,
+which contrasts with the ~50k files likely with the Conda approach.  This is
+particularly true if you're using a Lustre filesystem, that performs poorly
+with large numbers of files.
+
+It's also easier to archive on OneDrive, to share with other people, or
+transfer onto other systems.
+
+### Method
+
+```bash
+# Load the necessary anaconda (for Python) and apptainer modules
+module add anaconda/2022.05 apptainer/1.1.6
+
+# Write out a config file defining the container we want
+cat > spack.yaml << EOB
+spack:
+  specs:
+  - gdal@3
+  - r@4.1.1
+  - r-codetools
+  - r-terra
+
+  container:
+    format: singularity
+    images:
+      os: "ubuntu:22.04"
+      spack: develop
+    os_packages:
+      final:
+      - libgomp1
+      - libgfortran5
+      - locales-all
+EOB
+
+# Install a copy of Spack
+git clone https://github.com/spack/spack
+# Enable Spack
+. spack/share/spack/setup-env.sh 
+# Generate a container definition file
+spack containerize > r-geo.def
+# Built it into a SIF file
+apptainer build r-geo.sif r-geo.def
+
+# You can delete the files we no longer need
+rm -rf spack r-geo.def spack.yaml
+```
+
+This single file we've generated can now be used, e.g:
+
+```bash
+apptainer run r-geo.sif Rscript ./test.R
+```
+
+I don't think there's a right or wrong answer to problems like this, and it's
+nice to have options.
