@@ -93,7 +93,7 @@ def main(data_file: str, output_path: str, date: str) -> None:
     """
     # open data file from csv
     # expects csv file containing windows encoding from forms
-    working_file = pd.read_csv(data_file, encoding="latin")
+    working_file = pd.read_excel(data_file)
 
     working_file = column_mapper(working_file)
 
