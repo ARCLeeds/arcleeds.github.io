@@ -96,7 +96,9 @@ def main(data_file: str, output_path: str, date: str) -> None:
 
     working_file = column_mapper(working_file)
 
-    working_file['image_file'] = fix_img_paths(working_file)
+    # randomly shuffle the rows
+    working_file = working_file.sample(frac=1, random_state=42).reset_index(drop=True)
+
 
     # fill blank entries (which default to nan)
     # to empty string, we use this in jinja2 template to test for length of variable
