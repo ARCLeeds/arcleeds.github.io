@@ -14,6 +14,7 @@ spreadsheet and converted to a `.csv` file and used as the input for the
 
 The `blog_template.py` file does a number of operations to generate markdown
 blog posts these include:
+
 - Reading in the `.csv` file as a Pandas Dataframe
 - Renames the columns based on a Python dictionary defined in the file, we need
   to do this because Jinja needs to map values to keys and the keys can't have
@@ -85,3 +86,20 @@ To use this GitHub action just create a PR for each post and in the description 
 
 Where `YYYY-MM-DD` is the date you wish the PR to be merged. 
 The action will schedule the PR to be merged on that date on or around midnight.
+
+## Troubleshooting
+
+### Changes in the MS Form
+
+If the MS Form changes, it is necessary to update the mapping variable (`col_dict`) in the `blog_template.py` file to ensure consistency. A common example is the **festive question** that we tend to change from year to year. In this case, it is necessary to change the `key` to the `christmas_question` value.
+
+If the column name doesn't match any options in our col_dict we get a `nan` not an error. This can lead to further errors downstream in Jinja that look like this:
+
+```bash
+  File "/home/medacola/code/forks/arcleeds.github.io/scripts/blog_template.py", line 69, in render_md
+    file_todisk.write(get_template.render(**content))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: keywords must be strings
+```
+
+This error more than likely means we have a column name that has set itself to `nan` via this function.
