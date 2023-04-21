@@ -38,7 +38,8 @@ Conda environments are very similar to virtual environments in Python; they crea
 When using Conda on our HPC systems it's important to do our [suggested initial configuration steps](https://arcdocs.leeds.ac.uk/software/compilers/anaconda.html#first-time-conda-setup) to ensure you don't fill your home directory with Conda packages.
 
 For our example we want an environment into which we're going to install R and those library dependencies for our geospatial package [`terra`](https://cran.r-project.org/web/packages/terra/index.html).
-We can then use this environment for all our work related to the project we're doing using [`terra`](https://cran.r-project.org/web/packages/terra/index.html) and keep this isolated from any other R based work be might be doing with different packages by not using this environment.
+Having a distinct environment for these dependencies helps isolate our project, making sure that we keep the packages we need clearly specified and separated from any other projects we might be doing that are using different packages.
+This helps prevent package dependency conflicts, where two packages have a dependency on the same package but require incompatible versions of the shared package.
 
 To create an environment we use the `conda create` command. In the snippet below we specify the environment's name, some packages we want to install with specific versions and the [Conda channel](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html) from which we want to install these packages from.
 It's worth noting that the creation of Conda environments can take some time, as it resovles all of our dependencies and fetches them from the Conda channel.
