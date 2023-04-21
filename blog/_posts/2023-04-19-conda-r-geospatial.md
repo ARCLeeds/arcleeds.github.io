@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  Using Conda to install geospatial R packages on ARC4
-date:   2023-04-05
+title:  Using Conda or Spack to install geospatial R packages on ARC4
+date:   2023-04-19
 subheadline: "HPC"
 teaser: "
  Installing geospatial R packages can be challenging on HPC, conda provides on possible solution to this problem.
