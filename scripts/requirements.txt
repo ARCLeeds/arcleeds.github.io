@@ -1,2 +1,2 @@
-Jinja2
-pandas
+Jinja2==3.1.2
+pandas==1.5.2
