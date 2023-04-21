@@ -34,7 +34,7 @@ module add anaconda/2022.05
 ```
 
 This means we can now use the command `conda` in the shell to create and manage conda environments.
-Conda environments are very similar to virtual environments in Python, they create an isolated environment into which we can install packages helping prevent the dependencies of one project conflict with the dependencies of another, [see more about Conda environments in our HPC2 course notes](https://arctraining.github.io/hpc2-software/course/conda.html#conda-environments).
+Conda environments are very similar to virtual environments in Python; they create an isolated environment into which we can install packages, helping prevent the dependencies of one project conflict with the dependencies of another.  [See more about Conda environments in our HPC2 course notes](https://arctraining.github.io/hpc2-software/course/conda.html#conda-environments).
 When using Conda on our HPC systems it's important to do our [suggested initial configuration steps](https://arcdocs.leeds.ac.uk/software/compilers/anaconda.html#first-time-conda-setup) to ensure you don't fill your home directory with Conda packages.
 
 For our example we want an environment into which we're going to install R and those library dependencies for our geospatial package terra.
