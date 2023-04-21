@@ -99,6 +99,11 @@ def main(data_file: str, output_path: str, date: str) -> None:
     # randomly shuffle the rows
     working_file = working_file.sample(frac=1, random_state=42).reset_index(drop=True)
 
+    # create a column with publish date
+    # takes a YYYY-MM-DD string
+    # periods is the number of rows
+    # freq is D for days
+    working_file['Publish_date'] = pd.date_range(date, periods=working_file.shape[0], freq="D").astype(str)
 
     # fill blank entries (which default to nan)
     # to empty string, we use this in jinja2 template to test for length of variable
