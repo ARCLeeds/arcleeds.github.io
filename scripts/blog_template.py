@@ -117,7 +117,9 @@ def main(data_file: str, output_path: str, date: str) -> None:
     # iter through all rows
     for idx, row in working_file.iterrows():
         # render markdown and return filepath it wrote file to
-        file_path = render_md(row.to_dict(), output_path, row["Publish_date"])
+        file_path = render_md(
+            row.to_dict() | {"post_number": (idx + 1)}, output_path, row["Publish_date"]
+        )
 
         # print out to let us know where it wrote too
         print(f"Blog post written to {file_path}")
