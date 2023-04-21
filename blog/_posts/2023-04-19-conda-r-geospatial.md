@@ -83,7 +83,7 @@ We can use it to manage versions of R, along with library dependencies for R pac
 This however does come with some potential drawbacks:
 - We've added another tool, by using Conda to manage dependencies we've added to the complexity of our project because for people to reproduce it they will now need Conda
 - We're constrained by what libraries are available via Conda, now that we're using Conda to manage our library dependencies we're dependent on someone making sure those libraries are available and up-to-date via Conda. It also becomes harder for us to compile a different library from source and make it available to our Conda-installed version of R
-- We're using a different compiler toolchain than the one on our system, on ARC4 the R module has been compiled with the compilers available on the HPC. When we use the Conda-installed version of R this has been compiled using a different compiler toolchain (that is also installed via Conda). This may not have optimised for the architecture of our HPC and so we might not be getting the best performance for Conda-installed R versus the R module on HPC
+- We're using a different compiler toolchain than the one on our system; on ARC4 the R module has been compiled with a specific compiler available on the HPC. When we use the Conda-installed version of R this has been compiled using a different compiler toolchain (that is also installed via Conda). This may not have optimised for the architecture of our HPC and so we might not be getting the best performance for Conda-installed R versus the R module on HPC.
 
 ## Spack/Apptainer alternative
 
