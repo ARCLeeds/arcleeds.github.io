@@ -6,7 +6,7 @@ subheadline: "HPC"
 teaser: "
  Installing geospatial R packages can be challenging on HPC, conda provides on possible solution to this problem.
 "
-author: Alex Coleman
+author: Alex Coleman & John Hodrien
 image:
   thumb: HPC3small.jpg
 
