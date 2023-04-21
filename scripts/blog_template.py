@@ -6,10 +6,10 @@ from jinja2 import Environment, FileSystemLoader
 
 script_dir = os.path.dirname(__file__)
 
-# a mapping of column names from the MS Form to names 
+# a mapping of column names from the MS Form to names
 # used in the jinja template
 col_dict = {
-    "ID":"ID",
+    "ID": "ID",
     "Start time": "Start time",
     "Completion time": "Completion time",
     "Email": "Email",
@@ -31,7 +31,7 @@ col_dict = {
 
 def column_mapper(dataframe: pd.DataFrame) -> pd.DataFrame:
     """
-    A convenience function that maps the col_dict 
+    A convenience function that maps the col_dict
     onto the dataframe columns names
     """
 
@@ -97,6 +97,8 @@ def main(data_file: str, output_path: str, date: str) -> None:
 
     working_file = column_mapper(working_file)
 
+    working_file["image_file"] = fix_img_paths(working_file)
+
     # randomly shuffle the rows
     working_file = working_file.sample(frac=1, random_state=42).reset_index(drop=True)
 
@@ -104,7 +106,9 @@ def main(data_file: str, output_path: str, date: str) -> None:
     # takes a YYYY-MM-DD string
     # periods is the number of rows
     # freq is D for days
-    working_file['Publish_date'] = pd.date_range(date, periods=working_file.shape[0], freq="D").astype(str)
+    working_file["Publish_date"] = pd.date_range(
+        date, periods=working_file.shape[0], freq="D"
+    ).astype(str)
 
     # fill blank entries (which default to nan)
     # to empty string, we use this in jinja2 template to test for length of variable
@@ -112,7 +116,6 @@ def main(data_file: str, output_path: str, date: str) -> None:
 
     # iter through all rows
     for idx, row in working_file.iterrows():
-
         # render markdown and return filepath it wrote file to
         file_path = render_md(row.to_dict(), output_path, row["Publish_date"])
 
@@ -122,9 +125,9 @@ def main(data_file: str, output_path: str, date: str) -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="The 12 days of HPC blog maker!")
-    parser.add_argument('input_file', type=str, help='Path to input .csv file')
-    parser.add_argument('output_file', type=str, help='Path to output file')
-    parser.add_argument('date', type=str, help='Date in YYYY-MM-DD format')
+    parser.add_argument("input_file", type=str, help="Path to input .csv file")
+    parser.add_argument("output_file", type=str, help="Path to output file")
+    parser.add_argument("date", type=str, help="Date in YYYY-MM-DD format")
 
     args = parser.parse_args()
     # take first command line argument as path to .csv file
