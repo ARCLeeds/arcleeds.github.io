@@ -20,7 +20,7 @@ col_dict = {
     "What tools or technologies do you use in your research? (Programming languages, packages, APIs)": "tools_techniques",
     "How does HPC help your research?": "hpc_help",
     "What is the potential impact of your research?": "impact",
-    "In your person opinion, what's the coolest thing about your research?": "coolest",
+    "In your personal opinion, what's the coolest thing about your research?": "coolest",
     "Below you're able to upload some images to include in your post. Please use the box below to provide a caption for each image.": "captions",
     "Upload an image/images to be included with your blogpost": "image_file",
     "What's your favourite part of your Christmas dinner?": "christmas_question",
