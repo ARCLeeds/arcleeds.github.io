@@ -99,7 +99,7 @@ The Conda approach is definitely more straightforward, but there are
 potentially performance advantages to the Spack route, with it using a
 compressed image that takes up less space on disk, and also a single file,
 which contrasts with the ~50k files likely with the Conda approach.  This is
-particularly true if you're using a Lustre filesystem, that performs poorly
+particularly true if you're using a Lustre filesystem (such as /nobackup), that performs poorly
 with large numbers of files.
 
 It's also easier to archive on OneDrive, to share with other people, or
