@@ -5,6 +5,36 @@ from jinja2 import Environment, FileSystemLoader
 
 script_dir = os.path.dirname(__file__)
 
+# a mapping of column names from the MS Form to names 
+# used in the jinja template
+col_dict = {
+    "ID":"ID",
+    "Start time": "Start time",
+    "Completion time": "Completion time",
+    "Email": "Email",
+    "Name": "Name",
+    "What's your name?": "your_name",
+    "What department do you work in?": "your_department",
+    "What would you like the subtitle of your blogpost to be? (Points for festive puns)": "subtitle",
+    "What research question are you trying to answer? (The more detail the better)": "research_question",
+    "What tools or technologies do you use in your research? (Programming languages, packages, APIs)": "tools_techniques",
+    "How does HPC help your research?": "hpc_help",
+    "What is the potential impact of your research?": "impact",
+    "In your person opinion, what's the coolest thing about your research?": "coolest",
+    "Below you're able to upload some images to include in your post. Please use the box below to provide a caption for each image.": "captions",
+    "Upload an image/images to be included with your blogpost": "image_file",
+    "What's your favourite part of your Christmas dinner?": "christmas_question",
+    "Extra content (if there's anything you'd like to add that doesn't fall into the above categories)": "extra_content",
+}
+
+
+def column_mapper(dataframe):
+    """
+    A convenience function that maps the col_dict 
+    onto the dataframe columns names
+    """
+    return dataframe.columns.str.strip().map(col_dict)
+
 
 def render_md(content: dict, output_path: str, date):
     """
