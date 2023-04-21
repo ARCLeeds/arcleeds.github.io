@@ -1,6 +1,7 @@
 import os
 import sys
 import pandas as pd
+import argparse
 from jinja2 import Environment, FileSystemLoader
 
 script_dir = os.path.dirname(__file__)
@@ -120,10 +121,18 @@ def main(data_file: str, output_path: str, date: str) -> None:
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="The 12 days of HPC blog maker!")
+    parser.add_argument('input_file', type=str, help='Path to input .csv file')
+    parser.add_argument('output_file', type=str, help='Path to output file')
+    parser.add_argument('date', type=str, help='Date in YYYY-MM-DD format')
 
+    args = parser.parse_args()
     # take first command line argument as path to .csv file
-    path_to_workbook = sys.argv[1]
+    path_to_workbook = args.input_file
     # take 2nd command line argument as output path
-    output_path = sys.argv[2]
+    output_path = args.output_file
+
+    date = args.date
+
     # run main on both
-    main(path_to_workbook, output_path)
+    main(path_to_workbook, output_path, date)
