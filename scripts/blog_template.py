@@ -33,8 +33,10 @@ def column_mapper(dataframe: pd.DataFrame) -> pd.DataFrame:
     A convenience function that maps the col_dict 
     onto the dataframe columns names
     """
-    return dataframe.columns.str.strip().map(col_dict)
 
+    dataframe.columns = dataframe.columns.str.strip().map(col_dict)
+
+    return dataframe
 
 
 def render_md(content: dict, output_path: str, date: str) -> str:
