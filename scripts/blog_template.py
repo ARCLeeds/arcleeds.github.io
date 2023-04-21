@@ -28,7 +28,7 @@ col_dict = {
 }
 
 
-def column_mapper(dataframe):
+def column_mapper(dataframe: pd.DataFrame) -> pd.DataFrame:
     """
     A convenience function that maps the col_dict 
     onto the dataframe columns names
@@ -36,7 +36,8 @@ def column_mapper(dataframe):
     return dataframe.columns.str.strip().map(col_dict)
 
 
-def render_md(content: dict, output_path: str, date):
+
+def render_md(content: dict, output_path: str, date: str) -> str:
     """
     A helper function for rendering markdown in jinja2 template
 
@@ -74,7 +75,8 @@ def fix_img_paths(data: pd.DataFrame) -> pd.Series:
 
     return data['image_file'].fillna("").apply(lambda x: ",".join([x.split("/")[-1].replace("%20","_") for x in  x.split(";")]))
 
-def main(data_file, output_path):
+
+def main(data_file: str, output_path: str, date: str) -> None:
     """
     Main script for loading data in pandas iterating over rows and passing it to render_md
     """
