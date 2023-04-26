@@ -22,8 +22,8 @@ app](https://npmcalculator.cdrc.ac.uk/). As part of this I looked at developing
 a separate R package that implemented a series of functions to represent the
 Nutrient Profile Model logic and could be applied to product data in bulk.
  
-I’ve used the R language for several years although predominantly as a scripting
-language in data science (using the [tidyverse](https://www.tidyverse.org/)) or
+I’ve used the R language for several years, although predominantly as a scripting
+language in data science (using the [tidyverse](https://www.tidyverse.org/)), or
 developing web apps (using [Shiny](https://shiny.rstudio.com/)). I haven’t ever
 written an R package before so this project has been a really interesting
 experience looking at the R packaging ecosystem. 
@@ -32,7 +32,7 @@ My main reference point for this experience is the fantastic [R packaging
 book](https://r-pkgs.org/) developed by Hadley Wickham and Jennifer Bryan that
 is available free online and provides a really handy guide for how to go about
 developing an R package. This naturally led me to the [devtools
-package](https://devtools.r-lib.org/), which is an R package designed to assist
+package](https://devtools.r-lib.org/), which is an R package designed to help
 you build an R package.
 
 A further tangent on my setup is that I also looked at using a
@@ -41,14 +41,14 @@ developing this package, which is a personal design choice and not at all
 necessary but helped ensure a seamless developer experience between different
 devices!
 
-Getting started with writing an R package using
-[devtools](https://devtools.r-lib.org/) is straight forward, we can the
+To get started with writing an R package using
+[devtools](https://devtools.r-lib.org/) is straight forward, we can use
 following function that steps up a directory with all the files we need
 to get started. Devtools also brings with it the package
 [usethis](https://usethis.r-lib.org/) this which again makes it easy to
 integrate additional tools like [testthat](https://testthat.r-lib.org/) for testing and
-[roxygen2](https://roxygen2.r-lib.org/) for documentation. Adopting devtools it
-is worth noting however will dictate your workflow. The way we’ll write and
+[roxygen2](https://roxygen2.r-lib.org/) for documentation. Adopting devtools, it
+is worth noting however, will dictate your workflow. The way we’ll write and
 interact with our developing package will be through a series of devtools
 functions such as `devtools::test()`, and `devtools::check()`. I didn’t find any
 problems with this approach but I can imagine there might be certain flexibility
