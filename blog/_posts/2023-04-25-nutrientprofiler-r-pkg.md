@@ -4,7 +4,8 @@ title:  Building an R package for the Nutrient Profile Model
 date:   2023-04-25
 subheadline: "RSE"
 teaser: "
- Installing geospatial R packages can be challenging on HPC, conda provides on possible solution to this problem.
+ Read about a recent RSE project that looked at building an R package
+ and some tips along the way.
 "
 author: Alex Coleman
 image:
@@ -42,21 +43,25 @@ necessary but helped ensure a seamless developer experience between different
 devices!
 
 To get started with writing an R package using
-[devtools](https://devtools.r-lib.org/) is straight forward, we can use
-following function that steps up a directory with all the files we need
-to get started. Devtools also brings with it the package
-[usethis](https://usethis.r-lib.org/) this which again makes it easy to
-integrate additional tools like [testthat](https://testthat.r-lib.org/) for testing and
-[roxygen2](https://roxygen2.r-lib.org/) for documentation. Adopting devtools, it
+[devtools](https://devtools.r-lib.org/) is straight forward. Devtools also
+brings with it the package [usethis](https://usethis.r-lib.org/) which includes
+a number of functions for automatically setting up parts of our package. This
+includes setting up our initial package folder. We get started with
+`usethis::create_package()` which creates our package folder locally with all
+the standard boilerplate we need to get started. [Usethis](https://usethis.r-lib.org/)
+is also very useful for integrating additional tools like
+[testthat](https://testthat.r-lib.org/) for testing and 
+[roxygen2](https://roxygen2.r-lib.org/) for documentation, all through functions
+that handle initial boilerplate. Adopting [devtools](https://devtools.r-lib.org/), it
 is worth noting however, will dictate your workflow. The way we’ll write and
 interact with our developing package will be through a series of devtools
 functions such as `devtools::test()`, and `devtools::check()`. I didn’t find any
 problems with this approach but I can imagine there might be certain flexibility
-drawbacks if you want to have super custom setups.
+drawbacks if you want to have a super custom setup.
 
-When initially starting this project I came to it from my previous experience in
+When starting this project I came to it from my previous experience in
 Python and object orientated programming concepts. Whilst these exist within R
-it isn’t a true object oriented language and has a number of [different systems
+it isn’t a truly object oriented language and has a number of [different systems
 for implementing object orientated features](https://adv-r.hadley.nz/oo.html).
 With the time available I briefly dabbled with these but eventually dropped them
 in favour of adopting a purely functional approach and in particular trying to
@@ -103,7 +108,9 @@ The CDRC had previously developed a single form Shiny App that implements this
 model for helping check a product against the Nutrient Profile Model. This
 package expands on that logic and provides it as explicit low level R functions,
 along side high level R functions for applying the Nutrient Profile Model across
-datasets of products.
+datasets of products. The final part of the RSE project has been integrating the
+[`nutrientprofiler`](https://github.com/Leeds-CDRC/nutrientprofiler/) package
+into the Shiny app to support NPM modelling for multiple products at once.
 
 At present the package is not available via CRAN but can be downloaded directly
 from GitHub using the `remotes` package:
