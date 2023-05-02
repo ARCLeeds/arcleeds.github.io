@@ -37,7 +37,7 @@ package](https://devtools.r-lib.org/), which is an R package designed to help
 you build an R package.
 
 A further tangent on my setup is that I also looked at using a
-[devcontainer](https://code.visualstudio.com/docs/devcontainers/containers) for
+[devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) for
 developing this package, which is a personal design choice and not at all
 necessary but helped ensure a seamless developer experience between different
 devices!
@@ -62,7 +62,7 @@ drawbacks if you want to have a super custom setup.
 When starting this project I came to it from my previous experience in
 Python and object orientated programming concepts. Whilst these exist within R
 it isn’t a truly object oriented language and has a number of [different systems
-for implementing object orientated features](https://adv-r.hadley.nz/oo.html).
+for implementing object oriented features](https://adv-r.hadley.nz/oo.html).
 With the time available I briefly dabbled with these but eventually dropped them
 in favour of adopting a purely functional approach and in particular trying to
 write something that could behave reasonably nicely with
