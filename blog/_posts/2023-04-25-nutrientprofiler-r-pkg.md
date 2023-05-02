@@ -102,7 +102,7 @@ nutritional information against the [UK Government Nutrient Profile
 Model](https://www.gov.uk/government/publications/the-nutrient-profiling-model).
 This model was developed by the UK Department of Health to help Ofcom
 implement restrictions in advertising of foods that are high in fats, salt and
-sugar (HFSS). 
+sugar (HFSS) and now forms the basis of [new legislation](https://www.gov.uk/government/publications/restricting-promotions-of-products-high-in-fat-sugar-or-salt-by-location-and-by-volume-price/restricting-promotions-of-products-high-in-fat-sugar-or-salt-by-location-and-by-volume-price-implementation-guidance) restricting in-store and online placement-based promotions.
 
 The CDRC had previously developed a single form Shiny App that implements this
 model for helping check a product against the Nutrient Profile Model. This
@@ -123,4 +123,4 @@ remotes::install_github("Leeds-CDRC/nutrientprofiler")
 
 Vicki Jenneson, who has helped lead on this project said the following about RSE
 involvement: 
-> XXXXXX
+> Having support from Alex in the RSE team has been invaluable for this project. Alex was able to unpick a complex challenge and translate it into a simple set of logical steps, providing a well-organised, flexible and transparent data flow within the R package. Alex approached the project with professionalism and took the time to walk me through his work in a way that I could understand, even introducing me to some of the basics of R package building and using Github. I’m excited to have a scalable version of the NPM calculator, thanks to all the work which Alex put in.
