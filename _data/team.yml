@@ -23,19 +23,6 @@ main:
       version control and RDBMs including Postgres; MySQL and SQL Server.
     "
     img: team/ollieclark.png
-  - name: Alex Coleman
-    role: Research Software Engineer
-    bio:
-      "Alex is a Research Software Engineer at the University of Leeds. Previously,
-      he worked in Leeds Institute of Data Analytics as a Data Scientist intern on
-      projects looking at automatically classifying police dispatch reports using natural language
-      processing and developing methods for simulating police supply and demand. He has experience
-      using Python and R to wrangle data, develop statistical models and implement and deploy
-      interactive applications built ontop those models. He is evangelical about reproducible research
-      especially through leveraging software development tools such as version control, CI/CD, documentation
-      and testing to make code more open and more useful.
-    "
-    img: team/alexcoleman.jpeg
 
   - name: John Hodrien
     role: Research Software Engineer
@@ -110,6 +97,21 @@ alumni:
     Artificial Intelligence for Medical Diagnosis and Care.
     "
     img: team/lukeconibear.jpg
+
+  - name: Alex Coleman
+    role: Research Software Engineer
+    bio:
+      "Previously, he worked in Leeds Institute of Data Analytics as a Data Scientist intern on
+      projects looking at automatically classifying police dispatch reports using natural language
+      processing and developing methods for simulating police supply and demand. He has experience
+      using Python and R to wrangle data, develop statistical models and implement and deploy
+      interactive applications built ontop those models. He is evangelical about reproducible research
+      especially through leveraging software development tools such as version control, CI/CD, documentation
+      and testing to make code more open and more useful.
+
+      Alex has moved on to work as lead developer with Active Travel England.
+    "
+    img: team/alexcoleman.jpeg
 dat:
   - name: Adam Keeley
     role: Data Analyst
