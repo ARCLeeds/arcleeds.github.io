@@ -17,6 +17,8 @@ New upcoming training courses which are now open for registrations!
 
 Whether you want to learn some Linux command line or learn more about the University's high performance computing systems we've got a course for you.
 
+All booking is managed through SAP and by the IT Training team, any questions about your booking should be directed to ittraining@leeds.ac.uk.
+
 Find booking links on the course web pages below.
 
 ## June 2023
