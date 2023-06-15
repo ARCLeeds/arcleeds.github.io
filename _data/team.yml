@@ -71,7 +71,23 @@ main:
     joining the University of Leeds, Patricia also worked as an physics
     undergraduate professor at Federal Institute Catarinense-Brazil (2018-2019).
     "
-    img: team/patriciaternes.jpg
+    img: team/patriciaternes.jpg 
+  - name: Andy Turner
+    role: Research Software Engineer
+    bio: "
+    Andy has specialised in computational research for over 25 years and joined 
+    the team from the School of Geography in June 2023. He has been using the Java 
+    programming language and following Java developments for over 20 years, and 
+    by preference uses Maven and develops modularised code using Netbeans. Andy 
+    develops numerous open source Java libraries for geographical analysis and 
+    modelling, and has experience of developing well-tested workflows that generate 
+    computationally reproducible results on large scale distributed computers. He 
+    is also familiar with managing Python environments, developing Python programs 
+    and developing R scripts for geographical data analysis. Andy has experience 
+    of parallel programming, handling large volumes of sensitive data, and running 
+    large scale simulations on distributed computers.
+    "
+    img: team/andyturner.jpg
 alumni:
   - name: Martin Callaghan
     role: Research Computing Consultant
