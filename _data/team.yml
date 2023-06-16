@@ -75,17 +75,18 @@ main:
   - name: Andy Turner
     role: Research Software Engineer
     bio: "
-    Andy has specialised in computational research for over 25 years and joined 
-    the team from the School of Geography in June 2023. He has been using the Java 
-    programming language and following Java developments for over 20 years, and 
-    by preference uses Maven and develops modularised code using Netbeans. Andy 
-    develops numerous open source Java libraries for geographical analysis and 
-    modelling, and has experience of developing well-tested workflows that generate 
-    computationally reproducible results on large scale distributed computers. He 
-    is also familiar with managing Python environments, developing Python programs 
-    and developing R scripts for geographical data analysis. Andy has experience 
-    of parallel programming, handling large volumes of sensitive data, and running 
-    large scale simulations on distributed computers.
+    Andy joined the team from the School of Geography in June 2023. He develops some open source
+    Java libraries that have a wide range of application for data analysis and modelling, and has 
+    experience of generating computationally reproducible results on large scale distributed 
+    computers. Andy is interested in spatial and temporal data analysis and the development of 
+    environmental digital twins. He has been using the Java programming language and following 
+    Java developments since the start of the millenium, and by preference uses Maven and develops 
+    modularised code using Netbeans and standard testing frameworks. Andy has practised managing 
+    Python environments, developing Python programs and developing R scripts for geographical 
+    data analysis. Andy keenly promotes sustainable software development practice and 
+    reproducibility for science and evidence based policy. He has experience of parallel 
+    programming, handling large volumes of sensitive data, running stochstic simulations on 
+    distributed computers and a variety of operating systems and programming languages.
     "
     img: team/andyturner.jpg
 alumni:
