@@ -75,17 +75,18 @@ main:
   - name: Andy Turner
     role: Research Software Engineer
     bio: "
-    Andy joined the team from the School of Geography in June 2023. He is interested in spatial and 
-    temporal data analysis, the development of environmental digital twins and supporting computational
-    research. He has experience of parallel programming, handling large volumes of sensitive data, 
-    running stochastic simulations on distributed computers, and a variety of operating systems and 
+    Andy joined the team from the School of Geography in June 2023 after 25+ years specialising in 
+    computational geography research and teaching. He is interested in geometry, topology, spatial and 
+    temporal data analysis, the development of digital twins and supporting computational research. He 
+    has experience of parallel programming, handling large volumes of sensitive data, running 
+    stochastic simulations on distributed computers, and a variety of computer operating systems and 
     programming languages. Andy develops some open source Java libraries that have a wide range of 
-    application for data analysis and modelling. He has been using and following the Java developments 
-    since the start of the millenium, and by preference uses Maven and develops modularised code using 
-    Netbeans and standard unit testing frameworks on the latest openJDK. Andy is also familiar with 
-    managing Python enviornments, developing Python programs and writing and running R scripts for a 
-    range of applications. Andy keenly promotes sustainable software development practice and advocates
-    for computational reproducibility for science and evidence based policy.
+    application for data analysis and modelling. He has been following Java language development since 
+    the start of the millenium, and by preference uses Maven and develops modularised code using 
+    Netbeans, standard unit testing frameworks on the latest openJDK. Andy is familiar with managing 
+    Python enviornments, developing Python programs and writing and running R scripts for a range of 
+    applications. Andy is an advocate of sustainable software development practice and computational 
+    reproducibility for science and evidence based policy.
     "
     img: team/andyturner.jpg
 alumni:
