@@ -76,17 +76,17 @@ main:
     role: Research Software Engineer
     bio: "
     Andy joined the team from the School of Geography in June 2023 after 25+ years specialising in 
-    computational geography research and teaching. He is interested in geometry, topology, spatial and 
-    temporal data analysis, the development of digital twins and supporting computational research. He 
-    has experience of parallel programming, handling large volumes of sensitive data, running 
-    stochastic simulations on distributed computers, and a variety of computer operating systems and 
-    programming languages. Andy develops some open source Java libraries that have a wide range of 
-    application for data analysis and modelling. He has been following Java language development since 
-    the start of the millenium, and by preference uses Maven and develops modularised code using 
-    Netbeans, standard unit testing frameworks on the latest openJDK. Andy is familiar with managing 
-    Python enviornments, developing Python programs and writing and running R scripts for a range of 
-    applications. Andy is an advocate of sustainable software development practice and computational 
-    reproducibility for science and evidence based policy.
+    computational geography. He is interested in spatial and temporal data analysis, pattern 
+    recognition, fuzzy inference, precision, scale, uncertainty, computability, the development of 
+    digital twins and supporting computational research. Andy has experience of parallel programming, 
+    handling sensitive data, running stochastic simulations on distributed computers, and a variety 
+    of computer operating systems and programming languages. Andy develops some open source Java 
+    libraries that have a wide range of application for data analysis and modelling. He has been 
+    following Java language development since the start of the millenium, and by preference uses 
+    Maven and develops modularised code using Netbeans on the latest openJDK. He is familiar with 
+    managing Python enviornments, developing Python programs and writing and running R scripts. Andy 
+    is an advocate of sustainable software development practice and computational reproducibility 
+    for science and evidence based policy.
     "
     img: team/andyturner.jpg
 alumni:
