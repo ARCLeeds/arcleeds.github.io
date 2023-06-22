@@ -258,7 +258,7 @@ widget:
       The purpose of this one-day workshop is to introduce Biologists,
       Chemists and Bioinformaticians to the High Performance Computing facilities
       at Leeds. Although it will include material from some other workshops
-      (particularly [HPC 1: Introduction to High Performance Computing at Leeds]({% link pages/training/training_courses/hpc1.md %})),
+      (particularly [HPC 1: Introduction to High Performance Computing at Leeds](../hpc1)),
       it’s main purpose is to introduce the range of HPC services at Leeds,
       how they can be used in Life Sciences research with a specific emphasis
       on NextGen Sequence analysis.
