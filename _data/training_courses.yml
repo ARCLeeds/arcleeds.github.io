@@ -27,41 +27,38 @@
 
 
 widget:
-  - title: 'HPC0: <br> Introduction to Linux <br> for HPC'
+  - title: 'HPC0: <br> Introduction to Unix/Linux command line'
     url: /training/courses/hpc0/
     text: |
-        A hands-on workshop to introduce the Linux command line, practice using generally useful 
-        Linux commands for managing files and processing their contents, and learning how to create 
-        and execute shell scripts.
+        A hands-on workshop introducing the Unix/Linux command line and a typical Unix/Linux 
+        file system. Learn some generally useful Linux commands to manage files and process 
+        text files. Learn how to create and execute shell scripts.
     style: training-widget
     level: beginner
     content:
       body: "
-        A hands-on workshop to introduce the Linux command line, practice using generally useful 
-        Linux commands for managing files and processing their contents, and learning how to create 
-        and execute shell scripts. In preparation for the workshop, participants are encouraged 
-        to apply in advance for a University of Leeds High Performance Computer (HPC) account (if 
-        they intend to use University of Leeds HPC resources). Hopefully accounts will be set up 
-        in advance ready to be used from the start of the workshop. The main purpose of the workshop
-        is to develop skills, knowledge and confidence in using the Linux command line, managing 
-        files on a Linux file system and practicing some basic processing of text files that 
-        showcase some of the utility of Linux commands that might be useful in a wide variety of 
-        contexts. Whilst geared towards new users of University of Leeds HPC resources, the workshop 
-        is also suitable for those wanting to use command line Linux on other machines such as their 
-        own personal computer, a University of Leeds IT Service managed desktop machine, a virtual 
-        machine in the Cloud running Linux, or another HPC platform running a Linux. New and 
-        prospective University of Leeds HPC users are encouraged to take this workshop before taking 
-        the [HPC1: Introduction to High Performance Computing at Leeds workshop](/training/courses/hpc1/)."
+        Introduction to the Unix/Linux command line. Commands to manage files and process text 
+        files. Creating and executing shell scripts.<BR>
+        Whilst primarily aimed at new users of University of Leeds (UoL) High Performance 
+        Computer (HPC) resources, the workshop is also suitable for UoL staff and students 
+        wanting to learn about the Unix/Linux command line.<BR>
+        In preparation for the workshop, participants are encouraged to apply for UoL HPC 
+        accounts if they intend to use UoL HPC resources. The first part of the workshop is 
+        about getting participants logged in to a HPC resource or set up to use a Unix/Linux 
+        shell.<BR>
+        The main purpose of the workshop is to develop skills, knowledge and confidence in 
+        using the Unix/Linux command line.<BR>
+        New and prospective UoL HPC users are encouraged to take this workshop before taking 
+        [HPC1: Introduction to High Performance Computing at Leeds workshop](/training/courses/hpc1/)."
       outcomes:
-        - Understand the purpose of the Linux Shell
-        - Effectively manage Files and Directories at the command line
-        - Create files, directories and other objects
-        - Create Pipes and Filters to join together commands
-        - Use Loops to repeat actions
-        - Run and manage programs, tools and applications
-        - Create Shell Scripts to automate workflows
-        - Find things from the command line
-        - Use command line tools to search for patterns in data, filter, remove and edit data
+        - Familiarity with a typical Unix/Linux file system organisation
+        - Ability to create, read, update, delete and move files using commands
+        - Knowledge of navigating the file system
+        - Knowledge of using pipes to process data through a series of commands
+        - Knowledge of directing output to files
+        - Knowledge of using loops and sequences
+        - Ability to create and run Shell Scripts
+        - Knowledge of commands for searching and filtering
       prereq: None
       duration: 1/2 day
       frequency: This course usually runs 10 or more times per year.
