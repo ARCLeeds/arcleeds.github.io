@@ -52,8 +52,7 @@ widget:
         
         The main purpose of the workshop is to develop skills, knowledge and confidence in 
         using the Unix/Linux command line. New and prospective UoL HPC users unfamiliar with the 
-        Unix/Linux command line are encouraged to participate in this workshop before participating 
-        in the follow up workshop
+        Unix/Linux command line are encouraged to participate in this workshop before 
         [HPC1: Introduction to High Performance Computing at Leeds](/training/courses/hpc1/)."
       outcomes:
         - be familiar with the layout of a typical [Unix/Linux file system](https://en.wikipedia.org/wiki/Unix_filesystem)
