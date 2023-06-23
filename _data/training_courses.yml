@@ -51,7 +51,7 @@ widget:
         own personal computer, a University of Leeds IT Service managed desktop machine, a virtual 
         machine in the Cloud running Linux, or another HPC platform running a Linux. New and 
         prospective University of Leeds HPC users are encouraged to take this workshop before taking 
-        the [HPC1: Introduction to High Performance Computing at Leeds workshop](/training/courses/hpc1/)."
+        the <a href="/training/courses/hpc1/">HPC1: Introduction to High Performance Computing at Leeds workshop</a>."
       outcomes:
         - Understand the purpose of the Linux Shell
         - Effectively manage Files and Directories at the command line
