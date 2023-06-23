@@ -29,21 +29,28 @@
 widget:
   - title: 'HPC0: <br> Introduction to Linux <br> for HPC'
     url: /training/courses/hpc0/
-    text: This is a hands-on workshop intended as an introduction
-           to the Linux command line and shell scripting.
+    text: A hands-on workshop to introduce the Linux command line, practice using generally useful 
+    Linux commands for managing files and processing their contents, and learning how to create and 
+    execute shell scripts.
     style: training-widget
     level: beginner
     content:
       body: "
-        This is a hands-on workshop intended as an introduction to the Linux
-        command line and shell scripting. It is suitable for Linux, Unix and Mac
-        OSX users. The purpose of the workshop is to give users the Linux skills
-        to be able to handle data and files, run programs and automate workflows
-        on a PC and on the HPC service. The content of this workshop is equally
-        suited for people who wish to use command line Linux on a PC, in the
-        Cloud or on a HPC platform. New and prospective HPC users are advised to
-        take this workshop before taking the HPC1: Introduction to High Performance
-        Computing at Leeds workshop."
+        A hands-on workshop to introduce the Linux command line, practice using generally useful 
+        Linux commands for managing files and processing their contents, and learning how to create 
+        and execute shell scripts. In preparation for the workshop, participants are encouraged 
+        to apply in advance for a University of Leeds High Performance Computer (HPC) account (if 
+        they intend to use University of Leeds HPC resources). Hopefully accounts will be set up 
+        in advance ready to be used from the start of the workshop. The main purpose of the workshop
+        is to develop skills, knowledge and confidence in using the Linux command line, managing 
+        files on a Linux file system and practicing some basic processing of text files that 
+        showcase some of the utility of Linux commands that might be useful in a wide variety of 
+        contexts. Whilst geared towards new users of University of Leeds HPC resources, the workshop 
+        is also suitable for those wanting to use command line Linux on other machines such as their 
+        own personal computer, a University of Leeds IT Service managed desktop machine, a virtual 
+        machine in the Cloud running Linux, or another HPC platform running a Linux. New and 
+        prospective University of Leeds HPC users are encouraged to take this workshop before taking 
+        the [HPC1: Introduction to High Performance Computing at Leeds workshop](/training/courses/hpc1/)."
       outcomes:
         - Understand the purpose of the Linux Shell
         - Effectively manage Files and Directories at the command line
