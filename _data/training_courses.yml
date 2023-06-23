@@ -42,10 +42,10 @@ widget:
         
         Primarily aimed at new users of University of Leeds (UoL) High Performance Computer (HPC) 
         resources, the workshop is also suitable for UoL staff and students wanting to learn about 
-        the Unix/Linux command line. If they intend to use UoL HPC resources, they are encouraged 
-        to
+        the Unix/Linux command line. If intending to use UoL HPC resources, participants are 
+        encouraged to
         [get an account](https://leeds.service-now.com/it?id=sc_cat_item&sys_id=4c002dd70f235f00a82247ece1050ebc)
-        in preparation for the workshop.
+        in preparation for the workshop (a process that typically takes at least 1 full working day).
         
         The first part of the workshop involves ensuring participants are logged in to a HPC 
         resource or set up to use a Unix/Linux shell.
