@@ -55,14 +55,14 @@ widget:
         take this workshop before taking 
         [HPC1: Introduction to High Performance Computing at Leeds workshop](/training/courses/hpc1/)."
       outcomes:
-        - Familiarity with a typical Unix/Linux file system organisation
-        - Ability to create, read, update, delete and move files using commands
-        - Knowledge of navigating the file system
-        - Knowledge of using pipes to process data through a series of commands
-        - Knowledge of directing output to files
-        - Knowledge of using loops and sequences
-        - Ability to create and run Shell Scripts
-        - Knowledge of commands for searching and filtering
+        - Be familiar with a typical Unix/Linux file system organisation
+        - Be able to create, read, update, delete and move files using commands
+        - Be able to navigate the file system
+        - Be able to use pipes to process data through a series of commands
+        - Know how to direct output to files
+        - Know how to use loops and sequences
+        - Be able to create and run Shell Scripts
+        - Be familiar with some commands for searching and filtering
       prereq: None
       duration: 1/2 day
       frequency: This course usually runs 10 or more times per year.

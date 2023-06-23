@@ -15,7 +15,7 @@ breadcrumb: true
 {{ page_content.body }}
 
 
-At the end of the workshop, attendees will be able to:
+At the end of the workshop, participants should be:
 {% for item in page_content.outcomes %}
   - {{ item }}
 {% endfor %}
