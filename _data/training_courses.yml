@@ -37,18 +37,17 @@ widget:
     level: beginner
     content:
       body: "
-        Introduction to the Unix/Linux command line. Commands to manage files and process text 
-        files. Creating and executing shell scripts.<BR>
-        Whilst primarily aimed at new users of University of Leeds (UoL) High Performance 
-        Computer (HPC) resources, the workshop is also suitable for UoL staff and students 
-        wanting to learn about the Unix/Linux command line.<BR>
-        In preparation for the workshop, participants are encouraged to apply for UoL HPC 
-        accounts if they intend to use UoL HPC resources. The first part of the workshop is 
-        about getting participants logged in to a HPC resource or set up to use a Unix/Linux 
-        shell.<BR>
+        - Introduction to the Unix/Linux command line
+        - Commands to manage files and process text files
+        - Creating and executing shell scripts
+        Primarily aimed at new users of University of Leeds (UoL) High Performance Computer (HPC) 
+        resources, the workshop is also suitable for UoL staff and students wanting to learn about 
+        the Unix/Linux command line. If they intend to use UoL HPC resources, they are encouraged 
+        to get an account in preparation for the workshop. The first part of the workshop involves 
+        ensuring participants are logged in to a HPC resource or set up to use a Unix/Linux shell.
         The main purpose of the workshop is to develop skills, knowledge and confidence in 
-        using the Unix/Linux command line.<BR>
-        New and prospective UoL HPC users are encouraged to take this workshop before taking 
+        using the Unix/Linux command line. New and prospective UoL HPC users are encouraged to 
+        take this workshop before taking 
         [HPC1: Introduction to High Performance Computing at Leeds workshop](/training/courses/hpc1/)."
       outcomes:
         - Familiarity with a typical Unix/Linux file system organisation
