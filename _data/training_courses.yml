@@ -29,9 +29,10 @@
 widget:
   - title: 'HPC0: <br> Introduction to Linux <br> for HPC'
     url: /training/courses/hpc0/
-    text: A hands-on workshop to introduce the Linux command line, practice using generally useful 
-    Linux commands for managing files and processing their contents, and learning how to create and 
-    execute shell scripts.
+    text: |
+        A hands-on workshop to introduce the Linux command line, practice using generally useful 
+        Linux commands for managing files and processing their contents, and learning how to create 
+        and execute shell scripts.
     style: training-widget
     level: beginner
     content:
