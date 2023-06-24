@@ -76,18 +76,16 @@ main:
     role: Research Software Engineer
     bio: "
     Andy joined the team from the School of Geography in June 2023 after 25+ years specialising in 
-    computational geography. He is familiar with Grid and Cloud computing technologies, Linux and 
-    Windows operating systems, a range of scientific software, programming languages, information 
-    systems and remote sensing technologies. Andy is keen to support research and research software 
-    development, promote sustainable approaches and encourage computational reproducibility. He has 
-    designed and taught computer programming courses and is an experienced research collaborator 
-    that has worked across organisational boundaries and as part of international consortia. Andy 
-    has followed Java language development for over 20 years, and develops modularised open source 
-    Java libraries with the help of Maven, Netbeans and Git/GitHub. He is familiar with fuzzy 
-    inference, machine learning and a variety of statistical methods, and is experienced in using 
-    high end computational resources and optimising workflows and codes to generate results in 
-    shorter time frames using smaller amounts of memory. Andy is experienced in managing sensitive 
-    data and is interested in developing digital twins. 
+    computational geography. He is familiar with various Linux and Windows operating systems, 
+    Grid Computing and Cloud Computing technologies, programming languages, Web technologies, and 
+    scientific software. Andy has designed and taught computer programming courses. He is an 
+    experienced research collaborator that has worked across organisational boundaries and as part 
+    of international consortia. Andy follows Java language development, and is excited by what is 
+    coming. He is keen to make use of new language features to develop more useful open source 
+    Java libraries with the help of Maven, Netbeans and Git/GitHub. Andy is experienced in 
+    managing sensitive data and wants to support and promote sustainable inclusive scientific 
+    research. He has expertise in computational reproducibility and code optimisation and is 
+    interested in digital twins.  
     "
     img: team/andyturner.jpg
 alumni:
