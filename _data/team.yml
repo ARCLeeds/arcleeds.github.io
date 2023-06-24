@@ -75,17 +75,13 @@ main:
   - name: Andy Turner
     role: Research Software Engineer
     bio: "
-    Andy joined the team from the School of Geography in June 2023 after 25+ years specialising in 
-    computational geography. He is familiar with various Linux and Windows operating systems, 
-    Grid Computing and Cloud Computing technologies, programming languages, Web technologies, and 
-    scientific software. Andy has designed and taught computer programming courses. He is an 
-    experienced research collaborator that has worked across organisational boundaries and as part 
-    of international consortia. Andy follows Java language development, and is excited by what is 
-    coming. He is keen to make use of new language features to develop more useful open source 
-    Java libraries with the help of Maven, Netbeans and Git/GitHub. Andy is experienced in 
-    managing sensitive data and wants to support and promote sustainable inclusive scientific 
-    research. He has expertise in computational reproducibility and code optimisation and is 
-    interested in digital twins.  
+    Andy joined the team in June 2023 after 25+ years specialising in computational geography. 
+    He is familiar with various Linux and Windows operating systems, Grid Computing and Cloud 
+    Computing technologies, programming languages, Web technologies, and scientific software. 
+    Andy has designed and delivered courses that introduce computer programming and Web 
+    technologies. He is an experienced research collaborator keen to support and promote 
+    sustainable and inclusive practises. Andy follows Python and Java language developments 
+    and is excited by and contributes to various open source projects.
     "
     img: team/andyturner.jpg
 alumni:
