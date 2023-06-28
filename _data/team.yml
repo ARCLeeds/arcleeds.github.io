@@ -86,13 +86,13 @@ main:
   - name: Tom Hardcastle
     role: Research Software Engineer
     bio: "
-    Tom joined the team after working with the Cambridge Crystallograhic Data Centre and the School 
+    Tom joined the team after working with the Cambridge Crystallographic Data Centre and the School 
     of Chemical and Process Engineering where he was responsible for integrating a molecular mechanics 
-    base crystal facet prediction model into Mercury. Prior to this he completed his PhD in the School
-    of Chemical and Process Engineering on Ab Initio crystal morphology prediction with dispersion 
-    corrected density functional theory. Tom holds an MSc in Chemical Engineering, an MSc in Colorants,
-    Polymers, and Fine Chemicals, and an MChem in Chemistry. Tom is experienced with linux systems, C++,
-    Python, and Javascript.
+    based crystal facet prediction model into the CCDC's Mercury. Prior to this he completed his PhD 
+    in the School of Chemical and Process Engineering on Ab Initio crystal morphology prediction with
+    dispersion corrected density functional theory. Tom holds an MSc in Chemical Engineering, an MSc 
+    in Colorants, Polymers, and Fine Chemicals, and an MChem in Chemistry. Tom is experienced with 
+    linux systems, C++, Python, and Javascript.
     "
     img: team/tomhardcastle.jpeg
 
