@@ -6,7 +6,23 @@ breadcrumb: true
 
 Meet the members of the Research Computing Team at Leeds:
 
-{% for member in site.data.team.main %}
+## Management
+
+{% assign sortedManagement = site.data.team.management | sort:"lastname" %}
+
+{% for member in sortedManagement %}
+
+  {% include _about-widget.html widget=member %}
+
+  <br>
+
+{% endfor %}
+
+## Team
+
+{% assign sortedMain = site.data.team.main | sort:"lastname" %}
+
+{% for member in sortedMain %}
 
   {% include _about-widget.html widget=member %}
 
@@ -16,7 +32,9 @@ Meet the members of the Research Computing Team at Leeds:
 
 ## Team Alumni
 
-{% for member in site.data.team.alumni %}
+{% assign sortedAlum = site.data.team.alumni | sort:"lastname" %}
+
+{% for member in sortedAlum %}
 
   {% include _about-widget.html widget=member %}
 
@@ -30,7 +48,8 @@ Meet the members of the Research Computing Team at Leeds:
 
 The [DAT Team](https://lida.leeds.ac.uk/data-analytics-team/) are based in Leeds Institute of Data Analytics and provide support for LIDA based projects around data management, data analysis and software engineering. They also support the secure research platform [LASER](https://lida-data-analytics-team.github.io/laserdocs/). 
 
-{% for member in site.data.team.dat %}
+{% assign sortedDat = site.data.team.dat | sort:"lastname" %}
+{% for member in sortedDat %}
 
   {% include _about-widget.html widget=member %}
 
