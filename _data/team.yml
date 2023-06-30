@@ -1,5 +1,6 @@
 main:
-  - name: Mark Conmy
+  - firstname: Mark
+    lastname: ZConmy
     role: Head of Research IT
     bio: "
     Mark started out with a degree in Computer Science and, after a couple of years 
@@ -14,7 +15,8 @@ main:
     "
     img: team/markconmy.jpg
 
-  - name: Ollie Clark
+  - firstname: Ollie
+    lastname: Clark
     role: Research Software Engineer
     bio: "
       Ollie is Research Software Engineer at the University of Leeds.
@@ -24,7 +26,8 @@ main:
     "
     img: team/ollieclark.png
 
-  - name: Tom Hardcastle
+  - firstname: Tom
+    lastname: Hzardcastle
     role: Research Software Engineer
     bio: "
     Tom joined the team after working with the Cambridge Crystallographic Data Centre and the School 
@@ -37,7 +40,8 @@ main:
     "
     img: team/tomhardcastle.jpeg
 
-  - name: John Hodrien
+  - firstname: John
+    lastname: Hodrien
     role: Research Software Engineer
     bio: "
     John is a Research Software Engineer working within the Research
@@ -57,7 +61,8 @@ main:
     "
     img: team/johnhodrien.jpg
 
-  - name: Nick Rhodes
+  - firstname: Nick
+    lastname: Rhodes
     role: Research Software Engineer
     bio: "
     Nick is a Research Software Engineer at the University of Leeds.
@@ -71,7 +76,8 @@ main:
     He has frequently worked in devops and lean/agile teams.
     "
     img: team/nickrhodes.jpeg
-  - name: Patricia Ternes
+  - firstname: Patricia
+    lastname: Ternes
     role: Research Software Engineer
     bio: "
     Patricia is a Research Software Engineer, focusing on Computational Mechanics, 
@@ -85,7 +91,8 @@ main:
     undergraduate professor at Federal Institute Catarinense-Brazil (2018-2019).
     "
     img: team/patriciaternes.jpg 
-  - name: Andy Turner
+  - firstname: Andy
+    lastname: ATurner
     role: Research Software Engineer
     bio: "
     Andy joined the team in June 2023 transfering from the School of Geography where 
@@ -98,7 +105,8 @@ main:
     img: team/andyturner.jpg
 
 alumni:
-  - name: Martin Callaghan
+  - firstname: Martin 
+    lastname: Callaghan
     role: Research Computing Consultant
     bio: "
       Martin is a Research Computing Consultant and part of the Research Computing group
@@ -113,7 +121,8 @@ alumni:
       text at scale.
     "
     img: team/martincallaghan.jpeg
-  - name: Luke Conibear
+  - firstname: Luke
+    lastname: Conibear
     role: Research Software Engineer
     bio: "
     Luke is a Research Software Engineer focusing on Machine Learning. He used to be
@@ -123,7 +132,8 @@ alumni:
     "
     img: team/lukeconibear.jpg
 
-  - name: Alex Coleman
+  - firstname: Alex
+    lastname: Coleman
     role: Research Software Engineer
     bio:
       "Previously, he worked in Leeds Institute of Data Analytics as a Data Scientist intern on
@@ -138,7 +148,8 @@ alumni:
     "
     img: team/alexcoleman.jpeg
 dat:
-  - name: Adam Keeley
+  - firstname: Adam
+    lastname: Keeley
     role: Data Analyst
     bio: "
     Adam is a Data Analyst in the Data Analytics Team at Leeds Institute of Data Analytics (LIDA)
@@ -146,7 +157,8 @@ dat:
     SQL server, C#, SSAS, SSIS, SSRS.
     "
     img:
-  - name: Sean Tuck
+  - firstname: Sean
+    lastname: Tuck
     role: Research Software Engineer
     bio: "
     Sean is a Research Software Engineer at the University of Leeds, working within
