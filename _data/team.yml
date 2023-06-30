@@ -1,4 +1,4 @@
-main:
+management:
   - firstname: Mark
     lastname: Conmy
     role: Head of Research IT
@@ -15,6 +15,7 @@ main:
     "
     img: team/markconmy.jpg
 
+main:
   - firstname: Ollie
     lastname: Clark
     role: Research Software Engineer

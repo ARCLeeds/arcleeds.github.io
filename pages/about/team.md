@@ -6,6 +6,20 @@ breadcrumb: true
 
 Meet the members of the Research Computing Team at Leeds:
 
+## Management
+
+{% assign sortedManagement = site.data.team.management | sort:"lastname" %}
+
+{% for member in sortedManagement %}
+
+  {% include _about-widget.html widget=member %}
+
+  <br>
+
+{% endfor %}
+
+## Team
+
 {% assign sortedMain = site.data.team.main | sort:"lastname" %}
 
 {% for member in sortedMain %}
