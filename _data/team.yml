@@ -1,6 +1,6 @@
 main:
   - firstname: Mark
-    lastname: ZConmy
+    lastname: Conmy
     role: Head of Research IT
     bio: "
     Mark started out with a degree in Computer Science and, after a couple of years 
@@ -27,7 +27,7 @@ main:
     img: team/ollieclark.png
 
   - firstname: Tom
-    lastname: Hzardcastle
+    lastname: Hardcastle
     role: Research Software Engineer
     bio: "
     Tom joined the team after working with the Cambridge Crystallographic Data Centre and the School 
@@ -92,7 +92,7 @@ main:
     "
     img: team/patriciaternes.jpg 
   - firstname: Andy
-    lastname: ATurner
+    lastname: Turner
     role: Research Software Engineer
     bio: "
     Andy joined the team in June 2023 transfering from the School of Geography where 
