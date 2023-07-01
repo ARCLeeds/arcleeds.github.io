@@ -54,6 +54,8 @@ jekyll serve --incremental --watch
 If you leave jekyll running these flags allow you to make changes, save and jekyll will rebuild your changes automatically.
 The generated HTML is located under the `_site subfolder` for viewing/testing.
 
+If you pull changes from elsewhere, then stop the jekyll serve, delete or move the _site directory and run jekyll serve again to rebuild the _site directory incorporating all the changes pulled from elsewhere.  
+
 ### Merging your changes
 
 To merge your changes do a [pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
