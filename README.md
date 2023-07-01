@@ -48,7 +48,8 @@ $ conda env create -f environment.yml
 ### To build and test locally
 
 ```{bash}
-$ jekyll serve --incremental --watch  
+conda activate arcleeds-ghp
+jekyll serve --incremental --watch  
 ```
 If you leave jekyll running these flags allow you to make changes, save and jekyll will rebuild your changes automatically.
 The generated HTML is located under the `_site subfolder` for viewing/testing.
