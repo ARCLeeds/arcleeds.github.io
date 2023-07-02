@@ -8,103 +8,87 @@
 #
 # -- basic format --
 #
-#   - title: the widget title
-#    url: relative url for page /training/courses/hpc0/
-#    text: short summary text for widget
-#    style: style class for widget - training-widget
-#    level: is it beginner, intermediate or other (not shown)
-#    content:
-#      body: main body text describing course
-#      outcomes:
-#       - unordered list of learning outcomes
-#      prereq: list of what skills are required
-#      duration: how long is the course
-#      frequency: how often does it run
-#      suitability: who is suitable for coming
-#      booking: a string link to the SAP booking form
-#
-
-
+#   - code: Course_Code
+#     title: the widget title
+#     url: relative url for page /training/courses/hpc0/
+#     text: short summary text for widget
+#     style: style class for widget - training-widget
+#     level: is it beginner, intermediate or other (not shown)
+#     content:
+#       body: main body text describing course
+#       outcomes:
+#         - unordered list of learning outcomes
+#       prereq: list of what skills are required
+#       duration: how long is the course
+#       frequency: how often does it run
+#       suitability: who is suitable for coming
+#       booking: a string link to the SAP booking form
 
 widget:
-  - title: 'HPC0: <br> Introduction to Unix/Linux command line'
+  - code: 'HPC0'
+    title: 'Getting Started'
     url: /training/courses/hpc0/
-    text: |
-        A hands-on workshop introducing the Unix/Linux command line and a typical Unix/Linux 
-        file system. Learn some generally useful Linux commands to manage files and process 
-        text files. Learn how to create and execute shell scripts.
+    text: 'Logging in. Linux command line basics. Home directory contents.
+        Data processing workflows. Shell scripting basics.'
     style: training-widget
     level: beginner
     content:
-      body: "
-        Introduction to the Unix/Linux command line. Commands to manage files and process text files. 
-        Creating and executing shell scripts.
-        
-        Primarily aimed at new users of University of Leeds (UoL) High Performance Computer (HPC) 
-        resources, the workshop is also suitable for UoL research staff and students wanting to learn 
-        about the Unix/Linux command line. If intending to use UoL HPC resources, participants are 
-        encouraged to
-        [get an account](https://leeds.service-now.com/it?id=sc_cat_item&sys_id=4c002dd70f235f00a82247ece1050ebc)
-        in preparation for the workshop (a process that typically takes at least 1 full working day).
-        
-        The first part of the workshop involves ensuring participants are logged in to a HPC 
-        resource or set up to use another Unix/Linux shell.
-        
-        The main purpose of the workshop is to develop skills, knowledge and confidence in 
-        using the Unix/Linux command line. New and prospective UoL HPC users unfamiliar with the 
-        Unix/Linux command line are encouraged to participate in this workshop before 
-        [HPC1: Introduction to High Performance Computing at Leeds](/training/courses/hpc1/)."
-      outcomes:
-        - be familiar with the layout of a typical [Unix/Linux file system](https://en.wikipedia.org/wiki/Unix_filesystem)
-        - know how to create, read, update, delete and move files using commands
-        - know how to navigate the file system using commands
-        - know how to use [pipelines](https://en.wikipedia.org/wiki/Pipeline_(Unix)) to process data through a series of commands
-        - know how to direct output to files
-        - know how to use loops and sequences
-        - know how to able to create and run [Shell Scripts](https://en.wikipedia.org/wiki/Shell_script)
-        - be familiar with some commands for searching and filtering
+      body: 
+# The syllabus should match what is in:
+# https://github.com/ARCTraining/rc-lesson-plans/blob/main/hpc0/hpc0-lesson-plan.md
+# https://github.com/ARCTraining/rc-slides/blob/main/hpc0.qmd 
+      syllabus:
+            - Logging in
+            - Entering commands
+            - Finding out about commands
+            - File system navigation
+            - Commands to create, copy, move and delete files and directories
+            - Home directory contents
+            - File permissions
+            - Using commands to explore and filter data
+            - Shell scripting basics
       prereq: None
       duration: 1/2 day
       frequency: This course usually runs 10 or more times per year.
-      suitability: All research staff and students
+      suitability: New HPC users.
       booking: 'https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9TGludXgmZ2Rfc3R5cGU9JmdkX3R1dG9yPUxhc3QlMjBuYW1lJmRhdGUxPWRkJTJmbW0lMmZ5eXl5JmRhdGUyPWRkJTJmbW0lMmZ5eXl5JmRhdGUxPTAwLjAwLjAwMDAmZGF0ZTI9MDAuMDAuMDAwMCZwcm92aWRlcmxpc3Q9NTAwMjI0MjkmYW5kb3I9T1Imc29ydD1CRUdEQSZnZF9jYWxsaWQ9SU5JVElBTCZzdHlsZT0%3d'
 
-  - title: 'HPC1: <br> Introduction to High Performance Computing'
+  - code: 'HPC1'
+    title: 'System Details, Running Jobs, Good Practice'
     url: /training/courses/hpc1/
-    text: |
-           This workshop is designed to introduce new users to
-           concepts of High Performance Computing (HPC) and the HPC service at Leeds.
+    text: 'The HPC service at Leeds. Developing job submission scripts. Submitting,
+        monitoring and cancelling jobs. Managing and transferring data.'
     style: training-widget
     level: beginner
     content:
-      body: "
-      This workshop is designed to introduce new users to the
-      High Performance Computing (HPC) service at Leeds. It will be useful
-      if you are new to HPC in research or have used HPC elsewhere. It is suitable
-      for researchers from all faculties and examples will be given from a range
-      of research domains. The purpose of the workshop is to give users the
-      skills to be an effective user of the HPC service and to get codes and
-      applications running effectively."
+      body: " 
+            <br>
+           It will be useful if you are new to HPC in research or have used HPC elsewhere. 
+           It is suitable for researchers from all faculties and examples will be given from 
+           a range of research domains. The purpose of the workshop is to give users the
+           skills to be an effective user of the HPC service and to get codes and applications 
+           running effectively."
       outcomes:
         - Understand how HPC can be used to support their research
         - Use different models of parallel computing
-        - "Be able to use Linux effectively : SSH, directory management, command line etc"
+        - Be able to use Linux effectively : SSH, directory management, command line etc
         - Manage data on the HPC clusters
         - Use the HPC batch system effectively
         - Use the module system to load and manage pre-installed applications
         - Write scripts to run codes and applications
         - Examine how well code scales and apply techniques to benchmark code
       prereq: "
-      Experience using Linux at the command line would be useful. <br>
-      If you have no experience of using the command line, we advise you attend
-      the half-day workshop HPC 0: Introduction to Linux for High Performance Computing.
-      "
+         Experience using Linux at the command line would be useful. <br>
+         If you have no experience of using the command line, we advise you attend
+         the half-day workshop HPC 0: Introduction to Linux for High Performance Computing.
+         "
       duration: 1 day
       frequency: This workshop usually runs monthly, up to 10 times each academic year.
-      suitability: Research postgraduate students and above; teaching, lecturing and research staff
+      suitability: New HPC users.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9SFBDJTIwQ2FycGVudHJ5JmdkX3N0eXBlPSZnZF90dXRvcj1MYXN0JTIwbmFtZSZkYXRlMT1kZCUyZm1tJTJmeXl5eSZkYXRlMj1kZCUyZm1tJTJmeXl5eSZkYXRlMT0wMC4wMC4wMDAwJmRhdGUyPTAwLjAwLjAwMDAmcHJvdmlkZXJsaXN0PTAmYW5kb3I9QU5EJnNvcnQ9QkVHREEmZ2RfY2FsbGlkPUlOSVRJQUwmc3R5bGU9"
 
-  - title: 'SWD1a: <br> Introduction to <br> Python programming'
+  - code: 'SWD1a'
+    title: 'Introduction to Python programming'
     url: /training/courses/swd1a/
     text: |
           This is an introduction to programming in Python for
@@ -144,7 +128,8 @@ widget:
       suitability: This course of four half-day workshops is suitable for all research staff and students.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9c3dkMWEmZ2Rfc3R5cGU9JmdkX3R1dG9yPUxhc3QlMjBuYW1lJmRhdGUxPWRkJTJmbW0lMmZ5eXl5JmRhdGUyPWRkJTJmbW0lMmZ5eXl5JmRhdGUxPTAwLjAwLjAwMDAmZGF0ZTI9MDAuMDAuMDAwMCZwcm92aWRlcmxpc3Q9MCZhbmRvcj1PUiZzb3J0PUJFR0RBJmdkX2NhbGxpZD1JTklUSUFMJnN0eWxlPQ%3d%3d"
 
-  - title: 'SWD1b: <br> Introduction to <br> R programming'
+  - code: 'SWD1b'
+    title: 'Introduction to R programming'
     url: /training/courses/swd1b/
     text: |
           This is an introduction to programming in R
@@ -184,7 +169,8 @@ widget:
       suitability: This course of four half-day workshops is suitable for all research staff and students.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9c3dkMWImZ2Rfc3R5cGU9JmdkX3R1dG9yPUxhc3QlMjBuYW1lJmRhdGUxPWRkJTJmbW0lMmZ5eXl5JmRhdGUyPWRkJTJmbW0lMmZ5eXl5JmRhdGUxPTAwLjAwLjAwMDAmZGF0ZTI9MDAuMDAuMDAwMCZwcm92aWRlcmxpc3Q9MCZhbmRvcj1PUiZzb3J0PUJFR0RBJmdkX2NhbGxpZD1JTklUSUFMJnN0eWxlPQ%3d%3d"
 
-  - title: 'SWD2: <br> Version Control with Git and GitHub'
+  - code: 'SWD2'
+    title: 'Version Control with Git and GitHub'
     url: /training/courses/swd2/
     text: This is a hands-on workshop intended as an
           introduction to version control using git and GitHub.
@@ -219,7 +205,8 @@ widget:
       suitability: Research postgraduate students and above; teaching and lecturing staff.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9VmVyc2lvbiUyMENvbnRyb2wmZ2Rfc3R5cGU9JmdkX3R1dG9yPUxhc3QlMjBuYW1lJmRhdGUxPWRkJTJmbW0lMmZ5eXl5JmRhdGUyPWRkJTJmbW0lMmZ5eXl5JmRhdGUxPTAwLjAwLjAwMDAmZGF0ZTI9MDAuMDAuMDAwMCZwcm92aWRlcmxpc3Q9NTAwMjI0MjkmYW5kb3I9T1Imc29ydD1CRUdEQSZnZF9jYWxsaWQ9SU5JVElBTCZzdHlsZT0%3d"
 
-  - title: 'SWD3: <br> Software development practices for Research'
+  - code: 'SWD3'
+    title: 'Software development practices for Research'
     url: /training/courses/swd3/
     text: |
            A one-day workshop introducing techniques and concepts
@@ -255,7 +242,8 @@ widget:
       suitability: Research postgraduate students and above; teaching and lecturing staff.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9U1dEJTIwMyUzYSUyMFNvZnR3YXJlJmdkX3N0eXBlPSZnZF90dXRvcj1MYXN0JTIwbmFtZSZkYXRlMT1kZCUyZm1tJTJmeXl5eSZkYXRlMj1kZCUyZm1tJTJmeXl5eSZkYXRlMT0wMC4wMC4wMDAwJmRhdGUyPTAwLjAwLjAwMDAmcHJvdmlkZXJsaXN0PTAmYW5kb3I9QU5EJnNvcnQ9QkVHREEmZ2RfY2FsbGlkPUlOSVRJQUwmc3R5bGU9"
 
-  - title: 'HPC6: <br> HPC for Life Sciences and Bioinformatics'
+  - code: 'HPC6'
+    title: 'HPC for Life Sciences and Bioinformatics'
     url: /training/courses/hpc6/
     text: |
            A one-day workshop to introduce Biologists, Chemists and
@@ -289,7 +277,8 @@ widget:
 
   # intermediate courses
 
-  - title: 'HPC2: Applications and containers on HPC'
+  - code: 'HPC2'
+    title: 'Applications and containers on HPC'
     url: /training/courses/hpc2/
     text: |
           A one-day workshop introducing application
@@ -334,7 +323,8 @@ widget:
       suitability: All research staff and students
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMCZ3PTIwOTk1NjAr)/courses.htm?gd_keywords=50114002"
 
-  - title: 'HPC3: Computer architectures and shared memory parallel programming'
+  - code: 'HPC3'
+    title: 'Computer architectures and shared memory parallel programming'
     url: /training/courses/hpc3/
     text: |
           A one-day workshop introducing the OpenMP
@@ -381,7 +371,8 @@ widget:
       suitability: All research staff and students.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9Q29tcHV0ZXIlMjBBcmNoaXRlY3R1cmVzJTIwYW5kJTIwc2hhcmVkJTIwbWVtb3J5JTIwcGFyYWxsZWwlMjBwcm9ncmFtbWluZyZnZF9zdHlwZT0mZ2RfdHV0b3I9TGFzdCUyMG5hbWUmZGF0ZTE9ZGQlMmZtbSUyZnl5eXkmZGF0ZTI9ZGQlMmZtbSUyZnl5eXkmZGF0ZTE9MDAuMDAuMDAwMCZkYXRlMj0wMC4wMC4wMDAwJnByb3ZpZGVybGlzdD0wJmFuZG9yPUFORCZzb3J0PUJFR0RBJmdkX2NhbGxpZD1JTklUSUFMJnN0eWxlPQ%3d%3d"
 
-  - title: 'HPC5: Introduction to GPU programming with CUDA'
+  - code: 'HPC5'
+    title: 'Introduction to GPU programming with CUDA'
     url: /training/courses/hpc5/
     text: |
           A one-day workshop covering the  fundamentals of parallel computing
@@ -415,7 +406,8 @@ widget:
       suitability: All research staff and students.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9SW50cm9kdWN0aW9uJTIwdG8lMjBHUFUlMjBwcm9ncmFtbWluZyZnZF9zdHlwZT0mZ2RfdHV0b3I9TGFzdCUyMG5hbWUmZGF0ZTE9ZGQlMmZtbSUyZnl5eXkmZGF0ZTI9ZGQlMmZtbSUyZnl5eXkmZGF0ZTE9MDAuMDAuMDAwMCZkYXRlMj0wMC4wMC4wMDAwJnByb3ZpZGVybGlzdD0wJmFuZG9yPUFORCZzb3J0PUJFR0RBJmdkX2NhbGxpZD1JTklUSUFMJnN0eWxlPQ%3d%3d"
 
-  - title: 'SWD4: Cloud computing for Research'
+  - code: 'SWD4'
+    title: 'Cloud computing for Research'
     url: /training/courses/swd4/
     text: |
           An introduction to Cloud computing services for researchers especially
@@ -449,7 +441,8 @@ widget:
       suitability: Research postgraduate students and above; teaching and lecturing staff.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9U1dEJTIwNCUzYSUyMENsb3VkJmdkX3N0eXBlPSZnZF90dXRvcj1MYXN0JTIwbmFtZSZkYXRlMT1kZCUyZm1tJTJmeXl5eSZkYXRlMj1kZCUyZm1tJTJmeXl5eSZkYXRlMT0wMC4wMC4wMDAwJmRhdGUyPTAwLjAwLjAwMDAmcHJvdmlkZXJsaXN0PTAmYW5kb3I9QU5EJnNvcnQ9QkVHREEmZ2RfY2FsbGlkPUlOSVRJQUwmc3R5bGU9"
 
-  - title: 'SWD5: Scientific Python'
+  - code: 'SWD5'
+    title: 'Scientific Python'
     url: /training/courses/swd5/
     text: |
           A one-day workshop on Python’s main Scientific libraries
@@ -491,7 +484,8 @@ widget:
       suitability: Research postgraduate students and above; teaching and lecturing staff.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMCZ3PTIwOTk1NjAr)/courses.htm?gd_keywords=50131047"
 
-  - title: 'SWD6: <br> High performance Python'
+  - code: 'SWD6'
+    title: 'High performance Python'
     url: /training/courses/swd6/
     text: |
           A hands-on workshop covering the use of a set of tools and techniques aimed
@@ -532,7 +526,8 @@ widget:
       suitability: Research postgraduate students and above; teaching and lecturing staff.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9U1dEJTIwNiUzYSUyMEhpZ2glMjBQZXJmb3JtYW5jZSZnZF9zdHlwZT0mZ2RfdHV0b3I9TGFzdCUyMG5hbWUmZGF0ZTE9ZGQlMmZtbSUyZnl5eXkmZGF0ZTI9ZGQlMmZtbSUyZnl5eXkmZGF0ZTE9MDAuMDAuMDAwMCZkYXRlMj0wMC4wMC4wMDAwJnByb3ZpZGVybGlzdD0wJmFuZG9yPUFORCZzb3J0PUJFR0RBJmdkX2NhbGxpZD1JTklUSUFMJnN0eWxlPQ%3d%3d"
 
-  - title: 'SWD7: Introduction to reproducible workflows in Python'
+  - code: 'SWD7'
+    title: 'Introduction to reproducible workflows in Python'
     url: /training/courses/swd7/
     text: |
           A one-day workshop covering best practises for reproducible scientific
@@ -580,7 +575,8 @@ widget:
 
 # other courses not listed publically on arc.leeds.ac.uk
 
-  - title: "HPC4: An introduction to Parallel Programming with MPI C and Fortran"
+  - code: 'HPC4'
+    title: "An introduction to Parallel Programming with MPI C and Fortran"
     url: /training/courses/hpc4/
     text: |
           A one-day workshop for new users familiarising themselves with
@@ -615,7 +611,8 @@ widget:
       suitability: Research postgraduate students and above; teaching lecturing and research staff.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMCZ3PTIwOTk1NjAr)/courses.htm?gd_keywords=50113850"
 
-  - title: "HPC7: HPC for Data Analytics"
+  - code: 'HPC7'
+    title: "HPC for Data Analytics"
     url: /training/courses/hpc7/
     text: |
           A one-day workshop giving an overview of data science tools
@@ -653,7 +650,8 @@ widget:
       suitability: Research postgraduate students and above; teaching lecturing and research staff.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9RGF0YSUyMEFuYWx5dGljcyZnZF9zdHlwZT0mZ2RfdHV0b3I9TGFzdCUyMG5hbWUmZGF0ZTE9ZGQlMmZtbSUyZnl5eXkmZGF0ZTI9ZGQlMmZtbSUyZnl5eXkmZGF0ZTE9MDAuMDAuMDAwMCZkYXRlMj0wMC4wMC4wMDAwJnByb3ZpZGVybGlzdD0wJmFuZG9yPUFORCZzb3J0PUJFR0RBJmdkX2NhbGxpZD1JTklUSUFMJnN0eWxlPQ%3d%3d"
 
-  - title: "HPC8: Docker and Singularity: Containers for HPC"
+  - code: 'HPC8'
+    title: "Docker and Singularity: Containers for HPC"
     url: /training/courses/hpc8/
     text: |
           A one-day workshop giving an introduction to containerisation tools
