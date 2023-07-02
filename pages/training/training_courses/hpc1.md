@@ -14,23 +14,22 @@ breadcrumb: true
 
 {{ page_content.body }}
 
-
 At the end of the workshop, attendees will be able to:
 {% for item in page_content.outcomes %}
   - {{ item }}
 {% endfor %}
 
-## Prerequisites
-
+# Prerequisites
 {{ page_content.prereq }}
+
 ## Duration
-
 {{ page_content.duration }}
-## Frequency
 
+## Frequency
 {{ page_content.frequency }}
 
-If you would like a bespoke version of this course run in your department then please [contact us](https://bit.ly/arc-help).
-## Suitability
+If you would like a bespoke version of this course run in your department then please
+[contact us]({{ site.data.variables.contact_url }}).
 
+## Suitability
 {{ page_content.suitability }}
