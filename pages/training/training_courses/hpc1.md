@@ -1,4 +1,6 @@
 ---
+code: HPC1
+name: "Introduction to High Performance Computing"
 title: "HPC1: Introduction to High Performance Computing"
 permalink: "/training/courses/hpc1/"
 breadcrumb: true

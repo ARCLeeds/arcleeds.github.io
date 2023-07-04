@@ -27,6 +27,7 @@
 widget:
   - code: 'HPC0'
     title: 'Introduction to Linux for HPC at Leeds'
+#    title: *site.data.pages.training.training_courses.hpc0.title
     url: /training/courses/hpc0/
     text: 'Logging in. Linux command line basics. Home directory contents.
         Data processing workflows. Shell scripting basics.'
