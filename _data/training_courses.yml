@@ -26,7 +26,7 @@
 
 widget:
   - code: 'HPC0'
-    title: 'Getting Started'
+    title: 'Introduction to Linux for HPC at Leeds'
     url: /training/courses/hpc0/
     text: 'Logging in. Linux command line basics. Home directory contents.
         Data processing workflows. Shell scripting basics.'
@@ -54,7 +54,7 @@ widget:
       booking: 'https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9TGludXgmZ2Rfc3R5cGU9JmdkX3R1dG9yPUxhc3QlMjBuYW1lJmRhdGUxPWRkJTJmbW0lMmZ5eXl5JmRhdGUyPWRkJTJmbW0lMmZ5eXl5JmRhdGUxPTAwLjAwLjAwMDAmZGF0ZTI9MDAuMDAuMDAwMCZwcm92aWRlcmxpc3Q9NTAwMjI0MjkmYW5kb3I9T1Imc29ydD1CRUdEQSZnZF9jYWxsaWQ9SU5JVElBTCZzdHlsZT0%3d'
 
   - code: 'HPC1'
-    title: 'System Details, Running Jobs, Good Practice'
+    title: 'Introduction to High Performance Computing'
     url: /training/courses/hpc1/
     text: 'The HPC service at Leeds. Developing job submission scripts. Submitting,
         monitoring and cancelling jobs. Managing and transferring data.'
