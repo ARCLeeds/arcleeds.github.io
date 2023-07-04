@@ -1,4 +1,5 @@
 ---
+title: "HPC0: Introduction to Linux for HPC at Leeds"
 permalink: /training/courses/hpc0/
 breadcrumb: true
 ---
@@ -6,6 +7,8 @@ breadcrumb: true
 {% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}
 
 {% assign course_page = filtered_navigation[0] %}
+
+
 
 {% assign page_content = filtered_navigation[0].content %}
 
