@@ -1,7 +1,7 @@
 ---
 # code: HPC0
-# name: "Introduction to Linux for HPC at Leeds"
-# title: "HPC0: Introduction to Linux for HPC at Leeds"
+# name: "Introduction to Linux for HPC"
+# title: "HPC0: Introduction to Linux for HPC"
 permalink: /training/courses/hpc0/
 breadcrumb: true
 ---
@@ -10,62 +10,77 @@ breadcrumb: true
 
 {% assign hpc0 = hpc0w[0] %}
 
-
-
 <!--
-The following sets the page title and puts in the title.
-This is to avoid having to have lots of places to update the title.
+The following sets the page title and adds the title into a <h1> level heading.
+It is done like this to reduce the number of places that need updating if course codes and names change.
+Whilst the page.title (yaml title: ) in the front matter of this markdown file worked, it was yet one more place to edit.
+Jekyll currently will not by default allow variables in the front matter without a plugin being written, so this javascript seemed like the best way.
+In all honesty, the Web site is a bit of a horror and probably needs a complete re-write. Andy
 -->
 # {{ hpc0.code }}: {{ hpc0.title }}
 
-<span id="pagetitle" style="display: none">{{ hpc0.title }}</span>
+<div id="hpc0_title">{{ hpc0.title }}</div>
 
 <script type="text/javascript">
-    var pagetitle = document.getElementById("pagetitle");
-    if (pagetitle) {
-        document.title = pagetitle.textContent;
+    var hpc0Title = document.getElementById("hpc0_title");
+    if (hpc0Title) {
+        document.title = hpc0Title.textContent;
     }
+    hpc0Title.style.visibility = "hidden"; 
 </script>
 
+<!--
+The following was a successful attempt to get the filename of this file which contains the code for the training course.
+The problem is that this can't be injected into Jekyll to build the HTML as this happens prior to the javascript running.
+The code has been left here as a reminder for the time being.
+ 
+pages/training/training_courses/hpc0.md
+{{ page.path }}
 
+<p id="page_path">{{ page.path }}</p>
+
+<script type="text/javascript">
+    var pagePath = document.getElementById("page_path").innerText;
+    if (pagePath) {
+        const filename = new URL("file://" + pagePath).pathname.split("/").pop();
+        const code = filename.split(".")[0].toUpperCase();
+        document.getElementById("page_path").innerHTML = code;
+    }
+</script>
+-->
 
 {% assign course = hpc0.content %} 
 
 {% assign hpc1w = site.data.training_courses.widget | where:'code', 'HPC1' %}
-
-{% assign hpc1 = hpc1w[0] %}
-
-{% assign hpc1code = site.pages.training.training_courses.hpc1.code %}
+{% assign hpc1 = hpc1w[0] %} 
 
 ### Booking for this course is through the IT Training Unit. [Click here to book]({{ page_content.booking }})
 
 ## Workshop content
-- {{ hpc1code }}
 - {{ hpc0.text }}
+- {{ course.body }}
 - Aimed at new HPC users.
-- [Get an account]({{ site.data.variables.get_account_url }})
-in preparation for the workshop (a process that typically takes at least 1 full working day) 
 - The main purpose of the workshop is to develop knowledge, skills and confidence in using
 Linux command line and preparing shell scripts.
-- The workshop does not cover job submission which is covered in the subsequent course: 
-[{{ hpc1.code }}: {{ hpc1.title }}]({{ hpc1.url }})
-
-## Syllabus:
+- The workshop does not cover job submission which is covered in [{{ hpc1.code }}: {{ hpc1.title }}]({{ hpc1.url }}).
+- Syllabus:
 {% for item in course.syllabus %}
-  - {{ item }}
+- {{ item }}
 {% endfor %}
 
 ## Prerequisites
-{{ course.prereq }}
-
+- A HPC user account ([Click here to get an account]({{ site.data.variables.get_account_url }}) - a process that typically takes at least 1 full working day)
+{{ course.prerequisites }}
+ 
 ## Duration
 {{ course.duration }}
 
 ## Frequency
 {{ course.frequency }}
-
+<!--
 If you would like a bespoke version of this course run in your department then please
 [contact us]({{ site.data.variables.contact_url }}).
+-->
 
 ## Suitability
 {{ course.suitability }}
