@@ -54,19 +54,18 @@ pages/training/training_courses/hpc0.md
 {% assign hpc1w = site.data.training_courses.widget | where:'code', 'HPC1' %}
 {% assign hpc1 = hpc1w[0] %} 
 
-### Booking for this course is through the IT Training Unit. [Click here to book]({{ page_content.booking }})
+### Booking for this course is through the IT Training Unit. [Click here to book]({{ course.booking }})
 
 ## Workshop content
 - {{ hpc0.text }}
 - {{ course.body }}
-- Aimed at new HPC users.
-- The main purpose of the workshop is to develop knowledge, skills and confidence in using
-Linux command line and preparing shell scripts.
-- The workshop does not cover job submission which is covered in [{{ hpc1.code }}: {{ hpc1.title }}]({{ hpc1.url }}).
 - Syllabus:
 {% for item in course.syllabus %}
-- {{ item }}
+  - {{ item }}
 {% endfor %}
+- The users work on a login node and do not learn about submitting jobs in this workshop
+  - To learn about the HPC resources at Leeds and be guided in using them properly, please consider signing up to the following course:
+    - [{{ hpc1.code }}: {{ hpc1.title }}]({{ hpc1.url }}).
 
 ## Prerequisites
 - A HPC user account ([Click here to get an account]({{ site.data.variables.get_account_url }}) - a process that typically takes at least 1 full working day)

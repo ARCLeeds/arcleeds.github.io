@@ -11,7 +11,7 @@ breadcrumb: true
 {% assign hpc0w = site.data.training_courses.widget | where:'code', 'HPC0' %}
 {% assign hpc0 = hpc0w[0] %}
 
-### Booking for this course is through the IT Training Unit. [Click here to book]({{ page_content.booking }})
+### Booking for this course is through the IT Training Unit. [Click here to book]({{ course.booking }})
 
 ## Workshop content
 - {{ hpc1.text }}
@@ -24,7 +24,8 @@ breadcrumb: true
 # Prerequisites
 - A HPC user account ([Click here to get an account]({{ site.data.variables.get_account_url }}) - a process that typically takes at least 1 full working day)
 - {{ course.prereq }}
-  - (If you lack familiarity with command line Linux, please consider taking: [{{ hpc0.code }}: {{ hpc0.title }}]({{ hpc0.url }}))
+  - (If you lack familiarity with command line Linux, please consider taking the following first:
+    - [{{ hpc0.code }}: {{ hpc0.title }}]({{ hpc0.url }}))
 
 ## Duration
 {{ course.duration }}
