@@ -9,82 +9,98 @@
 # -- basic format --
 #
 #   - code: Course_Code
-#     title: the widget title
+#     title: the course title/name
 #     url: relative url for page /training/courses/hpc0/
-#     text: short summary text for widget
+#     text: short summary outlining the course format 
 #     style: style class for widget - training-widget
 #     level: is it beginner, intermediate or other (not shown)
 #     content:
 #       body: main body text describing course
-#       outcomes:
+#       outcomes/syllabus:
 #         - unordered list of learning outcomes
 #       prereq: list of what skills are required
-#       duration: how long is the course
-#       frequency: how often does it run
-#       suitability: who is suitable for coming
+#       duration: how long the course is
+#       frequency: how often it runs
+#       suitability: who is it suitable for
 #       booking: a string link to the SAP booking form
 
 widget:
   - code: 'HPC0'
-    title: 'Introduction to Linux for HPC at Leeds'
+    title: 'Introduction to Linux for HPC'
+#    title: *site.data.pages.training.training_courses.hpc0.title
     url: /training/courses/hpc0/
-    text: 'Logging in. Linux command line basics. Home directory contents.
-        Data processing workflows. Shell scripting basics.'
+    text: 'Run on campus or on-line in half a day. A practical workshop about
+        the Linux command line and filesystem on the HPC resources at Leeds.'
     style: training-widget
     level: beginner
     content:
-      body: 
+      body:
+        - A practical course with theory, demonstration and exercise.
+        - The aim is to build knowledge, skills and confidence step by step
+          so that users have a good foundation for using the HPC resources
+          at Leeds.
 # The syllabus should match what is in:
 # https://github.com/ARCTraining/rc-lesson-plans/blob/main/hpc0/hpc0-lesson-plan.md
 # https://github.com/ARCTraining/rc-slides/blob/main/hpc0.qmd 
       syllabus:
-            - Logging in
-            - Entering commands
-            - Finding out about commands
-            - File system navigation
-            - Commands to create, copy, move and delete files and directories
-            - Home directory contents
-            - File permissions
-            - Using commands to explore and filter data
-            - Shell scripting basics
-      prereq: None
-      duration: 1/2 day
-      frequency: This course usually runs 10 or more times per year.
-      suitability: New HPC users.
+        - Logging in
+        - Entering commands
+        - Finding out about commands
+        - Filesystem navigation
+        - Commands to list, create, copy, move and delete files
+        - Hidden files
+        - Command history
+        - Control key combinations
+        - Editing files
+        - File permissions
+        - Commands to explore and filter data
+        - Wildcards
+        - Shell scripting basics
+      prereq:
+        - None 
+      duration:
+        - 1/2 day
+      frequency:
+        - This course runs approximately monthly depending upon demand.
+      suitability:
+        - New HPC users unfamiliar with the Linux command line.
       booking: 'https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9TGludXgmZ2Rfc3R5cGU9JmdkX3R1dG9yPUxhc3QlMjBuYW1lJmRhdGUxPWRkJTJmbW0lMmZ5eXl5JmRhdGUyPWRkJTJmbW0lMmZ5eXl5JmRhdGUxPTAwLjAwLjAwMDAmZGF0ZTI9MDAuMDAuMDAwMCZwcm92aWRlcmxpc3Q9NTAwMjI0MjkmYW5kb3I9T1Imc29ydD1CRUdEQSZnZF9jYWxsaWQ9SU5JVElBTCZzdHlsZT0%3d'
 
   - code: 'HPC1'
     title: 'Introduction to High Performance Computing'
     url: /training/courses/hpc1/
-    text: 'The HPC service at Leeds. Developing job submission scripts. Submitting,
-        monitoring and cancelling jobs. Managing and transferring data.'
+    text: 'Run on campus or on-line in two half days or a full day. A
+        practical workshop providing an overview of HPC resources at Leeds
+        and how to use them.'
     style: training-widget
     level: beginner
     content:
-      body: " 
-            <br>
-           It will be useful if you are new to HPC in research or have used HPC elsewhere. 
-           It is suitable for researchers from all faculties and examples will be given from 
-           a range of research domains. The purpose of the workshop is to give users the
-           skills to be an effective user of the HPC service and to get codes and applications 
-           running effectively."
-      outcomes:
-        - Understand how HPC can be used to support their research
-        - Use different models of parallel computing
-        - Be able to use Linux effectively : SSH, directory management, command line etc
-        - Manage data on the HPC clusters
-        - Use the HPC batch system effectively
-        - Use the module system to load and manage pre-installed applications
-        - Write scripts to run codes and applications
-        - Examine how well code scales and apply techniques to benchmark code
-      prereq: "
-         Experience using Linux at the command line would be useful. <br>
-         If you have no experience of using the command line, we advise you attend
-         the half-day workshop HPC 0: Introduction to Linux for High Performance Computing.
-         "
-      duration: 1 day
-      frequency: This workshop usually runs monthly, up to 10 times each academic year.
-      suitability: New HPC users.
+      body:
+        - A practical course with theory, demonstration and exercise.
+        - It will be useful if you are new to HPC in research or have used
+          HPC elsewhere.
+        - The main purpose of the workshop is to help users gain the
+          knowledge and skills to be an effective and considerate user of
+          the HPC resources at Leeds.
+      syllabus:
+# The syllabus should match what is in:
+# https://github.com/ARCTraining/rc-lesson-plans/blob/main/hpc1/hpc1-lesson-plan.md
+# https://github.com/ARCTraining/rc-slides/blob/main/hpc1.qmd 
+        - Transferring data to and from HPC resources
+        - Managing data on HPC resources
+        - The job scheduler
+        - Job submission, monitoring and cancellation
+        - The module system
+        - Developing scripts to run codes and applications
+        - Benchmarking and analysing how jobs scale
+      prereq:
+        - Familiarity with the Linux command line.
+      duration:
+        - 1 day
+      frequency:
+        - This course runs approximately monthly depending upon demand.
+      suitability:
+        - New HPC users.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9SFBDJTIwQ2FycGVudHJ5JmdkX3N0eXBlPSZnZF90dXRvcj1MYXN0JTIwbmFtZSZkYXRlMT1kZCUyZm1tJTJmeXl5eSZkYXRlMj1kZCUyZm1tJTJmeXl5eSZkYXRlMT0wMC4wMC4wMDAwJmRhdGUyPTAwLjAwLjAwMDAmcHJvdmlkZXJsaXN0PTAmYW5kb3I9QU5EJnNvcnQ9QkVHREEmZ2RfY2FsbGlkPUlOSVRJQUwmc3R5bGU9"
 
   - code: 'SWD1a'
