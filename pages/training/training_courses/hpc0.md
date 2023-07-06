@@ -5,6 +5,7 @@
 # title: {{ site.data.training_courses.widget.title }}
 permalink: /training/courses/hpc0/
 breadcrumb: true
+layout: page_training_courses.html
 ---
 
 {% assign hpc0w = site.data.training_courses.widget | where:'url', page.permalink %}
