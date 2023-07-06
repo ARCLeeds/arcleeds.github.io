@@ -4,39 +4,35 @@ permalink: "/training/courses/swd6/"
 breadcrumb: true
 ---
 
-{% assign filtered_navigation = site.data.training_courses.widget | where:'url', page.permalink %}
-
-{% assign page_content = filtered_navigation[0].content %}
+{% assign swd6w = site.data.training_courses.widget | where:'code', 'SWD6' %}
+{% assign swd6 = swd6w[0] %}
+{% assign course = swd6.content %}
 
 {% assign swd1aw = site.data.training_courses.widget | where:'code', 'SWD1a' %}
 {% assign swd1a = swd1aw[0] %}
 
 
-### Booking for this course is through the IT Training Unit. [Click here to book]({{ page_content.booking }})
+### Booking for this course is through the IT Training Unit. [Click here to book]({{ course.booking }})
 
 ## Workshop content
-
-{{ page_content.body }}
-
+{{ course.body }}
 
 At the end of the workshop, attendees will be able to:
-{% for item in page_content.outcomes %}
+{% for item in course.outcomes %}
   - {{ item }}
 {% endfor %}
 
 ## Prerequisites
-
-{{ page_content.prereq }}
--[{{swd1a.code}}: {swd1a.title}]({{ swd1a.url }})
+{{ course.prereq }}
+- [{{swd1a.code}}: {swd1a.title}]({{ swd1a.url }})
 
 ## Duration
+{{ course.duration }}
 
-{{ page_content.duration }}
 ## Frequency
+{{ course.frequency }}
 
-{{ page_content.frequency }}
+If you would like a bespoke version of this course run in your department then please [contact us]({{ site.data.variables.contact_url }}).
 
-If you would like a bespoke version of this course run in your department then please [contact us](https://bit.ly/arc-help).
 ## Suitability
-
-{{ page_content.suitability }}
+{{ course.suitability }}
