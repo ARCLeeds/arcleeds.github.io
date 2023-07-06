@@ -8,6 +8,10 @@ breadcrumb: true
 
 {% assign page_content = filtered_navigation[0].content %}
 
+{% assign swd1aw = site.data.training_courses.widget | where:'code', 'SWD1a' %}
+{% assign swd1a = swd1aw[0] %}
+
+
 ### Booking for this course is through the IT Training Unit. [Click here to book]({{ page_content.booking }})
 
 ## Workshop content
@@ -23,6 +27,8 @@ At the end of the workshop, attendees will be able to:
 ## Prerequisites
 
 {{ page_content.prereq }}
+-[{{swd1a.code}}: {swd1a.title}]({{ swd1a.url }})
+
 ## Duration
 
 {{ page_content.duration }}

@@ -2,6 +2,7 @@
 # code: HPC0
 # name: "Introduction to Linux for HPC"
 # title: "HPC0: Introduction to Linux for HPC"
+# title: {{ site.data.training_courses.widget.title }}
 permalink: /training/courses/hpc0/
 breadcrumb: true
 ---
@@ -11,13 +12,17 @@ breadcrumb: true
 {% assign hpc0 = hpc0w[0] %}
 
 <!--
+{% assign title = hpc0.title %}
+-->
+
+<!--
 The following sets the page title and adds the title into a <h1> level heading.
 It is done like this to reduce the number of places that need updating if course codes and names change.
 Whilst the page.title (yaml title: ) in the front matter of this markdown file worked, it was yet one more place to edit.
 Jekyll currently will not by default allow variables in the front matter without a plugin being written, so this javascript seemed like the best way.
 In all honesty, the Web site is a bit of a horror and probably needs a complete re-write. Andy
--->
 # {{ hpc0.code }}: {{ hpc0.title }}
+-->
 
 <div id="hpc0_title">{{ hpc0.title }}</div>
 
