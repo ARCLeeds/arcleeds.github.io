@@ -9,7 +9,7 @@ You can find the site at [arcleeds.github.io](https://arcleeds.github.io)
 
 ## Website Structure Philosophy
 
-The way this site has been structured looks to take advantage of Liquid syntax
+The way this site has been structured looks to take advantage of [Liquid syntax](https://shopify.github.io/liquid/basics/introduction/)
 to neatly manage page content without writing lots of HTML. You'll find most of the data
 that makes up the content to this site within the \_data/ directory, with most of the files
 in the pages directory just including the liquid syntax to load the data.
