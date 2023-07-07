@@ -30,7 +30,7 @@ At the end of the workshop, attendees will be able to:
 
 {{ page_content.frequency }}
 
-If you would like a bespoke version of this course run in your department then please [contact us](https://bit.ly/arc-help).
+If you would like a bespoke version of this course run in your department then please [contact us]({{ site.data.variables.contact_url }}).
 ## Suitability
 
 {{ page_content.suitability }}

@@ -66,7 +66,7 @@ If you are working against an issue, remember to [link your pull request](https:
 
 ## Contact us
 
-You can get in touch with the Research Computing Team via our [help form](https://bit.ly/arc-help).
+You can get in touch with the Research Computing Team via our [help form](http://bit.ly/arc-help).
 
 If you are unable to use our contact form you can email the team via the service desk [itservicedesk@leeds.ac.uk](mailto:itservicedesk@leeds.ac.uk)
 
