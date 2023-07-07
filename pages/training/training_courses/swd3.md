@@ -27,13 +27,11 @@ At the end of the workshop, attendees will be able to:
     - [{{ hpc0.code }}: {{ hpc0.title }}]({{ hpc0.url }})
 
 ## Duration
-
 {{ page_content.duration }}
+
 ## Frequency
-
 {{ page_content.frequency }}
+If you would like a bespoke version of this course run in your department then please [contact us]({{ site.data.variables.contact_url }}).
 
-If you would like a bespoke version of this course run in your department then please [contact us]( {{ site.data.variables.contact_url }}).
 ## Suitability
-
 {{ page_content.suitability }}
