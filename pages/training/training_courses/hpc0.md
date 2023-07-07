@@ -1,54 +1,13 @@
 ---
-# code: HPC0
-# name: "Introduction to Linux for HPC"
-# title: "HPC0: Introduction to Linux for HPC"
+title: 'HPC0: Introduction to Linux for HPC' 
+# title: {{ code }}: {{ name }}
 permalink: /training/courses/hpc0/
 breadcrumb: true
+#layout: page_training_course
 ---
 
-{% assign hpc0w = site.data.training_courses.widget | where:'url', page.permalink %}
-
+{% assign hpc0w = site.data.training_courses.widget | where:'code', 'HPC0' %}
 {% assign hpc0 = hpc0w[0] %}
-
-<!--
-The following sets the page title and adds the title into a <h1> level heading.
-It is done like this to reduce the number of places that need updating if course codes and names change.
-Whilst the page.title (yaml title: ) in the front matter of this markdown file worked, it was yet one more place to edit.
-Jekyll currently will not by default allow variables in the front matter without a plugin being written, so this javascript seemed like the best way.
-In all honesty, the Web site is a bit of a horror and probably needs a complete re-write. Andy
--->
-# {{ hpc0.code }}: {{ hpc0.title }}
-
-<div id="hpc0_title">{{ hpc0.title }}</div>
-
-<script type="text/javascript">
-    var hpc0Title = document.getElementById("hpc0_title");
-    if (hpc0Title) {
-        document.title = hpc0Title.textContent;
-    }
-    hpc0Title.style.visibility = "hidden"; 
-</script>
-
-<!--
-The following was a successful attempt to get the filename of this file which contains the code for the training course.
-The problem is that this can't be injected into Jekyll to build the HTML as this happens prior to the javascript running.
-The code has been left here as a reminder for the time being.
- 
-pages/training/training_courses/hpc0.md
-{{ page.path }}
-
-<p id="page_path">{{ page.path }}</p>
-
-<script type="text/javascript">
-    var pagePath = document.getElementById("page_path").innerText;
-    if (pagePath) {
-        const filename = new URL("file://" + pagePath).pathname.split("/").pop();
-        const code = filename.split(".")[0].toUpperCase();
-        document.getElementById("page_path").innerHTML = code;
-    }
-</script>
--->
-
 {% assign course = hpc0.content %} 
 
 {% assign hpc1w = site.data.training_courses.widget | where:'code', 'HPC1' %}

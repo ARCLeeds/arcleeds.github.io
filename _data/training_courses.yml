@@ -27,7 +27,7 @@
 widget:
   - code: 'HPC0'
     title: 'Introduction to Linux for HPC'
-#    title: *site.data.pages.training.training_courses.hpc0.title
+#    title: site.data.pages.training.training_courses.hpc0.title
     url: /training/courses/hpc0/
     text: 'Run on campus or on-line in half a day. A practical workshop about
         the Linux command line and filesystem on the HPC resources at Leeds.'
@@ -57,7 +57,7 @@ widget:
         - Wildcards
         - Shell scripting basics
       prereq:
-        - None 
+        - None
       duration:
         - 1/2 day
       frequency:
@@ -214,8 +214,8 @@ widget:
         - Hosting code
         - Open Science and Licensing issues
       prereq: "We recommend that attendees have a working knowledge of the Unix shell.
-              A suitable course is
-              HPC 0: Introduction to Linux for High Performance Computing."
+              A suitable course is:"
+#              HPC 0: Introduction to Linux for High Performance Computing."
       duration: 1 day
       frequency: This course will run at least twice each academic year.
       suitability: Research postgraduate students and above; teaching and lecturing staff.
@@ -308,13 +308,13 @@ widget:
       installing and compiling codes on the HPC service. This workshop will be most
       useful for researchers who need to manage and install their own applications
       and research codes. This workshop builds on the skills developed on the
-      HPC 1: Introduction to High Performance Computing at Leeds workshop.
+      [HPC 1: Introduction to High Performance Computing at Leeds workshop](../hpc1).
       No previous experience of compiling or managing code is expected,
       although experience with the Linux command line and some programming
       experience in Fortran, C or Python would be very useful. It is <strong>not</strong> an
       introductory programming workshop (see workshops
-      SWD1a: Introduction to Python programming,
-      SWD1b: Introduction to R programming
+      [SWD1a: Introduction to Python programming](../swd1a),
+      [SWD1b: Introduction to R programming](../swd1b)
       if that is what you need).
       "
       outcomes:
@@ -327,16 +327,12 @@ widget:
         - Write scripts to request resources and run code through the batch scheduler
         - Create and use modules to manage own applications
         - Understand when and where to use software containers (Docker and Singularity)
-      prereq: "
-      Attendees should have some experience of using HPC services, such as through
-      attending the 
-      HPC 1: Introduction to High Performance Computing at Leeds.
-      It is likely the workshop will be of most benefit to those users who need to develop and
-      adapt research codes on the HPC service.
-      "
+      prereq:
+        - Experience of using HPC resources at Leeds, such as through attending the [HPC 1: Introduction to High Performance Computing at Leeds](../hpc1).
       duration: 1 day
       frequency: This course will usually run at least twice per academic year.
-      suitability: All research staff and students
+      suitability:
+        - HPC service users at Leeds who need to develop and adapt research codes on the HPC service.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMCZ3PTIwOTk1NjAr)/courses.htm?gd_keywords=50114002"
 
   - code: 'HPC3'
@@ -349,20 +345,10 @@ widget:
     style: training-widget
     level: intermediate
     content:
-      body: "
-      This workshop is designed for HPC users who already write or develop codes
-       to give an overview of the hardware and infrastructure that code runs on
-       and how design choices can affect how efficiently code runs. Following this
-       introduction, the workshop will give an introduction to the OpenMP parallel
-       programming model and give hands on practice developing and adapting code
-       to run on shared memory machines. The second part of the workshop is designed
-       for those users who already have experience of using (and perhaps developing)
-       sequential code in C or Fortran and would like to examine the benefits of
-       applying the OpenMP model to parallelise their code. No previous experience
-       of developing parallel code is expected, but familiarity with Fortran or C
-        would be very useful as would the ability to use Linux and the batch
-        scheduler on the HPC service.
-      "
+      body:
+        - The workshop introduces the OpenMP parallel programming model and involves
+          adapting code to run on shared memory machines. No previous experience
+          of developing parallel code is expected.
       outcomes:
         - Understand the structure of a typical single core and multicore CPU
         - Understand the building blocks of a typical HPC cluster
@@ -373,25 +359,20 @@ widget:
         - Understand and apply the need for shared and private data
         - Avoid data access conflicts
         - Write, compile and run simple OpenMP programs
-      prereq: "
-      Attendees should have some experience of using HPC services, such as through
-      attending the 
-      HPC 1: Introduction to High Performance Computing at Leeds
-      and be able to program in Fortran or C at an intermediate level
-      (most of the teaching will use Fortran but examples will be in both languages).
-      It is <strong>not</strong> an introductory programming workshop. You will be expected to know
-      how to program in a modern programming language.
-      "
+      prereq:
+        - Experience of using HPC services at Leeds.
+        - Familiarity with programming in Fortran and/or C.
       duration: 1 day
       frequency: This course will usually run at least twice each academic year.
-      suitability: All research staff and students.
+      suitability:
+        - HPC service users who write or develop codes.
       booking: "https://uolr3.leeds.ac.uk/temcatsearch(bD1lbiZjPTUwMA==)/courses.htm?sap-params=Z2Rfa2V5d29yZHM9Q29tcHV0ZXIlMjBBcmNoaXRlY3R1cmVzJTIwYW5kJTIwc2hhcmVkJTIwbWVtb3J5JTIwcGFyYWxsZWwlMjBwcm9ncmFtbWluZyZnZF9zdHlwZT0mZ2RfdHV0b3I9TGFzdCUyMG5hbWUmZGF0ZTE9ZGQlMmZtbSUyZnl5eXkmZGF0ZTI9ZGQlMmZtbSUyZnl5eXkmZGF0ZTE9MDAuMDAuMDAwMCZkYXRlMj0wMC4wMC4wMDAwJnByb3ZpZGVybGlzdD0wJmFuZG9yPUFORCZzb3J0PUJFR0RBJmdkX2NhbGxpZD1JTklUSUFMJnN0eWxlPQ%3d%3d"
 
   - code: 'HPC5'
     title: 'Introduction to GPU programming with CUDA'
     url: /training/courses/hpc5/
     text: |
-          A one-day workshop covering the  fundamentals of parallel computing
+          A one-day workshop covering the fundamentals of parallel computing
           with GPUs and the CUDA programming environment.
     style: training-widget
     level: intermediate
@@ -413,10 +394,9 @@ widget:
         - Hints and tips to CUDA parallelise existing serial code
         - Optimising code
         - "PyCUDA: CUDA programming for Python"
-      prereq: "We recommend that attendees have a working knowledge of the Unix
-      shell, some ability to program in C and Python and can compile C and Fortran codes.
-      This is <strong>not</strong> an introductory programming course. If you need to learn how to program,
-      please attend one of the SWD1 programming courses."
+      prereq:
+        - Familiarity with the Linuc command line.
+        - Familiarity with Fortran and/or C and/or Python.
       duration: 1 day
       frequency: This workshop usually runs twice each academic year.
       suitability: All research staff and students.
@@ -493,7 +473,7 @@ widget:
         This workshop is aimed at people who can already program in Python
         at an intermediate level (with a knowledge of loops, functions and 'if' statements).
         If you need to learn how to program in Python, please attend
-        SWD1a: Introduction to Python programming.
+        [SWD1a: Introduction to Python programming](../swd1a).
         "
       duration: 1 day
       frequency: This workshop usually runs once each academic year.
