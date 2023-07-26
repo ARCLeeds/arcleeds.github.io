@@ -100,7 +100,7 @@ main:
     shell scripting. Andy has expertise in software sustainability, sensitive data 
     management and computational reproducibility.
     "
-    img: team/andyturner.jpg  
+    img: team/andyturner.jpg
   - firstname: Tianyi
     lastname: Pan
     role: Research Software Engineer
@@ -115,7 +115,7 @@ main:
     as a Research Officer, on collaborative CFD modelling projects for complex fluids
     and nozzle design optimisation.
     "
-    img: team/tianyipan.jpeg
+    img: team/tianyipan.jpg
 
 alumni:
   - firstname: Martin 
