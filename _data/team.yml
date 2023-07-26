@@ -104,6 +104,7 @@ main:
     management and computational reproducibility.
     "
     img: team/andyturner.jpg
+    
   - firstname: Tianyi
     lastname: Pan
     role: Research Software Engineer
@@ -118,7 +119,7 @@ main:
     as a Research Officer, on collaborative CFD modelling projects for complex fluids 
     and nozzle design optimisation.
     "
-    img: team/tianyipan.jpg    
+    img: team/tianyipan.jpeg    
 
 alumni:
   - firstname: Martin 
