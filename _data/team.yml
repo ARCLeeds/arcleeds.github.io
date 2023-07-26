@@ -26,7 +26,6 @@ main:
       version control and RDBMs including Postgres; MySQL and SQL Server.
     "
     img: team/ollieclark.png
-
   - firstname: Tom
     lastname: Hardcastle
     role: Research Software Engineer
@@ -40,7 +39,6 @@ main:
     linux systems, C++, Python, and Javascript.
     "
     img: team/tomhardcastle.jpeg
-
   - firstname: John
     lastname: Hodrien
     role: Research Software Engineer
@@ -61,7 +59,6 @@ main:
     standard configuration and deployment of systems and solutions at Leeds.
     "
     img: team/johnhodrien.jpg
-
   - firstname: Nick
     lastname: Rhodes
     role: Research Software Engineer
@@ -104,6 +101,21 @@ main:
     management and computational reproducibility.
     "
     img: team/andyturner.jpg
+  - firstname: Tianyi
+    lastname: Pan
+    role: Research Software Engineer
+    bio: "
+    Tianyi joined the Research IT team after working on the Supercomputing Wales project
+    as a Research Software Engineer. Tianyi received his PhD in Mechanical Engineering
+    from the University of Leeds in 2020, focusing on the aerodynamic analysis of mutual benefits
+    between hybrid and distributed propulsion concepts to improve the aerodynamic performance
+    of a large transonic distributed propulsion aircraft. Tianyi has more than 8 years of
+    experience in applying high-fidelity CFD simulations for both aerodynamic and hydrodynamic
+    research on HPC. Before joining Swansea University, Tianyi worked at Proctor & Gamble,
+    as a Research Officer, on collaborative CFD modelling projects for complex fluids
+    and nozzle design optimisation.
+    "
+    img: team/tianyipan.jpg
 
 alumni:
   - firstname: Martin 
