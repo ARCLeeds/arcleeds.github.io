@@ -4,11 +4,11 @@ permalink: "/training/courses/hpc1/"
 breadcrumb: true
 ---
 
-{% assign hpc1w = site.data.training_courses.widget | where:'code', page.code %}
+{% assign hpc1w = site.data.training_courses.widget | where:'code', 'HPC1' %}
 {% assign hpc1 = hpc1w[0] %}
 {% assign course = hpc1.content %}
 
-{% assign hpc0w = site.data.training_courses.widget | where:'code', 'HPC1' %}
+{% assign hpc0w = site.data.training_courses.widget | where:'code', 'HPC0' %}
 {% assign hpc0 = hpc0w[0] %}
 
 ### Booking for this course is through the IT Training Unit. [Click here to book]({{ course.booking }})
