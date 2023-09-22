@@ -6,7 +6,7 @@ breadcrumb: true
 
 {% assign swd1bw = site.data.training_courses.widget | where:'code', 'SWD1b' %}
 {% assign swd1b = swd1b[0] %}
-{% assign course = filtered_navigation[0].content %}
+{% assign course = swd1b.content %}
 
 ### Booking for this course is through the IT Training Unit. [Click here to book]({{ course.booking }})
 
