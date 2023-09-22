@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  Spring 2023 Training Courses now open
-date:   2023-01-30
+title:  Autumn 2023 Training Courses now open
+date:   2023-09-22
 subheadline: "Training"
 teaser: "
  Places are now available for upcoming Research Computing training courses, sign up now!
@@ -18,7 +18,7 @@ We've now confirmed some upcoming training courses which are now open for regist
 Whether you want to learn some Git, Linux command line or learn more about the University's high performance computing systems we've got a course for you.
 They are hands-on so be prepared to do some typing!
 
-All booking is managed through SAP and by the IT Training team, any questions about your booking should be directed to ittraining@leeds.ac.uk.
+All booking is managed through SAP and by the IT Training team, any questions about your booking should be directed to [ittraining@leeds.ac.uk](mailto:ittraining@leeds.ac.uk).
 
 Find booking links on the course web pages below.
 
