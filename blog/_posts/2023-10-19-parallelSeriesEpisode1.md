@@ -93,8 +93,6 @@ By using chunks, every process spend more time running and less time communicati
 
 ![Chunk Parallel CPU Usage](/images/blog/parallelSeries/episode1/cpu_chunk.png)
 
-You can notice that 40 chunks is not the best option. This happens because check the interval 1-10 takes much less time than check the range 100-110, for example.
-So at some point some cores will finish where others are going to be working at maximum capacity. The idea is to find a good balance where you have enough numbers of chunks to when the quick ranges finish, a new process can start in that core, but not so many chunks that your overhead comunication is going to use all the time you won with the cores otimization
 
 #### Chunk size optimization
 
