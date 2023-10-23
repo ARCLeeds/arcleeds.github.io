@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Exploring Parallel Python Series - Episode 1
+title:  A Journey into Parallel Python - Episode 1
 date:   2023-10-19
 subheadline: "Training"
 teaser: "
