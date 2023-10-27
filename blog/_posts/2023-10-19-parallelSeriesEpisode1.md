@@ -83,7 +83,7 @@ Although we have attempted to divide the workload into 40 cores theoretically, t
 
 #### Parallel Chunk Approach
 
-Next, we implemented a parallel chunk approach, where we divided the range of numbers into chunks and assigned each chunk to a separate process. This is an attempt to create larger process to avoid the communication overhead. The task here is find the right ballance between the time we loose managing all process and keeping all cores using 100% of CPU as much as possible. This approach allowed us to fine-tune the level of parallelism. The results for 40 chunks were particularly impressive:
+Next, we implemented a parallel chunk approach, where we divided the range of numbers into chunks and assigned each chunk to a separate process. This is an attempt to create larger process to avoid the communication overhead. The task here is find the right ballance between the time we lose managing all processes and keeping all cores using 100% of CPU as much as possible. This approach allowed us to fine-tune the level of parallelism. The results for 40 chunks were particularly impressive:
 
 - For 10^6 numbers, the parallel chunk approach took approximately 0.27 seconds, showcasing a substantial improvement, approximately 10.67 times faster than the serial version.
 - With 10^7 numbers, execution time reduced to approximately 4.09 seconds, achieving a remarkable speedup of about 17.38 times.
