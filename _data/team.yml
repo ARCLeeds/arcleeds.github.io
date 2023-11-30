@@ -59,6 +59,34 @@ main:
     standard configuration and deployment of systems and solutions at Leeds.
     "
     img: team/johnhodrien.jpg
+  - firstname: Maeve
+    lastname: Murphy Quinlan
+    role: Research Software Engineer
+    bio: "
+    Maeve is a Research Software Engineer who joined the Research Computing Team following her PhD
+    in planetary science and meteoritics from the University of Leeds. She previously has applied
+    numerical modelling in Python on ARC4 to investigate the thermal and structural
+    evolution of early-Solar System planetesimals, and to analyse microscopy data from 4.6 billion-year-old
+    meteorite samples. She is interested in scientific software development, publishing research software
+    papers, assisting researchers in packaging their code for re-use, and developing Open Source tools
+    to compliment analysis of geospatial and microscopy data.
+    "
+    img: team/maevequinlan.jpg
+  - firstname: Tianyi
+    lastname: Pan
+    role: Research Software Engineer
+    bio: "
+    Tianyi joined the Research IT team after working on the Supercomputing Wales project
+    as a Research Software Engineer. Tianyi received his PhD in Mechanical Engineering
+    from the University of Leeds in 2020, focusing on the aerodynamic analysis of mutual benefits
+    between hybrid and distributed propulsion concepts to improve the aerodynamic performance
+    of a large transonic distributed propulsion aircraft. Tianyi has more than 8 years of
+    experience in applying high-fidelity CFD simulations for both aerodynamic and hydrodynamic
+    research on HPC. Before joining Swansea University, Tianyi worked at Proctor & Gamble,
+    as a Research Officer, on collaborative CFD modelling projects for complex fluids
+    and nozzle design optimisation.
+    "
+    img: team/tianyipan.jpg
   - firstname: Nick
     lastname: Rhodes
     role: Research Software Engineer
@@ -101,21 +129,6 @@ main:
     management and computational reproducibility.
     "
     img: team/andyturner.jpg
-  - firstname: Tianyi
-    lastname: Pan
-    role: Research Software Engineer
-    bio: "
-    Tianyi joined the Research IT team after working on the Supercomputing Wales project
-    as a Research Software Engineer. Tianyi received his PhD in Mechanical Engineering
-    from the University of Leeds in 2020, focusing on the aerodynamic analysis of mutual benefits
-    between hybrid and distributed propulsion concepts to improve the aerodynamic performance
-    of a large transonic distributed propulsion aircraft. Tianyi has more than 8 years of
-    experience in applying high-fidelity CFD simulations for both aerodynamic and hydrodynamic
-    research on HPC. Before joining Swansea University, Tianyi worked at Proctor & Gamble,
-    as a Research Officer, on collaborative CFD modelling projects for complex fluids
-    and nozzle design optimisation.
-    "
-    img: team/tianyipan.jpg
 
 alumni:
   - firstname: Martin 
