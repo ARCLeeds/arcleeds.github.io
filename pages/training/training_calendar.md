@@ -4,7 +4,7 @@ permalink: "/training/calendar/"
 breadcrumb: true
 ---
 
-### Here is the upcoming schedule of Research Computing training.
+### The upcoming schedule of Research Computing training should appear below (there may be a delay):
 
 <br/>
 

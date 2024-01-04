@@ -13,6 +13,11 @@
 - title: Training
   url: /training/
   side: left
+  dropdown:
+  - title: Calendar
+    url: /training/calendar/
+  - title: Courses
+    url: /training/courses/
 
 - title: About
   url: /about/
