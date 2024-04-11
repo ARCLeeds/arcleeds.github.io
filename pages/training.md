@@ -1,29 +1,14 @@
 ---
-title: "Training"
+title: "Upcoming Events"
 permalink: "/training/"
 breadcrumb: true
 ---
 
-To see what courses are available and when:
-
-{% assign page_list = site.data.widgets.main | where: 'title', page.title %}
-
-{% assign page_data = page_list[0].subpages %}
-
-{% assign page_items = page_data | size %}
-
-{% assign page_nrows = page_items | divided_by: 4.0 | ceil %}
-
-{% assign col2 = 0 %}
-
-<div class="t60">
-  {% for row in (1..page_nrows) %}
-	   {% for col in (1..4) %}
-				{% assign col_data = page_data[col2] %}
-	      {% if col_data.title %}
-				   {% include _frontpage-widget.html widget=col_data  %}
-				{% endif %}
-				{% assign col2 = col2 | plus: 1 %}
-		{% endfor %}
-  {% endfor %}
-</div>		
+{% assign current_date = site.time | date: "%s" %}
+{% for event in site.data.events %}
+  {% assign event_date = event.dates[0] | date: "%s" %}
+  {% if event_date > current_date %}
+    {% assign page = event %}
+    {% include event.html %}
+  {% endif %}
+{% endfor %}
