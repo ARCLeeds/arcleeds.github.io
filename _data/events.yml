@@ -1,0 +1,36 @@
+# Data used to create the Upcoming Events under /training/ page
+# The layout for an event is:
+#
+# - code: Course_Code
+#   dates:
+#     - day 1 (format yyyy/mm/dd)
+#     - day 2 (if there is more than 1 day)
+#   location: Teams or Bluiding, Room
+#   tags:
+#     - Course_tag (some ideas: In-Person/Online, 1 half-day, 2 full days)
+
+- code: HPC0
+  dates:
+    - 2024-03-20
+  location: Venue A
+  tags:
+    - Tag1
+    - Tag2
+
+- code: SWD2
+  dates:
+    - 2024-04-15
+    - 2024-04-16
+  location: Venue B
+  tags:
+    - Tag3
+    - Tag4
+
+- code: SWD6
+  dates:
+    - 2024-04-15
+    - 2024-04-16
+  location: Venue B
+  tags:
+    - Tag3
+    - Tag4
