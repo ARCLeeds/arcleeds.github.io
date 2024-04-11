@@ -10,23 +10,112 @@
 
 - code: HPC0
   dates:
-    - 2024-03-20
+    - 2024-02-20
   tags:
-    - Tag1
-    - Tag2
+    - 1 Half Day
+    - Online
+
+- code: HPC1
+  dates:
+    - 2024-03-05
+    - 2024-03-12
+  tags:
+    - 2 Half Days
+    - Online
 
 - code: SWD2
   dates:
-    - 2024-04-15
-    - 2024-04-16
+    - 2024-03-21
   tags:
-    - Tag3
-    - Tag4
+    - 1 Day
+    - Online
+
+- code: SWD1a
+  dates:
+    - 2024-04-19
+    - 2024-04-26
+  tags:
+    - 2 Days
+    - Online
+
+- code: SWD1b
+  dates:
+    - 2024-05-13
+    - 2024-05-20
+  tags:
+    - 2 Days
+    - Online
+
+- code: HPC0
+  dates:
+    - 2024-06-19
+  tags:
+    - 1 Half Day
+    - In-Person
+
+- code: HPC1
+  dates:
+    - 2024-07-01
+  tags:
+    - 1 Day
+    - In-Person
+
+- code: SWD3
+  dates:
+    - 2024-07-25
+  tags:
+    - 1 Day
+    - In-Person
+
+- code: SWD1a
+  dates:
+    - 2024-08-08
+    - 2024-08-09
+  tags:
+    - 2 Days
+    - In-Person
+
+- code: HPC2
+  dates:
+    - 2024-09-10
+    - 2024-09-12
+  tags:
+    - 2 Half Days
+    - Online
+
+- code: DataVis
+  dates:
+    - 2024-09-25
+  tags:
+    - 1 Day
+    - In-Person
+
+- code: HPC0
+  dates:
+    - 2024-10-25
+  tags:
+    - 1 Half Day
+    - Online
+
+- code: HPC1
+  dates:
+    - 2024-11-04
+    - 2024-11-11
+  tags:
+    - 2 Half Days
+    - Online
 
 - code: SWD6
   dates:
-    - 2024-04-15
-    - 2024-04-16
+    - 2024-11-28
   tags:
-    - Tag3
-    - Tag4
+    - 1 Day
+    - Online
+
+- code: SWD1a
+  dates:
+    - 2024-12-03
+    - 2024-12-10
+  tags:
+    - 2 Days
+    - Online
