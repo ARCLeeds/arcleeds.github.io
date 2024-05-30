@@ -11,18 +11,23 @@ management:
     local compute, storage, software self-service, automation and training.
     "
     img: team/davidbaldwin.jpg
+  - firstname: Patricia
+    lastname: Ternes
+    role: Research Software Engineer Manager
     bio: "
-    Mark started out with a degree in Computer Science and, after a couple of years 
-    as a software engineer in the financial world, has spent over twenty-five years 
-    working in academia, specialising in research systems and research-led teaching.  
-    As well as developing and supporting software and hardware solutions across the 
-    University's wide research portfolio, Mark has lectured in software engineering 
-    and championed the need for specialist research support throughout his career.  
-    Working as part of the University IT Executive Team, Mark's portfolio encompasses 
-    all aspects of Research IT, and how to continue to develop its teams and research 
-    capabilities to meet the exciting challenges of the future.
+    Patricia leads the Research Computing Team at the University of Leeds.
+    She has a PhD in Theoretical Physics and a Master degree in Condensed Matter
+    Physics. She has experience in a range of activities related with sustainable
+    and reliable software development and High Performance Computing. Her work
+    focuses on the development of computational models that help to understand
+    complex systems; initially focusing on phenomena such as the behaviour of
+    fluids at nano‐scales and lately modelling emergence in spatio‐social systems.
+    Previously, she worked as a Researcher in Simulating Urban Systems at the
+    School of Geography (2019-2021), and before joining the University of Leeds,
+    Patricia also worked as an physics undergraduate professor at Federal
+    Institute Catarinense-Brazil (2018-2019).
     "
-    img: team/markconmy.jpg
+    img: team/patriciaternes.jpg 
 
 main:
   - firstname: Ollie
@@ -111,21 +116,6 @@ main:
     He has frequently worked in devops and lean/agile teams.
     "
     img: team/nickrhodes.jpeg
-  - firstname: Patricia
-    lastname: Ternes
-    role: Research Software Engineer
-    bio: "
-    Patricia is a Research Software Engineer, focusing on Computational Mechanics, 
-    at the University of Leeds. She has a PhD in Theoretical Physics and a Master 
-    degree in Condensed Matter Physics. Her research focuses on the development of
-    computational models that help to understand complex systems; initially focusing
-    on phenomena such as the behaviour of fluids at nano‐scales and lately modelling
-    emergence in spatio‐social systems. Previously, she worked as a Researcher in
-    Simulating Urban Systems at the School of Geography (2019-2021), and before 
-    joining the University of Leeds, Patricia also worked as an physics
-    undergraduate professor at Federal Institute Catarinense-Brazil (2018-2019).
-    "
-    img: team/patriciaternes.jpg 
   - firstname: Andy
     lastname: Turner
     role: Research Software Engineer
