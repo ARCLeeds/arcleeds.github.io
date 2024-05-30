@@ -1,7 +1,16 @@
 management:
-  - firstname: Mark
-    lastname: Conmy
-    role: Head of Research IT
+  - firstname: David
+    lastname: Baldwin
+    role: Director of Digital Research
+    bio: "
+    Responsible for supporting high-quality research and innovation applications,
+    and research software engineering - fostering collaboration between research
+    colleagues, IT Services and the broader University community. His role focuses
+    on maintaining, implementing and evolving the Digital Research Strategy to
+    include new services, high-performance compute, trusted research environments,
+    local compute, storage, software self-service, automation and training.
+    "
+    img: team/davidbaldwin.jpg
     bio: "
     Mark started out with a degree in Computer Science and, after a couple of years 
     as a software engineer in the financial world, has spent over twenty-five years 
