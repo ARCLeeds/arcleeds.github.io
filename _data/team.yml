@@ -114,23 +114,25 @@ alumni:
     lastname: Callaghan
     role: Research Computing Consultant
     bio: "
-      Martin is a Research Computing Consultant and part of the Research Computing group
+      Martin was a Research Computing Consultant and part of the Research Computing group
       at the University of Leeds in the UK, where we provide High Performance Computing (HPC),
       Programming and Software Development consultancy across a diverse research community.
-      My role involves Research Software Engineering, training, consultancy and outreach.
-      He also manages a comprehensive HPC and Research Computing training programme designed to
+      His role involved Research Software Engineering, training, consultancy and outreach.
+      He also managed a comprehensive HPC and Research Computing training programme designed to
       be a 'zero to hero' structured introduction to HPC, Cloud and research software development.
       Before joining the University of Leeds, he worked as an Engineer designing machine tool
       control systems, a teacher and ran his own training and consultancy business. Personal
       research interests are in text analytics, particularly using neural networks to summarise
       text at scale.
+
+      Martin has moved on to work as Lecture in the School of Computing at the University of Leeds.
     "
     img: team/martincallaghan.jpeg
   - firstname: Luke
     lastname: Conibear
     role: Research Software Engineer
     bio: "
-    Luke is a Research Software Engineer focusing on Machine Learning. He used to be
+    Luke was a Research Software Engineer focusing on Machine Learning. He used to be
     a postdoc in air pollution using numerical models to understand how to improve
     public health. He currently works with the Centre for Doctoral Training in
     Artificial Intelligence for Medical Diagnosis and Care.
@@ -165,13 +167,16 @@ alumni:
     Working as part of the University IT Executive Team, Mark's portfolio encompasses 
     all aspects of Research IT, and how to continue to develop its teams and research 
     capabilities to meet the exciting challenges of the future.
+
+    Mark has moved on to work as Head of Digital Policy in the IT Services 
+    at the University of Leeds.
     "
     img: team/markconmy.jpg
   - firstname: John
     lastname: Hodrien
     role: Research Software Engineer
     bio: "
-    John is a Research Software Engineer working within the Research
+    John was a Research Software Engineer working within the Research
     IT team at the University of Leeds. Starting life as a Computer Scientist at
     Leeds; he taught parallel programming (C/C++, MPI/pthreads) before becoming
     a researcher within the Visualisation and Virtual Reality research group,
@@ -185,6 +190,9 @@ alumni:
     along with associated toolchains like Git, and has a soft spot for
     configuration management tools like Puppet, which has been used to provide
     standard configuration and deployment of systems and solutions at Leeds.
+
+    John has moved on to work as Principal Teaching and Research Support
+    Specialist in the School of Computing at the University of Leeds.
     "
     img: team/johnhodrien.jpg
     
