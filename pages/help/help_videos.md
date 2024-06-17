@@ -4,11 +4,11 @@ permalink: "/help/videos/"
 breadcrumb: true
 ---
 
-Find a number of simple walkthrough videos below that cover the basics of getting started connecting to the HPC, submitting and troubleshooting jobs as well as videos about configuring Anaconda on your personal computer.
+Find a number of simple walkthrough videos below that cover the basics submitting and troubleshooting jobs as well as videos about configuring Anaconda on your personal computer.
 
 ### Using HPC whilst working remotely
 
-See below for a range of videos covering useful topics for accessing and using HPC when working remotely.
+See below for a range of videos covering useful topics for using HPC when working remotely.
 
 <div class="t60">
     {% for vid in site.data.bitesize-videos.main.working-remotely %}

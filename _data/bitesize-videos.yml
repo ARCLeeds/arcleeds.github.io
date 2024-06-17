@@ -1,13 +1,5 @@
 main:
   working-remotely:
-    - description: Getting MobaXTerm and connecting to ARC
-      src: "https://mymedia.leeds.ac.uk/Mediasite/Play/7c25b8af4c7f43f7898efeba0ec6dd311d"
-    - description: Connecting to ARC from off-campus via MobaXTerm
-      src: "https://mymedia.leeds.ac.uk/Mediasite/Play/0fdeab94c034418d9ea493e57f10efe91d"
-    - description: Connecting to ARC off-campus via Linux/MacOS
-      src: "https://mymedia.leeds.ac.uk/Mediasite/Play/63acd1b646d14387b7a5edd3873e9ca61d"
-    - description: Configuring your MobaXTerm Terminal for accessing ARC remotely
-      src: "https://mymedia.leeds.ac.uk/Mediasite/Play/2d17de882b0244baab8093cde6797ecc1d"
     - description: Data Transfer using Rsync (On Campus)
       src: "https://mymedia.leeds.ac.uk/Mediasite/Play/28e926831e1b475eb7ae40f9c8f8731e1d"
     - description: Using Conda on ARC4 (only on ARC4)
@@ -24,8 +16,5 @@ main:
       src: "https://mymedia.leeds.ac.uk/Mediasite/Play/09302f838ced49af803054090c449b331d"
     - description: Getting Anaconda Python and Conda package manager on Linux
       src: "https://mymedia.leeds.ac.uk/Mediasite/Play/86d18e4cb4de44b5aaeb349b9f13c0041d"
-    - description: Getting Anaconda Python and Conda package manager on MacOS
-      src: 
     - description: Get a Bash shell on your Windows Computer
       src: "https://mymedia.leeds.ac.uk/Mediasite/Play/a6c3e36367174d95a9ed7af0a03a31481d"
-
