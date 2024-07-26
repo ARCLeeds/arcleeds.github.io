@@ -34,10 +34,10 @@ main:
     lastname: Clark
     role: Research Software Engineer
     bio: "
-      Ollie is Research Software Engineer at the University of Leeds.
-      He has experience in databases and web development and is familiar with
-      languages including Perl; Python and C/C++. He also has experience with
-      version control and RDBMs including Postgres; MySQL and SQL Server.
+    Ollie is Research Software Engineer at the University of Leeds.
+    He has experience in databases and web development and is familiar with
+    languages including Perl; Python and C/C++. He also has experience with
+    version control and RDBMs including Postgres; MySQL and SQL Server.
     "
     img: team/ollieclark.png
   - firstname: Tom
@@ -70,14 +70,13 @@ main:
     lastname: Pan
     role: Research Software Engineer
     bio: "
-    Tianyi joined the Research IT team after working on the Supercomputing Wales project
-    as a Research Software Engineer. Tianyi received his PhD in Mechanical Engineering
-    from the University of Leeds in 2020, focusing on the aerodynamic analysis of mutual benefits
-    between hybrid and distributed propulsion concepts to improve the aerodynamic performance
-    of a large transonic distributed propulsion aircraft. Tianyi has more than 8 years of
-    experience in applying high-fidelity CFD simulations for both aerodynamic and hydrodynamic
-    research on HPC. Before joining Swansea University, Tianyi worked at Proctor & Gamble,
-    as a Research Officer, on collaborative CFD modelling projects for complex fluids
+    Tianyi joined the Research Computing team following his role as a Research Software Engineer
+    on the Supercomputing Wales project at Swansea University. He completed his PhD in Mechanical
+    Engineering at the University of Leeds in 2020, with research centred on improving the transonic
+    aerodynamic performance of large distributed propulsion aircraft. Tianyi possesses extensive
+    expertise in high-fidelity CFD simulations for both aerodynamic and hydrodynamic research using
+    HPC. Prior to his position at Swansea University, he worked as a Research Officer at Procter & Gamble,
+    where he was involved in collaborative CFD modelling projects focused on complex fluids
     and nozzle design optimisation.
     "
     img: team/tianyipan.jpg
@@ -114,18 +113,17 @@ alumni:
     lastname: Callaghan
     role: Research Computing Consultant
     bio: "
-      Martin was a Research Computing Consultant and part of the Research Computing group
-      at the University of Leeds in the UK, where we provide High Performance Computing (HPC),
-      Programming and Software Development consultancy across a diverse research community.
-      His role involved Research Software Engineering, training, consultancy and outreach.
-      He also managed a comprehensive HPC and Research Computing training programme designed to
-      be a 'zero to hero' structured introduction to HPC, Cloud and research software development.
-      Before joining the University of Leeds, he worked as an Engineer designing machine tool
-      control systems, a teacher and ran his own training and consultancy business. Personal
-      research interests are in text analytics, particularly using neural networks to summarise
-      text at scale.
-
-      Martin has moved on to work as Lecture in the School of Computing at the University of Leeds.
+    Martin was a Research Computing Consultant and part of the Research Computing group
+    at the University of Leeds in the UK, where we provide High Performance Computing (HPC),
+    Programming and Software Development consultancy across a diverse research community.
+    His role involved Research Software Engineering, training, consultancy and outreach.
+    He also managed a comprehensive HPC and Research Computing training programme designed to
+    be a 'zero to hero' structured introduction to HPC, Cloud and research software development.
+    Before joining the University of Leeds, he worked as an Engineer designing machine tool
+    control systems, a teacher and ran his own training and consultancy business. Personal
+    research interests are in text analytics, particularly using neural networks to summarise
+    text at scale.
+    Martin has moved on to work as a lecturer in the School of Computing at the University of Leeds.
     "
     img: team/martincallaghan.jpeg
   - firstname: Luke
@@ -138,20 +136,18 @@ alumni:
     Artificial Intelligence for Medical Diagnosis and Care.
     "
     img: team/lukeconibear.jpg
-
   - firstname: Alex
     lastname: Coleman
     role: Research Software Engineer
-    bio:
-      "Previously, he worked in Leeds Institute of Data Analytics as a Data Scientist intern on
-      projects looking at automatically classifying police dispatch reports using natural language
-      processing and developing methods for simulating police supply and demand. He has experience
-      using Python and R to wrangle data, develop statistical models and implement and deploy
-      interactive applications built ontop those models. He is evangelical about reproducible research
-      especially through leveraging software development tools such as version control, CI/CD, documentation
-      and testing to make code more open and more useful.
-
-      Alex has moved on to work as lead developer with Active Travel England.
+    bio: "
+    Previously, he worked in Leeds Institute of Data Analytics as a Data Scientist intern on
+    projects looking at automatically classifying police dispatch reports using natural language
+    processing and developing methods for simulating police supply and demand. He has experience
+    using Python and R to wrangle data, develop statistical models and implement and deploy
+    interactive applications built ontop those models. He is evangelical about reproducible research
+    especially through leveraging software development tools such as version control, CI/CD, documentation
+    and testing to make code more open and more useful.
+    Alex has moved on to work as lead developer with Active Travel England.
     "
     img: team/alexcoleman.jpeg
   - firstname: Mark
