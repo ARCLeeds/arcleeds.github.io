@@ -30,11 +30,21 @@ To begin, simply submit the details of your project via our contact form, includ
 
 You can read through some examples of consulting work the Research Computing Team have been part of at our [Case studies blog]({{ site.baseurl }}/about/casestudies/). -->
 
-## Service Catalogue Summary
+## Service Catalogue
 
-This catalogue details the services we provide. By consulting this list, you can identify the specific support you need from our team to ensure the success of your research, from initial concept through to final dissemination.
+This catalogue details the services we provide.
 
+<div class="event-space">
+    <div class="event-tile" style="background-color:#56B4E9">
+        <a class="event-tile-a" href="{{ '/assets/files/ResearchConsultancy_ServiceCatalogue.pdf' | relative_url }}"
+        target="_blank" rel="noopener noreferrer">
+            <strong>Service Catalogue (PDF) </strong>
+        </a>
+    </div>
+</div>
 We're constantly developing new skills, integrating new colleagues and learning about new technologies so please get in touch if you are unsure if we can work together.
+
+By consulting this list, you can identify the specific support you need from our team to ensure the success of your research, from initial concept through to final dissemination.
 
 {% comment %}
 
