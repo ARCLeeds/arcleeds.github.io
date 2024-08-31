@@ -4,7 +4,7 @@ permalink: "/consulting/"
 breadcrumb: true
 ---
 
-Our Research Computing team at the University of Leeds, delivered through our dedicated Research Software Engineers (RSEs), offers a comprehensive range of expert services designed to support researchers throughout the entire lifecycle of their projects. You can meet members of the team via the [Team page]({{ site.baseurl }}/about/team/).
+Our Research Computing Consultation Service at the University of Leeds, delivered through our dedicated Research Software Engineers (RSEs), offers a comprehensive range of expert services designed to support researchers throughout the entire lifecycle of their projects. You can meet members of the team via the [Team page]({{ site.baseurl }}/about/team/).
 
 ## How to Access Our Services
 
