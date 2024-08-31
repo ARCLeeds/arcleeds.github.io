@@ -19,11 +19,8 @@ services.each do |service|
   content = <<-HEREDOC
 ---
 layout: service_template
-title: "#{service['title']}"
-permalink: "#{service['url']}"
-description: "#{service['description']}"
-services:
-#{service['services'].map { |item| "  - item: \"#{item['item']}\"\n    description: \"#{item['description']}\"" }.join("\n")}
+code: "#{service['code']}"
+permalink: #{service['url']}
 ---
 HEREDOC
 
