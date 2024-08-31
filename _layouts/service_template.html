@@ -5,6 +5,10 @@ permalink: "{{ page.url }}"
 breadcrumb: true
 ---
 
+{% assign code = page.code %}
+{% assign services = site.data.service_catalogue | where:'code', code %}
+{% assign service = services[0] %}
+
 <p>{{ page.description }}</p>
 
 
