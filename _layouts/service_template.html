@@ -1,21 +1,22 @@
 ---
 layout: page
-title: "{{ page.title }}"
+code: "{{ page.code }}"
 permalink: "{{ page.url }}"
-breadcrumb: true
 ---
 
 {% assign code = page.code %}
 {% assign services = site.data.service_catalogue | where:'code', code %}
 {% assign service = services[0] %}
 
-<p>{{ page.description }}</p>
+<h1>{{ service.title }} </h1>
+
+<p>{{ service.description }}</p>
 
 
-{% for service in page.services %}
+{% for task in service.tasks %}
 
-  <h3>{{ service.item }} </h3>
-  <p>{{ service.description }} </p>
+  <h3>{{ task.title }} </h3>
+  <p>{{ task.description }} </p>
   
 {% endfor %}
 
