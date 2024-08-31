@@ -21,6 +21,7 @@ services.each do |service|
 layout: service_template
 code: "#{service['code']}"
 permalink: #{service['url']}
+breadcrumb: true
 ---
 HEREDOC
 
