@@ -1,6 +1,17 @@
 # Data used to create the Service Catalogue under /consulting/ page
+#
+# All files in the `pages/consulting` directory are created automatically using a ruby script.
+# The script reads this file and generates the corresponding markdown files.
+# The information relevant for the ruby script are `code` and `url` fields.
+# So all consulting files are very simple and only contain the front matter that calls the `service-template` layout.
+# 
+# The `_layouts/service-template.html` layout is used to generate the content of the consulting pages dinamically.
+# So you can change all the fields besides `code` and `url` as you wish, and the changes will be reflected in the generated pages.
+# If you need to change the `code` or `url` fields, you will need to run the ruby script again to update the consulting pages.
+# To run the script, you can use the following command: `ruby scripts/generate_service_pages.rb` in the root of the repository.
 
 - title: Grant Proposal Support
+  code: CS1
   url: /consulting/grant-proposal-support/
   description: "Our support can begin at the earliest stages of your project, helping you to transform research ideas into feasible computational research plans. We will help you to select the best techniques, tools, and infrastructure, ensuring that your grant proposal is both innovative and competitive."
   services:
@@ -14,6 +25,7 @@
       description: "We can assist in writing the computational and technical sections of your grant proposals, ensuring clarity, accuracy, and a strong justification for the requested resources."
 
 - title: Expert Software Development and Engineering
+  code: CS2
   url: /consulting/expert-software-development-and-engineering/
   description: "Once your project is funded, our team can provide essential software development services. Whether you need to design new software, refactor existing code, or optimise computational workflows, we bring expert engineering skills to your research."
   services:
@@ -25,6 +37,7 @@
       description: "We can improve the structure, readability, and performance of your existing software, making it more maintainable and efficient."
 
 - title: High-Performance Computing Expertise
+  code: CS3
   url: /consulting/high-performance-computing-expertise/
   description: "For projects that require significant computational power, our deep expertise in high-performance computing is invaluable. We can help you maximize the potential of HPC resources, including parallel computing and GPU programming."
   services:
@@ -34,6 +47,7 @@
       description: "We can help you design and implement complex workflows that leverage HPC resources, ensuring optimal performance for your computational tasks."
 
 - title: Numerical Computing and Advanced Modelling
+  code: CS4
   url: /consulting/numerical-computing-and-advanced-modelling/
   description: "We offer specialised services in numerical computing and advanced modelling, supporting complex simulations and analyses in fields such as fluid dynamics, molecular dynamics, and more, ensuring accurate and efficient computational results."
   services:
@@ -51,6 +65,7 @@
       description: "We offer expertise in numerical optimisation techniques that are crucial for tuning models, optimising design parameters, and solving complex research problems."
 
 - title: Workflow Optimisation and Management
+  code: CS5
   url: /consulting/workflow-optimisation-and-management/
   description: "As your project progresses, we assist in optimising and managing complex workflows. Our team ensures that your research processes are efficient, scalable, and well-organised, allowing you to focus on discovery and innovation. We also help automate your research workflows, reducing repetitive tasks and streamlining complex processes. Our expertise in workflow orchestration ensures that your computational pipelines are efficient and manageable."
   services:
@@ -68,6 +83,7 @@
       description: "We can implement workflow orchestration tools (e.g., Apache Airflow, Nextflow) to manage complex multi-step computational pipelines efficiently."
 
 - title: Version Control and Collaborative Development
+  code: CS6
   url: /consulting/version-control-and-collaborative-development/
   description: "Maintaining a robust codebase is crucial for any research project. We provide support for version control systems and collaborative development workflows, ensuring your software is reliable, traceable, and easy to manage."
   services:
@@ -83,6 +99,7 @@
       description: "We can set up and optimise the use of GitHub Codespaces, providing you with a cloud-based development environment that's ready to use instantly. This service enhances collaboration by offering a consistent, pre-configured environment that's accessible from anywhere."
 
 - title: Containerisation and Virtualisation
+  code: CS7
   url: /consulting/containerisation-and-virtualisation/
   description: "To enhance the portability and reproducibility of your research, we offer services in containerisation and virtualisation. These techniques ensure that your software runs consistently across different computing environments."
   services:
@@ -92,6 +109,7 @@
       description: "We can help set up virtualised environments tailored to your research needs, allowing for isolated and repeatable computational experiments."
 
 - title: Cloud Computing and Infrastructure as Code
+  code: CS8
   url: /consulting/cloud-computing-and-infrastructure-as-code/
   description: "For projects that require scalable and flexible computing resources, we provide cloud computing solutions and infrastructure as code services. These tools allow you to deploy and manage computational environments with ease."
   services:
@@ -101,6 +119,7 @@
       description: "We can assist in automating the setup and management of your research infrastructure using IaC tools like Terraform, making your computational environments more reproducible and easier to manage."
 
 - title: Reproducibility and Research Integrity
+  code: CS9
   url: /consulting/reproducibility-and-research-integrity/
   description: "Reproducibility is key to credible research. We work with you to implement best practices that enhance the reproducibility of your results, ensuring that your findings can be validated and built upon by others. This ensures that your research is not only successful but also maintainable and extensible for future work."
   services:
@@ -116,6 +135,7 @@
       description: "Our team can create clear and comprehensive documentation for your software, workflows, and research processes, facilitating understanding and reuse by others in your field."
 
 - title: Research Data Management
+  code: CS10
   url: /consulting/research-data-management/
   description: "Proper data management is crucial to the success of any research project. We offer services to help you plan, curate, and preserve your research data, ensuring it is well-organised, accessible, and compliant with relevant standards."
   services:
@@ -125,6 +145,7 @@
       description: "We provide services for curating and preserving research data, ensuring it is well-organised, accessible, and compliant with data preservation standards."
 
 - title: Data-Driven Research Support
+  code: CS11
   url: /consulting/data-driven-research-support/
   description: "Leveraging data effectively is at the heart of many research projects. We provide support for advanced data analysis techniques, including AI and machine learning, ensuring that your data-driven research is impactful and insightful."
   services:
@@ -134,6 +155,7 @@
       description: "Our team is well-versed in the ethical considerations and governance related to data handling, ensuring that your research adheres to the highest standards of data integrity and compliance."
 
 - title: Data Visualisation and Interactive Tools
+  code: CS12
   url: /consulting/data-visualisation-and-interactive-tools/
   description: "Effective communication of research findings often depends on high-quality data visualisation. We help you create reproducible, accurate visualisations and develop interactive tools to present your data compellingly."
   services:
@@ -143,6 +165,7 @@
       description: "We can develop interactive dashboards and web applications for real-time data visualisation, making it easier to explore and present your research findings."
 
 - title: Software Sustainability and Longevity
+  code: CS13
   url: /consulting/software-sustainability-and-longevity/
   description: "We ensure that the software developed during your project remains functional and maintainable in the long term. Our services include advice for software maintenance and for the sustainable evolution of your tools, and legacy code modernisation."
   services:
@@ -152,6 +175,7 @@
       description: "If your research relies on legacy software, our team can help modernise and migrate it to current technologies, improving performance and compatibility."
 
 - title: Open Science and Community Engagement
+  code: CS14
   url: /consulting/open-science-and-community-engagement/
   description: "We support open science initiatives, helping you develop and share open-source software, engage with the research community, and build tools that are accessible and beneficial to others in your field."
   services:
@@ -161,6 +185,7 @@
       description: "We can assist in creating and managing platforms for sharing your research outputs, such as code repositories and data archives."
 
 - title: Research Outputs and Dissemination
+  code: CS15
   url: /consulting/research-outputs-and-dissemination/
   description: "As your project nears completion, we assist in disseminating your research findings. Our team can co-author papers, contribute to science communication, and participate in conferences, ensuring your work reaches the widest possible audience."
   services:
@@ -176,6 +201,7 @@
       description: "We offer training and support in using tools and platforms for research dissemination, including setting up and maintaining research websites, creating interactive visualisations, and using social media effectively."
 
 - title: Compliance and Security
+  code: CS16
   url: /consulting/compliance-and-security/
   description: "Ensuring that your research complies with relevant regulations and is secure from vulnerabilities is critical. We provide guidance on data security, secure coding practices, and compliance with standards like GDPR."
   services:
@@ -185,6 +211,7 @@
       description: "We can help you implement secure coding practices to protect your software from vulnerabilities and ensure data integrity."
 
 - title: Teaching and Curriculum Development
+  code: CS17
   url: /consulting/teaching-and-curriculum-development/
   description: "Beyond direct project support, we contribute to the academic environment by developing and delivering educational content. We help design curricula, provide mentorship, and foster computational skills across the university."
   services:
@@ -194,6 +221,7 @@
       description: "Beyond workshops, we offer one-on-one or small group mentoring sessions to build the computational skills of researchers, fostering a culture of continuous learning."
 
 - title: Interdisciplinary and Collaborative Research
+  code: CS18
   url: /consulting/interdisciplinary-and-collaborative-research/
   description: "We excel in facilitating interdisciplinary research, providing the computational tools and expertise necessary for successful collaboration across diverse fields. Our support ensures that complex, multi-disciplinary projects achieve their full potential."
   services:
