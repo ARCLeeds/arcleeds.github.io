@@ -60,7 +60,7 @@ If you pull changes from elsewhere, then stop the jekyll serve, delete or move t
 
 By combining the files
 
-- `generate_service_pages.rb`
+- `scripts/generate_service_pages.rb`
 - `_data/service_catalogue.yml`
 - `_layouts/service_template.html`
 
@@ -68,7 +68,7 @@ I was able to create one file for each item listed in the data file using the pr
 To do this I used the following ruby command:
 
 ```ruby
-ruby generate_service_pages.rb
+ruby scripts/generate_service_pages.rb
 ```
 
 ### Merging your changes
