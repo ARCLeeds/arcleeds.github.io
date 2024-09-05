@@ -108,6 +108,14 @@ main:
     "
     img: team/andyturner.jpg
 
+  - firstname: Sorrel
+    lastname: Harriet
+    role: Research Software Engineer
+    bio: "
+    Sorrel joined the team in September 2024. She has extensive experience supporting learning and software delivery in academia and industry, having previously worked as a consultant, lecturer and developer. Sorrel holds a PhD in Music Technology from the University of York. She has expertise in software delivery best practices, web application development, teaching and learning. She is skilled in Python, JavaScript, databases, development tooling and shell scripting.
+    "
+    img: team/sorrelharriet.jpg
+
 alumni:
   - firstname: Martin 
     lastname: Callaghan
