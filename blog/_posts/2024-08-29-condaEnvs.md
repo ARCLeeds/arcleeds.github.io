@@ -107,7 +107,7 @@ conda env export > environment.yml # from inside the env
 
 This will create a record with every package and its version in your environment, including background dependencies that you did not specify but were required by your packages. This file will include specific builds of packages and a path to the environment directory on your machine.
 
-> This is a really useful record of the exact environment you used to create your results; however, it is not useable to create a new environment from due to specified builds
+> This is a really useful record of the exact environment you used to create your results; however, it is not broadly usable to create a new environment from due to specified builds
 
 You can remove the specified builds:
 
