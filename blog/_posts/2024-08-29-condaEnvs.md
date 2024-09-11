@@ -93,7 +93,7 @@ This file contains packages required to build a documentation website using `mkd
 
 If you have a selection of similar environments that have subtly differing package versions, make sure you record exactly which environment you are using for your research calculations.
 
-Ideally, all your results should be produced with the same environment, as trying to keep track of when you added or updated a package in an environment can become very messy very quickly.
+Ideally, all your results should be produced with the same environment, as trying to keep track of when you added or updated a package in an environment can become very messy, very quickly.
 
 ## Recording your environment
 
