@@ -1,0 +1,34 @@
+---
+layout: page
+code: "{{ page.code }}"
+permalink: "{{ page.url }}"
+---
+
+{% assign code = page.code %}
+{% assign services = site.data.service_catalogue | where:'code', code %}
+{% assign service = services[0] %}
+
+<h1>{{ service.title }} </h1>
+
+<p>{{ service.description }}</p>
+
+
+{% for task in service.tasks %}
+
+  <h3>{{ task.title }} </h3>
+  <p>{{ task.description }} </p>
+  
+{% endfor %}
+
+<br> <br>
+<hr>
+<p> <i> See more services in our catalogue: </i> </p>
+
+<p>
+  {% assign page_list = site.data.service_catalogue %}
+
+  {% for service in page_list %}
+          {% assign page = service %}
+          {% include _catalogue.html %}
+  {% endfor %}
+</p>

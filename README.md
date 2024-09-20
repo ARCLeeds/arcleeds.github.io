@@ -56,6 +56,21 @@ The generated HTML is located under the `_site subfolder` for viewing/testing.
 
 If you pull changes from elsewhere, then stop the jekyll serve, delete or move the _site directory and run jekyll serve again to rebuild the _site directory incorporating all the changes pulled from elsewhere.  
 
+#### Using ruby to generate multiple pages
+
+By combining the files
+
+- `scripts/generate_service_pages.rb`
+- `_data/service_catalogue.yml`
+- `_layouts/service_template.html`
+
+I was able to create one file for each item listed in the data file using the provided template.
+To do this I used the following ruby command:
+
+```ruby
+ruby scripts/generate_service_pages.rb
+```
+
 ### Merging your changes
 
 To merge your changes do a [pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
