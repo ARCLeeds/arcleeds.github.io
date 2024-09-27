@@ -3,16 +3,18 @@ title: Research Platforms
 permalink: /platforms/
 breadcrumb: true
 ---
-
+Welcome to the University of Leeds' Research Computing Resource Guide!
 IT Services provide a number of tools and services for both data storage and compute, Research Computing being the primary point of contact for research users.
 
+## Finding the Right Computing Resources for Your Research
 
-| Platform                                                        | Application                                                                                                                                                                                                                                                                                                                                                                       |
-|-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| High Performance Computing (ARC) clusters                       | Batch processing for Big Data and Big Compute.  Used for both high throughput and high performance computing workloads.                                                                                                                                                                                                                                                           |
-| Research Data Science Platform (IRC)                            | Virtual Windows and Linux desktops for the processing and storage of data deemed sensitive.                                                                                                                                                                                                                                                                                       |
-| Research Data Storage (provided through DCS project and others) | Scalable research data storage (IT) PeTAL tape archive (Faculty of Environment). Research Data Repository (Library). SEED (Faculty of Medicine).                                                                                                                                                                                                                                  |
-| Research Virtual Machines (provided through DCS project)        | Linux and Windows virtual machines (various CPU, memory and storage configurations).  Powerful computing resources (dedicated to supporting computationally or data intensive research) that can be deployed flexibly and changed easily to meet evolving user needs.  This could also provide other services such as a managed on-premise Gitlab service and a Database platform. |
-| Research Programming Platform                                   | A browser based service providing access to Python, R and Julia through Jupyter Notebooks, Jupyter Lab, RStudio and a Coder (Visual Studio Code) interface.  Use: general purpose code development.                                                                                                                                                                               |
-| Research Cloud                                                  | Access to Public Cloud services for research needs not met elsewhere (eg. VMs with GPUs or FPGAs, Cognitive Services APIs, Kubernetes, Azure Labs, Machine Learning Workbench).                                                                                                                                                                                                   |
-| Research Visualisation Platform                                 | Providing access to a variety of computationally intense visualisation tools (eg. VMD, Paraview).                                                                                                                                                                                                                                                                                 |
+Whether you're working on small-scale analysis, developing complex simulations, or running intensive computations, we have a wide range of computing resources tailored to support your research.
+
+This guide will help you navigate through various options, from individual devices to advanced High-Performance Computing (HPC) systems. To find the most appropriate resource, consider these questions:
+
+- Are you looking for something you can use immediately on your personal device?
+- Do you need more power without the complexity of HPC systems?
+- Are you running large-scale computations that require multi-node parallel processing?
+
+*Use our Resource Roadmap below to discover the best solution for your research needs.*
+
