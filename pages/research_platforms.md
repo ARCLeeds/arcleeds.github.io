@@ -31,10 +31,10 @@ This guide will help you navigate through various options, from individual devic
    - These are perfect for sharing work, developing in teams, and quickly testing your code without investing in hardware.
    - Unfortunately, most of the solutions are not supported by the university
 4. **Need to Scale Up? Local HPC is the Next Step**
-   - When your research requires heavy computation, high-end GPUs, or parallel processing, it’s time to consider our local (Tier 3) HPC resources like.
+   - When your research requires heavy computation, high-end GPUs, or parallel processing, it’s time to consider our local (Tier 3) HPC resources.
    - Get direct support from the Research Computing team and access systems tailored to your project’s needs.
 5. **For the Largest Projects: External HPC**
-   - For large, multi-node, or specialized GPU jobs, Tier-2 (Regional) and Tier-1 (National) HPC facilities offer matchless power and scale.
+   - For large, multi-node, or specialized GPU jobs, Tier-2 (Regional) and Tier-1 (National) HPC facilities offer unmatched power and scale.
    - These external HPC systems are ideal for massive datasets, complex simulations, or GPU-heavy research.
 
 ## Detailed Resource Overview
@@ -54,7 +54,7 @@ Following the roadmap, we dive into each section, helping you understand the spe
     <tr>
       <td>Standard Laptops</td>
       <td><ul>
-        <li>Standard request/support via University IT - faster deliver/support</li>
+        <li>Standard request via University IT - fast delivery/setup</li>
         <li>Flexible and Portable</li>
         <li>Impacts your other work whilst running computationally intensive jobs</li>
       </ul></td>
@@ -64,7 +64,7 @@ Following the roadmap, we dive into each section, helping you understand the spe
     <tr>
       <td>Standard Windows Desktops</td>
       <td><ul>
-        <li>Standard request/support via University IT - faster deliver/support</li>
+        <li>Standard request via University IT - fast delivery/setup</li>
         <li>Impacts your other work whilst running computationally intensive jobs</li>
         <li>Not necessarily considerably faster than laptops</li>
       </ul></td>
@@ -74,7 +74,7 @@ Following the roadmap, we dive into each section, helping you understand the spe
     <tr>
       <td>Non-Standard Computer</td>
       <td><ul>
-        <li>Request/support via University IT</li>
+        <li>Request via University IT</li>
         <li>Custom solution</li>
         <li>Long Purchasing/setting up time</li>
         <li>Impacts your other work whilst running computationally intensive jobs</li>
@@ -107,7 +107,7 @@ Following the roadmap, we dive into each section, helping you understand the spe
     <tr>
       <td>Clusters</td>
       <td><ul>
-        <li>Useful for trialing and debugging on a high end machine without needing to buy a workstation or queue on the HPC for testing</li>
+        <li>Useful for trialling and debugging on a high end machine without needing to buy a workstation or queue on the HPC for testing</li>
         <li>Useful for access to Windows for non-Windows users</li>
         <li>Access to Printer / Copier / Scanner </li>
         <li>Possibility of 24h access</li>
@@ -123,7 +123,7 @@ Following the roadmap, we dive into each section, helping you understand the spe
     <tr>
       <td>Linux Workstations/Servers</td>
       <td><ul>
-        <li>Benefits of RAM/Cores/GPU, a general issue of scale compared to personal systems</li>
+        <li>Benefits of higher specification RAM/cores/GPU; generally high end compared to personal systems</li>
         <li>None of the queuing issues or other complexity of HPC</li>
       </ul></td>
       <td><a href="https://it.leeds.ac.uk/it?id=kb_article_view&table=kb_knowledge&sys_kb_id=4b5e3e6c1b66cd9042c642ead34bcb40" target="_blank">Environment System</a></td>
@@ -143,19 +143,19 @@ Following the roadmap, we dive into each section, helping you understand the spe
   <tbody>
     <!-- New row -->
     <tr>
-      <td>Colab</td>
+      <td>Google Colab</td>
       <td>Jupyter Notebook service useful for teaching, training and development</td>
       <td><ul>
         <li>Can be useful for trialling and experimenting with GPU Python codes</li>
         <li>Relatively limited CPU (2 vCPU, 13G RAM)</li>
         <li>No control about resource allocation - bad for reproducibility</li>
       </ul></td>
-      <td><a href="https://colab.research.google.com/" target="_blank">Colab Homepage</a></td>
+      <td><a href="https://colab.research.google.com/" target="_blank">Google Colab Homepage</a></td>
     </tr>
     <!-- New row -->
     <tr>
       <td>MyBinder</td>
-      <td>Can install dependencies more nicely than Colab</td>
+      <td>Easier to install dependencies than Colab</td>
       <td><ul>
         <li>Opens up the whole repository rather than just a single notebook</li>
         <li>Low machine specification as it is 1-2Gbytes of RAM</li>
@@ -184,7 +184,7 @@ Following the roadmap, we dive into each section, helping you understand the spe
       <td>A model for well defined workflows. CI/CD lifecycle</td>
       <td><ul>
         <li>Automating code testing and deployment</li>
-        <li>Run actions in windows, linux and macos environments</li>
+        <li>Run actions in Windows, Linux and macOS environments</li>
         <li>The University of Leeds has a GitHub Enterprise educational licence</li>
       </ul></td>
       <td><ul>
@@ -211,7 +211,7 @@ Following the roadmap, we dive into each section, helping you understand the spe
       <td>ARC3/4†</td>
       <td>Higher RAM/core/storage than can be achieved in previous options</td>
       <td><ul>
-        <li>GPUs (V100), but a relatively small number</li>
+        <li>GPUs (Nvidia Tesla V100), but a relatively small number</li>
         <li>ARC3 GPUs often lightly used, enabling development and debugging work with interactive sessions</li>
         <li>Support - ability to get guidance and advice from the Research Computing team on how to best solve your research problems on the platform</li>
       </ul></td>
@@ -223,7 +223,7 @@ Following the roadmap, we dive into each section, helping you understand the spe
     <!-- New row -->
     <tr>
       <td>Aire‡</td>
-      <td>11 times more flops than ARC3 and ARC4 combined</td>
+      <td>11 times more FLOPS than ARC3 and ARC4 combined</td>
       <td><ul>
         <li>84 Nvidia L40S GPUs</li>
         <li>Total of 9072 Cores</li>
@@ -265,7 +265,7 @@ Following the roadmap, we dive into each section, helping you understand the spe
       <td>JADE2†</td>
       <td>Running multiple GPU jobs - simpler than Bede due to the x86\_64 architecture</td>
       <td><ul>
-        <li>GPU, V100</li>
+        <li>100% GPU, Nvidia Tesla V100</li>
         <li>Higher performance storage options</li>
       </ul></td>
       <td><a href="https://www.jade.ac.uk/" target="_blank">JADE2 Overview</a></td>
@@ -285,7 +285,7 @@ Following the roadmap, we dive into each section, helping you understand the spe
       <td>Jasmin</td>
       <td>A much more comprehensive service for NERC users</td>
       <td><ul>
-        <li>Jupyer notebook support</li>
+        <li>Jupyter notebook support</li>
         <li>HPC</li>
         <li>Shared Linux systems</li>
         <li>Cloud</li>
@@ -295,4 +295,4 @@ Following the roadmap, we dive into each section, helping you understand the spe
   </tbody>
 </table>
 
-† *The JADE2 account registration period closed on 01/09/2024. As of this date, we are no longer able to approve project requests. 6th January 2025: All access to the service will be withdrawn and physical decommissioning of the system will commence.*
+† *The JADE2 account registration period closed on 01/09/2024. As of this date, we are no longer able to approve project requests. 1st November 2024: Batch and interactive access to all compute resources will be withdrawn. 6th January 2025: All access to the service will be withdrawn and physical decommissioning of the system will commence.*
