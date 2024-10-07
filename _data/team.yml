@@ -107,14 +107,20 @@ main:
     management and computational reproducibility.
     "
     img: team/andyturner.jpg
-
   - firstname: Sorrel
     lastname: Harriet
     role: Research Software Engineer
     bio: "
     Sorrel joined the team in September 2024. She has extensive experience supporting learning and software delivery in academia and industry, having previously worked as a consultant, lecturer and developer. Sorrel holds a PhD in Music Technology from the University of York. She has expertise in software delivery best practices, web application development, teaching and learning. She is skilled in Python, JavaScript, databases, development tooling and shell scripting.
     "
-    img: team/sorrelharriet.jpg
+    img: team/sorrelharriet.jpg    
+  - firstname: Andrew
+    lastname: Harvie
+    role: Research Software Engineer
+    bio: "
+    Andrew joined the Research Computing team in October 2024 from the School of Chemical and Process Engineering, where he worked on automated, machine learning-directed optimisation of chemical processes. Prior to this, he worked at the Norwegian University of Science and Technology, developing open-source hardware and software tools for laboratory scientists. This followed a PhD in Physics from the University of Leeds. He is skilled with Python, C/C++ and MATLAB, and has a particular interest in developing efficient code for embedded systems.
+    "
+    img: team/andrewharvie.jpg
 
 alumni:
   - firstname: Martin 
