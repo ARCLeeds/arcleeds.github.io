@@ -5,7 +5,8 @@ This is the official repository of the Research Computing Team website from
 the University of Leeds. It is built using [GitHub pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com) and is
 based on the [*Feeling Responsive*][2] theme.
 
-You can find the site at [arcleeds.github.io](https://arcleeds.github.io)
+You can find the site at [arcleeds.github.io](https://arcleeds.github.io). This used to be forwarded to from [https://arc.leeds.ac.uk](https://arc.leeds.ac.uk), however, that is now a Wordpress site to be edited via:
+[https://arc.leeds.ac.uk/wp-admin](https://arc.leeds.ac.uk/wp-admin).
 
 ## Website Structure Philosophy
 
