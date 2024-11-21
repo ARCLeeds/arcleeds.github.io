@@ -15,7 +15,7 @@ breadcrumb: true
 
 #### How do I request software/module to be installed on a HPC?
 
-> If you can't find the software you need for your research on HPC you've got a number of options. First, we recommend double checking the HPC modules directly by using the ```module avail``` command to list all installed modules. If it's definitely not there you can submit a installation request to Research computing. [Click here to be redirected to the installation request form](https://it.leeds.ac.uk/it?id=sc_cat_item&sys_id=48d5a6d70f275f00a82247ece1050ea0). We will discuss with you more about the software you want and aim to identify whether this software would be used by other users (in which case we will create a module for that application) or for more niche software how we can help guide you installing it for yourself. If you have any questions about this process you can always contact us via our IT contact form. [You can click here to be redirected to the Research Computing contact form.](https://it.leeds.ac.uk/it?id=sc_cat_item&sys_id=7587b2530f675f00a82247ece1050eda)
+> We are currently not able to install new software. If you can't find the software you need for your research on HPC, we recommend double checking the HPC modules directly by using the ```module avail``` command to list all installed modules.  We can discuss with you more about the software you want and how we can help guide you installing it for yourself; contact us via our IT contact form. [You can click here to be redirected to the Research Computing contact form.](https://it.leeds.ac.uk/it?id=sc_cat_item&sys_id=7587b2530f675f00a82247ece1050eda)
 
 #### How do I access HPC from outside the University network?
 
